@@ -1,0 +1,93 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": true,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "path:电影",
+      "color": {
+        "a": 1,
+        "rgb": 2811199
+      }
+    },
+    {
+      "query": "tag:macOS",
+      "color": {
+        "a": 1,
+        "rgb": 12789975
+      }
+    },
+    {
+      "query": "tag:Alfred",
+      "color": {
+        "a": 1,
+        "rgb": 11331382
+      }
+    },
+    {
+      "query": "tag:Vim",
+      "color": {
+        "a": 1,
+        "rgb": 6084188
+      }
+    },
+    {
+      "query": "tag:Emacs",
+      "color": {
+        "a": 1,
+        "rgb": 10363863
+      }
+    },
+    {
+      "query": "tag:男性",
+      "color": {
+        "a": 1,
+        "rgb": 6073814
+      }
+    },
+    {
+      "query": "tag:女性",
+      "color": {
+        "a": 1,
+        "rgb": 6053078
+      }
+    },
+    {
+      "query": "path:000图书-中图法/A马克思主义、列宁主义、毛泽东思想、邓小平理论",
+      "color": {
+        "a": 1,
+        "rgb": 16711680
+      }
+    },
+    {
+      "query": "path:_快捷键_",
+      "color": {
+        "a": 1,
+        "rgb": 14048429
+      }
+    },
+    {
+      "query": "",
+      "color": {
+        "a": 1,
+        "rgb": 14048348
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1.50483661588009,
+  "lineSizeMultiplier": 0.503186300012387,
+  "collapse-forces": false,
+  "centerStrength": 0.504851562822577,
+  "repelStrength": 8.9969115157521,
+  "linkStrength": 1,
+  "linkDistance": 500,
+  "scale": 0.8332481609528978,
+  "close": true
+}

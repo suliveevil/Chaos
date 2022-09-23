@@ -1,0 +1,13 @@
+{
+  "targetLanguage": {
+    "text": "Chinese Simplified",
+    "code": "zh-Hans"
+  },
+  "apiType": {
+    "text": "Builtin",
+    "value": "0"
+  },
+  "translateApiUrl": "https://api.cognitive.microsofttranslator.com/translate?api-version=3.0",
+  "maxCharacters": 2000,
+  "token": ""
+}

@@ -1,0 +1,13 @@
+{
+  "baseFontSize": 14,
+  "theme": "system",
+  "translucency": false,
+  "cssTheme": "",
+  "interfaceFontFamily": "",
+  "textFontFamily": "Sarasa Mono SC Nerd",
+  "monospaceFontFamily": "Sarasa Mono SC Nerd",
+  "accentColor": "",
+  "showViewHeader": false,
+  "nativeMenus": true,
+  "baseFontSizeAction": false
+}

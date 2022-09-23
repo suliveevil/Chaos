@@ -1,0 +1,55 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Chinese" tvg-logo="http://www.pngmart.com/files/3/Popcorn-Transparent-PNG.png" tvg-country="CN" tvg-url="" group-title="BGV",24H电影 历年贺岁档
+http://aldirect.hls.huya.com/huyalive/28466698-2689663056-11552014862779416576-3048959692-10057-A-0-1.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Chinese" tvg-logo="http://www.pngmart.com/files/3/Popcorn-Transparent-PNG.png" tvg-country="CN" tvg-url="" group-title="BGV",24H电影 爱奇艺 欢乐剧场
+http://101.72.196.41/r/baiducdnct.inter.iqiyi.com/tslive/c16_lb_xijudianying_1080p_t10/c16_lb_xijudianying_1080p_t10.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Chinese" tvg-logo="http://www.pngmart.com/files/3/Popcorn-Transparent-PNG.png" tvg-country="CN" tvg-url="" group-title="BGV",24H电影 爱奇艺 经典港片
+http://101.72.196.41/r/baiducdnct.inter.iqiyi.com/tslive/c15_lb_jingdianguangpian_1080p_t10/c15_lb_jingdianguangpian_1080p_t10.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Chinese" tvg-logo="http://www.pngmart.com/files/3/Popcorn-Transparent-PNG.png" tvg-country="CN" tvg-url="" group-title="BGV",24H电影 爱奇艺 豆瓣高分
+http://101.72.196.41/r/baiducdnct.inter.iqiyi.com/tslive/c15_lb_wuxingyingyuan_1080p_t10/c15_lb_wuxingyingyuan_1080p_t10.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Chinese" tvg-logo="http://www.pngmart.com/files/3/Popcorn-Transparent-PNG.png" tvg-country="CN" tvg-url="" group-title="BGV",24H看剧 武林外传
+http://aldirect.hls.huya.com/huyalive/29141112-2689670670-11552047564660408320-2847687630-10057-A-0-1.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Chinese" tvg-logo="http://www.pngmart.com/files/3/Popcorn-Transparent-PNG.png" tvg-country="CN" tvg-url="" group-title="BGV",24H看剧 炊事班的故事
+http://aldirect.hls.huya.com/huyalive/29359996-2689642072-11551924737185677312-2847687578-10057-A-0-1.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Chinese" tvg-logo="http://www.pngmart.com/files/3/Popcorn-Transparent-PNG.png" tvg-country="CN" tvg-url="" group-title="BGV",24H看剧 爱奇艺 家庭剧场
+http://101.72.196.41/r/baiducdnct.inter.iqiyi.com/tslive/c15_lb_jiatingjuchang_1080p_t10/c15_lb_jiatingjuchang_1080p_t10.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Chinese" tvg-logo="http://www.pngmart.com/files/3/Popcorn-Transparent-PNG.png" tvg-country="CN" tvg-url="" group-title="BGV",24H看剧 爱奇艺 热播电视剧
+http://101.72.196.41/r/baiducdnct.inter.iqiyi.com/tslive/c15_lb_reboju_1080p_t10/c15_lb_reboju_1080p_t10.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Chinese" tvg-logo="http://www.pngmart.com/files/3/Popcorn-Transparent-PNG.png" tvg-country="CN" tvg-url="" group-title="BGV",24H看剧 生活大爆炸
+http://aldirect.hls.huya.com/huyalive/29169025-2686221732-11537234488744476672-2847699168-10057-A-0-1_1200.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Chinese" tvg-logo="http://www.pngmart.com/files/3/Popcorn-Transparent-PNG.png" tvg-country="CN" tvg-url="" group-title="BGV",24H看剧 相声小品轮播
+http://aldirect.hls.huya.com/huyalive/29169025-2686221544-11537233681290625024-2847687612-10057-A-0-1.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Chinese" tvg-logo="http://www.pngmart.com/files/3/Popcorn-Transparent-PNG.png" tvg-country="CN" tvg-url="" group-title="BGV",24H看剧 老友记（前四季）
+http://aldirect.hls.huya.com/huyalive/29169025-2686220018-11537227127170531328-2847699120-10057-A-1524041208-1_1200.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Chinese" tvg-logo="http://www.pngmart.com/files/3/Popcorn-Transparent-PNG.png" tvg-country="CN" tvg-url="" group-title="BGV",24H看剧 龙门镖局
+http://aldirect.hls.huya.com/huyalive/29106097-2689454638-11551119714285518848-2847687516-10057-A-0-1.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Chinese" tvg-logo="http://www.pngmart.com/files/3/Popcorn-Transparent-PNG.png" tvg-country="CN" tvg-url="" group-title="BGV",24H纪录片 爱奇艺 科学探索
+http://cdn-out.iqy.sc96655.com/tslive/c16_lb_kexuetansuo_1080p_t10/c16_lb_kexuetansuo_1080p_t10.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Chinese" tvg-logo="http://www.pngmart.com/files/3/Popcorn-Transparent-PNG.png" tvg-country="CN" tvg-url="" group-title="BGV",24H纪录片 爱奇艺 纪录片
+http://cdn-out.iqy.sc96655.com/tslive/c15_lb_newjilupian_1080p_t10/c15_lb_newjilupian_1080p_t10.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Chinese" tvg-logo="http://www.pngmart.com/files/3/Popcorn-Transparent-PNG.png" tvg-country="CN" tvg-url="" group-title="BGV",24H纪录片 爱奇艺 自然地理
+http://cdn-out.iqy.sc96655.com/tslive/c16_lb_zirandili_1080p_t10/c16_lb_zirandili_1080p_t10.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Chinese" tvg-logo="http://www.pngmart.com/files/3/Popcorn-Transparent-PNG.png" tvg-country="CN" tvg-url="" group-title="BGV",24H综艺 爱奇艺 奔跑吧
+http://cdn-out.iqy.sc96655.com/tslive/c15_lb_benpaobaxiongdi_1080p_t10/c15_lb_benpaobaxiongdi_1080p_t10.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Chinese" tvg-logo="http://www.pngmart.com/files/3/Popcorn-Transparent-PNG.png" tvg-country="CN" tvg-url="" group-title="BGV",24H综艺 爱奇艺 王牌对王牌
+http://cdn-out.iqy.sc96655.com/tslive/c20_lb_fengshang_high_t10/c20_lb_fengshang_high_t10.m3u8
+#EXTINF:-1 tvg-id="20" tvg-name="CGTN" tvg-language="Chinese" tvg-logo="https://i.imgur.com/c5Yj2to.png" tvg-country="CN" tvg-url="http://epg.51zmt.top:8000/e.xml.gz" group-title="BGV",CGTN
+http://ivi.bupt.edu.cn/hls/cgtnhd.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Chinese" tvg-logo="https://i.imgur.com/TSG6WBy.png" tvg-country="CN" tvg-url="" group-title="BGV",CGTN Documentary
+http://ivi.bupt.edu.cn/hls/cgtndochd.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="English" tvg-logo="https://i.imgur.com/rnQMXRm.jpg" tvg-country="US" tvg-url="" group-title="BGV",DocuBox HD
+http://livecdnh3.tvanywhere.ae/hls/docubox/04.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="English" tvg-logo="https://d2po7v53a8yrck.cloudfront.net/static/2/Open/2400x2400_1578/Misc/h2_2400_color_dark_light.png" tvg-country="US" tvg-url="" group-title="BGV",H2
+http://livecdnh1.tvanywhere.ae/hls/h2/05.m3u8
+#EXTINF:-1 tvg-id="MBC 2 ARB" tvg-name="MBC 2 ARB" tvg-language="Arabic" tvg-logo="https://i.imgur.com/KXuzL1u.png" tvg-country="AE" tvg-url="http://195.154.221.171/epg/guidearab.xml.gz" group-title="BGV",MBC 2 HD
+http://livecdnh3.tvanywhere.ae/hls/mbc2/05.m3u8
+#EXTINF:-1 tvg-id="MBC 4 ARB" tvg-name="MBC 4 ARB" tvg-language="Arabic" tvg-logo="https://i.imgur.com/pfF61uH.png" tvg-country="AE" tvg-url="http://195.154.221.171/epg/guidearab.xml.gz" group-title="BGV",MBC 4
+http://livecdnh3.tvanywhere.ae/hls/mbc4/05.m3u8
+#EXTINF:-1 tvg-id="MBC Max ARB" tvg-name="MBC Max ARB" tvg-language="Arabic" tvg-logo="https://i.imgur.com/X6EliFm.png" tvg-country="AE" tvg-url="http://195.154.221.171/epg/guidearab.xml.gz" group-title="BGV",MBC Max HD
+http://livecdnh3.tvanywhere.ae/hls/mbcmax/05.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="English" tvg-logo="https://i.imgur.com/DcIYiLM.jpg" tvg-country="US" tvg-url="" group-title="BGV",Nat Geo People
+http://livecdnh1.tvanywhere.ae/hls/nat_geo_people/05.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="English" tvg-logo="https://i.imgur.com/2Wy4o31.png" tvg-country="US" tvg-url="" group-title="BGV",Nat Geo Wild HD
+http://livecdnh1.tvanywhere.ae/hls/nat_geo_wild/05.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="English" tvg-logo="https://i.imgur.com/bUepAp5.png" tvg-country="US" tvg-url="" group-title="BGV",National Geograpic
+http://livecdnh1.tvanywhere.ae/hls/nat_geo/05.m3u8

@@ -1,0 +1,18 @@
+{
+  "extends": "@tsconfig/svelte/tsconfig.json",
+  "compilerOptions": {
+    "strict": true,
+    "types": ["svelte", "node", "jest"],
+    "baseUrl": ".",
+    "inlineSources": true,
+    "module": "ESNext",
+    "target": "es6",
+    "allowJs": true,
+    "strictPropertyInitialization": false,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "lib": ["dom", "es5", "scripthost", "es2020"],
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["**/*.ts"]
+}

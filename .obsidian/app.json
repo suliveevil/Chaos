@@ -1,0 +1,24 @@
+{
+  "alwaysUpdateLinks": true,
+  "promptDelete": false,
+  "fileSortOrder": "alphabetical",
+  "foldHeading": true,
+  "showLineNumber": true,
+  "tabSize": 4,
+  "emacsyKeys": false,
+  "communityPluginSortOrder": "release",
+  "trashOption": "local",
+  "readableLineLength": true,
+  "legacyEditor": false,
+  "vimMode": false,
+  "attachmentFolderPath": "assets",
+  "userIgnoreFilters": [
+    "主题/CSCCT/"
+  ],
+  "spellcheck": true,
+  "showFrontmatter": true,
+  "showInlineTitle": false,
+  "autoPairBrackets": false,
+  "useTab": false,
+  "livePreview": true
+}

@@ -1,0 +1,9 @@
+# Omnioutliner
+
+
+
+## Misc
+
+[[Omnifocus]]
+
+

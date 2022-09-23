@@ -1,0 +1,10 @@
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:6
+#EXT-X-MEDIA-SEQUENCE:3419975
+#EXTINF:5.986000,
+http://httpdvb.slave.ttcatv.tv:13164/httpdvb/piece.ts?accesstoken=R5E62C4E5U309EF010K778965A4ID620FE72PBM3233C4EV1044EZ33519WE66F22B3151&piecekey=sdbeijingjishi&piecevalue=5e6d1e2f&pieceid=4200000311
+#EXTINF:5.951000,
+http://httpdvb.slave.ttcatv.tv:13164/httpdvb/piece.ts?accesstoken=R5E62C4E5U309EF010K778965A4ID620FE72PBM3233C4EV1044EZ33519WE66F22B3151&piecekey=sdbeijingjishi&piecevalue=5e6d1e35&pieceid=4200000311
+#EXTINF:5.054000,
+http://httpdvb.slave.ttcatv.tv:13164/httpdvb/piece.ts?accesstoken=R5E62C4E5U309EF010K778965A4ID620FE72PBM3233C4EV1044EZ33519WE66F22B3151&piecekey=sdbeijingjishi&piecevalue=5e6d1e3b&pieceid=4200000311

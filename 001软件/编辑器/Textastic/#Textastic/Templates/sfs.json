@@ -1,0 +1,21 @@
+{
+	"uuid": "21840A74-EF92-479C-9709-64C6C3AF263E",
+	"category": "Stats For Sharks",
+	"templates": [
+		{
+			"name": "Article Placeholder",
+			"fileExtension": "wiki",
+			"snippet": "{{EpisodePlaceholder\n|Category=${1:categorycode}\n|CategoryName=${2:categoryname}\n|SeasonNumber=${3:seasonnum}\n|Season=${4:seasonname}\n|Episode=${5:episodenum}\n|CompanyOne=[[${7:company}]]\n|CompanyTwo=[[${8:company}]]\n|CompanyThree=[[${9:company}]]\n|CompanyFour=[[${10:company}]]\n|Company=${11:company}\n|AskingAmt=\n|AskingEQ=\n|AskingVal=\n|DealType=${6:type}\n|Sharks=\n|DealAmt=\n|DealEQ=\n|DealVal=\n|SharkBite=\n|Filler=\n\n}}\n\n[[Category:${6}]]\n[[Category:Deals]]"
+		},
+		{
+			"name": "Article - Full",
+			"fileExtension": "wiki",
+			"snippet": "<div>\n<statschart type=\"season-investment-by-type\"  categories=\"${1:categorycode}\" season=\"${2:seasonnum}\" style=\"size-half left\"/>\n<statschart type=\"shark-amt-investment\" category=\"${1}\" season=\"${2}\" style=\"size-half right\"/>\n<statschart type=\"season-investment-by-type\"  categories=\"${1}\" style=\"size-half left\"/>\n<statschart type=\"shark-amt-investment\" category=\"${1}\" style=\"size-half right\"/>\n</div>\n\n{{CompanySidebar\n|Float=right\n|Category=[[:Category:${4:categoryname}|${4}]]\n|Company=\n|AskingAmt=\n|AskingEQ=\n|AskingVal=\n|DealType=${6:No Deal}\n|Sharks=\n|DealAmt=\n|DealEQ=\n|DealVal=\n|SharkBite=\n}}\n\n\n\n===Making A Deal===\n\n<statschart type=\"shark-season-investment\" category=\"${1}\" style=\"size-full\" title=\"${4} Deals Per Season\"/>\n\n<statschart type=\"categories-by-season\" category=\"${1}\" title=\"${4} vs. Other Major Category Offers by Season\" style=\"size-full\"/>\n\n{{BasicFooter\n|Title=[[Season ${5}]]\n|Subhead=[[${3:episodenum}]]\n|[[company]]\n|[[company]]\n|[[company]]\n|[[company]]\n}}\n\n[[Category:Deals]]\n[[Category:${6}]]\n[[Category:Season ${5}]]\n[[Category:${3}]]\n[[Category:${4}]]\n"
+		},
+		{
+			"name": "Episode",
+			"fileExtension": "wiki",
+			"snippet": "{{EpisodeUpdate\n|Title=[[${1:episodenum}|${1} Deals]]\n|CompanyOne=[[${2:company}]]\n|CompanyOneDeal=true\n|SummaryOne=\n|CategoryOneOne=\n|CategoryOneTwo=\n|CompanyTwo=[[${3:company}]]\n|CompanyTwoDeal=true\n|SummaryTwo=\n|CategoryTwoOne=\n|CategoryTwoTwo=\n|CompanyThree=[[${4:company}]]\n|CompanyThreeDeal=false\n|SummaryThree=\n|CategoryThreeOne=\n|CategoryThreeTwo=\n|CompanyFour=[[${5:company}]]\n|CompanyFourDeal=true\n|SummaryFour=\n|CategoryFourOne=\n|CategoryFourTwo=\n|CategoryFourThree=\n|[[${7:shark}\n|[[${8:shark}\n|[[${9:shark}\n|[[${10:shark}\n|[[${11:shark}\n}}\n\n\nThis episode originally aired on ${12:airdate}.\n\n[[Category:Episodes]]\n[[Category:Season ${6:seasonnum}]]"
+		}
+	]
+}

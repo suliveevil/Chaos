@@ -1,0 +1,44 @@
+* Master Emacs in One Year
+** English version
+Guide on how to master Emacs in one year.
+
+The critical question is whether one year is enough.
+
+My answer is a big YES, if you know how to do it efficiently!
+
+Here are the tips *for your first year*:
+- Set the standard to the highest
+- DON'T create your own setup
+- Report bugs to the master
+- DON'T learn Lisp
+- DON'T remember key bindings
+
+Emacs Lisp has nothing to do with your IQ. So don't feel pressured to master it asap. As I have observed, most people (including me) dislike language with unfamiliar syntax. That's ok. Start from using Emacs, you will feel the love for Emacs, then comes the love for Lisp naturally.
+
+Click [[https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/guide-en.org][HERE]] to read it.
+
+** 中文版本 (Chinese version)
+关于如何在一年内成为高手的指导.
+
+Web版本也会发布在我的[[http://blog.csdn.net/redguardtoo/article/details/7222501][CSDN博客]]和[[http://blog.binchen.org/?p=268][个人博客]].
+
+我建议一年内,
+- 标准要最高
+- 不要从头创建自己的配置
+- 给高手报告bug
+- 不要学习Lisp
+- 不要记快捷键
+
+Lisp和你的IQ毫无关系.不要急着学它.据我观察,大多数人(包括我)讨厌语法怪异的语言.这很正常,先从使用软件开始,当你爱上Emacs,对Lisp的爱也就跟着来了.
+
+[[https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/guide-zh.org][点击这里查看]].
+
+* Practical guide to use Gnus with Gmail
+** English version
+Gnus is the default Email client of Emacs. No technical details involved.
+
+Click [[https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/gnus-guide-en.org][HERE]] to read it.
+* Guide for developers
+Many tutorials teach you how to convert Emacs into a perfect IDE.
+
+[[https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/developer-guide-en.org][This guide]] explains how to convert Emacs into a good IDE with minimum setup.

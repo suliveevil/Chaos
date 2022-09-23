@@ -1,0 +1,212 @@
+{
+  "main": {
+    "id": "19d5b9a3d1c69d7e",
+    "type": "split",
+    "children": [
+      {
+        "id": "df4bd4fd360932d5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a5a31f84846ed881",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "001软件/编辑器/Vim/Vim.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6944ed763ed9f28a",
+    "type": "split",
+    "children": [
+      {
+        "id": "ce585d0073add119",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b6849641272f075e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "790d76a2c456c99e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "001软件/编辑器/Vim/Vim.md"
+              }
+            }
+          },
+          {
+            "id": "dafb78433f668a40",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "alphabetical",
+                "useHierarchy": false
+              }
+            }
+          },
+          {
+            "id": "f4c2057ddea75491",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "001软件/编辑器/Vim/Vim.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 2,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": true,
+                  "showTags": true,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": false,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.26236073875424387,
+                  "close": true
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 245.5,
+    "collapsed": true
+  },
+  "right": {
+    "id": "06dc78a8e45ad1e3",
+    "type": "split",
+    "children": [
+      {
+        "id": "ee893679fc6ba762",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "69c4e4b324be50cc",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "binary move",
+                "matchingCase": false,
+                "explainSearch": true,
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "287b3bbbe813e36a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "001软件/编辑器/Vim/Vim.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": true,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "9a8f07a640480515",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "001软件/编辑器/Vim/Vim.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "30d38bdfecbd111b",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "03cc835697311b7f",
+            "type": "leaf",
+            "state": {
+              "type": "langr-learn-panel",
+              "state": {}
+            }
+          },
+          {
+            "id": "709bf2f87c29cd11",
+            "type": "leaf",
+            "state": {
+              "type": "langr-stat",
+              "state": {}
+            }
+          },
+          {
+            "id": "a28ce2c248c21bb4",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 273.5
+  },
+  "active": "a5a31f84846ed881",
+  "lastOpenFiles": [
+    "001软件/编辑器/Emacs/pcre2el.md",
+    "001软件/编辑器/Emacs/bln-mode.md",
+    "001软件/tree-sitter-regex.md",
+    "001软件/tree-sitter.md",
+    "001软件/编辑器/Emacs/voicemacs.md",
+    "001软件/编辑器/Emacs/loophole.md",
+    "001软件/编辑器/Emacs/emacs-which-key.md",
+    "001软件/编辑器/Emacs/keyfreq.md",
+    "001软件/编辑器/Emacs/Emacs 快捷键.md",
+    "001软件/编辑器/Emacs/wordsmith-mode.md"
+  ]
+}

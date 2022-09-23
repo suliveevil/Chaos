@@ -1,0 +1,34 @@
+{
+  "choices": [
+    {
+      "id": "9fe92ff2-8a21-4e47-a155-79e2afdcb95e",
+      "name": "Open in MacVim",
+      "type": "Macro",
+      "command": true,
+      "macroId": "743b234d-0036-4640-ba64-f2d002518bd9"
+    }
+  ],
+  "macros": [
+    {
+      "name": "Move File with tag to Folder",
+      "id": "1c736867-e16b-4241-a279-be1f33d722de",
+      "commands": [
+        {
+          "name": "Move-File-with-tag-to-Folder",
+          "type": "UserScript",
+          "id": "a8de922f-0115-484e-9ed0-bb887690d113",
+          "path": "Macros/Move-File-with-tag-to-Folder.js",
+          "settings": {}
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Open in MacVim",
+      "id": "743b234d-0036-4640-ba64-f2d002518bd9",
+      "commands": [],
+      "runOnStartup": true
+    }
+  ],
+  "inputPrompt": "multi-line"
+}

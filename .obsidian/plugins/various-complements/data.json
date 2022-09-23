@@ -1,0 +1,815 @@
+{
+  "strategy": "chinese",
+  "matchStrategy": "prefix",
+  "maxNumberOfSuggestions": 99,
+  "maxNumberOfWordsAsPhrase": 5,
+  "minNumberOfCharactersTriggered": 1,
+  "minNumberOfWordsTriggeredPhrase": 1,
+  "complementAutomatically": true,
+  "delayMilliSeconds": 360,
+  "disableSuggestionsDuringImeOn": true,
+  "insertAfterCompletion": false,
+  "firstCharactersDisableSuggestions": ":/^",
+  "showMatchStrategy": true,
+  "showComplementAutomatically": true,
+  "showIndexingStatus": true,
+  "descriptionOnSuggestion": "Full",
+  "selectSuggestionKeys": "Ctrl/Cmd+Enter",
+  "additionalCycleThroughSuggestionsKeys": "Ctrl/Cmd+N, Ctrl/Cmd+P",
+  "disableUpDownKeysForCycleThroughSuggestionsKeys": false,
+  "openSourceFileKey": "Ctrl/Cmd+Enter",
+  "propagateEsc": false,
+  "enableCurrentFileComplement": true,
+  "currentFileMinNumberOfCharacters": 0,
+  "onlyComplementEnglishOnCurrentFileComplement": false,
+  "enableCurrentVaultComplement": true,
+  "currentVaultMinNumberOfCharacters": 0,
+  "includeCurrentVaultPathPrefixPatterns": "",
+  "excludeCurrentVaultPathPrefixPatterns": "主题/CSCCT/",
+  "includeCurrentVaultOnlyFilesUnderCurrentDirectory": false,
+  "enableCustomDictionaryComplement": true,
+  "customDictionaryPaths": "https://raw.githubusercontent.com/first20hours/google-10000-english/master/google-10000-english-no-swears.txt",
+  "columnDelimiter": "Comma",
+  "customDictionaryWordRegexPattern": "",
+  "delimiterToHideSuggestion": "",
+  "delimiterToDivideSuggestionsForDisplayFromInsertion": "",
+  "caretLocationSymbolAfterComplement": "",
+  "displayedTextSuffix": " => ...",
+  "enableInternalLinkComplement": true,
+  "suggestInternalLinkWithAlias": false,
+  "excludeInternalLinkPathPrefixPatterns": "",
+  "enableFrontMatterComplement": true,
+  "frontMatterComplementMatchStrategy": "inherit",
+  "insertCommaAfterFrontMatterCompletion": false,
+  "showLogAboutPerformanceInConsole": false,
+  "selectionHistoryTree": {
+    "AppCake": {
+      "AppCake": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1663861229244
+        }
+      }
+    },
+    "词典": {
+      "词典": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1663862936930
+        },
+        "frontMatter": {
+          "count": 1,
+          "lastUpdated": 1663961351343
+        }
+      }
+    },
+    "Windows": {
+      "Windows": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1663863070688
+        }
+      }
+    },
+    "folder": {
+      "folder": {
+        "customDictionary": {
+          "count": 1,
+          "lastUpdated": 1663866807608
+        }
+      }
+    },
+    "电影": {
+      "电影": {
+        "frontMatter": {
+          "count": 3,
+          "lastUpdated": 1663926317921
+        }
+      }
+    },
+    "text": {
+      "text": {
+        "customDictionary": {
+          "count": 1,
+          "lastUpdated": 1663872542627
+        }
+      }
+    },
+    "Neovim": {
+      "Neovim": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1663876832877
+        },
+        "frontMatter": {
+          "count": 5,
+          "lastUpdated": 1664028241425
+        }
+      }
+    },
+    "Miss": {
+      "Miss": {
+        "customDictionary": {
+          "count": 3,
+          "lastUpdated": 1663880654708
+        }
+      }
+    },
+    "Markdown": {
+      "Markdown": {
+        "internalLink": {
+          "count": 2,
+          "lastUpdated": 1663950565484
+        }
+      }
+    },
+    "Neovim插件": {
+      "Neovim插件": {
+        "internalLink": {
+          "count": 11,
+          "lastUpdated": 1664029077794
+        }
+      }
+    },
+    "mode": {
+      "mode": {
+        "customDictionary": {
+          "count": 1,
+          "lastUpdated": 1663878959965
+        }
+      }
+    },
+    "Vim": {
+      "Vim": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1663880611189
+        }
+      }
+    },
+    "Bang": {
+      "Bang": {
+        "customDictionary": {
+          "count": 1,
+          "lastUpdated": 1663881794512
+        }
+      }
+    },
+    "消解": {
+      "消解": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1663883108764
+        }
+      }
+    },
+    "分析": {
+      "分析": {
+        "internalLink": {
+          "count": 2,
+          "lastUpdated": 1663911002446
+        }
+      }
+    },
+    "对象": {
+      "对象": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1663883832864
+        }
+      }
+    },
+    "指令集": {
+      "指令集": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1663884165520
+        }
+      }
+    },
+    "码表": {
+      "码表": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1663884431488
+        }
+      }
+    },
+    "爱转角": {
+      "爱转角": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1663884515648
+        }
+      }
+    },
+    "堆栈": {
+      "堆栈": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1663884579332
+        }
+      }
+    },
+    "链接器": {
+      "链接器": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1663884788161
+        }
+      }
+    },
+    "调试器": {
+      "调试器": {
+        "internalLink": {
+          "count": 2,
+          "lastUpdated": 1663885086734
+        }
+      }
+    },
+    "IntelliJ": {
+      "IntelliJ": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1663888055561
+        }
+      }
+    },
+    "Tools": {
+      "Tools": {
+        "customDictionary": {
+          "count": 1,
+          "lastUpdated": 1663888194039
+        }
+      }
+    },
+    "许可证": {
+      "许可证": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1663888277916
+        }
+      }
+    },
+    "Kotlin": {
+      "Kotlin": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1663888531792
+        }
+      }
+    },
+    "字体": {
+      "字体": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1663888703237
+        }
+      }
+    },
+    "等宽字体": {
+      "等宽字体": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1663889585632
+        }
+      }
+    },
+    "律师": {
+      "律师": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1663894577285
+        }
+      }
+    },
+    "更": {
+      "更": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1663900266219
+        }
+      }
+    },
+    "文件": {
+      "文件": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1663900846419
+        }
+      }
+    },
+    "内容": {
+      "内容": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1663900880702
+        }
+      }
+    },
+    "Alfred": {
+      "Alfred": {
+        "internalLink": {
+          "count": 2,
+          "lastUpdated": 1663904137013
+        }
+      }
+    },
+    "Moom": {
+      "Moom": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1663903588983
+        }
+      }
+    },
+    "Vim插件": {
+      "Vim插件": {
+        "internalLink": {
+          "count": 12,
+          "lastUpdated": 1664032380657
+        }
+      }
+    },
+    "vim9": {
+      "vim9": {
+        "frontMatter": {
+          "count": 3,
+          "lastUpdated": 1663913314084
+        }
+      }
+    },
+    "婚姻": {
+      "婚姻": {
+        "frontMatter": {
+          "count": 1,
+          "lastUpdated": 1663925930655
+        }
+      }
+    },
+    "爱情": {
+      "爱情": {
+        "frontMatter": {
+          "count": 1,
+          "lastUpdated": 1663926252237
+        }
+      }
+    },
+    "剧情": {
+      "剧情": {
+        "frontMatter": {
+          "count": 2,
+          "lastUpdated": 1663926495141
+        }
+      }
+    },
+    "龙": {
+      "龙": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1663926382676
+        }
+      }
+    },
+    "冯小刚": {
+      "冯小刚": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1663926447324
+        }
+      }
+    },
+    "姜文": {
+      "姜文": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1663926457781
+        }
+      }
+    },
+    "汤唯": {
+      "汤唯": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1663926550015
+        }
+      }
+    },
+    "冯巩": {
+      "冯巩": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1663926592834
+        }
+      }
+    },
+    "闫妮": {
+      "闫妮": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1663926602938
+        }
+      }
+    },
+    "Node.js": {
+      "Node.js": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1663930508864
+        }
+      }
+    },
+    "TypeScript": {
+      "TypeScript": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1663931958308
+        },
+        "frontMatter": {
+          "count": 1,
+          "lastUpdated": 1663932164216
+        }
+      }
+    },
+    "JavaScript": {
+      "JavaScript": {
+        "internalLink": {
+          "count": 3,
+          "lastUpdated": 1664039762403
+        },
+        "frontMatter": {
+          "count": 1,
+          "lastUpdated": 1663934419949
+        }
+      }
+    },
+    "Swift": {
+      "Swift": {
+        "frontMatter": {
+          "count": 7,
+          "lastUpdated": 1663933290708
+        }
+      }
+    },
+    "Alfred Workflow": {
+      "Alfred Workflow": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1663934138317
+        }
+      }
+    },
+    "DeepL": {
+      "DeepL": {
+        "frontMatter": {
+          "count": 1,
+          "lastUpdated": 1663934192008
+        }
+      }
+    },
+    "进程": {
+      "进程": {
+        "frontMatter": {
+          "count": 1,
+          "lastUpdated": 1663934492115
+        }
+      }
+    },
+    "Obsidian": {
+      "Obsidian": {
+        "frontMatter": {
+          "count": 2,
+          "lastUpdated": 1663961152955
+        }
+      }
+    },
+    "Linus Torvalds": {
+      "Linus Torvalds": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1663936038561
+        }
+      }
+    },
+    "Org-mode": {
+      "Org-mode": {
+        "frontMatter": {
+          "count": 2,
+          "lastUpdated": 1663946442209
+        }
+      }
+    },
+    "Emacs": {
+      "Emacs": {
+        "frontMatter": {
+          "count": 3,
+          "lastUpdated": 1664047918705
+        }
+      }
+    },
+    "PostScript": {
+      "PostScript": {
+        "internalLink": {
+          "count": 2,
+          "lastUpdated": 1664021353103
+        }
+      }
+    },
+    "视频播放器": {
+      "视频播放器": {
+        "frontMatter": {
+          "count": 5,
+          "lastUpdated": 1663984805673
+        }
+      }
+    },
+    "Safari": {
+      "Safari": {
+        "frontMatter": {
+          "count": 3,
+          "lastUpdated": 1663948543754
+        }
+      }
+    },
+    "文件格式": {
+      "文件格式": {
+        "frontMatter": {
+          "count": 2,
+          "lastUpdated": 1664037360767
+        }
+      }
+    },
+    "Language": {
+      "Language": {
+        "customDictionary": {
+          "count": 3,
+          "lastUpdated": 1663961836134
+        }
+      }
+    },
+    "MWeb": {
+      "MWeb": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1663969928545
+        }
+      }
+    },
+    "Vimscript": {
+      "Vimscript": {
+        "frontMatter": {
+          "count": 1,
+          "lastUpdated": 1663976035883
+        }
+      }
+    },
+    "Godot": {
+      "Godot": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1663977935611
+        }
+      }
+    },
+    "剪贴板": {
+      "剪贴板": {
+        "frontMatter": {
+          "count": 1,
+          "lastUpdated": 1663982812527
+        }
+      }
+    },
+    "音频播放器": {
+      "音频播放器": {
+        "frontMatter": {
+          "count": 1,
+          "lastUpdated": 1663983231892
+        }
+      }
+    },
+    "文件下载": {
+      "文件下载": {
+        "frontMatter": {
+          "count": 2,
+          "lastUpdated": 1663983451853
+        }
+      }
+    },
+    "文件压缩": {
+      "文件压缩": {
+        "frontMatter": {
+          "count": 1,
+          "lastUpdated": 1663983565398
+        }
+      }
+    },
+    "格式转换": {
+      "格式转换": {
+        "frontMatter": {
+          "count": 2,
+          "lastUpdated": 1663983766331
+        }
+      }
+    },
+    "通行密钥": {
+      "通行密钥": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1663983886283
+        }
+      }
+    },
+    "思维导图": {
+      "思维导图": {
+        "frontMatter": {
+          "count": 1,
+          "lastUpdated": 1663984058285
+        }
+      }
+    },
+    "编辑器": {
+      "编辑器": {
+        "frontMatter": {
+          "count": 2,
+          "lastUpdated": 1664016528340
+        }
+      }
+    },
+    "视频编辑器": {
+      "视频编辑器": {
+        "frontMatter": {
+          "count": 4,
+          "lastUpdated": 1663984876562
+        }
+      }
+    },
+    "音频编辑器": {
+      "音频编辑器": {
+        "frontMatter": {
+          "count": 2,
+          "lastUpdated": 1663984903304
+        }
+      }
+    },
+    "文件管理": {
+      "文件管理": {
+        "frontMatter": {
+          "count": 2,
+          "lastUpdated": 1664020996812
+        }
+      }
+    },
+    "全文搜索": {
+      "全文搜索": {
+        "frontMatter": {
+          "count": 1,
+          "lastUpdated": 1664018539242
+        }
+      }
+    },
+    "模糊搜索": {
+      "模糊搜索": {
+        "frontMatter": {
+          "count": 1,
+          "lastUpdated": 1664018558214
+        }
+      }
+    },
+    "Visual": {
+      "Visual": {
+        "customDictionary": {
+          "count": 1,
+          "lastUpdated": 1664021448241
+        }
+      }
+    },
+    "Visual Studio Code": {
+      "Visual Studio Code": {
+        "internalLink": {
+          "count": 2,
+          "lastUpdated": 1664022493948
+        }
+      }
+    },
+    "Emacs插件": {
+      "Emacs插件": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1664022459079
+        }
+      }
+    },
+    "Keyboard Maestro": {
+      "Keyboard Maestro": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1664027291721
+        }
+      }
+    },
+    "UI": {
+      "UI": {
+        "frontMatter": {
+          "count": 1,
+          "lastUpdated": 1664028253335
+        }
+      }
+    },
+    "补全": {
+      "补全": {
+        "frontMatter": {
+          "count": 2,
+          "lastUpdated": 1664031894414
+        }
+      }
+    },
+    "我的世界": {
+      "我的世界": {
+        "currentVault": {
+          "count": 2,
+          "lastUpdated": 1664032305221
+        }
+      }
+    },
+    "CSV": {
+      "CSV": {
+        "frontMatter": {
+          "count": 1,
+          "lastUpdated": 1664035749351
+        }
+      }
+    },
+    "标记语言": {
+      "标记语言": {
+        "frontMatter": {
+          "count": 1,
+          "lastUpdated": 1664037334203
+        }
+      }
+    },
+    "正则表达式": {
+      "正则表达式": {
+        "frontMatter": {
+          "count": 1,
+          "lastUpdated": 1664040746560
+        }
+      }
+    },
+    "Bash": {
+      "Bash": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1664041023410
+        }
+      }
+    },
+    "without": {
+      "without": {
+        "customDictionary": {
+          "count": 1,
+          "lastUpdated": 1664049467329
+        }
+      }
+    },
+    "support": {
+      "support": {
+        "customDictionary": {
+          "count": 2,
+          "lastUpdated": 1664049516971
+        }
+      }
+    },
+    "知识管理": {
+      "知识管理": {
+        "frontMatter": {
+          "count": 1,
+          "lastUpdated": 1664055106277
+        }
+      }
+    },
+    "知识图谱": {
+      "知识图谱": {
+        "frontMatter": {
+          "count": 1,
+          "lastUpdated": 1664055110518
+        }
+      }
+    },
+    "Reference": {
+      "Reference": {
+        "customDictionary": {
+          "count": 1,
+          "lastUpdated": 1664055769067
+        }
+      }
+    },
+    "Manual": {
+      "Manual": {
+        "customDictionary": {
+          "count": 1,
+          "lastUpdated": 1664055774318
+        }
+      }
+    }
+  }
+}
