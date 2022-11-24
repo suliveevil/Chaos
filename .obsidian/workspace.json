@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "001软件/编辑器/Vim/Vim.md",
+                "file": "001软件/编辑器/Emacs/Emacs.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "001软件/编辑器/Vim/Vim.md"
+                "file": "001软件/编辑器/Emacs/Emacs.md"
               }
             }
           },
@@ -70,7 +70,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "001软件/编辑器/Vim/Vim.md",
+                "file": "001软件/编辑器/Emacs/Emacs.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -120,7 +120,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "binary move",
+                "query": "emacs",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -135,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "001软件/编辑器/Vim/Vim.md",
+                "file": "001软件/编辑器/Emacs/Emacs.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "001软件/编辑器/Vim/Vim.md",
+                "file": "001软件/编辑器/Emacs/Emacs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,19 +194,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 273.5
+    "width": 273.5,
+    "collapsed": true
   },
   "active": "a5a31f84846ed881",
   "lastOpenFiles": [
-    "001软件/编辑器/Emacs/pcre2el.md",
+    "主题/编辑器.md",
     "001软件/编辑器/Emacs/bln-mode.md",
+    "主题/安全软件.md",
+    "001软件/编辑器/Vim/Vim.md",
+    "001软件/编辑器/Emacs/pcre2el.md",
     "001软件/tree-sitter-regex.md",
     "001软件/tree-sitter.md",
     "001软件/编辑器/Emacs/voicemacs.md",
     "001软件/编辑器/Emacs/loophole.md",
-    "001软件/编辑器/Emacs/emacs-which-key.md",
-    "001软件/编辑器/Emacs/keyfreq.md",
-    "001软件/编辑器/Emacs/Emacs 快捷键.md",
-    "001软件/编辑器/Emacs/wordsmith-mode.md"
+    "001软件/编辑器/Emacs/emacs-which-key.md"
   ]
 }

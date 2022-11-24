@@ -19,11 +19,11 @@ org.gnu.Emacs
 [Emacs is the 2D Command-line Interface – Hongchao's Notes](https://hongchao.me/cli-and-emacs/)
 
 > [!NOTE] Emacs 核心缺点
-> 
+>
 > - Emacs Lisp 性能
 > - 真の多线程支持
 > - 图形绘制能力
-> 
+>
 > [manateelazycat.github.io/2022-10-03-emacs-rpc.md](https://github.com/manateelazycat/manateelazycat.github.io/blob/master/_posts/2022-10-03-emacs-rpc.md)
 
 
@@ -211,6 +211,33 @@ Windows: [kiennq/emacs-build](https://github.com/kiennq/emacs-build): Scripts to
 [How To Build the Development Version of Emacs on Windows – Random Thoughts](https://lars.ingebrigtsen.no/2020/12/18/how-to-build-the-development-version-of-emacs-on-windows/)
 
 ## 启动/重启
+
+随系统启动
+
+```text
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+ <plist version="1.0">
+   <dict>
+     <key>KeepAlive</key>
+     <true/>
+     <key>Label</key>
+     <string>gnu.emacs.daemon</string>
+     <key>ProgramArguments</key>
+     <array>
+       <string>/Applications/Emacs.app/Contents/MacOS/Emacs</string>
+       <string>--daemon</string>
+     </array>
+     <key>RunAtLoad</key>
+     <true/>
+     <key>ServiceDescription</key>
+     <string>GNU Emacs Daemon</string>
+   </dict>
+```
+
+```shell
+sudo launchctl load -w ~/Library/LaunchAgents/gnu.emacs.daemon.plist
+```
 
 [提高emacs启动速度至少10%的技巧 - Emacs China](https://emacs-china.org/t/emacs-10/17716)
 
