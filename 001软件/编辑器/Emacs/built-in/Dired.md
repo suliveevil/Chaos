@@ -69,6 +69,9 @@ M
 
 [amno1/dired-auto-readme](https://github.com/amno1/dired-auto-readme): An Emacs package to automatically display a README file when one is present in a dired buffer.
 
+[hjudt/dired-duplicates - Codeberg.org](https://codeberg.org/hjudt/dired-duplicates): Find duplicate files on local and remote filesystems
+
+[thomp/dired-launch](https://github.com/thomp/dired-launch): Launch an external application from dired
 
 ## Misc
 

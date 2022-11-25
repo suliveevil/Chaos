@@ -41,6 +41,26 @@ Apple Dictionary
 
 [ilius/pyglossary](https://github.com/ilius/pyglossary/): A tool for converting dictionary files aka glossaries. Mainly to help use our offline glossaries in any Open Source dictionary we like on any modern operating system / device.
 
+## 词典查询
+
+[Dictionary Services | Apple Developer Documentation](https://developer.apple.com/documentation/coreservices/dictionary_services/)
+
+[[xdict]]
+
+[cxa/dicmd](https://github.com/cxa/dicmd): Command line for macOS Dictionary.app
+
+[beaugalbraith/define](https://github.com/beaugalbraith/define): macOS command line dictionary
+
+[chungchien/macdict](https://github.com/chungchien/macdict): macOS Dictionary Services Demo (Swift)
+
+[tonyseek/macdict](https://github.com/tonyseek/macdict): CLI and library to look up dictionary in macOS.
+
+[pouyatafti/mdef](https://github.com/pouyatafti/mdef): command-line dictionary lookup tool for macOS
+
+[leettran/osxdict](https://github.com/leettran/osxdict): Command line dictionary for OSX
+
+[gh640/SublimeMacDictionary](https://github.com/gh640/SublimeMacDictionary): 📚 A Sublime Text 3 / 4 package to use MacOS dictionary service in popup windows.
+
 
 ## Misc
 

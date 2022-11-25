@@ -3,7 +3,7 @@ title: "emacs-smart-input-source"
 categories: 
 date: 2022-11-23 13:08:12 +0800
 tags: 
-excerpt: 
+excerpt: sis
 ---
 
 [laishulu/emacs-smart-input-source](https://github.com/laishulu/emacs-smart-input-source): Less manual switch for native or OS input source (input method).

@@ -7,7 +7,6 @@ excerpt:
 ---
 
 
-
 [emacs-tw/awesome-emacs](https://github.com/emacs-tw/awesome-emacs): A community driven list of useful Emacs packages, libraries and other items.
 
 [stars:>20 extension:el language:elisp - GitHub Search](https://github.com/search?o=desc&q=stars%3A%3E20+extension%3Ael+language%3Aelisp&s=updated&type=Repositories)
@@ -81,6 +80,10 @@ Git submodule
 
 ## 数据安全
 
+[GPG in Emacs – EmacsTalk](https://emacstalk.github.io/post/011/)
+
+reveal-mode
+
 [[cloak-mode]]
 
 [[insecure-lock]]
@@ -91,11 +94,22 @@ Git submodule
 
 [[emacs-rime]]
 
+## Buffer
+
+[[scratch.el]]
+
+
 ## 字符处理
 
 [tecosaur/engrave-faces](https://github.com/tecosaur/engrave-faces): Convert font-lock faces to other formats
 
 [Unicad - EmacsWiki](https://www.emacswiki.org/emacs/Unicad)
+
+## 字体管理
+
+[jcs-elpa/use-ttf](https://github.com/jcs-elpa/use-ttf): Keep font consistency across different OSs.
+
+[[cnfonts]]
 
 ## 文本编辑
 
@@ -108,6 +122,10 @@ avy
 [[emacs-evil]]
 sniem
 snail
+
+## 数据分析
+
+[andcarnivorous/linguistic](https://github.com/andcarnivorous/linguistic): A package for basic linguistic analysis.
 
 ## 文件管理器
 
@@ -135,9 +153,14 @@ helm
 
 ## 窗口管理
 
+[[moom.el]]
+
+[[zoom.el]]
+
+[[es-windows]]
+
 [[popper]]：临时窗口管理
 
-[takaxp/moom](https://github.com/takaxp/moom): A Moom port to Emacs - Make your dominant hand FREE from your mouse
 
 ## shell
 
@@ -170,6 +193,9 @@ helm
 
 ## 社交
 
+[hidekuno/el-ml-file](https://github.com/hidekuno/el-ml-file): Mailing List thread viewer by emacs lisp program
+
+[Aaron G / reddio · GitLab](https://gitlab.com/aaronNG/reddio)
 [martianh/mastodon.el: Emacs client for Mastodon - Codeberg.org](https://codeberg.org/martianh/mastodon.el)
 
 [yuya373/emacs-slack](https://github.com/yuya373/emacs-slack): slack client for emacs
@@ -192,6 +218,8 @@ helm
 ## 截图/录屏
 
 [emacsmirror/frameshot](https://github.com/emacsmirror/frameshot): Take screenshots of a frame
+
+[tarsius/frameshot](https://github.com/tarsius/frameshot): Take screenshots of a frame
 
 [tecosaur/screenshot](https://github.com/tecosaur/screenshot): Swiftly grab pretty images of your code
 
@@ -220,15 +248,32 @@ helm
 
 ## 语音/音频相关
 
+[[emacspeak]]
+
+[[speechd-el]]
+
 [lujun9972/podcaster](https://github.com/lujun9972/podcaster): Emacs podcast client
 
-[brailcom/speechd-el](https://github.com/brailcom/speechd-el): Emacs speech and Braille output interface
 
 ## 视频/字幕
 
 [suyeden/vcwalk](https://github.com/suyeden/vcwalk): Video Converter for Walkman
 
 [[subed]]
+
+## 图像编辑
+
+[chuntaro/epaint](https://github.com/chuntaro/epaint): A simple paint tool for Emacs
+
+## 游戏
+
+[fitzsim/slime-volleyball](https://github.com/fitzsim/slime-volleyball): Emacs Slime Volleyball
+
+[gongo/emacs-nes](https://github.com/gongo/emacs-nes): A NES Emulator written in Emacs Lisp
+
+## 娱乐
+
+[dieggsy/emacs-hacker-typer](https://github.com/dieggsy/emacs-hacker-typer): A customizable implementation of http://hackertyper.com in emacs.
 
 ## 待整理
 

@@ -30,6 +30,8 @@ excerpt:
 
 ## Misc
 
+[[phi-search]]
+
 [[vim-visual-multi]]
 
 

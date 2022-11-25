@@ -16,13 +16,19 @@ excerpt:
 
 [emacs-lsp/lsp-gitpod](https://github.com/emacs-lsp/lsp-gitpod): One-click Emacs Web IDE(Beta)
 
+[emacs-grammarly/lsp-grammarly](https://github.com/emacs-grammarly/lsp-grammarly): lsp-mode ❤️ grammarly
+
+[[lsp-sourcekit]]
+
+
 ## 竞品
 
 [[Eglot]]
 
 [[lsp-bridge]]
 
-[zbelial/lspce](https://github.com/zbelial/lspce): LSP Client for Emacs implemented as a module using rust.
+[[lspce]]
+
 
 ## 兄弟产品
 

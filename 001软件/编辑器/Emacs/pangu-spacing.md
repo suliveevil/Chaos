@@ -16,6 +16,7 @@ excerpt:
 
 [[electric-spacing]]
 
+[hlissner/ws-butler](https://github.com/hlissner/ws-butler): Unobtrusively trim extraneous white-space *ONLY* in lines edited.
 [lewang/ws-butler](https://github.com/lewang/ws-butler): Unobtrusively trim extraneous white-space *ONLY* in lines edited.
 
 

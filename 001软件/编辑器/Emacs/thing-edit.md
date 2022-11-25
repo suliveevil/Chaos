@@ -20,6 +20,8 @@ excerpt:
 
 [[easy-kill]]
 
+[[combobulate]]
+
 [JorisL/select-text-objects](https://github.com/JorisL/select-text-objects): Emacs Lisp package providing functions to quickly select pieces of text (similar to vi's text objects)
 
 ## Misc

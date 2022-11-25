@@ -6,10 +6,13 @@ tags:
 excerpt: 
 ---
 
+[paredit — parenthetical editing in Emacs](http://paredit.org/)
 
 [campbell/git/paredit.git](http://mumble.net/~campbell/git/paredit.git/)
 
 [The Original Hacker's Dictionary](https://www.dourish.com/goodies/jargon.html)
+
+
 
 ## 竞品
 

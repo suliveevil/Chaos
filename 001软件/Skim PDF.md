@@ -21,7 +21,7 @@ brew install --cask skim
 
 [ryota2357/vim-skim-synctex](https://github.com/ryota2357/vim-skim-synctex): This plugin enables you to do synctex with Skim.app.
 
-
+[houshuang/skim-emacs](https://github.com/houshuang/skim-emacs)
 
 ## Misc
 

@@ -17,6 +17,11 @@ excerpt:
 [fpiper/header-info](https://github.com/fpiper/header-info): Emacs minor mode to display buffer information in the header line
 
 [grugrut/marquee-header.el](https://github.com/grugrut/marquee-header.el): show string at header-line on emacs, like marquee in html
+[tuhdo/semantic-stickyfunc-enhance](https://github.com/tuhdo/semantic-stickyfunc-enhance): Improved version of semantic-stickyfunc-mode that handles parameters on multiple lines
+
+## 兄弟产品
+
+[alphapapa/dogears.el](https://github.com/alphapapa/dogears.el): Never lose your place in Emacs again
 
 ## Misc
 

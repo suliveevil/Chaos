@@ -12,7 +12,7 @@ numbchild@gmail.com
 
 [arduino-mode](https://repo.or.cz/arduino-mode.git)
 
-[amread-mode](https://repo.or.cz/amread-mode.git)
+[[amread-mode]]
 
 [edebug-inline-result](https://repo.or.cz/edebug-inline-result.git)
 

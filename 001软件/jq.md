@@ -15,15 +15,19 @@ excerpt:
 
 
 
+## 竞品
 
-
-
+[[yq]]
 
 ## Misc
 
+[[json-navigator]]
+
+[antonmedv/fx](https://github.com/antonmedv/fx/): Terminal JSON viewer
+
 [[sq]]
 
-[[yq]]
+
 
 
 

@@ -27,6 +27,10 @@ org.gnu.Emacs
 > [manateelazycat.github.io/2022-10-03-emacs-rpc.md](https://github.com/manateelazycat/manateelazycat.github.io/blob/master/_posts/2022-10-03-emacs-rpc.md)
 
 
+> Emacs was created before I born and most likely will be alive after I die.
+
+[Contributing to Emacs](https://archive.casouri.cc/note/2020/contributing-to-emacs/)
+
 ## 功能
 
 ELPA：[[Emacs Lisp]] Package Archive
@@ -44,6 +48,9 @@ emacs-uptime
 
 ### Emacs 29
 
+LSP: [[Eglot]]
+[[tree-sitter]] 支持: C、C++、Java、CSS、JSON、C#、TypeScript
+Profiles: `--init-directory`
 [Emacs 29 目前适合作为日常生产力工具了么？ - Emacs China](https://emacs-china.org/t/emacs-29/21495/24?u=suliveevil)
 
 ## 界面
@@ -197,7 +204,7 @@ brew install --cask emacs-app-nightly
 
 [[Emacs-mac]]
 
-[[homebrew-emacs-head]]
+[[emacs-head]]
 
 [The Emacs for the Mac · Aquamacs Emacs](https://aquamacs.org/)
 [Aquamacs Emacs - GitHub](https://github.com/aquamacs-emacs/aquamacs-emacs)
@@ -239,7 +246,7 @@ Windows: [kiennq/emacs-build](https://github.com/kiennq/emacs-build): Scripts to
 sudo launchctl load -w ~/Library/LaunchAgents/gnu.emacs.daemon.plist
 ```
 
-[提高emacs启动速度至少10%的技巧 - Emacs China](https://emacs-china.org/t/emacs-10/17716)
+[提高 emacs 启动速度至少 10%的技巧 - Emacs China](https://emacs-china.org/t/emacs-10/17716)
 
 [[restart-emacs]]
 启动参数
@@ -267,11 +274,20 @@ The Free Software Foundation [⎋](https://www.fsf.org/ "Homepage") (principal
 The Org Project [⎋](https://orgmode.org/ "Homepage") (responsible for [org-mode](https://orgmode.org/ "project page"))
 [[Emacsmirror]]
 [[Emacs China]]: [emacs-china/blogroll](https://github.com/emacs-china/blogroll): Emacs China 搜集的周围朋友们的 Blog
-EmacsWiki
-[水木社区-Emacs编辑器](https://www.mysmth.net/nForum/#!board/Emacs)
+[[EmacsWiki]]
+[水木社区-Emacs 编辑器](https://www.mysmth.net/nForum/#!board/Emacs)
 [Emacs Application Framework](https://github.com/emacs-eaf?type=source)
 [Emacs Cask](https://github.com/cask/)
+[BLEE](https://github.com/bx-blee?type=source): ByStar Libre-Halaal Emacs Environment
 [manateelazycat.github.io/2019-05-12-emacs-hackers.md](https://github.com/manateelazycat/manateelazycat.github.io/blob/master/_posts/2019-05-12-emacs-hackers.md)
+
+### 维护者
+
+Eli Zaretskii
+Stefan Monnier
+John Wiegley
+Yuan Fu
+
 
 ### 国际用户
 
@@ -292,6 +308,11 @@ Martin Fowler [[重构：改善既有代码的设计]]作者
 Peter Norvig《人工智能：一种现代方法》的作者
 Neal Stephenson
 Richard Gabriel：文章 _Worse is Better_ 的作者
+Marijn Haverbeke：《Eloquent JavaScript》的作者
+Christopher Wellons：[[elfeed]] 作者
+Steve Yegge
+James Clark：[[nxml-mode]] 作者
+Nicolas Petton：[[seq.el]] 作者
 Vernor Vinge：
 Jonas Bernoulli [@tarsius](https://github.com/tarsius "GitHub profile") (responsible for [Magit](https://github.com/tarsius/magit "project page"), [Transient](https://github.com/tarsius/transient "project page"), and others)
 [Protesilaos Stavrou](https://protesilaos.com/) [@protesilaos](https://github.com/protesilaos "GitHub profile") (responsible for [Modus themes](https://git.sr.ht/~protesilaos/modus-themes "project page"), [Denote](https://git.sr.ht/~protesilaos/denote "project page"), and others)
@@ -311,12 +332,12 @@ Nicholas Vollmer [@progfolio](https://github.com/progfolio "GitHub profile") (
 [[陈斌]]
 [[刘家财]]
 [[子龙山人]]
-[[第253页图灵笔记]]
+[[第 253 页图灵笔记]]
 [baohaojun - 哔哩哔哩_bilibili](https://space.bilibili.com/19652426)
 [KiteAB - 哔哩哔哩_bilibili](https://space.bilibili.com/387229912)
 [无知的菜狗 - 哔哩哔哩_bilibili](https://space.bilibili.com/1281376)
-[一杯玺茶xt - 哔哩哔哩_bilibili](https://space.bilibili.com/11608450): [loveminimal/emacs.d](https://github.com/loveminimal/emacs.d)
-[uppet (Joyer Huang)](https://github.com/uppet): [再一次，写一个最简单的.emacs - JoyerHuang_悦- CSDN博客](https://blog.csdn.net/DelphiNew/article/details/6732295)
+[一杯玺茶 xt - 哔哩哔哩_bilibili](https://space.bilibili.com/11608450): [loveminimal/emacs.d](https://github.com/loveminimal/emacs.d)
+[uppet (Joyer Huang)](https://github.com/uppet): [再一次，写一个最简单的.emacs - JoyerHuang_悦- CSDN 博客](https://blog.csdn.net/DelphiNew/article/details/6732295)
 [gcclll (gcclll) / Repositories](https://github.com/gcclll?tab=repositories&type=source)
 
 ### 其他
@@ -330,13 +351,15 @@ Nicholas Vollmer [@progfolio](https://github.com/progfolio "GitHub profile") (
 
 ## 教程/文档/社区
 
+[Emacs Tips and Tricks](https://www.jimmenard.com/emacs_tips.html)
+
 [专业 Emacs 入门教程 - 知乎专栏](https://www.zhihu.com/column/c_1440829147212279808)
 
 [EmacsWiki](https://www.emacswiki.org/)
 
 [Planet Emacslife](https://planet.emacslife.com/)
 
-[Emacs Docs](https://emacsdocs.org/)
+[Emacs Docs](https://emacsdocs.org/): The modern documentation website Emacs deserves.
 
 [Emacs Online Documentation](https://doc.endlessparentheses.com/)
 
@@ -389,11 +412,12 @@ http://emacs.stackexchange.com
 
 ## 书籍
 
-_Writing GNU Emacs Extensions_ by Bob Glickstein
+Sam Teach Yourself Emacs in 24 Hours
+[[Writing GNU Emacs Extensions]]
 Emacs Field Guide
 [[Mastering Emacs]]
-
-
+Hacking your way around in Emacs
+Emacs Lisp - An Introduction
 
 ## 生态
 
@@ -438,7 +462,7 @@ Emacs Field Guide
 
 [thomasluquet/emacs-can-do-that](https://github.com/thomasluquet/emacs-can-do-that): Yep, emacs can do that !
 
-[Tags: Emacs之怒 - 暗无天日](http://blog.lujun9972.win/tags/emacs%E4%B9%8B%E6%80%92/)
+[Tags: Emacs 之怒 - 暗无天日](http://blog.lujun9972.win/tags/emacs%E4%B9%8B%E6%80%92/)
 
 [如何加快 Emacs 的启动速度 - Emacs-general - Emacs China](https://emacs-china.org/t/emacs/15409/22)
 
@@ -462,12 +486,12 @@ https://news.ycombinator.com/item?id=25810427
 
 [Eason0210/karabiner-config](https://github.com/Eason0210/karabiner-config): Personal [[Karabiner-Elements]] Configuration for MacBook Pro and Emacs
 
-[有没有Emacs专用的键盘？ - Emacs China](https://emacs-china.org/t/emacs/20582)
+[有没有 Emacs 专用的键盘？ - Emacs China](https://emacs-china.org/t/emacs/20582)
 
 ### 文章
 
 [LibrePlanet 2022: Living in freedom with GNU Emacs | Protesilaos Stavrou](https://protesilaos.com/codelog/2022-03-22-libreplanet-emacs-living-freedom/)
 
-[30岁文转码：我用了三年时间从哲学家变成知名软件项目核心开发 - 腾讯新闻](https://new.qq.com/rain/a/20220325A062ZS00)
+[30 岁文转码：我用了三年时间从哲学家变成知名软件项目核心开发 - 腾讯新闻](https://new.qq.com/rain/a/20220325A062ZS00)
 
 

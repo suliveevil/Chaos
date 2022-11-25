@@ -70,9 +70,13 @@ Alt+`,`：选择第一个侯选词
 
 ## 生态
 
+[[Citre]]
+
 [[acm-terminal]]
 
+[jadestrong/lsp-bridge-diagnostics](https://github.com/jadestrong/lsp-bridge-diagnostics)
 
+[metaescape/Wen](https://github.com/metaescape/Wen): 面向 org-mode 个人知识管理的语言服务试验场
 
 ## 竞品
 
@@ -80,9 +84,7 @@ Alt+`,`：选择第一个侯选词
 
 [[lsp-mode]]
 
-capf
-
-[[company-mode]]
+[[lspce]]
 
 ## 兄弟产品
 

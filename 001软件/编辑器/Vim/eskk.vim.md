@@ -9,7 +9,7 @@
 
 [vim-skk/skk.vim](https://github.com/vim-skk/skk.vim): skk.vim with miscellaneous hacks. patches/forks are welcome. if you are insterested in improving skk.vim, please contact me by twitter, email, and so on.
 
-[vim-skk/skkeleton](https://github.com/vim-skk/skkeleton): SKK implements for Vim/Neovim with denops.vim
+[vim-skk/skkeleton](https://github.com/vim-skk/skkeleton): SKK implements for Vim/Neovim with [[denops.vim]]
 
 
 

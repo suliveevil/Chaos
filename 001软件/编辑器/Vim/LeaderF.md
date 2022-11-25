@@ -10,6 +10,9 @@ excerpt:
 
 [Yggdroot/LeaderF](https://github.com/Yggdroot/LeaderF): An efficient fuzzy finder that helps to locate files, buffers, mrus, gtags, etc. on the fly for both vim and neovim.
 
+## 竞品
+
+[[vim-clap]]
 
 ## Misc
 
@@ -22,3 +25,5 @@ excerpt:
 [[pounce.nvim]]
 
 [[nvim-snap]]
+
+[[blink-search]]

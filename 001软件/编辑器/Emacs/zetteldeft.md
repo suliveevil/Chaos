@@ -9,7 +9,7 @@ excerpt:
 
 
 
-[EFLS/zetteldeft](https://github.com/EFLS/zetteldeft): A Zettelkasten system! Or rather, some functions on top of the emacs deft package.
+[EFLS/zetteldeft](https://github.com/EFLS/zetteldeft): A Zettelkasten system! Or rather, some functions on top of the emacs [[deft]] package.
 
 [Zetteldeft](https://www.eliasstorms.net/zetteldeft/)
 

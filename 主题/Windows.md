@@ -55,6 +55,6 @@ Power Automate
 
 ## Misc
 
-
+[「求助」Emacs之外，Windows上有哪些好用的工具？ - Emacs China](https://emacs-china.org/t/emacs-windows/14488)
 
 

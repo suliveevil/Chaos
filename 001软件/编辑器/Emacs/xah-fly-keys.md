@@ -13,9 +13,20 @@ excerpt:
 
 [xah-fly-keys 使用总结](https://pengpengxp.github.io/emacs/summary_of_xah_fly_keys.html)
 
+[xah-fly-key: leaderkeys](http://xahlee.info/emacs/misc/xah_fly_keys_leader_keys_2021-05-17.txt)
+
+## 竞品
+
+[[meow-edit]]
+
+[jyp/boon](https://github.com/jyp/boon): Ergonomic Command Mode for Emacs
+
+
+
 ## 兄弟产品
 
 [xahlee/xah-wolfram-mode](https://github.com/xahlee/xah-wolfram-mode): emacs mode for Wolfram Language
+
 
 
 ## Misc

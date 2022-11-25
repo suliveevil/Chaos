@@ -1,5 +1,5 @@
 {
-  "settings_version": "0.16.0",
+  "settings_version": "0.17.0",
   "debug": false,
   "obsidian_command_palette_prefix": "Execute: ",
   "preview_variables_in_command_palette": true,
@@ -39,7 +39,8 @@
       "events": {},
       "command_palette_availability": "enabled",
       "preactions": [],
-      "variable_default_values": {}
+      "variable_default_values": {},
+      "output_handling_mode": "buffered"
     },
     {
       "id": "41mbjc71al",
@@ -63,7 +64,8 @@
       "events": {},
       "command_palette_availability": "enabled",
       "preactions": [],
-      "variable_default_values": {}
+      "variable_default_values": {},
+      "output_handling_mode": "buffered"
     },
     {
       "id": "w3l1ehjqqu",
@@ -87,7 +89,8 @@
       "events": {},
       "command_palette_availability": "enabled",
       "preactions": [],
-      "variable_default_values": {}
+      "variable_default_values": {},
+      "output_handling_mode": "buffered"
     },
     {
       "id": "stgkjmg3ef",
@@ -111,7 +114,8 @@
       "events": {},
       "command_palette_availability": "enabled",
       "preactions": [],
-      "variable_default_values": {}
+      "variable_default_values": {},
+      "output_handling_mode": "buffered"
     },
     {
       "id": "u4kn9b0m39",
@@ -135,7 +139,8 @@
       "events": {},
       "command_palette_availability": "enabled",
       "preactions": [],
-      "variable_default_values": {}
+      "variable_default_values": {},
+      "output_handling_mode": "buffered"
     }
   ],
   "prompts": [],

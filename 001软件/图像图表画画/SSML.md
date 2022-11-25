@@ -11,6 +11,16 @@ excerpt:
 SSML：Speech Synthesis Markup Language，基于 XML
 SSML 是W3C语音接口框架的一部分。
 
+PAUSE
+ORDINAL
+CHARACTERS
+UNIT
+VERBATIM
+DATE
+TIME
+SUB
+EMHASIS
+
 [微软 Azure 认知服务-文本转语音](https://azure.microsoft.com/zh-cn/services/cognitive-services/text-to-speech/#overview) 支持[[中文]][[文本转语音]]
 
 ## SSMD

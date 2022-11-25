@@ -8,10 +8,70 @@ excerpt:
 
 [[法布里·贝拉德]]
 
-
-
-
 支持的CPU架构：x86、[[LoongArch]]……
+
+
+## 使用
+
+[NapoleonWils0n/ffmpeg-scripts](https://github.com/NapoleonWils0n/ffmpeg-scripts)
+
+[FFmpeg - Ultimate Guide | IMG.LY Blog](https://img.ly/blog/ultimate-guide-to-ffmpeg/)
+
+### 合并 [[M3U8]] 文件
+
+获取所有 TS 文件名
+
+```shell
+# 从已下载 TS 文件
+ls -v *.ts | grep "[0-9]" | xargs cat > all.ts
+# 从 M3U8 文件获取 TS 索引
+cat index.m3u8 | grep ".ts" | xargs cat > all.ts
+```
+
+```shell
+ffmpeg -i all.ts -codec copy -y output.mp4
+```
+
+### 格式转换
+
+```shell
+ffmpeg -i input_video.mkv -codec copy output_video.mp4
+
+ffmpeg -i in.mp4 -c:v libx265 -crf 26 -c:a copy -progress p.txt out.mp4
+```
+
+
+
+## 集成
+
+[[LumaFusion]]
+
+
+
+a-Shell 中的 FFmpeg
+
+
+```shell
+ffmpeg -version
+ffmpeg version n4.4-80-gbf87bdd3f6 Copyright (c) 2000-2021 the FFmpeg dev
+elopers
+built with Apple clang version 12.0.5 (clang-1205.0.22.11)
+configuration: --cc=clang --arch=arm64 --disable-asm --enable-cross-compi
+le --enable-pthreads --enable-videotoolbox --disable-audiotoolbox --enabl
+e-libfreetype --enable-libzimg --disable-network --disable-debug --disabl
+e-gpl --disable-nonfree
+libavutil      56. 70.100 / 56. 70.100
+libavcodec     58.134.100 / 58.134.100
+libavformat    58. 76.100 / 58. 76.100
+libavdevice    58. 13.100 / 58. 13.100
+libavfilter     7.110.100 /  7.110.100
+libswscale      5.  9.100 /  5.  9.100
+libswresample   3.  9.100 /  3.  9.100
+
+```
+
+
+
 
 ## 依赖
 
@@ -258,63 +318,6 @@ digraph G {
     "zeromq" -> "libsodium";
 }
 ```
-
-## 使用
-
-### 合并 [[M3U8]] 文件
-
-获取所有 TS 文件名
-
-```shell
-# 从已下载 TS 文件
-ls -v *.ts | grep "[0-9]" | xargs cat > all.ts
-# 从 M3U8 文件获取 TS 索引
-cat index.m3u8 | grep ".ts" | xargs cat > all.ts
-```
-
-```shell
-ffmpeg -i all.ts -codec copy -y output.mp4
-```
-
-### 格式转换
-
-```shell
-ffmpeg -i input_video.mkv -codec copy output_video.mp4
-
-ffmpeg -i in.mp4 -c:v libx265 -crf 26 -c:a copy -progress p.txt out.mp4
-```
-
-
-
-## 集成
-
-[[LumaFusion]]
-
-
-
-a-Shell 中的 FFmpeg
-
-
-```shell
-ffmpeg -version
-ffmpeg version n4.4-80-gbf87bdd3f6 Copyright (c) 2000-2021 the FFmpeg dev
-elopers
-built with Apple clang version 12.0.5 (clang-1205.0.22.11)
-configuration: --cc=clang --arch=arm64 --disable-asm --enable-cross-compi
-le --enable-pthreads --enable-videotoolbox --disable-audiotoolbox --enabl
-e-libfreetype --enable-libzimg --disable-network --disable-debug --disabl
-e-gpl --disable-nonfree
-libavutil      56. 70.100 / 56. 70.100
-libavcodec     58.134.100 / 58.134.100
-libavformat    58. 76.100 / 58. 76.100
-libavdevice    58. 13.100 / 58. 13.100
-libavfilter     7.110.100 /  7.110.100
-libswscale      5.  9.100 /  5.  9.100
-libswresample   3.  9.100 /  3.  9.100
-
-```
-
-
 
 
 ## Misc

@@ -62,5 +62,6 @@ Ctrl+C Ctrl+F `;`
 
 [[Audioc]]
 [[AutoCut]]
-
+https://apps.apple.com/cn/app/underword/id1588379446?mt=12
+[[translate-mode]]
 

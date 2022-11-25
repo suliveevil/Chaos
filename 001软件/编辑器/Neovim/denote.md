@@ -26,5 +26,5 @@ excerpt:
 
 ## Misc
 
-
+[My packages and/or custom code for GNU Emacs | Protesilaos Stavrou](https://protesilaos.com/emacs/)
 

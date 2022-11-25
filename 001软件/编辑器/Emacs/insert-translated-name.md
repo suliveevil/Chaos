@@ -22,6 +22,8 @@ excerpt:
 
 ## Misc
 
+[[dictionary-overlay]]
+
 [[deepl-alfred-workflow]]
 
 

@@ -28,7 +28,7 @@ excerpt:
 
 ## 兄弟产品
 
-[manateelazycat/lazy-load](https://github.com/manateelazycat/lazy-load): Lazy load keys for speed up Emacs startup.
+[[lazy-load]]
 
 
 ## Misc

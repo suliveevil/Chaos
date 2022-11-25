@@ -24,6 +24,21 @@ DaVinci Resolve Studio
 
 DaVinci Resolve Studio支持上至120fps的32K庞大分辨率，还支持多个GPU实时播放专业级10bit格式，加速版H.264和H.265硬件编解码。它设有Dolby Vision等一系列沉浸式音频工具，HDR10+调色和渲染功能，DaVinci Neural Engine神经网络引擎及30多个额外Resolve FX插件；还具有时域和空域降噪、动态效果、镜头畸变校正、去隔行、工作流程和媒体文件管理整合、远程API脚本编写、远程及联网调色、渲染和编码器插件支持等众多功能。添加第二台监视器还可以获得全屏播放！
 
+## 教程
+
+[【达芬奇最速入门教程】中文教程 - 哔哩哔哩_bilibili](https://www.bilibili.com/video/av48893120)
+
+<iframe
+		src="http://player.bilibili.com/player.html?aid=48893120&bvid=BV1Tb411M7R8&cid=85620004&page=1"
+		scrolling="no"
+		border="0"
+		frameborder="no"
+		framespacing="0"
+		allowfullscreen="true"
+		style="height:100%;width:100%; aspect-ratio: 16 / 9;">
+</iframe>
+
+
 
 ## 竞品
 

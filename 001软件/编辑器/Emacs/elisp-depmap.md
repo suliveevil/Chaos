@@ -14,8 +14,13 @@ excerpt:
 > read-symbol-position-list
 
 
+## 竞品
+
+[zellerin/dynamic-graphs](https://github.com/zellerin/dynamic-graphs)
 
 ## Misc
+
+[gustavopuche/doxy-graph-mode](https://github.com/gustavopuche/doxy-graph-mode): links source code to doxygen call graphs.
 
 [[epkg]]
 

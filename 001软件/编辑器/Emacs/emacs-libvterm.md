@@ -10,6 +10,8 @@ excerpt:
 
 ## 生态
 
+[[vterm-capf]]
+
 [iostapyshyn/eshell-vterm](https://github.com/iostapyshyn/eshell-vterm): Run eshell-visual-commands in Vterm
 
 [suonlight/multi-vterm](https://github.com/suonlight/multi-vterm): Managing multiple vterm buffers in Emacs

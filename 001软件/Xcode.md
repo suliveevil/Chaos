@@ -33,6 +33,9 @@ Instruments
 
 [twostraws/ControlRoom](https://github.com/twostraws/ControlRoom): A macOS app to control the Xcode Simulator.
 
+## 竞品
+
+[Swift Studio](https://swiftstudio.app/)
 
 ## Misc
 

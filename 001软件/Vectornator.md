@@ -24,6 +24,8 @@ excerpt: Vectornator：Vector Design
 
 [[Inkscape]]
 
+[Vectr](https://vectr.com/): Free Online Vector Graphics Editor
+
 Autodesk Graphic
 
 Amadine

@@ -12,7 +12,7 @@ excerpt:
 
 [jschaf/esup](https://github.com/jschaf/esup): ESUP - Emacs Start Up Profiler. Benchmark Emacs Startup time without ever leaving your Emacs.
 
-
+[[explain-pause-mode]]
 
 ## Misc
 

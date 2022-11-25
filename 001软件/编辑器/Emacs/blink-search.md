@@ -76,6 +76,8 @@ grep-dired
 
 [[vim-clap]]
 
+[[LeaderF]]
+
 [[telescope.nvim]]
 
 [[ugrep]]

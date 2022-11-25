@@ -11,6 +11,10 @@ excerpt:
 
 [[Emacs]] 风格[[快捷键]]：macOS 上的 Emacs 风格快捷键是由 [[Readline]] 带来的
 
+[Mac OS X Keybinding Key Syntax](http://xahlee.info/kbd/osx_keybinding_key_syntax.html)
+
+[NSStandardKeyBindingResponding | Apple Developer Documentation](https://developer.apple.com/documentation/appkit/nsstandardkeybindingresponding?language=objc)
+
 [显著提高写代码/文本编辑效率的10个隐藏macOS快捷键 - 知乎](https://zhuanlan.zhihu.com/p/583758234)
 
 [[Command+1]]：以图标方式显示“访达”窗口中的项目。
@@ -509,8 +513,6 @@ pl | grep -v noop: | ruby -pe'$_.gsub!(/[^ -~\n]/){"\\U%04x"%$&.ord}'
 [使用 macOS 键盘快捷键 - Apple 支持 (中国)](https://support.apple.com/zh-cn/guide/mac-help/mchlp2262/mac)
 
 [(Emacs) Keyboard Shortcuts for Editing Text Fields in OS X](https://jblevins.org/log/kbd)
-
-[Mac OS X Keybinding Key Syntax](http://xahlee.info/kbd/osx_keybinding_key_syntax.html)
 
 
 

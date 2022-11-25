@@ -1,0 +1,144 @@
+{
+  "settings_version": "0.16.0",
+  "debug": false,
+  "obsidian_command_palette_prefix": "Execute: ",
+  "preview_variables_in_command_palette": true,
+  "show_autocomplete_menu": true,
+  "working_directory": "",
+  "default_shells": {},
+  "environment_variable_path_augmentations": {
+    "darwin": "/opt/homebrew/bin/"
+  },
+  "error_message_duration": 20,
+  "notification_message_duration": 10,
+  "execution_notification_mode": "disabled",
+  "output_channel_clipboard_also_outputs_to_notification": true,
+  "enable_events": true,
+  "approve_modals_by_pressing_enter_key": true,
+  "max_visible_lines_in_shell_command_fields": false,
+  "shell_commands": [
+    {
+      "id": "4rdsfcbb0o",
+      "platform_specific_commands": {
+        "default": "code --goto {{file_path:absolute}}:{{caret_position}}"
+      },
+      "shells": {},
+      "alias": "Open in VSCode",
+      "icon": null,
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      },
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
+    },
+    {
+      "id": "41mbjc71al",
+      "platform_specific_commands": {
+        "default": "mvim {{file_path:absolute}} -c 'normal {{caret_position:line}}G{{caret_position:column}}|'"
+      },
+      "shells": {},
+      "alias": "Open in MacVim",
+      "icon": null,
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      },
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
+    },
+    {
+      "id": "w3l1ehjqqu",
+      "platform_specific_commands": {
+        "default": "neovide +{{caret_position:line}} {{file_path:absolute}}"
+      },
+      "shells": {},
+      "alias": "Open in Neovide",
+      "icon": null,
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      },
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
+    },
+    {
+      "id": "stgkjmg3ef",
+      "platform_specific_commands": {
+        "default": "emacs +{{caret_position}} {{file_path:absolute}}"
+      },
+      "shells": {},
+      "alias": "Open in Emacs",
+      "icon": null,
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      },
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
+    },
+    {
+      "id": "u4kn9b0m39",
+      "platform_specific_commands": {
+        "default": "alacritty -e nvim {{file_path:absolute}} \"+call cursor({{caret_position:line}}, {{caret_position:column}})\""
+      },
+      "shells": {},
+      "alias": "Open in Neovim(Alacritty)",
+      "icon": null,
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      },
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
+    }
+  ],
+  "prompts": [],
+  "custom_variables": [],
+  "output_wrappers": []
+}

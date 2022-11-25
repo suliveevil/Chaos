@@ -49,7 +49,7 @@ sly
 [[smex]]
 tecoline
 unfill
-wanderlust
+[[WanderLust]]
 wl
 
 

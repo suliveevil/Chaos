@@ -21,6 +21,7 @@ excerpt:
 
 [[obsidian-smart-random-note]]
 
-
 [[Obsidian ExcaliBrain]]
+
+[[khoj]]
 

@@ -1,6 +1,5 @@
 ---
 title: "LanguageTool"
-author: 
 categories: 
 date: 2022-10-02 02:08:44 +0800
 tags: 中文 英文 多语种 校对
@@ -26,6 +25,12 @@ LanguageTool for Desktop
 
 
 ## 竞品
+
+[Vale.sh - A linter for prose](https://vale.sh/)
+
+[abingham/flycheck-vale](https://github.com/abingham/flycheck-vale): Flycheck integration for the vale natural language linter
+
+[tpeacock19/flymake-vale](https://github.com/tpeacock19/flymake-vale)
 
 [[黑马校对]]
 

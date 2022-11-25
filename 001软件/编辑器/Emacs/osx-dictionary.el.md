@@ -28,6 +28,8 @@ excerpt:
 
 [xuchunyang/youdao-dictionary.el](https://github.com/xuchunyang/youdao-dictionary.el): Youdao Dictionary(有道词典) interface for Emacs
 
+[[repeater.el]]
+
 
 ## 竞品
 
@@ -35,19 +37,14 @@ excerpt:
 
 [leoliu/osx-dictionary](https://github.com/leoliu/osx-dictionary): use Mac OSX's builtin dictionary in emacs
 
+[[external-dict.el]]
+
+
+
 ## Misc
 
 [[fanyi.el]]
 
-[Dictionary Services | Apple Developer Documentation](https://developer.apple.com/documentation/coreservices/dictionary_services/)
-
-[chungchien/macdict](https://github.com/chungchien/macdict): macOS Dictionary Services Demo (Swift)
-
-[tonyseek/macdict](https://github.com/tonyseek/macdict): CLI and library to look up dictionary in macOS.
-
-[leettran/osxdict](https://github.com/leettran/osxdict): Command line dictionary for OSX
-
-[gh640/SublimeMacDictionary](https://github.com/gh640/SublimeMacDictionary): 📚 A Sublime Text 3 / 4 package to use MacOS dictionary service in popup windows.
 
 [EvanMeek/shengci.el](https://github.com/EvanMeek/shengci.el): Record unfamiliar English words with Emacs.
 

@@ -43,5 +43,6 @@ brew install google-chrome --cask
 
 ## Misc
 
-
+[Lakr233/SafariYYDS](https://github.com/Lakr233/SafariYYDS)
+[ShirasawaSama/CefDetectorX](https://github.com/ShirasawaSama/CefDetectorX): 【升级版-Electron】Check how many CEFs are on your computer. 检测你电脑上有几个CEF.
 

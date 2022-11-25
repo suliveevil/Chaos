@@ -30,6 +30,8 @@ V-USB
 
 ## 竞品
 
+[GyulyVGC/sniffnet](https://github.com/GyulyVGC/sniffnet): Cross-platform application to monitor your network traffic with ease
+
 [nathants/mighty-snitch](https://github.com/nathants/mighty-snitch): noticing and preventing network requests should be easy
 
 [[Debookee]]

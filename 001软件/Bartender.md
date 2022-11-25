@@ -13,6 +13,8 @@ excerpt:
 
 ## 竞品
 
+[[iBar]]
+
 [[Barbee]]
 
 

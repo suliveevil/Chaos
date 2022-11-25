@@ -14,9 +14,15 @@ excerpt:
 
 [yangsheng6810/undo-tree](https://github.com/yangsheng6810/undo-tree): A fork of the famous undo-tree for emacs
 
- 
+## 竞品
+
+[[vundo]]
+
+[[undo-fu]]
+
 ## Misc
 
+[Toby 'qubit' Cubitt - Lost or corrupted undo-tree history](https://www.dr-qubit.org/Lost_undo-tree_history.html)
 
 [[undotree]]
 

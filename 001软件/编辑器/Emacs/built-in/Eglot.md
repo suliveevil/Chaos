@@ -12,6 +12,11 @@ excerpt:
 
 [[eglot-ltex]]
 
+[zhscn/eglot-ccls - sourcehut git](https://git.sr.ht/~zhscn/eglot-ccls)
+
+[nemethf/eglot-x](https://github.com/nemethf/eglot-x): Protocol extensions for Eglot
+
+
 ## 竞品
 
 [[lsp-bridge]]

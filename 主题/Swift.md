@@ -47,6 +47,9 @@ digraph G {
 
 [[sourcekit-lsp]]
 
+[[lsp-sourcekit]]
+
+
 ## 包管理器
 
 SPM（Swift Package Manager）：[Swift.org - Package Manager](https://www.swift.org/package-manager/)
@@ -69,7 +72,7 @@ hackingwithswift
 
 [apple/sample-food-truck](https://github.com/apple/sample-food-truck): SwiftUI sample code from WWDC22
 
-
+[Hacking with Swift – learn to code iPhone and iPad apps with free Swift tutorials](https://www.hackingwithswift.com/)
 
 ## Misc
 

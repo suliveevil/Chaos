@@ -68,8 +68,13 @@ filenotify-recursive
 
 ## 竞品
 
+[[denote]]
+
+[[deft]]
+
 [Kinneyzhang/gkroam](https://github.com/Kinneyzhang/gkroam): A lightweight roam replica on top of emacs org-mode.
 
+[ahyatt/ekg](https://github.com/ahyatt/ekg): The emacs knowledge graph, app for notes and structured data.
 
 
 ## Misc

@@ -75,7 +75,7 @@ vc
 
 mu4e
 notmuch
-wanderlust
+[[WanderLust]]
 
 
 ## Input

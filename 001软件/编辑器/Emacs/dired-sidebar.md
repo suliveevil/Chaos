@@ -16,7 +16,7 @@ excerpt:
 
 ## 兄弟产品
 
-[jojojames/fussy](https://github.com/jojojames/fussy): Emacs completion-style leveraging [[flx]]
+[[fussy.el]]
 
 [emacs-evil/evil-collection](https://github.com/emacs-evil/evil-collection): A set of keybindings for evil-mode
 

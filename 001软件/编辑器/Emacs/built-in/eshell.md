@@ -10,11 +10,13 @@ excerpt:
 
 ## 生态
 
+[[aweshell]]
+
 [[company-shell]]
 
+[[esh-autosuggest]]
 
-
-
+[[eat.el]]
 
 ## Misc
 

@@ -13,9 +13,9 @@ excerpt:
 [akib/emacs-popon - Codeberg.org](https://codeberg.org/akib/emacs-popon): "Pop" floating text "on" a window
 
 
+## 竞品
 
-
-
+[[popwin]]
 
 ## Misc
 

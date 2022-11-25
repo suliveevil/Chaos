@@ -9,12 +9,14 @@ excerpt:
 [casouri/vundo](https://github.com/casouri/vundo): Visualize the undo tree.
 
 
-
-## 竞品
-
+## 联动
 
 Emacs 内置插件 undo-redo
 [[undo-fu]]
+
+
+## 竞品
+
 [[undo-tree]]
 
 ## Misc

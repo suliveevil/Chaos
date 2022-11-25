@@ -21,11 +21,5 @@ excerpt:
 
 [udayvir-singh/tangerine.nvim](https://github.com/udayvir-singh/tangerine.nvim): 🍊 Sweet Fennel integration for Neovim
 
-
 [udayvir-singh/hibiscus.nvim](https://github.com/udayvir-singh/hibiscus.nvim): Flavored Fennel Macros for Neovim
-
-
-
-
-
 

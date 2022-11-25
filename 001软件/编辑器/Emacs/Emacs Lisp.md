@@ -8,6 +8,10 @@ excerpt: Elisp
 
 [[Lisp]] 的 [[Emacs]] 方言，动态类型的脚本语言
 
+[Lisp之根源](http://daiyuwen.freeshell.org/gb/rol/roots_of_lisp.html)
+
+[Emacs Lisp Function Frequency - xahlee](http://xahlee.info/emacs/emacs/function-frequency.html)
+
 
 
 块（form）
@@ -18,6 +22,11 @@ excerpt: Elisp
 array
 hashtable
 class
+
+## 书籍
+
+The Evolutionof Emacs Lisp
+
 
 ## 工具
 
@@ -33,7 +42,7 @@ class
 
 [[emacs-inspector]]
 
-[Wilfred/elisp-def](https://github.com/Wilfred/elisp-def): Find Emacs Lisp definitions
+[[elisp-def]]
 
 [Wilfred/elisp-refs](https://github.com/Wilfred/elisp-refs): semantic code search for emacs lisp
 
@@ -53,6 +62,8 @@ class
 [Suraj Kushwah - YouTube](https://www.youtube.com/watch?v=6M1JesjbtDM)
 
 [RenWenshan/hacking-intro](https://github.com/RenWenshan/hacking-intro)
+
+[David O'Toole / elisp-tutorial · GitLab](https://gitlab.com/dto/elisp-tutorial/-/blob/master/elisp-tutorial.org)
 
 [alphapapa/emacs-package-dev-handbook](https://github.com/alphapapa/emacs-package-dev-handbook): An Emacs package development handbook. Built with Emacs, by Emacs package developers, for Emacs package developers.
 
@@ -131,6 +142,10 @@ t：[[true]]
 
 
 ## Misc
+
+[redraiment/linsp](https://github.com/redraiment/linsp): Lisp in Lisp
+
+[Emacs is the 2D Command-line Interface - Emacs China](https://emacs-china.org/t/emacs-is-the-2d-command-line-interface/16711)
 
 Bozhidar Batsov: prelude 的作者
 

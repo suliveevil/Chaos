@@ -19,6 +19,8 @@ excerpt:
 
 EAF Browser+[[popweb]]+EWW+dictionary-overlay
 
+[[insert-translated-name]]
+
 ## 竞品
 
 [[mybigword]]
@@ -31,6 +33,8 @@ EAF Browser+[[popweb]]+EWW+dictionary-overlay
 
 ## Misc
 
+[zbelial/language-chunk](https://github.com/zbelial/language-chunk): A package used to help capture and remember English words and chunks.
+
 [[简明英汉词典增强版]]
 
 [[osx-dictionary.el]]
@@ -39,4 +43,11 @@ EAF Browser+[[popweb]]+EWW+dictionary-overlay
 [gromnitsky/read-aloud.el](https://github.com/gromnitsky/read-aloud.el): A simple Emacs interface to TTS (text-to-speech) engines
 
 [maxdiefenbach/md-speed-read](https://github.com/maxdiefenbach/md-speed-read): speed reading in emacs
+
+Relingo
+
+[Language Reactor](https://www.languagereactor.com/)
+
+
+
 

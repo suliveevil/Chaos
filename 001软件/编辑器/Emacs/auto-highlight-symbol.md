@@ -16,6 +16,9 @@ excerpt:
 
 [[origami.el]]
 
+## 竞品
+
+[[highlight-thing.el]]
 
 ## Misc
 

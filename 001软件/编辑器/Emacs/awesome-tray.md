@@ -16,6 +16,12 @@ excerpt:
 
 ## 竞品
 
+[qaiviq/echo-bar.el](https://github.com/qaiviq/echo-bar.el): Display some custom text at the end of the echo area
+
+[honmaple/emacs-maple-line](https://github.com/honmaple/emacs-maple-line): emacs hide mode line of every buffer but with single maple line
+
+[Bad-ptr/common-header-mode-line.el](https://github.com/Bad-ptr/common-header-mode-line.el): header-line and/or mode-line that common for all windows of emacs frame
+
 tab-bar
 
 [[telephone-line]]

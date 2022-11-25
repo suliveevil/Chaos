@@ -7,14 +7,6 @@ tags: Emacs 文件对比 Git
 excerpt: 
 ---
 
-
-
-
-
-
-
-
-
 [Bitnut/diffgit](https://github.com/Bitnut/diffgit): Diff Git repo with [[difftastic]] for Emacs
 
 
@@ -25,13 +17,7 @@ excerpt:
 
 
 
-
-
 ## Misc
-
-
-
-
 
 
 

@@ -32,6 +32,7 @@ excerpt:
 
 ## 兄弟App
 
+[[iBar]]
 
 iCopy
 

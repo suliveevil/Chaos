@@ -1,12 +1,10 @@
 ---
 title: "pipdot"
-author:
 categories:
 date: 2022-10-07 21:26:42 +0800
-tags:
+tags: 依赖
 excerpt:
 ---
-
 
 
 [tanbro/pipdot](https://github.com/tanbro/pipdot): Generate a [[Graphviz]] dot file representing installed PyPI distributions
@@ -125,8 +123,9 @@ digraph {
 
 
 
+## 竞品
 
-
+pip-audit
 
 ## Misc
 

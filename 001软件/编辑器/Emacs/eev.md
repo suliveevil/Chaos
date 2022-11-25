@@ -1,5 +1,10 @@
-
-
+---
+title: "eev"
+categories: 
+date: 2022-11-29 14:52:23 +0800
+tags: 
+excerpt: 
+---
 
 [edrx/eev](https://github.com/edrx/eev): a tool for automating almost everything (with Emacs)
 
@@ -12,5 +17,6 @@
 [edrx/emlua](https://github.com/edrx/emlua/): Emlua: run Lua in Emacs as a module
 
 
+## Misc
 
 

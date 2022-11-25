@@ -14,6 +14,7 @@ excerpt:
 
 [[Plain Org]]
 
+[xenodium/dotsies](https://github.com/xenodium/dotsies): Dot files, Emacs config, etc
 
 ## Misc
 

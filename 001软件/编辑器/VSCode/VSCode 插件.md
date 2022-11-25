@@ -31,7 +31,7 @@ excerpt:
 
 ## 第三方插件
 
-
+[BetterThanTomorrow/joyride](https://github.com/BetterThanTomorrow/joyride): Making VS Code Hackable since 2022
 
 [[Foam]]
 

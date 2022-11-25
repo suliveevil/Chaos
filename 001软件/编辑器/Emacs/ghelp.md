@@ -6,21 +6,17 @@ tags:
 excerpt: 
 ---
 
-
-
 [casouri/ghelp](https://github.com/casouri/ghelp): Emacs generic Help
 
+## 后端
 
-
-## 联动
+builtin help
 
 [[helpful.el]]
 
 [[Eglot]]
 
-[emacs-geiser/geiser - GitLab](https://gitlab.com/emacs-geiser/geiser)
-
-[Geiser - Geiser User Manual](https://www.nongnu.org/geiser/)
+[emacs-geiser/geiser - GitLab](https://gitlab.com/emacs-geiser/geiser)/[Geiser - Geiser User Manual](https://www.nongnu.org/geiser/)
 
 [joaotavora/sly](https://github.com/joaotavora/sly): Sylvester the Cat's Common Lisp IDE
 

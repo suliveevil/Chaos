@@ -20,6 +20,7 @@ Ctrl+X `?`：按键列表（[[emacs-which-key]]）
 
 [【询问】如何记录并输出 Emacs 的按键过程 - Emacs China](https://emacs-china.org/t/emacs/22413)
 
+[Here's a list of Emacs keyboard shortcuts that I use on a regular basis, might be useful to some. : emacs](https://www.reddit.com/r/emacs/comments/x43eie/heres_a_list_of_emacs_keyboard_shortcuts_that_i/)
 
 ## 按键
 

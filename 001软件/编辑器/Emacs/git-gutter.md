@@ -23,7 +23,7 @@ excerpt:
 ## 竞品
 
 [[diff-hl]]
-
+[honmaple/emacs-maple-diff](https://github.com/honmaple/emacs-maple-diff): To sign the changes of file.
 
 ## Misc
 

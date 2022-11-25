@@ -79,7 +79,7 @@ fullframe
 git-blamed
 git-modes
 git-timemachine
-git-link
+[[git-link]]
 ibuffer-vc
 github-clone
 github-review

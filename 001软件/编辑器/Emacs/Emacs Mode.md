@@ -13,6 +13,7 @@ excerpt:
 
 [More Batteries included with Emacs | Karthinks](https://karthinks.com/software/more-batteries-included-with-emacs/)
 
+[[mode-minder]]
 
 
 ## 内置 Mode

@@ -52,6 +52,11 @@ JCB
 Amazon
 比特币
 
+## 资源搜索
+
+[zu1k/zlib-searcher](https://github.com/zu1k/zlib-searcher): search zlib/libgen index to get ipfs_cid. We don't save and provide files, we provide search. I hope everyone have a copy of the index locally, so that no need to rely on any centralized service.
+
+
 ## 官方网址
 
 https://zh.1lib.domains

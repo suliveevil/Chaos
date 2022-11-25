@@ -19,7 +19,8 @@ excerpt:
 [lewang/command-log-mode](https://github.com/lewang/command-log-mode): log commands to buffer
 
 [ir33k/tb-keycast](https://github.com/ir33k/tb-keycast): Emacs keycast minor mode that shows pressed keys in tab bar line.
-[emacsmirror/keypression](https://github.com/emacsmirror/keypression): Keystroke visualizer
+
+[[emacs-keypression]]
 
 ## Misc
 

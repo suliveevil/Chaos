@@ -7,7 +7,7 @@ excerpt:
 ---
 
 
-[manateelazycat/aweshell](https://github.com/manateelazycat/aweshell): Awesome shell extension base on eshell with wonderful features!
+[manateelazycat/aweshell](https://github.com/manateelazycat/aweshell): Awesome shell extension base on [[eshell]] with wonderful features!
 
 
 

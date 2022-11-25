@@ -1,6 +1,5 @@
 ---
-title: ""
-author:
+title: "test"
 categories:
 date: 2022-10-15 22:35:28 +0800
 tags:
@@ -13,6 +12,8 @@ excerpt:
 [[文件对比]]
 [[文件合并]]
 [[Emacs]]
+
+[Video viewing in this custom Windows build of Emacs 28.1 (FAQ and more information in the comments soon) : emacs](https://www.reddit.com/r/emacs/comments/z6qcve/video_viewing_in_this_custom_windows_build_of/)
 
 # 一级标题
 

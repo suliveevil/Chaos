@@ -57,6 +57,7 @@ brew services restart svim
 
 [[firenvim]]
 
+[algon-320/vime](https://github.com/algon-320/vime): Using Vim as an input method for X11 apps
 
 ## 兄弟产品
 

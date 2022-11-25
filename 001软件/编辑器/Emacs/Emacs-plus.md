@@ -31,7 +31,6 @@ brew install emacs-plus@26
 
 # 可选项/功能
 --with-ctags            # don’t remove the ctags executable that Emacs provides
---with-compress-install # Build with compressed install optimization
 --with-dbus             # build with dbus support
 --with-debug            # build with debug symbols and debugger friendly optimizations
 --with-imagemagick      # not included by default with emacs-plus@29
@@ -48,32 +47,33 @@ brew install emacs-plus@26
 --without-cocoa         # build a non-Cocoa version of Emacs (terminal only)
 
 # 过时选项
+--with-compress-install # Build with compressed install optimization
 --with-no-titlebar      # 在 Emacs 29 中弃用
 
 # 安装示例
-brew install d12frosted/emacs-plus/emacs-plus@29 --with-dbus --with-debug --with-imagemagick --with-mailutils --with-no-frame-refocus --with-xwidgets
+brew install d12frosted/emacs-plus/emacs-plus@30 --with-dbus --with-debug --with-mailutils --with-no-frame-refocus --with-xwidgets
 
 
 # 重装（不建议使用brew reinstall）
 brew uninstall d12frosted/emacs-plus/emacs-plus@29
-brew install d12frosted/emacs-plus/emacs-plus@29
+brew install d12frosted/emacs-plus/emacs-plus@30
 ```
 
 ```shell
 Emacs.app was installed to:
-  /opt/homebrew/opt/emacs-plus@28
+  /opt/homebrew/opt/emacs-plus@30
 
 To link the application to default Homebrew App location:
-  ln -s /opt/homebrew/opt/emacs-plus@28/Emacs.app /Applications
+  ln -s /opt/homebrew/opt/emacs-plus@30/Emacs.app /Applications
 
-osascript -e 'tell application "Finder" to make alias file to posix file "/opt/homebrew/opt/emacs-plus@29/Emacs.app" at POSIX file "/Applications"'
+osascript -e 'tell application "Finder" to make alias file to posix file "/opt/homebrew/opt/emacs-plus@30/Emacs.app" at POSIX file "/Applications"'
 
 Your PATH value was injected into Emacs.app/Contents/Info.plist
 
 Report any issues to http://github.com/d12frosted/homebrew-emacs-plus
 
-To start d12frosted/emacs-plus/emacs-plus@28 now and restart at login:
-  brew services start d12frosted/emacs-plus/emacs-plus@28
+To start d12frosted/emacs-plus/emacs-plus@30 now and restart at login:
+  brew services start d12frosted/emacs-plus/emacs-plus@30
 Or, if you don't want/need a background service you can just run:
   emacs
 ```
@@ -222,7 +222,7 @@ digraph G {
 
 [[Emacs-mac]]
 
-[[homebrew-emacs-head]]
+[[emacs-head]]
 
 
 

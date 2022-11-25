@@ -25,7 +25,7 @@ excerpt:
 ## Misc
 
 
-
+[[copilot.el]]
 
 
 

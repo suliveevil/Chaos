@@ -20,6 +20,9 @@ excerpt:
 
 [[git-gutter]]
 
+emacs-maple-diff
+
+[emacsorphanage/git-gutter-fringe](https://github.com/emacsorphanage/git-gutter-fringe): Fringe version of git-gutter.el
 
 ## Misc
 

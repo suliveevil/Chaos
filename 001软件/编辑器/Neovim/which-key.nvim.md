@@ -23,6 +23,7 @@ excerpt:
 
 [[key-menu.nvim]]
 
+[[command_center.nvim]]
 
 ## 兄弟产品
 

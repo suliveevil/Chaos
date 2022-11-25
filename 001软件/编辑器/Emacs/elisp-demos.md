@@ -14,6 +14,9 @@ excerpt:
 
 [[elisp-depmap]]
 
+## 竞品
+
+[Wilfred/suggest.el](https://github.com/Wilfred/suggest.el): discover elisp functions that do what you want
 
 
 ## Misc

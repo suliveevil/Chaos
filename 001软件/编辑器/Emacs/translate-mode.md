@@ -8,6 +8,7 @@ excerpt:
 
 [rayw000/translate-mode](https://github.com/rayw000/translate-mode): Paragraph-oriented Emacs minor mode for doing translation jobs.
 
+[martianh/translate-mode - Codeberg.org](https://codeberg.org/martianh/translate-mode): forked from https://github.com/rayw000/translate-mode
 
 ## 联动
 

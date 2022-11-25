@@ -13,15 +13,17 @@ excerpt:
 
 [[ag.el]]
 
+[[Deadgrep]]
+
+[[color-rg]]
+
+
 ## 兄弟产品
 
 [dajva/epipe](https://github.com/dajva/epipe): Pipe to emacs
 
 
 ## Misc
-
-[[color-rg]]
-
 
 [[fzf.vim]]
 

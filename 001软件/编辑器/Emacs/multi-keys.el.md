@@ -9,9 +9,9 @@ excerpt:
 
 [Liu233w/multi-keys.el](https://github.com/Liu233w/multi-keys.el): Like key-chord.el but without input-method dependency
 
+## Misc
 
-
-
+[[key-chord.el]]
 
 
 

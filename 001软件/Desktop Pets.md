@@ -18,6 +18,10 @@ excerpt:
 
 ## Misc
 
+[[uwu.el]]
+
+[[duck.nvim]]
+
 [[宠物]]
 
 

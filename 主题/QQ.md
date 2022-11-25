@@ -12,8 +12,11 @@ excerpt:
 
 
 
+## QQ 语音
 
+[kn007/silk-v3-decoder](https://github.com/kn007/silk-v3-decoder): Skype Silk Codec SDK Decode silk v3 audio files (like wechat amr, aud files, qq slk files) and convert to other format (like mp3). Batch conversion support.
 
+[KasukuSakura/silk-codec](https://github.com/KasukuSakura/silk-codec): Silk coder; Encode audio to silk; Decode silk to PCM
 
 ## Misc
 

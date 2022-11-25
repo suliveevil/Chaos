@@ -23,7 +23,7 @@ excerpt:
 
 [[heirline.nvim]]
 
-[tamton-aquib/staline.nvim](https://github.com/tamton-aquib/staline.nvim): A modern lightweight statusline and bufferline plugin for neovim in lua. Mainly uses Unicode symbols for showing info.
+[[staline.nvim]]
 
 [hn275/simpleline.nvim](https://github.com/hn275/simpleline.nvim): Simple and lightweight statusline for neovim
 

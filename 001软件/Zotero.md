@@ -19,6 +19,7 @@ GNU AGPLv3
 
 [[zowie]]
 
+[[zotero-pdf-translate]]
 
 [[Zotero translator]]
 

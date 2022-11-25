@@ -278,7 +278,7 @@ icalendar                 :ICalendar implementation
 icomplete                 :Minibuffer completion incremental feedback
 icon                      :Mode for editing Icon code
 idlwave                   :IDL editing mode for GNU Emacs
-ido                       :Interactively do things with buffers and files
+[[ido]]                       :Interactively do things with buffers and files
 ielm                      :Interaction mode for Emacs Lisp
 ietf-drums                :Functions for parsing RFC 2822 headers
 iimage                    :Inline image minor mode

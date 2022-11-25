@@ -16,7 +16,7 @@ a.el
 adaptive-wrap
 aggressive-indent
 async.el
-auctex
+[[auctex]]
 autopair
 avy
 bind-key(use-package)
@@ -39,7 +39,7 @@ coterm
 [[Counsel]]
 [[dash.el]]
 dash-functional
-dired-hacks-utils
+[[dired-hacks]]
 dired-ranger
 ebdb
 ebdb-i18n
@@ -124,7 +124,7 @@ string-inflection
 switch-window
 [[tempel]]
 [[transcient]]
-treepy
+[[treepy]]
 ts
 [[undo-tree]]
 [[use-package]]

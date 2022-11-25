@@ -22,17 +22,13 @@ cp ~/Library/Safari/History.db /tmp/h && sqlite3 /tmp/h "select json_object('ite
 
 ## 竞品
 
-
 [[alfred-fzf-safari-history]]
 
 ## 兄弟产品
 
-
-
 [[ch - Chrome History Fuzzy Search]]
 
-
-
 ## Misc
+
 
 

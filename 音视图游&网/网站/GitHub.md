@@ -6,10 +6,9 @@ tags:
 excerpt: 
 ---
 
-
-
-
 [GitHub](https://github.com/)：[[Git]] 服务器，软件[[社区]]
+
+[善用GitHub · 构建我的被动收入](https://www.bmpi.dev/self/use-github-better/)
 
 ## 设置
 

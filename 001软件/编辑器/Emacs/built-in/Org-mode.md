@@ -98,8 +98,11 @@ Metadata
 
 [如何在org-mode中使用graphviz画流程图 - 哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1qW4y1b74M)
 
+[Migrate Tiddlywiki to org-roam - Part 1: Export Tiddlers - blog.dornea.nu](https://blog.dornea.nu/2022/09/03/migrate-tiddlywiki-to-org-roam-part-1-export-tiddlers/#convert-to-org-mode)
+
 ## 竞品
 
+[[deft]]
 [[Markdown]]
 [[Neorg]]
 [[orgmode]]
@@ -114,6 +117,6 @@ Wolfram Mathematica Notebook
 
 [[Ledger]]
 
-
+[[Super Productivity]]
 
 

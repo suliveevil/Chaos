@@ -258,6 +258,8 @@ Bill Joy
 
 [[macOS Automation]]
 
+[macOS as Unix Workstation 2022 | skybert.net](https://skybert.net/mac-os-x/macos-as-unix-workstation-2022/)
+
 [serhii-londar/open-source-mac-os-apps](https://github.com/serhii-londar/open-source-mac-os-apps): 🚀 Awesome list of open source applications for macOS. https://t.me/s/opensourcemacosapps
 
 [herrbischoff awesome-macos-command-line](https://github.com/herrbischoff/awesome-macos-command-line)

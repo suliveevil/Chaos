@@ -28,7 +28,7 @@ Nikolaj Schumacher（在 [[JetBrains]] 工作）
 
 [[company-english-helper]]
 
-
+[wushuaibuaa/emacscompanywords](https://github.com/wushuaibuaa/emacscompanywords): emacs company mode English words backend
 
 ## 竞品
 

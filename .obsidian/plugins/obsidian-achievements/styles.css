@@ -1,0 +1,16 @@
+.achievements-plugin__reset-modal__button-container {
+	display: flex;
+	justify-content: end;
+	gap: 0.5rem;
+}
+
+.achievements-plugin__progress {
+	position: relative;
+}
+
+.achievements-plugin__progress::before {
+	content: attr(value) "/" attr(max);
+	position: absolute;
+	top: -20px;
+	left: 0px;
+}

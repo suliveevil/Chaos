@@ -21,8 +21,13 @@ excerpt:
 [[tree-sitter]]
 [[ripgrep]]
 
+## 竞品
+
+[KarimAziev/elisp-scan](https://github.com/KarimAziev/elisp-scan): Find unused code in Emacs Lisp files.
 
 ## 兄弟产品
+
+[manateelazycat/recursive-search-references](https://github.com/manateelazycat/recursive-search-references): Find function references in directory
 
 [[lsp-bridge]]
 

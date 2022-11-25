@@ -20,6 +20,8 @@ excerpt: 代码重构/重命名工具
 
 ## 竞品
 
+[[Deadgrep]]
+
 [Wilfred/emacs-refactor](https://github.com/Wilfred/emacs-refactor): language-specific refactoring in Emacs
 
 [mhayashi1120/Emacs-wgrep](https://github.com/mhayashi1120/Emacs-wgrep): Writable grep buffer and apply the changes to files
@@ -34,6 +36,8 @@ excerpt: 代码重构/重命名工具
 [[blink-search]]
 
 ## Misc
+
+[[phi-grep]]
 
 [[rg.el]]
 

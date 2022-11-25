@@ -9,7 +9,7 @@ excerpt:
 [swift-emacs/swift-mode](https://github.com/swift-emacs/swift-mode): Emacs support for Apple's Swift programming language.
 
 
-
+[Writing Swift in Emacs - drshapeless blog](https://blog.drshapeless.com/posts/writing-swift-in-emacs.html)
 
 
 

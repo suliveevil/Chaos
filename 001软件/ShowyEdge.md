@@ -7,10 +7,7 @@ tags: macOS UI 输入法
 excerpt: 
 ---
 
-
-
-## 官网&简介
-
+[ShowyEdge](https://showyedge.pqrs.org/): A visible indicator of the current input source for macOS.
 
 
 ## 配置
@@ -29,7 +26,7 @@ Width ✖️ Height：16 ✖️ 16
 
 [[Karabiner-Elements]]
 
-
+[[Tinkle]]
 
 ## Misc
 

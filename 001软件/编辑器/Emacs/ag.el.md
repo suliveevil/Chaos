@@ -6,9 +6,6 @@ tags:
 excerpt: 
 ---
 
-
-
-
 [Wilfred/ag.el](https://github.com/Wilfred/ag.el): An Emacs frontend to The Silver Searcher
 
 

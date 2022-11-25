@@ -164,7 +164,11 @@ Option+X magit-clone：clone a Git repository
 
 [akib/emacs-why-this - Codeberg.org](https://codeberg.org/akib/emacs-why-this): Why the current line contains this?
 
+[vc-fossil: Documentation](https://tumbleweed.nu/r/vc-fossil/doc/tip/README.md)
+
 [[neogit]]
+
+[[edamagit]]
 
 [[vim-fugitive]]
 

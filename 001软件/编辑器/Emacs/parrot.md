@@ -14,7 +14,8 @@ excerpt:
 
 ## 竞品
 
-[ROCKTAKEY/grugru](https://github.com/ROCKTAKEY/grugru): Rotate text at point in Emacs.
+[[grugru]]
+
 
 
 ## Misc

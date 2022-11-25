@@ -26,13 +26,20 @@ macOS 必备 App
 
 [[Keyboard Maestro]]
 
-## 同类软件
+## 竞品
 
 [[xkeysnail]]
 
 [[AutoHotkey]]
 
 [temochka/Anykey](https://github.com/temochka/Anykey): A free macOS app for binding shell commands to system-wide or app-specific hotkeys.
+
+## 兄弟产品
+
+[[Tinkle]]
+
+[[ShowyEdge]]
+
 
 ## Misc
 

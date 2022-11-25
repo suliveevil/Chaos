@@ -52,7 +52,7 @@ Sticky Scroll
 
 [microsoft/vscode-anycode](https://github.com/microsoft/vscode-anycode)：A [[tree-sitter]]-based language extension that _inaccurately_ implements popular features like "Outline & Breadcrumbs", "Go to Symbol in Workspace", "Document Highlights" and more. This extension should be used when running in enviroments that don't allow for running actual language services, like [https://github.dev](https://github.dev/) or [https://vscode.dev](https://vscode.dev/).
 
-
+[Code App - App Store](https://apps.apple.com/us/app/code-app/id1512938504?platform=ipad)
 
 
 

@@ -14,6 +14,9 @@ excerpt:
 [Why We Created Julia](https://julialang.org/blog/2012/02/why-we-created-julia/)
 
 
+## App
+
+[JuliaPlots/UnicodePlots.jl](https://github.com/JuliaPlots/UnicodePlots.jl): Unicode-based scientific plotting for working in the terminal
 
 
 ## 竞品

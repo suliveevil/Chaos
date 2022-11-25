@@ -13,12 +13,7 @@ excerpt:
 [penpot/penpot](https://github.com/penpot/penpot): Penpot - The Open-Source design & prototyping platform
 
 
-
-
 Mozilla Public License v2
-
-
-
 
 
 
@@ -26,8 +21,9 @@ Mozilla Public License v2
 
 [[Figma]]
 
+[[OmniGraffle]]
 
-
+[[draw.io]]
 
 ## Misc
 

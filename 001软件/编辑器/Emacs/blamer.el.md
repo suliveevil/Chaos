@@ -13,13 +13,14 @@ excerpt:
 
 ## 竞品
 
+[akib/emacs-why-this - Codeberg.org](https://codeberg.org/akib/emacs-why-this): Why the current line contains this?
+
 [[git-gutter]]
 
 [ctsk/emacs-inline-annotate](https://github.com/ctsk/emacs-inline-annotate): [[GitLens]] blame messages -- but in Emacs
 
 
 ## Misc
-
 
 [[git-lens.vim]]
 

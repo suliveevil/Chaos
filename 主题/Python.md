@@ -20,7 +20,6 @@ brew isntall python3
 ```
 
 
-
 ## LSP
 
 [python-lsp/python-lsp-server](https://github.com/python-lsp/python-lsp-server): Fork of the python-language-server project, maintained by the Spyder IDE team and the community
@@ -54,6 +53,7 @@ pip3 install -r requirements.txt
 
 [thebjorn/pydeps](https://github.com/thebjorn/pydeps): Python Module Dependency graphs
 
+[seddonym/grimp](https://github.com/seddonym/grimp): Builds a graph of a Python project's internal dependencies.
 
 ## 依赖
 
@@ -101,8 +101,8 @@ PyPy：使用 JIT 技术进行动态编译。
 生成器Generator
 迭代器Iterator
 
-
 ## 数据类型
+
 整数
 浮点数
 [[字符串]]、[[占位符]]

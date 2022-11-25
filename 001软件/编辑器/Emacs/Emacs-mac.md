@@ -173,7 +173,7 @@ digraph G {
 [[Emacs-plus]]
 
 
-[[homebrew-emacs-head]]
+[[emacs-head]]
 
 
 

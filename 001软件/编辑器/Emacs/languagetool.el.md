@@ -6,9 +6,6 @@ tags:
 excerpt: 
 ---
 
-
-
-
 [PillFall/languagetool.el](https://github.com/PillFall/languagetool.el): LanguageTool suggestions integrated within Emacs
 
 

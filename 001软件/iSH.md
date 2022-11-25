@@ -350,6 +350,8 @@ zcat
 
 ## Misc
 
+[beringresearch/macpine](https://github.com/beringresearch/macpine): Lightweight Linux VMs on MacOS
+
 [[Vim]]
 
 [[Git]]

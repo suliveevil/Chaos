@@ -24,4 +24,5 @@ excerpt:
 
 ## Misc
 
+[[Core ML]]
 

@@ -18,7 +18,7 @@ excerpt:
 
 ## 竞品
 
-[polymode/polymode](https://github.com/polymode/polymode): Framework for Multiple Major Modes in Emacs (core library)
+[[polymode]]
 
 
 ## Misc

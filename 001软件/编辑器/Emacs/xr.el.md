@@ -27,6 +27,8 @@ excerpt:
 
 ## Misc
 
+[[easy-escape]]
+
 [使用 rx 构建正则时如何让 `any` 匹配一个变量？ - Emacs China](https://emacs-china.org/t/rx-any/22528)
 
 [[visual-regexp.el]]

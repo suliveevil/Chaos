@@ -104,7 +104,7 @@ json-mode
 json-reformat
 json-snatcher
 po-mode
-lazy-load
+[[lazy-load]]
 lazycat
 lazycat-theme
 llvm-mode
@@ -139,6 +139,7 @@ watch-other-window
 [[web-mode]]
 wrap-region
 xterm-color
+[[markmacro]]
 
 ### 内置插件
 

@@ -17,7 +17,7 @@ excerpt:
 
 ## 快捷键
 
-|---------------|----------------------|--------------------------|
+
 | key binding   | default command      | cns-mode command         |
 |---------------|----------------------|--------------------------|
 | M-b           | (backward-word)      | (cns-backward-word)      |
@@ -27,7 +27,8 @@ excerpt:
 | C-<delete>    | (kill-word)          | (cns-kill-word)          |
 | M-d           | (kill-word)          | (cns-kill-word)          |
 | M-t           | (transpose-words)    | (cns-transpose-words)    |
-|---------------|----------------------|--------------------------|
+
+
 
 
 
@@ -37,6 +38,10 @@ excerpt:
 [[pyim]]
 
 [[cnhl]]
+
+[cireu/jieba.el](https://github.com/cireu/jieba.el): 在Emacs中使用jieba中文分词
+
+[LdBeth/emacs-split-chinese-words](https://github.com/LdBeth/emacs-split-chinese-words/tree/master): A dynamic module using cjieba lib.
 
 ## Misc
 

@@ -15,15 +15,17 @@ excerpt:
 
 ## 兄弟产品
 
+[[duck.nvim]]
+
 [[keys.nvim]]
 
-staline.nvim
+[[staline.nvim]]
 
 
 
 ## Misc
 
-
+[[gameoflife.el]]
 
 
 

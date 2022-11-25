@@ -19,6 +19,8 @@ excerpt:
 
 [bbatsov/crux](https://github.com/bbatsov/crux): A Collection of Ridiculously Useful eXtensions for Emacs
 
+[Porting init.vim to intit.el - reddit/emacs](https://www.reddit.com/r/emacs/comments/m7lg9i/porting_initvim_to_intitel/)
+
 ## 配置
 
 [[EditorConfig]]
@@ -215,6 +217,7 @@ if point is at end of line , new-line-and-indent"
 [[Emacs-helper]]
 [[redguardtoo]]
 [包昊军](http://baohaojun.github.io/): 公众号 Programate
+[Henry/dot-emacs](https://github.com/Henry/dot-emacs)
 [dogEmacs](https://github.com/DogLooksGood/dogEmacs)
 [yqrashawn/yqdotfiles](https://github.com/yqrashawn/yqdotfiles)
 [gujiaxi/.emacs.d](https://github.com/gujiaxi/.emacs.d): 极简配置
@@ -250,6 +253,7 @@ if point is at end of line , new-line-and-indent"
 [[purcell]]
 [[ward-emacs]]
 [freetonik/castlemacs](https://github.com/freetonik/castlemacs): Modern, minimalist Emacs for macOS ⌘
+[a-schaefers/spartan-emacs](https://github.com/a-schaefers/spartan-emacs): Finally, a simple base Emacs configuration framework
 [alhassy/emacs.d: My Emacs configuration, literately](https://github.com/alhassy/emacs.d)
 [Imymirror/imy-emacs.d](https://github.com/Imymirror/imy-emacs.d)
 [RenWenshan/wenshan-emacs](https://github.com/RenWenshan/wenshan-emacs): Wenshan's emacs configuration
@@ -258,6 +262,7 @@ if point is at end of line , new-line-and-indent"
 [protesilaos/dotfiles](https://github.com/protesilaos/dotfiles): [Mirror] Configuration files for Emacs and some other programs. Running on Arch Linux. Managed with GNU Stow.
 [madgrid/demonacs](https://github.com/madgrid/demonacs): Emacs Configuration for the masochist. (Default Keybindings, Projectile, Vertico & Consult, TS & Node,...) <3 Rian
 [cybniv/emacs.d](https://github.com/cybniv/emacs.d)
+[Sanemacs](https://sanemacs.com/): The Best Minimal Emacs Configuration
 [Lambda-Emacs/lambda-emacs](https://github.com/Lambda-Emacs/lambda-emacs): Emacs distribution with sane defaults, pre-configured packages, and useful functions.
 [NateEag/.emacs.d](https://github.com/NateEag/.emacs.d): Nate Eagleson's Emacs config.
 [turbana/emacs-config](https://github.com/turbana/emacs-config)
@@ -275,9 +280,19 @@ if point is at end of line , new-line-and-indent"
 [pierre-rouleau/pel](https://github.com/pierre-rouleau/pel): Pragmatic Emacs Library
 [Xaldew/dotfiles](https://github.com/Xaldew/dotfiles)
 [incandescentman/Emacs-Settings](https://github.com/incandescentman/Emacs-Settings): Emacs for Writers
+[Impaktor's .emacs](https://impaktor.gitlab.io/dot_emacs.html#org87d6718)
+[junkw/dot.emacs.d](https://github.com/junkw/dot.emacs.d): My config for Emacs 28+: check out as ~/.emacs.d
+[renzmann/.emacs.d](https://github.com/renzmann/.emacs.d): [My Literate .emacs.d · robbmann](https://robbmann.io/emacsd/)
+[deadblackclover/clover](https://github.com/deadblackclover/clover): Emacs for real hackers
+[pierre-rouleau/pel](https://github.com/pierre-rouleau/pel): Pragmatic Emacs Library
+[dudemanweed/emaks](https://github.com/dudemanweed/emaks): Emaks: I took a text editor too seriously
+[ska2342/ska-init-files](https://github.com/ska2342/ska-init-files): Everyone has to keep their init files in a public repo, no? So, after just 20 years or so, I finally got around to join the club.
+[harmonicalchemy/modular-emacs](https://github.com/harmonicalchemy/modular-emacs): A new simpler module based emacs that may be easily extended...
+[patrickt/emacs](https://github.com/patrickt/emacs): the greatest emacs setup of all time
 
+### Doom
 
-
+[slano-ls/Doom-Emacs-Config](https://github.com/slano-ls/Doom-Emacs-Config): My (Illiterate) Literate Doom Emacs Config
 
 
 ## Misc
@@ -286,6 +301,7 @@ if point is at end of line , new-line-and-indent"
 
 [[Emacs 快捷键]]
 
+[Emacs on an iPad - Andy's Blog](https://andschwa.com/posts/emacs-on-an-ipad/)
 
 [配置全新的 Macbook Pro M1 下 Emacs 开发环境 - 子龙山人](https://zilongshanren.com/post/setup-macbook-pro-m1/)
 

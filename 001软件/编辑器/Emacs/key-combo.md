@@ -24,7 +24,8 @@ excerpt:
 
 [EmacsWiki: sequential-command.el](https://www.emacswiki.org/emacs/sequential-command.el)
 
-[EmacsWiki: key-chord.el](https://www.emacswiki.org/emacs/key-chord.el)
+[[key-chord.el]]
+
 
 
 

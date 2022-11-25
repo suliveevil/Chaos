@@ -8,8 +8,9 @@ excerpt:
 
 [Wilfred/helpful](https://github.com/Wilfred/helpful): A better Emacs *help* buffer
 
+## 联动
 
-
+[[ghelp]]
 
 ## 兄弟产品
 

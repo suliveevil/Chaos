@@ -18,6 +18,17 @@ excerpt:
 
 [[vertico]]
 
+[[ivy]]
+
+## 竞品
+
+ido
+flx
+helm
+smex
+Historian.el
+
+
 ## Misc
 
 

@@ -36,6 +36,8 @@ FTP/SFTP/iCloud
 
 [[ShareX]]
 
+[[Gemoo Snap]]
+
 [ksnip/ksnip](https://github.com/ksnip/ksnip): ksnip the cross-platform screenshot and annotation tool
 
 [[Snipaste]]
