@@ -290,6 +290,10 @@ if point is at end of line , new-line-and-indent"
 [harmonicalchemy/modular-emacs](https://github.com/harmonicalchemy/modular-emacs): A new simpler module based emacs that may be easily extended...
 [patrickt/emacs](https://github.com/patrickt/emacs): the greatest emacs setup of all time
 
+### 40% keyboard
+
+[Domse007/.emacs.d](https://github.com/Domse007/.emacs.d)
+
 ### Doom
 
 [slano-ls/Doom-Emacs-Config](https://github.com/slano-ls/Doom-Emacs-Config): My (Illiterate) Literate Doom Emacs Config

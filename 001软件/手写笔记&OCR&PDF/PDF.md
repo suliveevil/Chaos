@@ -27,6 +27,12 @@ PDF-XChange：垃圾加拿大公司，反华
 
 [[Affinity Publisher]]
 
+[PDFtk - The PDF Toolkit](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/)
+
+```shell
+brew tap zph/cervezas
+brew install zph/cervezas/pdftk
+```
 
 ## PDF rendering library
 [MuPDF](https://www.mupdf.com/)

@@ -1,8 +1,8 @@
 ---
 title: "Rosetta Stone"
-categories: 
+categories:
 date: 2022-12-01 08:12:09 +0800
-tags: 
+tags:
 excerpt: 罗赛塔石碑/如师通
 ---
 
@@ -12,4 +12,7 @@ excerpt: 罗赛塔石碑/如师通
 
 
 
+## Misc
+
+[Rosetta Code](https://rosettacode.org)
 

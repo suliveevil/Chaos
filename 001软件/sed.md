@@ -17,7 +17,9 @@ Linux 三剑客（[[awk]]、sed、[[grep]]）之一
 
 手册：[sed, a stream editor - GNU Manual](https://www.gnu.org/software/sed/manual/sed.html)
 
-
+```shell
+brew install gnu-sed
+```
 
 
 ## 书籍

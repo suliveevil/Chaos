@@ -18,6 +18,12 @@ excerpt:
 
 [[eat.el]]
 
+## 兄弟产品
+
+[[shell-mode]]
+
+[[term-mode]]
+
 ## Misc
 
 [[emacs-native-shell-complete]]

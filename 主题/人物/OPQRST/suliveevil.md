@@ -28,6 +28,7 @@ Linux：经年未用
 
 Alfred
 BetterAndBetter
+Emacs
 Karabiner-Elements
 Keyboard Maestro
 

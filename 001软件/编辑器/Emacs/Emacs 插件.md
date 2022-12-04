@@ -88,6 +88,8 @@ reveal-mode
 
 [[insecure-lock]]
 
+[seanfarley/emacs-bitwarden](https://github.com/seanfarley/emacs-bitwarden): Emacs Bitwarden command wrapper.
+
 ## 输入法
 
 [[pyim]]

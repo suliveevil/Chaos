@@ -1,0 +1,28 @@
+{
+  "achievedAchievementIDs": [
+    "command-palette:open",
+    "heading-levels:1",
+    "heading-levels:3",
+    "notes-created:1",
+    "notes-created:10",
+    "notes-created:100",
+    "notes-created:1000",
+    "internal-links-created:1",
+    "internal-links-created:10",
+    "internal-links-created:100",
+    "internal-links-created:1000",
+    "tags-created:1",
+    "tags-created:5",
+    "tags-created:10",
+    "callouts:1",
+    "switcher:open"
+  ],
+  "notesCreated": 284468,
+  "notesDeleted": 5,
+  "internalLinksCreated": 401607,
+  "commandPaletteOpened": 34,
+  "quickSwitcherOpened": 3,
+  "calloutsCreated": 1,
+  "headingLevelsCreated": 6,
+  "tagsCreated": 36413
+}

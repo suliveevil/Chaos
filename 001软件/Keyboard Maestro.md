@@ -105,6 +105,8 @@ Keysmith
 
 [[Raycast]]
 
+[taojy123/KeymouseGo](https://github.com/taojy123/KeymouseGo): 类似按键精灵的鼠标键盘录制和自动化操作 模拟点击和键入 | automate mouse clicks and keyboard input
+
 ## 联动
 
 [[alfred-maestro]]

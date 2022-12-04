@@ -1,9 +1,9 @@
 ---
 title: "Org-roam"
-categories: 
+categories:
 date: 2022-09-25 05:31:38 +0800
 tags: 知识管理 知识图谱
-excerpt: 
+excerpt:
 ---
 
 [[Emacs 插件]]
@@ -51,6 +51,8 @@ filenotify-recursive
 
 ## 使用
 
+[jethrokuan/org-roam-guide](https://github.com/jethrokuan/org-roam-guide): How I Take Notes In Org-roam (WIP)
+
 [Org-roam(v2) 以及 org-roam-ui 的使用姿势（已支持Emacs 29 内置的 sqlite) - Emacs China](https://emacs-china.org/t/org-roam-v2-org-roam-ui-emacs-29-sqlite/17806/165)
 
 [coldnight/dump-brain-with-emacs](https://github.com/coldnight/dump-brain-with-emacs): 从零开始用 Emacs 管理笔记！
@@ -72,10 +74,13 @@ filenotify-recursive
 
 [[deft]]
 
-[Kinneyzhang/gkroam](https://github.com/Kinneyzhang/gkroam): A lightweight roam replica on top of emacs org-mode.
-
 [ahyatt/ekg](https://github.com/ahyatt/ekg): The emacs knowledge graph, app for notes and structured data.
 
+[Kinneyzhang/gkroam](https://github.com/Kinneyzhang/gkroam): A lightweight roam replica on top of emacs org-mode.
+
+## 兄弟产品
+
+[[mathpix.el]]
 
 ## Misc
 

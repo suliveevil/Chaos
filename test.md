@@ -12,6 +12,7 @@ excerpt:
 [[文件对比]]
 [[文件合并]]
 [[Emacs]]
+[[Flame Graph]]
 
 [Video viewing in this custom Windows build of Emacs 28.1 (FAQ and more information in the comments soon) : emacs](https://www.reddit.com/r/emacs/comments/z6qcve/video_viewing_in_this_custom_windows_build_of/)
 

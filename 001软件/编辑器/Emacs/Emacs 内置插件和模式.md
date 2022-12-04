@@ -11,78 +11,133 @@ excerpt:
 5x5: Simple little puzzle game
 EMMS
 EWW
-[ch11ng/exwm](https://github.com/ch11ng/exwm): Emacs X Window Manager
 TMM：transient mark mode
 [[Dired]]
 [[Eglot]]：The Emacs Client for LSP servers
 [[Org-mode]]：Outline-based notes management and organizer
+[[align-mode]]                     :Align text to a specific column, by regexp
 [[allout-widgets]]：Visually highlight allout outline structure.
 [[allout]]：extensive outline mode for use alone and with other modes
 [[ansi-color]]：translate ANSI escape sequences into faces
 [[antlr-mode]]：major mode for ANTLR grammar files
 [[auth-source-pass]]：Integrate auth-source with password-store
+[[autorevert]]                :Revert buffers when files on disk change
 [[backtrace.el]]：generic major mode for Elisp backtraces
+[[calendar-mode]]                  :Calendar functions
 [[cc-mode]]：major mode for editing C and similar languages
+[[cedet]]                     :Setup CEDET environment
 [[cedet]]：Setup CEDET environment
 [[cfengine]]：mode for editing Cfengine files
 [[cl-generic]]：CLOS-style generic functions for Elisp
 [[cl-lib]]：Common Lisp extensions for Emacs
 [[cl-print]]：CL-style generic printing
+[[delsel]]                    :Delete selection if you insert
 [[dunnet]]                    :        Text adventure for Emacs
 [[ede]]：Emacs Development Environment gloss
 [[ediff]]：a comprehensive visual interface to diff & patch
 [[eieio-core]]：Core implementation for eieio
 [[eieio]]：Enhanced Implementation of Emacs Interpreted Objects
 [[eldoc]]：Show function arglist or variable docstring in echo area
+[[elec-pair]]                 :Automatic parenthesis pairing
+[[emacs-flymake]]                   :A universal on-the-fly syntax checker
 [[emacs-flymake]]：A universal on-the-fly syntax checker
 [[epg]]：the EasyPG Library
 [[erc]]：An Emacs Internet Relay Chat client
 [[eshell]]：the Emacs command shell
 [[faceup]]：Markup language for faces and font-lock regression testing
 [[feedmail]]：assist other email packages to massage outgoing messages
+[[filecache]]                 :Find files using a pre-loaded cache
+[[filesets]]                  :Handle group of files
 [[find-cmd]]：Build a valid find(1) command with sexps
+[[find-file]]                 :Find a file corresponding to this one given a pattern
 [[flymake-proc]]：Flymake backend for external tools
+[[flyspell]]                  :On-the-fly spell checker
 [[foldout]]：folding extensions for outline-mode and outline-minor-mode
+[[follow-mode]]                    :Synchronize windows showing the same buffer
+[[glasses]]                   :Make cantReadThis readable
+[[gnus]]                      :A newsreader for GNU Emacs
 [[gnus]]：a newsreader for GNU Emacs
+[[hideshow]]                  :Minor mode cmds to selectively display code/comment blocks
+[[hl-line]]                   :Highlight the current line
 [[htmlfontify]]：htmlize a buffer/source tree with optional hyperlinks
+[[ibuffer]]                   :Operate on buffers like dired
 [[idlwave]]：IDL editing mode for GNU Emacs
+[[ido]]                       :Interactively do things with buffers and files
+[[iimage-mode]]                    :Inline image minor mode
 [[image-dired]]：use dired to browse and manipulate your images
+[[imenu]]                     :Framework for mode-specific buffer indexes
 [[info-xref]]：check external references in an Info document
+[[isearch]]
 [[isearchb.el]]：a marriage between iswitchb and isearch
+[[ispell]]                    :Interface to spell checkers
 [[js.el]]：Major mode for editing JavaScript
 [[json.el]]：JavaScript Object Notation parser / generator
 [[jsonrpc.el]]：JSON-RPC library
 [[let-alist]]：Easily let-bind values of an assoc-list by their names
 [[map.el]]：Map manipulation functions
+[[memory-report]]             :Short function summaries
 [[meta-mode]]：major mode for editing Metafont or MetaPost sources
 [[mh-e]]：GNU Emacs interface to the MH mail system
 [[mixal-mode]]：Major mode for the mix asm language.
+[[morse-mode]]                     :Convert text to morse code and back
+[[mouse-copy]]                :One-click text copy and move
+[[mouse-drag]]                :Use mouse-2 to do a new style of scrolling
 [[nadvice]]：Light-weight advice primitives for Elisp functions
+[[newsticker]]                :A Newsticker for Emacs
 [[ntlm.el]]：NTLM (NT LanManager) authentication support
+[[octave-mode]]                    :Editing octave source files under emacs
 [[package.el]]：Simple package system for Emacs
+[[paren-mode]]                     :Highlight matching paren
+[[picture-mode]]                   :"Picture mode" -- editing using quarter-plane screen model
 [[project.el]]：Operations on the current project
 [[ps-mode]]：PostScript mode for GNU Emacs
 [[pulse.el]]：Pulsing Overlays
 [[python.el]]：Python's flying circus support for Emacs
+[[rcirc]]                     :Default, simple IRC client
+[[recentf]]                   :Setup a menu of recently opened files
+[[repeat-mode]]                    :Convenient way to repeat the previous command
 [[ruby-mode]]：Major mode for editing Ruby files
+[[rx]]                        :S-exp notation for regexps           -
+[[saveplace]]                 :Automatically save place in files
+[[scroll-all]]                :Scroll all buffers together minor mode
+[[scroll-lock]]               :Scroll lock scrolling
 [[semantic.el]]：Semantic buffer evaluator.
 [[seq.el]]：Sequence manipulation functions
+[[ses-mode]]                       :Simple Emacs Spreadsheet
+[[sgml-mode]]                 :SGML- and HTML-editing modes
+[[shell-mode]]                     :Specialized comint.el for running the shell
+[[simple-mode]]
+[[smerge-mode]]               :Minor mode to resolve diff3 conflicts
+[[so-long.el]]                   :Say farewell to performance problems with minified code
 [[so-long.el]]：Say farewell to performance problems with minified code.
 [[soap-client.el]]：Access SOAP web services
 [[sql.el]]：specialized comint.el for SQL interpreters
 [[srecode.el]]：Semantic buffer evaluator.
+[[strokes-mode]]                   :Control Emacs through mouse strokes
+[[subword-mode]]                   :Handling capitalized subwords in a nomenclature
 [[svg.el]]：SVG image creation functions
 [[tabulated-list]]：generic major mode for tabulated lists
+[[tempo-mode]]                     :Flexible template insertion
+[[term-mode]]                      :General command interpreter in a window stuff
 [[thunk.el]]：Lazy form evaluation
 [[tildify.el]]：adding hard spaces into texts
+[[timeclock-mode]]                 :Mode for keeping track of how much you work
+[[timezone.el]]                  :Time zone package for GNU Emacs
 [[tramp.el]]：Transparent Remote Access, Multiple Protocol
+[[type-break]]                :Encourage rests from typing at appropriate intervals
 [[vera-mode]]：major mode for editing Vera files
 [[verilog-mode]]：major mode for editing verilog source in Emacs
+[[viper.el]]                     :A full-featured Vi emulator for Emacs
 [[viper.el]]：A full-featured Vi emulator for Emacs
+[[wdired]]                    :Rename files editing their names in dired buffers
+[[webjump]]                   :Programmable Web hotlist
+[[whitespace-mode]]                :Minor mode to visualize TAB, (HARD) SPACE, NEWLINE
 [[whitespace.el]]：minor mode to visualize TAB, (HARD) SPACE, NEWLINE
+[[windmove]]                  :Directional window-selection routines
+[[winner-mode]]                    :Restore old window configurations
 [[xref.el]]：Cross-referencing commands
+[ch11ng/exwm](https://github.com/ch11ng/exwm): Emacs X Window Manager
 add-log                   :Change log maintenance commands for Emacs
-align                     :Align text to a specific column, by regexp
 allout                    :Extensive outline mode for use alone and with other modes
 allout-widgets            :Visually highlight allout outline structure
 ange-ftp                  :Transparent FTP support for GNU Emacs
@@ -98,7 +153,6 @@ auth-source-pass          :Integrate auth-source with password-store
 autoarg                   :Make digit keys supply prefix args
 autoconf                  :Mode for editing Autoconf configure.ac files
 autoinsert                :Automatic mode-dependent insertion of text into new files
-autorevert                :Revert buffers when files on disk change
 avl-tree                  :Balanced binary trees, AVL-trees
 avoid                     :Make mouse pointer stay out of the way of editing
 backtrace                 :Generic major mode for Elisp backtraces
@@ -118,11 +172,9 @@ bubbles                   :Puzzle game for Emacs
 bug-reference             :Buttonize bug references
 calc                      :The GNU Emacs calculator
 calculator                :A calculator for Emacs
-calendar                  :Calendar functions
 cc-guess                  :Guess indentation values by scanning existing code
 cc-mode                   :Major mode for editing C and similar languages
 cdl                       :Common Data Language (CDL) utility functions for GNU Emacs
-cedet                     :Setup CEDET environment
 cfengine                  :Mode for editing Cfengine files
 char-fold                 :Match unicode to similar ASCII
 chart                     :Draw charts (bar charts, etc)
@@ -157,7 +209,6 @@ dcl-mode                  :Major mode for editing DCL command files
 debug                     :Debuggers and related commands for Emacs
 decipher                  :Cryptanalyze monoalphabetic substitution ciphers
 delim-col                 :Prettify all columns in a region or rectangle
-delsel                    :Delete selection if you insert
 descr-text                :Describe text mode
 desktop                   :Save partial status of Emacs when killed
 dframe                    :Dedicate frame support modes
@@ -192,7 +243,6 @@ ehelp                     :Bindings for electric-help mode
 eieio                     :Enhanced Implementation of Emacs Interpreted Objects
 eieio-core                :Core implementation for eieio
 eldoc                     :Show function arglist or variable docstring in echo area
-elec-pair                 :Automatic parenthesis pairing
 electric                  :Window maker and Command loop for `electric' modes
 elide-head                :Hide headers in files
 elint                     :Lint Emacs Lisp
@@ -206,7 +256,6 @@ epg                       :The EasyPG Library
 erc                       :An Emacs Internet Relay Chat client
 ert                       :Emacs Lisp Regression Testing
 ert-x                     :Staging area for experimental extensions to ERT
-eshell                    :The Emacs command shell
 etags                     :Etags facility for Emacs
 etc-authors-mode          :Font-locking for etc/AUTHORS
 eudc                      :Emacs Unified Directory Client
@@ -222,24 +271,18 @@ face-remap                :Functions for managing `face-remapping-alist'
 faceup                    :Markup language for faces and font-lock regression testing
 feedmail                  :Assist other email packages to massage outgoing messages
 ffap                      :Find file (or url) at point
-filecache                 :Find files using a pre-loaded cache
 fileloop                  :Operations on multiple files
 filenotify                :Watch files for changes on disk
-filesets                  :Handle group of files
 find-cmd                  :Build a valid find(1) command with sexps
 find-dired                :Run a `find' command and dired the output
-find-file                 :Find a file corresponding to this one given a pattern
 find-func                 :Find the definition of the Emacs Lisp function near point
 find-lisp                 :Emulation of find in Emacs Lisp
 finder                    :Topic & keyword-based code finder
 flow-ctrl                 :Help for lusers on cu(1) or ttys with wired-in ^S/^Q flow control
 flow-fill                 :Interpret RFC2646 "flowed" text
-flymake                   :A universal on-the-fly syntax checker
 flymake-cc                :Flymake support for GNU tools for C/C++
 flymake-proc              :Flymake backend for external tools
-flyspell                  :On-the-fly spell checker
 foldout                   :Folding extensions for outline-mode and outline-minor-mode
-follow                    :Synchronize windows showing the same buffer
 footnote                  :Footnote support for message mode
 format-spec               :Format arbitrary formatting strings
 forms                     :Forms mode: edit a file as a form to fill in
@@ -249,13 +292,11 @@ frameset                  :Save and restore frame and window setup
 gamegrid                  :Library for implementing grid-based games on Emacs
 gametree                  :Manage game analysis trees in Emacs
 gdb-mi                    :User Interface for running GDB
-glasses                   :Make cantReadThis readable
-gnus                      :A newsreader for GNU Emacs
 gnutls                    :Support SSL/TLS connections through GnuTLS
 gomoku                    :Gomoku game between you and Emacs
 goto-addr                 :Click to browse URL or to send to e-mail address
 gravatar                  :Get Gravatars
-grep                      :Run `grep' and display the results
+grep                      :Run grep and display the results
 gud                       :Grand Unified Debugger mode for running GDB and other debuggers
 handwrite                 :Turns your emacs buffer into a handwritten document
 hanoi                     :Towers of hanoi in Emacs
@@ -265,28 +306,22 @@ hex-util                  :Functions to encode/decode hexadecimal string
 hexl                      :Edit a file in a hex dump format using the hexl filter
 hi-lock                   :Minor mode for interactive automatic highlighting
 hideif                    :Hides selected code within ifdef
-hideshow                  :Minor mode cmds to selectively display code/comment blocks
 hierarchy                 :Library to create and display hierarchical structures
 hilit-chg                 :Minor mode displaying buffer changes with special face
 hippie-exp                :Expand text trying various ways to find its expansion
-hl-line                   :Highlight the current line
 hmac-def                  :A macro for defining HMAC functions
 hmac-md5                  :Compute HMAC-MD5
 htmlfontify               :Htmlize a buffer/source tree with optional hyperlinks
-[[ibuffer]]                   :Operate on buffers like dired
 icalendar                 :ICalendar implementation
 icomplete                 :Minibuffer completion incremental feedback
 icon                      :Mode for editing Icon code
 idlwave                   :IDL editing mode for GNU Emacs
-[[ido]]                       :Interactively do things with buffers and files
 ielm                      :Interaction mode for Emacs Lisp
 ietf-drums                :Functions for parsing RFC 2822 headers
-iimage                    :Inline image minor mode
 image-converter           :Converting images from exotic formats
 image-dired               :Use dired to browse and manipulate your images
 image-file                :Support for visiting image files
 imap                      :Imap library
-[[imenu]]                     :Framework for mode-specific buffer indexes
 inf-lisp                  :An inferior-lisp mode
 info                      :Info package for Emacs
 info-look                 :Major-mode-sensitive Info index lookup facility
@@ -295,7 +330,6 @@ informat                  :Info support functions package for Emacs
 inline                    :Define functions by their inliner
 isearchb                  :A marriage between iswitchb and isearch
 iso8601                   :Parse ISO 8601 date/time strings
-ispell                    :Interface to spell checkers
 jka-compr                 :Reading/writing/loading compressed files
 js                        :Major mode for editing JavaScript
 json                      :JavaScript Object Notation parser / generator
@@ -333,7 +367,6 @@ map                       :Map manipulation functions
 master                    :Make a buffer the master over another buffer
 mb-depth                  :Indicate minibuffer-depth in prompt
 md4                       :MD4 Message Digest Algorithm
-memory-report             :Short function summaries
 meta-mode                 :Major mode for editing Metafont or MetaPost sources
 mh-e                      :GNU Emacs interface to the MH mail system
 mhtml-mode                :HTML editing mode that handles CSS and JS
@@ -343,9 +376,6 @@ misearch                  :Isearch extensions for multi-buffer search
 mixal-mode                :Major mode for the mix asm language
 mode-local                :Support for mode local facilities
 modula2                   :Modula-2 editing support package
-morse                     :Convert text to morse code and back
-mouse-copy                :One-click text copy and move
-mouse-drag                :Use mouse-2 to do a new style of scrolling
 mpc                       :A client for the Music Player Daemon
 mpuz                      :Multiplication puzzle for GNU Emacs
 msb                       :Customizable buffer-selection with multiple menus
@@ -354,7 +384,6 @@ nadvice                   :Light-weight advice primitives for Elisp functions
 net-utils                 :Network functions
 netrc                     :.netrc parsing functionality
 network-stream            :Open network processes, possibly with encryption
-newsticker                :A Newsticker for Emacs
 notifications             :Client interface to desktop notifications
 nov
 novice                    :Handling of disabled commands ("novice mode") for Emacs
@@ -362,12 +391,9 @@ nroff-mode                :GNU Emacs major mode for editing nroff source
 nsm                       :Network Security Manager
 ntlm                      :NTLM (NT LanManager) authentication support
 nxml                      :A new XML mode
-octave                    :Editing octave source files under emacs
 opascal                   :Major mode for editing Object Pascal source in Emacs
 outline                   :Outline mode commands for Emacs
-package                   :Simple package system for Emacs
 page-ext                  :Extended page handling commands
-paren                     :Highlight matching paren
 parse-time                :Parsing time strings
 pascal                    :Major mode for editing pascal source in Emacs
 password-cache            :Read passwords, possibly using a password cache
@@ -375,7 +401,6 @@ pcase                     :ML-style pattern-matching macro for Elisp
 pcomplete                 :Programmable completion
 pcvs                      :A front-end to CVS
 perl-mode                 :Perl code editing commands for GNU Emacs
-picture                   :"Picture mode" -- editing using quarter-plane screen model
 plstore                   :Secure plist store
 po                        :Basic support of PO translation files
 pong                      :Classical implementation of pong
@@ -394,9 +419,7 @@ python                    :Python's flying circus support for Emacs
 qp                        :Quoted-Printable functions
 quickurl                  :Insert a URL based on text at point in buffer
 radix-tree                :A simple library of radix trees
-rcirc                     :Default, simple IRC client
 re-builder                :Building Regexps with visual feedback
-recentf                   :Setup a menu of recently opened files
 refbib                    :Convert refer-style references to ones usable by Latex bib
 refer                     :Look up references in bibliography files
 refill                    :`auto-fill' by refilling paragraphs on changes
@@ -415,7 +438,6 @@ regexp-opt                :Generate efficient regexps to match strings
 regi                      :REGular expression Interpreting engine
 registry                  :Track and remember data items by various fields
 remember                  :A mode for quickly jotting down things to remember
-repeat                    :Convenient way to repeat the previous command
 reporter                  :Customizable bug reporting of lisp programs
 reposition                :Center a Lisp function or comment on the screen
 reveal                    :Automatically reveal hidden text at point
@@ -434,25 +456,18 @@ rst                       :Mode for viewing and editing reStructuredText-documen
 rtree                     :Functions for manipulating range trees
 ruby-mode                 :Major mode for editing Ruby files
 ruler-mode                :Display a ruler in the header line
-rx                        :S-exp notation for regexps           -
 sasl                      :SASL client framework
 savehist                  :Save minibuffer history
-saveplace                 :Automatically save place in files
 scheme                    :Scheme (and DSSSL) editing mode
-scroll-all                :Scroll all buffers together minor mode
-scroll-lock               :Scroll lock scrolling
 secrets                   :Client interface to gnome-keyring and kwallet
 select                    :Lisp portion of standard selection support
 semantic                  :Semantic buffer evaluator
 sendmail                  :Mail sending commands for Emacs
 seq                       :Sequence manipulation functions
 server                    :Lisp code for GNU Emacs running as server process
-ses                       :Simple Emacs Spreadsheet
-sgml-mode                 :SGML- and HTML-editing modes
 sh-script                 :Shell-script editing commands for Emacs
 shadow                    :Locate Emacs Lisp file shadowings
 shadowfile                :Automatic file copying
-shell                     :Specialized comint.el for running the shell
 shr                       :Simple HTML Renderer
 shr-color                 :Simple HTML Renderer color management
 sieve                     :Utilities to manage sieve scripts
@@ -460,12 +475,10 @@ sieve-manage              :Implementation of the managesieve protocol in elisp
 sieve-mode                :Sieve code editing commands for Emacs
 simula                    :SIMULA 87 code editing commands for Emacs
 skeleton                  :Lisp language extension for writing statement skeletons
-smerge-mode               :Minor mode to resolve diff3 conflicts
 smie                      :Simple Minded Indentation Engine
 smtpmail                  :Simple SMTP protocol (RFC 821) for sending mail
 snake                     :Implementation of Snake for Emacs
 snmp-mode                 :SNMP & SNMPv2 MIB major mode
-so-long                   :Say farewell to performance problems with minified code
 soap-client               :Access SOAP web services
 socks                     :A Socks v5 Client for Emacs
 solitaire                 :Game of solitaire in Emacs Lisp
@@ -475,11 +488,8 @@ speedbar                  :Quick access to files and tags in a frame
 spook                     :Spook phrase utility for overloading the NSA line eater
 sql                       :Specialized comint.el for SQL interpreters
 srecode                   :Semantic buffer evaluator
-strokes                   :Control Emacs through mouse strokes
 studly                    :StudlyCaps (tm)(r)(c)(xxx)
-subword                   :Handling capitalized subwords in a nomenclature
 supercite                 :Minor mode for citing mail and news replies
-svg                       :SVG image creation functions
 syntax                    :Helper functions to find syntactic context
 t-mouse                   :Mouse support within the text terminal
 tab-bar                   :Frame-local tabs with named persistent window configurations
@@ -490,8 +500,6 @@ talk                      :Allow several users to talk to each other through Ema
 tar-mode                  :Simple editing of tar files from GNU Emacs
 tcl                       :Tcl code editing commands for Emacs
 telnet                    :Run a telnet session from within an Emacs buffer
-tempo                     :Flexible template insertion
-term                      :General command interpreter in a window stuff
 testcover                 :Visual code-coverage tool
 tetris                    :Implementation of Tetris for Emacs
 tex-mode                  :TeX, LaTeX, and SliTeX mode commands
@@ -507,15 +515,12 @@ tildify                   :Adding hard spaces into texts
 time                      :Display time, load and mail indicator in mode line of Emacs
 time-date                 :Date and time handling functions
 time-stamp                :Maintain last change time stamps in files edited by Emacs
-timeclock                 :Mode for keeping track of how much you work
-timezone                  :Time zone package for GNU Emacs
 tmm                       :Text mode access to menu-bar
 todo-mode                 :Facilities for making and maintaining todo lists
 tq                        :Utility to maintain a transaction queue
 trace                     :Tracing facility for Emacs Lisp functions
 tree-widget               :Tree widget
 two-column                :Minor mode for editing of two-column text
-type-break                :Encourage rests from typing at appropriate intervals
 uce                       :Facilitate reply to unsolicited commercial email
 underline                 :Insert/remove underlining (done by overstriking) in Emacs
 undigest                  :Digest-cracking support for the RMAIL mail reader
@@ -529,16 +534,10 @@ vera-mode                 :Major mode for editing Vera files
 verilog-mode              :Major mode for editing verilog source in Emacs
 vhdl-mode                 :Major mode for editing VHDL code
 view                      :Peruse file or buffer without editing
-viper                     :A full-featured Vi emulator for Emacs
 vt-control                :Common VTxxx control functions
 vt100-led                 :Functions for LED control on VT-100 terminals & clones
 warnings                  :Log and display warnings
-wdired                    :Rename files editing their names in dired buffers
-webjump                   :Programmable Web hotlist
 which-func                :Print current function in mode line
-whitespace                :Minor mode to visualize TAB, (HARD) SPACE, NEWLINE
-windmove                  :Directional window-selection routines
-winner                    :Restore old window configurations
 woman                     :Browse UN*X manual pages `wo (without) man'
 xdg                       :XDG specification and standard support
 xml                       :XML parser
