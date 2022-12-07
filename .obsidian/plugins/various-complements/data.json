@@ -564,8 +564,8 @@
     "Apple Silicon": {
       "Apple Silicon": {
         "internalLink": {
-          "count": 1,
-          "lastUpdated": 1670145468283
+          "count": 3,
+          "lastUpdated": 1670412794641
         }
       }
     },
@@ -574,6 +574,14 @@
         "frontMatter": {
           "count": 1,
           "lastUpdated": 1670151018698
+        }
+      }
+    },
+    "->": {
+      "->": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1670412800903
         }
       }
     }

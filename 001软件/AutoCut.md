@@ -22,4 +22,4 @@ excerpt:
 ## Misc
 
 [[subed]]
-
+[COLOR-SKY/DialogueExtractor](https://github.com/COLOR-SKY/DialogueExtractor): A tool that extracts video clips using subtitles

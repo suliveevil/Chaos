@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "4e9dbb5700e84049",
+        "id": "9262f0c89ac9d745",
         "type": "tabs",
         "children": [
           {
-            "id": "cd120c1f0239ace8",
+            "id": "37e393e6803be8f2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "001软件/编辑器/Emacs/Emacs 内置插件和模式.md",
+                "file": "test.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "001软件/编辑器/Emacs/Emacs 内置插件和模式.md"
+                "file": "test.md"
               }
             }
           },
@@ -70,7 +70,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "001软件/编辑器/Emacs/Emacs 内置插件和模式.md",
+                "file": "test.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -120,7 +120,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "vc",
+                "query": "emacs  内置",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -135,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "001软件/编辑器/Emacs/Emacs 内置插件和模式.md",
+                "file": "test.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "001软件/编辑器/Emacs/Emacs 内置插件和模式.md",
+                "file": "test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,17 +173,17 @@
     "width": 273.5,
     "collapsed": true
   },
-  "active": "cd120c1f0239ace8",
+  "active": "37e393e6803be8f2",
   "lastOpenFiles": [
-    "broken links output.md",
-    "001软件/编辑器/Emacs/built-in/picture-mode.md",
+    "quick_start.md",
+    "001软件/编辑器/Emacs/built-in/context-menu-mode.md",
     "001软件/编辑器/Emacs/Emacs 内置插件和模式.md",
-    "001软件/编辑器/Emacs/built-in/flyspell.md",
-    "001软件/编辑器/Emacs/built-in/gnus.md",
-    "001软件/编辑器/Emacs/built-in/eshell.md",
-    "001软件/编辑器/Emacs/Emacs Mode.md",
-    "001软件/编辑器/Emacs/built-in/strokes-mode.md",
-    "001软件/编辑器/Emacs/built-in/rcirc.md",
-    "001软件/编辑器/Emacs/built-in/soap-client.el.md"
+    "001软件/编辑器/Emacs/artist-mode.md",
+    "001软件/AutoCut.md",
+    "主题/字幕.md",
+    "001软件/yaplon.md",
+    "主题/JSON.md",
+    "主题/表格.md",
+    "broken links output.md"
   ]
 }

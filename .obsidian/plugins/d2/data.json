@@ -1,0 +1,7 @@
+{
+  "layoutEngine": "dagre",
+  "debounce": 500,
+  "theme": 0,
+  "apiToken": "",
+  "d2Path": "/opt/homebrew/bin/d2"
+}

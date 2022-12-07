@@ -12,6 +12,8 @@ excerpt:
 EMMS
 EWW
 TMM：transient mark mode
+[[artist-mode]]
+[[context-menu-mode]]
 [[Dired]]
 [[Eglot]]：The Emacs Client for LSP servers
 [[Org-mode]]：Outline-based notes management and organizer

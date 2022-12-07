@@ -16,6 +16,10 @@ excerpt:
 
 [Video viewing in this custom Windows build of Emacs 28.1 (FAQ and more information in the comments soon) : emacs](https://www.reddit.com/r/emacs/comments/z6qcve/video_viewing_in_this_custom_windows_build_of/)
 
+```d2
+A -> B
+```
+
 # 一级标题
 
 ## 二级标题
