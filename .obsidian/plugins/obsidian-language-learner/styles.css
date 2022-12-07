@@ -53,7 +53,7 @@
   position: relative;
   overflow: hidden;
   padding-top: 10px;
-  transition: max-height .5s;
+  transition: max-height 1s cubic-bezier(0, 1, 0, 1);
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -87,7 +87,7 @@
 }
 .dict-item.expand .dict-item-body {
   max-height: 5000px;
-  transition: max-height 2s;
+  transition: max-height 2s ease-in-out;
 }
 .dict-item.open .fold-arrow {
   transform: rotate(-90deg);
@@ -408,6 +408,12 @@
 #langr-search .dict-area {
   flex: 1;
 }
+.is-mobile #langr-search button:not(.fold-mask) {
+  width: auto;
+}
+.is-mobile #langr-search input[type=text] {
+  padding: 0;
+}
 .count-bar {
   border: 2px solid black;
   height: 20px;
@@ -435,8 +441,18 @@
 #langr-reading {
   user-select: none;
 }
+#langr-reading .function-area {
+  padding-bottom: 10px;
+  border-bottom: 2px solid gray;
+}
+#langr-reading .function-area button {
+  width: auto;
+}
+#langr-reading .text-area {
+  touch-action: none;
+}
 #langr-reading .text-area span.word {
-  user-select: text;
+  user-select: contain;
   border: 1px solid transparent;
   cursor: pointer;
   border-radius: 4px;
@@ -473,6 +489,9 @@
 #langr-reading .text-area span .learned {
   background-color: #4cb05155;
 }
+#langr-reading .text-area span.other {
+  user-select: text;
+}
 #langr-reading .text-area .select {
   background-color: #90ee9060;
   padding-top: 3px;
@@ -499,6 +518,9 @@
   padding: 5px;
   margin-left: 2px;
   overflow: auto;
+}
+.is-mobile #langr-reading .pagination {
+  padding-bottom: 48px;
 }
 .word-more h2 {
   margin: .5em 0;
@@ -531,6 +553,12 @@
 #langr-data #data-tags {
   display: flex;
 }
+#langr-data .n-data-table-filter {
+  width: 19px;
+}
+#langr-data .n-data-table-th--filterable {
+  width: 19px;
+}
 #langr-data .n-data-table__pagination {
   justify-content: center;
 }
@@ -557,7 +585,7 @@
   border-radius: 5px;
   background-color: var(--background-secondary);
   z-index: 1000;
-  box-shadow: 0 0 6px 3px #cecece;
+  touch-action: none;
   box-shadow: var(--shadow-l);
 }
 #popup-search .pop-handle {
@@ -567,6 +595,9 @@
   background-color: var(--interactive-accent);
   cursor: move;
   display: flex;
+}
+#popup-search .pop-handle:active {
+  cursor: grab;
 }
 #popup-search .pop-handle .empty {
   flex: 1;
@@ -586,8 +617,16 @@
   transform: rotate(45deg);
 }
 #popup-search .pop-body {
-  height: 500px;
   width: 450px;
+}
+#popup-search .pop-body #langr-search {
+  max-height: 500px;
+}
+.is-mobile #popup-search .pop-body {
+  width: 350px;
+}
+.is-mobile #popup-search .pop-body #langr-search {
+  max-height: 300px;
 }
 
 /* src/main.css */

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "test.md",
+                "file": "001软件/编辑器/Emacs/built-in/diff-mode.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "test.md"
+                "file": "001软件/编辑器/Emacs/built-in/diff-mode.md"
               }
             }
           },
@@ -70,7 +70,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "test.md",
+                "file": "001软件/编辑器/Emacs/built-in/diff-mode.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -135,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "test.md",
+                "file": "001软件/编辑器/Emacs/built-in/diff-mode.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "test.md",
+                "file": "001软件/编辑器/Emacs/built-in/diff-mode.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -176,6 +176,7 @@
   "active": "37e393e6803be8f2",
   "lastOpenFiles": [
     "quick_start.md",
+    "test.md",
     "001软件/编辑器/Emacs/built-in/context-menu-mode.md",
     "001软件/编辑器/Emacs/Emacs 内置插件和模式.md",
     "001软件/编辑器/Emacs/artist-mode.md",
@@ -183,7 +184,6 @@
     "主题/字幕.md",
     "001软件/yaplon.md",
     "主题/JSON.md",
-    "主题/表格.md",
-    "broken links output.md"
+    "主题/表格.md"
   ]
 }
