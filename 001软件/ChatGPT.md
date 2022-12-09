@@ -1,7 +1,9 @@
 
 
 
+[vincelwt/chatgpt-mac](https://github.com/vincelwt/chatgpt-mac): ChatGPT for Mac, living in your menubar.
 
+[ginqi7/websocket-bridge-chatGPT](https://github.com/ginqi7/websocket-bridge-chatGPT)
 
 [[ChatGPT.nvim]]
 

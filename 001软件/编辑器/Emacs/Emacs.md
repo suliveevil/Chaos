@@ -429,6 +429,7 @@ Emacs Lisp - An Introduction
 
 ## Emacs elsewhere
 
+[XKeymacs](http://www.cam.hi-ho.ne.jp/oishi/indexen.html)
 
 [stsquad/emacs_chrome](https://github.com/stsquad/emacs_chrome): A Chromium "clone" of It's All Text for spawning an editor to edit text areas in browsers. Based on David Hilley's original Chromium extension.
 

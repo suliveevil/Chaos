@@ -34,7 +34,8 @@ iPad Pro 2020:第四代 iPad Pro 增加激光雷达
 [[macOS]]
 [[watchOS]]
 [[tvOS]]
-
+[[realityOS]]
+[[xrOS]]
 
 ## 软件
 

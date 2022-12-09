@@ -55,7 +55,7 @@ brew install d12frosted/emacs-plus/emacs-plus@30 --with-dbus --with-debug --with
 
 
 # 重装（不建议使用brew reinstall）
-brew uninstall d12frosted/emacs-plus/emacs-plus@29
+brew uninstall d12frosted/emacs-plus/emacs-plus@30
 brew install d12frosted/emacs-plus/emacs-plus@30
 ```
 

@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "9262f0c89ac9d745",
+        "id": "7ec0085652ee00c1",
         "type": "tabs",
         "children": [
           {
-            "id": "37e393e6803be8f2",
+            "id": "dcc975514a2f1e26",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "001软件/编辑器/Emacs/built-in/diff-mode.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -48,9 +43,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "001软件/编辑器/Emacs/built-in/diff-mode.md"
-              }
+              "state": {}
             }
           },
           {
@@ -70,7 +63,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "001软件/编辑器/Emacs/built-in/diff-mode.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -103,8 +95,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.5,
-    "collapsed": true
+    "width": 245.5
   },
   "right": {
     "id": "06dc78a8e45ad1e3",
@@ -120,7 +111,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "emacs  内置",
+                "query": "easyocr",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -135,7 +126,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "001软件/编辑器/Emacs/built-in/diff-mode.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +142,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "001软件/编辑器/Emacs/built-in/diff-mode.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,17 +162,17 @@
     "width": 273.5,
     "collapsed": true
   },
-  "active": "37e393e6803be8f2",
+  "active": "dcc975514a2f1e26",
   "lastOpenFiles": [
-    "quick_start.md",
-    "test.md",
-    "001软件/编辑器/Emacs/built-in/context-menu-mode.md",
-    "001软件/编辑器/Emacs/Emacs 内置插件和模式.md",
-    "001软件/编辑器/Emacs/artist-mode.md",
-    "001软件/AutoCut.md",
-    "主题/字幕.md",
-    "001软件/yaplon.md",
-    "主题/JSON.md",
-    "主题/表格.md"
+    "001软件/PaddleOCR.md",
+    "001软件/(Not Boring) Habits.md",
+    "未命名.md",
+    "001软件/EasyOCR.md",
+    "001软件/Buzz.md",
+    "001软件/编辑器/Emacs/Emacs 快捷键.md",
+    "主题/键盘.md",
+    "001软件/FSMonitor.md",
+    "001软件/Little Snitch.md",
+    "主题/安全软件.md"
   ]
 }

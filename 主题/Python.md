@@ -19,6 +19,10 @@ excerpt:
 brew isntall python3
 ```
 
+## compiler
+
+[exaloop/codon](https://github.com/exaloop/codon): A high-performance, zero-overhead, extensible Python compiler using [[LLVM]]
+
 
 ## LSP
 

@@ -240,6 +240,7 @@ if point is at end of line , new-line-and-indent"
 [jixiuf/vmacs](https://github.com/jixiuf/vmacs)：Vim Emacs 双修
 [emacs配置 - 果丁 - 博客园](https://www.cnblogs.com/wuyuans/p/4214088.html)
 [王垠（Yin Wang）](https://docs.huihoo.com/homepage/shredderyin/index.html)
+[zhcosin/dotemacs](https://github.com/zhcosin/dotemacs): 主要配置了evil, magit, helm, latex, python 等环境.
 [ksqsf/emacs-config](https://github.com/ksqsf/emacs-config): Back-up of my finely tweaked Emacs configuration
 [qdzhang/vanilla-emacs](https://github.com/qdzhang/vanilla-emacs): Vanilla emacs config
 [junjiemars/.emacs.d](https://github.com/junjiemars/.emacs.d): Nore Emacs on MacOS, Windows and Linux
