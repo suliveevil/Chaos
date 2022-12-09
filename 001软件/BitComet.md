@@ -1,14 +1,23 @@
 ---
 title: "BitComet"
-categories: 
+categories:
 date: 2022-09-24 09:36:46 +0800
 tags: 文件下载
-excerpt: 
+excerpt:
 ---
 
 [BitComet](https://www.bitcomet.com/en)
 
+## 功能
 
+BitTorrent
+HTTP
+FTP
+Magnet Link
+HTTP Seeding
+DHT network
+UDP tracker Protocol v2
+ED2K(plugin)
 
 ## 竞品
 

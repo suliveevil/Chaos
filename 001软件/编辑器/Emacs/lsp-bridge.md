@@ -1,9 +1,9 @@
 ---
 title: "lsp-bridge"
-categories: 
+categories:
 date: 2022-09-29 01:37:18 +0800
 tags: Emacs 补全 LSP
-excerpt: 
+excerpt:
 ---
 
 
@@ -79,6 +79,8 @@ Alt+`,`：选择第一个侯选词
 [metaescape/Wen](https://github.com/metaescape/Wen): 面向 org-mode 个人知识管理的语言服务试验场
 
 ## 竞品
+
+[vritser/lsp-rocks](https://github.com/vritser/lsp-rocks)
 
 [[Eglot]]
 

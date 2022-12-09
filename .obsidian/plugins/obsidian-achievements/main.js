@@ -1639,10 +1639,6 @@ var AchievementsView2 = class extends import_obsidian4.ItemView {
 
 // src/main.ts
 var AchievementsPlugin = class extends import_obsidian5.Plugin {
-  constructor() {
-    super(...arguments);
-    this.uninstallCommands = [];
-  }
   async onload() {
     console.log("loading Achievements plugin");
     await this.loadSettings();
@@ -1652,12 +1648,17 @@ var AchievementsPlugin = class extends import_obsidian5.Plugin {
       this.handleFileCreateUpdateDelete(file, cache);
     }));
     this.registerEvent(this.app.metadataCache.on("deleted", (file, _prevCache) => this.handleFileCreateUpdateDelete(file)));
-    this.uninstallCommands.push(onCommandTrigger("command-palette:open", async () => {
+    this.register(onCommandTrigger("command-palette:open", async () => {
       this.settings.commandPaletteOpened += 1;
       this.getNewAchievementMaybe("commandPaletteOpened");
       await this.saveSettings();
     }));
-    this.uninstallCommands.push(onCommandTrigger("switcher:open", async () => {
+    this.register(onCommandTrigger("command-palette:open", async () => {
+      this.settings.commandPaletteOpened += 1;
+      this.getNewAchievementMaybe("commandPaletteOpened");
+      await this.saveSettings();
+    }));
+    this.register(onCommandTrigger("switcher:open", async () => {
       this.settings.quickSwitcherOpened += 1;
       this.getNewAchievementMaybe("quickSwitcherOpened");
       await this.saveSettings();
@@ -1674,9 +1675,6 @@ var AchievementsPlugin = class extends import_obsidian5.Plugin {
   onunload() {
     console.log("unloading Achievements plugin");
     this.app.workspace.detachLeavesOfType(VIEW_TYPE_ACHIEVEMENTS);
-    this.uninstallCommands.forEach((uninstallCommand) => {
-      uninstallCommand();
-    });
   }
   async loadSettings() {
     this.settings = Object.assign({}, DEFAULT_SETTINGS, await this.loadData());
@@ -1708,7 +1706,11 @@ var AchievementsPlugin = class extends import_obsidian5.Plugin {
     return this.app.vault.getMarkdownFiles().length;
   }
   getInternalLinksCount() {
-    return this.app.fileManager.getAllLinkResolutions().length;
+    let count = 0;
+    this.app.metadataCache.iterateReferences(() => {
+      count++;
+    });
+    return count;
   }
   getTagsCount() {
     const tagsObj = this.app.metadataCache.getTags();

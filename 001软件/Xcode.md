@@ -1,9 +1,9 @@
 ---
 title: "Xcode"
-categories: 
+categories:
 date: 2022-09-25 23:13:51 +0800
 tags: macOS Swift IDE 编译器
-excerpt: 
+excerpt:
 ---
 
 [[iOS]]、[[iPadOS]]、[[macOS]]、[[tvOS]]、[[watchOS]] App 开发 [[IDE]]。官网：[Xcode - Apple Developer](https://developer.apple.com/cn/xcode/)
@@ -19,7 +19,10 @@ Mac App Store 版
 
 双击解压缩并安装
 
-
+关闭 Xcode 广告
+```shell
+defaults write com.apple.dt.Xcode XcodeCloudUpsellPromptEnabled -bool false
+```
 
 ## 子 App
 

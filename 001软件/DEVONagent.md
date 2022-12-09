@@ -19,6 +19,8 @@
 
 [[Liquid]]
 
+[[ChatGPT]]
+
 ## Misc
 
 

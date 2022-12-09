@@ -19,6 +19,8 @@ excerpt:
 
 ## Misc
 
-[casouri/xeft](https://github.com/casouri/xeft): Xiapian emacs dynamic module
+[[xeft]]
+
+
 
 

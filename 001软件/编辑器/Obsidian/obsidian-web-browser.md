@@ -1,9 +1,9 @@
 ---
 title: "obsidian-web-browser"
-categories: 
+categories:
 date: 2022-10-13 23:11:48 +0800
-tags: 
-excerpt: 
+tags:
+excerpt:
 ---
 
 
@@ -11,9 +11,9 @@ excerpt:
 
 
 
+## 竞品
 
-
-
+[Quorafind/Obsidian-Surfing](https://github.com/Quorafind/Obsidian-Surfing): An Obsidian plugin that lets you browse the web within Obsidian.
 
 
 

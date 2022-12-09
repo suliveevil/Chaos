@@ -16,7 +16,7 @@
   "showComplementAutomatically": true,
   "showIndexingStatus": true,
   "descriptionOnSuggestion": "Full",
-  "selectSuggestionKeys": "Space",
+  "selectSuggestionKeys": "Ctrl/Cmd+Enter",
   "additionalCycleThroughSuggestionsKeys": "Tab, Shift+Tab",
   "disableUpDownKeysForCycleThroughSuggestionsKeys": true,
   "openSourceFileKey": "Ctrl/Cmd+Enter",
@@ -590,6 +590,46 @@
         "internalLink": {
           "count": 1,
           "lastUpdated": 1670522449340
+        }
+      }
+    },
+    "哒": {
+      "哒": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1670588184896
+        }
+      }
+    },
+    "哈": {
+      "哈": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1670588494801
+        }
+      }
+    },
+    "嗣": {
+      "嗣": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1670836125863
+        }
+      }
+    },
+    "丽": {
+      "丽": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1670836138528
+        }
+      }
+    },
+    "半田君传说": {
+      "半田君传说": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1670891216492
         }
       }
     }

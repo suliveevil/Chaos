@@ -1,9 +1,9 @@
 ---
 title: "Little Snitch"
-categories: 
+categories:
 date: 2022-09-26 23:51:37 +0800
 tags: macOS 网络 防火墙
-excerpt: 
+excerpt:
 ---
 
 防火墙 App
@@ -45,4 +45,5 @@ NextTrace：一款开源的可视化路由跟踪工具，使用 Golang 开发。
 
 [[FSMonitor]]
 
+[Samhain Labs](https://www.la-samhna.de/index.html)
 

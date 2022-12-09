@@ -1,10 +1,10 @@
 ---
 title: "Apple终端"
-author: 
-categories: 
+author:
+categories:
 date: 2022-10-13 15:28:00 +0800
-tags: 
-excerpt: 
+tags:
+excerpt:
 ---
 
 
@@ -60,7 +60,9 @@ printf '%s\n' ${PATH//:/\/* } | xargs -n 1 basename > commands.txt
 /opt/homebrew/sbin
 /usr/local/bin
 ```
+## 生态
 
+[roy2220/osc52pty](https://github.com/roy2220/osc52pty): OSC 52 workaround for Terminal.app
 
 ## 竞品
 

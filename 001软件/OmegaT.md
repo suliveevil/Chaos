@@ -26,7 +26,7 @@ Crowdin
 
 Apertium
 
-SDL Trados Studio
+[[Trados]]
 
 LF Aligner
 

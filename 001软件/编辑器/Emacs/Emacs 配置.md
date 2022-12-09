@@ -247,6 +247,7 @@ if point is at end of line , new-line-and-indent"
 
 ## 国际用户
 
+[Likhon-baRoy/.emacs.d](https://github.com/Likhon-baRoy/.emacs.d#readme): Dream Emacs 🫶
 [technomancy/better-defaults - sourcehut git](https://git.sr.ht/~technomancy/better-defaults)
 [sachac/.emacs.d](https://github.com/sachac/.emacs.d): [Sacha Chua's Emacs configuration](https://sachachua.com/dotemacs/index.html)
 [[Doom Emacs]]
@@ -296,6 +297,8 @@ if point is at end of line , new-line-and-indent"
 [Domse007/.emacs.d](https://github.com/Domse007/.emacs.d)
 
 ### Doom
+
+[tecosaur/emacs-config](https://github.com/tecosaur/emacs-config): My configuration for Doom Emacs. Mirror of https://git.tecosaur.net/tec/emacs-config.
 
 [slano-ls/Doom-Emacs-Config](https://github.com/slano-ls/Doom-Emacs-Config): My (Illiterate) Literate Doom Emacs Config
 

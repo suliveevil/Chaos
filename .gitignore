@@ -3,5 +3,6 @@
 **/.DS_Store
 **/._.DS_Store
 /.trash
-.obsidian/workspace
+.obsidian/workspace.json
+.obsidian/workspaces.json
 .xeft-db/

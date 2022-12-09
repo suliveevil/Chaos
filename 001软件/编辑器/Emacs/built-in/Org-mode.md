@@ -1,9 +1,9 @@
 ---
 title: "Org-mode"
-categories: 
+categories:
 date: 2022-09-23 23:19:35 +0800
 tags: Emacs
-excerpt: 
+excerpt:
 ---
 
 [[Emacs]] 插件，基于 [[outline-mode]]，支持[[文学编程]]
@@ -88,6 +88,8 @@ Metadata
 [[beorg]]
 
 ### 其他
+
+[jml/obsidian-to-org](https://github.com/jml/obsidian-to-org): Convert an Obsidian directory to org-roam
 
 [[GitHub]] Readme 支持 Org 格式
 [[Logseq]] 支持 Org 格式

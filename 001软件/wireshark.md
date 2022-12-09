@@ -9,6 +9,13 @@ excerpt:
 [Wireshark · Go Deep.](https://www.wireshark.org)
 Wireshark is the world’s foremost and widely-used network protocol analyzer. It lets you see what’s happening on your network at a microscopic level and is the de facto (and often de jure) standard across many commercial and non-profit enterprises, government agencies, and educational institutions. Wireshark development thrives thanks to the volunteer contributions of networking experts around the globe and is the continuation of a project started by Gerald Combs in 1998.
 
+## 安装
+
+[macos中安装wireshark | 威格灵](http://www.gaohaiyan.com/2674.html)
+
+```shell
+sudo chmod 777 /dev/bpf*
+```
 
 
 ## 过滤器

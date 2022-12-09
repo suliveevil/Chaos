@@ -1,9 +1,9 @@
 ---
 title: "blink-search"
-categories: 
+categories:
 date: 2022-09-30 00:43:00 +0800
 tags: Emacs 模糊搜索
-excerpt: 
+excerpt:
 ---
 
 
@@ -81,4 +81,6 @@ grep-dired
 [[telescope.nvim]]
 
 [[ugrep]]
+
+[agzam/browser-hist.el](https://github.com/agzam/browser-hist.el): Search through browser history, in Emacs
 

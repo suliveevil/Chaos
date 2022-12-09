@@ -214,6 +214,8 @@ Bear
 
 Lattics
 
+[Meogic](https://meogic.com/zh/)
+
 ### 导入
 
 [ze-kel/DayOne-JSON-to-MD](https://github.com/ze-kel/DayOne-JSON-to-MD): Converts json from Day One app to Markdown. Intended for transferring from DayOne to Obsidian but should work with everything else. =====UPDATE=====: I made it to solve my specific need, and not really interested in working on it any further. Check out forks though, there seems to be a few improved implementations.

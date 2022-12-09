@@ -117,13 +117,31 @@ reveal-mode
 
 [hungyiloo/titular.el](https://github.com/hungyiloo/titular.el): 🔠 Smart title casing in Emacs
 
-## 编辑模式
+## 编辑模式/快捷键/macro
 
 [[meow-edit]]
 avy
 [[emacs-evil]]
 sniem
 snail
+
+[shapr/markovkeyboard](https://github.com/shapr/markovkeyboard): keyboard layout that changes by markov frequency
+
+[superhandy/handy-mode](https://github.com/superhandy/handy-mode): A progressive way to change your default Emacs keyboard shortcuts into something sane
+
+[madand/keymacs-madand](https://github.com/madand/keymacs-madand): Variant of the Keymacs keyboard layout
+
+[flexibeast/dkl](https://github.com/flexibeast/dkl): An ASCII-art representation of a keyboard layout, within an Emacs buffer.
+
+[defaultxr/piano-mode](https://github.com/defaultxr/piano-mode): Turn your keyboard into a "piano" in Emacs
+
+[vifon/kmacro-x.el](https://github.com/vifon/kmacro-x.el): A collection of Emacs commands, modes and functions building on top of the keyboard macros (kmacros) system.
+
+[NicholasBHubbard/reckmac.el](https://github.com/NicholasBHubbard/reckmac.el): Recursive keyboard macros
+
+[CsBigDataHub/emacros](https://github.com/CsBigDataHub/emacros): Emacros: A Package for Organizing and Handling Keyboard Macros in GNU Emacs
+
+
 
 ## 数据分析
 
@@ -132,6 +150,14 @@ snail
 ## 文件管理器
 
 [[dirvish]]
+
+## 幻灯片
+
+[[ox-spectacle]]
+
+[[ox-reveal]]
+
+
 
 ## 时间管理
 
@@ -168,13 +194,20 @@ helm
 
 [[dtache]]
 
+[Alex Branham / system-packages - GitLab](https://gitlab.com/jabranham/system-packages)
+
 ## App集成/联动
 
 黑科技：[[telega.el]]
 
+
+
+
 ## 硬件交互
 
 [[emacs-camera]]
+
+[mihaiolteanu/mugur](https://github.com/mihaiolteanu/mugur): Configurator for QMK compatible keyboards
 
 ## 触摸屏
 
@@ -210,6 +243,8 @@ helm
 [data-niklas/chanel](https://github.com/data-niklas/chanel): Emacs Lisp imageboard viewer for 4chan, 8chan and similar imageboards
 
 ## 在线查询
+
+[[engine-mode]]
 
 [[wordreference.el]]
 
@@ -274,6 +309,10 @@ helm
 [gongo/emacs-nes](https://github.com/gongo/emacs-nes): A NES Emulator written in Emacs Lisp
 
 ## 娱乐
+
+[alphapapa/snow.el](https://github.com/alphapapa/snow.el): Let it snow in Emacs!
+
+[johanvts/emacs-fireplace](https://github.com/johanvts/emacs-fireplace): A cozy fireplace for emacs.
 
 [dieggsy/emacs-hacker-typer](https://github.com/dieggsy/emacs-hacker-typer): A customizable implementation of http://hackertyper.com in emacs.
 

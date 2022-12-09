@@ -1,19 +1,16 @@
 ---
 title: "DNS"
-categories: 
+categories:
 date: 2022-10-29 15:34:32 +0800
-tags: 
+tags:
 excerpt: 域名解析系统：Domain Name System
 ---
 
 根服务器、顶级域、二级域
 
-
-
 [badmojr/1Hosts](https://github.com/badmojr/1Hosts): World's most advanced DNS filter-/blocklists!
 
-
-
+[felixonmars/dnsmasq-china-list](https://github.com/felixonmars/dnsmasq-china-list): Chinese-specific configuration to improve your favorite DNS server. Best partner for chnroutes.
 
 
 
