@@ -1,10 +1,11 @@
 ---
-title: "Spacemacs 快捷键"
-author: 
-categories: 
+title: Spacemacs 快捷键
+author:
+categories:
 date: 2022-10-10 15:34:24 +0800
-tags: 快捷键
-excerpt: 
+tags:
+  - 快捷键
+excerpt:
 ---
 
 

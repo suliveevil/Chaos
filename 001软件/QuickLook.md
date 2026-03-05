@@ -1,8 +1,9 @@
 ---
-title: "QuickLook"
+title: QuickLook
 categories:
 date: 2022-10-05 03:28:15 +0800
-tags: macOS
+tags:
+  - macOS
 excerpt:
 ---
 

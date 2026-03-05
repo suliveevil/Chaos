@@ -1,9 +1,10 @@
 ---
-title: "KeyCastr"
-categories: 
+title: KeyCastr
+categories:
 date: 2022-09-26 23:50:06 +0800
-tags: macOS
-excerpt: 
+tags:
+  - macOS
+excerpt:
 ---
 
 [keycastr/keycastr](https://github.com/keycastr/keycastr): an open-source keystroke visualizer.

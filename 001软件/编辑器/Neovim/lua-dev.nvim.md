@@ -1,9 +1,11 @@
 ---
-title: "lua-dev.nvim"
-categories: 
+title: lua-dev.nvim
+categories:
 date: 2022-09-24 18:27:22 +0800
-tags: Neovim Lua
-excerpt: 
+tags:
+  - Neovim
+  - Lua
+excerpt:
 ---
 
 [[Neovim 插件]]

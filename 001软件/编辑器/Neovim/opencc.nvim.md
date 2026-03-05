@@ -1,9 +1,11 @@
 ---
-title: "opencc.nvim"
-categories: 
+title: opencc.nvim
+categories:
 date: 2022-09-25 19:52:37 +0800
-tags: Neovim 中文
-excerpt: 
+tags:
+  - Neovim
+  - 中文
+excerpt:
 ---
 
 [stvhuang/opencc.nvim](https://github.com/stvhuang/opencc.nvim): [[Neovim]] plugin for Traditional-Simplified Chinese conversion, powered by OpenCC, written in [[Lua]].

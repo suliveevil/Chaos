@@ -1,9 +1,11 @@
 ---
-title: "sdcv.el"
-categories: 
+title: sdcv.el
+categories:
 date: 2022-09-30 00:42:29 +0800
-tags: Emacs 词典
-excerpt: 
+tags:
+  - Emacs
+  - 词典
+excerpt:
 ---
 
 

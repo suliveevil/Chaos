@@ -1,10 +1,12 @@
 ---
-title: "Little Tagger"
-author: 
-categories: 
+title: Little Tagger
+author:
+categories:
 date: 2022-10-02 08:52:51 +0800
-tags: macOS 文件管理
-excerpt: 
+tags:
+  - macOS
+  - 文件管理
+excerpt:
 ---
 
 

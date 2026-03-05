@@ -1,9 +1,10 @@
 ---
-title: "easy-typing-obsidian"
-categories: 
+title: easy-typing-obsidian
+categories:
 date: 2022-09-27 07:08:58 +0800
-tags: Obsidian
-excerpt: 
+tags:
+  - Obsidian
+excerpt:
 ---
 
 

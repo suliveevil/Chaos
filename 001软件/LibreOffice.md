@@ -1,9 +1,10 @@
 ---
-title: "LibreOffice"
-categories: 
+title: LibreOffice
+categories:
 date: 2022-09-26 01:57:49 +0800
-tags: 自由软件
-excerpt: 
+tags:
+  - 自由软件
+excerpt:
 ---
 
 

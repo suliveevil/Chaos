@@ -1,9 +1,10 @@
 ---
-title: "Google Chrome"
-categories: 
+title: Google Chrome
+categories:
 date: 2022-09-30 00:55:58 +0800
-tags: 浏览器
-excerpt: 
+tags:
+  - 浏览器
+excerpt:
 ---
 
 [[Google]]旗下浏览器

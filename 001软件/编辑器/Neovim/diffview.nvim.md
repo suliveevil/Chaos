@@ -1,9 +1,11 @@
 ---
-title: "diffview.nvim"
-categories: 
+title: diffview.nvim
+categories:
 date: 2022-10-02 19:42:14 +0800
-tags: Neovim 文件对比
-excerpt: 
+tags:
+  - Neovim
+  - 文件对比
+excerpt:
 ---
 
 

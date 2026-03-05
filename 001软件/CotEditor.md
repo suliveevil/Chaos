@@ -1,9 +1,12 @@
 ---
-title: "CotEditor"
-categories: 
+title: CotEditor
+categories:
 date: 2022-09-26 23:37:42 +0800
-tags: macOS 文本编辑器 Swift
-excerpt: 
+tags:
+  - macOS
+  - 文本编辑器
+  - Swift
+excerpt:
 ---
 
 

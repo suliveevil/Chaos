@@ -1,9 +1,11 @@
 ---
-title: "vim-alith"
-categories: 
+title: vim-alith
+categories:
 date: 2022-10-06 02:26:19 +0800
-tags: Vim vim9
-excerpt: 
+tags:
+  - Vim
+  - vim9
+excerpt:
 ---
 
 

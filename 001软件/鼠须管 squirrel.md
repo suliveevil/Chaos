@@ -1,9 +1,12 @@
 ---
-title: "鼠须管 squirrel"
-categories: 
+title: 鼠须管 squirrel
+categories:
 date: 2022-09-27 00:07:05 +0800
-tags: macOS 输入法 自由软件
-excerpt: 
+tags:
+  - macOS
+  - 输入法
+  - 自由软件
+excerpt:
 ---
 
 

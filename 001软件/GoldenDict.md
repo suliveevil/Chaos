@@ -1,10 +1,12 @@
 ---
-title: "GoldenDict"
-author: 
-categories: 
+title: GoldenDict
+author:
+categories:
 date: 2022-10-03 07:45:57 +0800
-tags: macOS 词典
-excerpt: 
+tags:
+  - macOS
+  - 词典
+excerpt:
 ---
 
 词典

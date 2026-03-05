@@ -1,9 +1,10 @@
 ---
-title: "CustomShortcuts"
-categories: 
+title: CustomShortcuts
+categories:
 date: 2022-09-26 23:37:25 +0800
-tags: macOS
-excerpt: 
+tags:
+  - macOS
+excerpt:
 ---
 
 

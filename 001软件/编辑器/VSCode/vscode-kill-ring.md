@@ -1,10 +1,12 @@
 ---
-title: "vscode-kill-ring"
-author: 
-categories: 
+title: vscode-kill-ring
+author:
+categories:
 date: 2022-10-12 13:30:52 +0800
-tags: VSCode 剪贴板
-excerpt: 
+tags:
+  - VSCode
+  - 剪贴板
+excerpt:
 ---
 
 

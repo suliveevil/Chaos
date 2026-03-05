@@ -1,9 +1,11 @@
 ---
-title: "Moom"
-categories: 
+title: Moom
+categories:
 date: 2022-09-24 03:10:12 +0800
-tags: macOS 窗口管理
-excerpt: 
+tags:
+  - macOS
+  - 窗口管理
+excerpt:
 ---
 
 

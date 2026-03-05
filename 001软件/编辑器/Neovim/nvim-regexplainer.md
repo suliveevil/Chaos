@@ -1,9 +1,11 @@
 ---
-title: "nvim-regexplainer"
-categories: 
+title: nvim-regexplainer
+categories:
 date: 2022-09-25 01:32:17 +0800
-tags: Neovim 正则表达式
-excerpt: 
+tags:
+  - Neovim
+  - 正则表达式
+excerpt:
 ---
 
 [[Neovim 插件]]

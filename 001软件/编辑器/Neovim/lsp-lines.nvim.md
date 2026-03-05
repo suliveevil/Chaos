@@ -1,10 +1,12 @@
 ---
-title: "lsp-lines.nvim"
-author: 
-categories: 
+title: lsp-lines.nvim
+author:
+categories:
 date: 2022-10-16 04:07:56 +0800
-tags: Neovim LSP
-excerpt: 
+tags:
+  - Neovim
+  - LSP
+excerpt:
 ---
 
 

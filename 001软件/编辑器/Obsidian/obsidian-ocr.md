@@ -1,9 +1,10 @@
 ---
-title: "obsidian-ocr"
-categories: 
+title: obsidian-ocr
+categories:
 date: 2022-10-24 07:31:26 +0800
-tags: OCR
-excerpt: 
+tags:
+  - OCR
+excerpt:
 ---
 
 

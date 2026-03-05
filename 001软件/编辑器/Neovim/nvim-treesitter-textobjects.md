@@ -1,9 +1,11 @@
 ---
-title: "nvim-treesitter-textobjects"
-categories: 
+title: nvim-treesitter-textobjects
+categories:
 date: 2022-09-25 19:14:55 +0800
-tags: Neovim 文本对象
-excerpt: 
+tags:
+  - Neovim
+  - 文本对象
+excerpt:
 ---
 
 

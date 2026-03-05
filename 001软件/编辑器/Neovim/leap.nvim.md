@@ -1,10 +1,12 @@
 ---
-title: "leap.nvim"
-author: 
-categories: 
+title: leap.nvim
+author:
+categories:
 date: 2022-10-02 10:02:52 +0800
-tags: Neovim Fennel
-excerpt: 
+tags:
+  - Neovim
+  - Fennel
+excerpt:
 ---
 
 

@@ -1,9 +1,11 @@
 ---
-title: "cybu.nvim"
-categories: 
+title: cybu.nvim
+categories:
 date: 2022-09-24 03:24:06 +0800
-tags: Neovim Buffer
-excerpt: 
+tags:
+  - Neovim
+  - Buffer
+excerpt:
 ---
 
 [[Neovim 插件]]

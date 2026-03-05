@@ -1,9 +1,11 @@
 ---
-title: "VSCode 快捷键"
+title: VSCode 快捷键
 author:
 categories:
 date: 2022-10-10 15:30:10 +0800
-tags: VSCode 快捷键
+tags:
+  - VSCode
+  - 快捷键
 excerpt:
 ---
 

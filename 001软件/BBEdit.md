@@ -1,10 +1,11 @@
 ---
-title: "BBEdit"
-author: 
-categories: 
+title: BBEdit
+author:
+categories:
 date: 2022-10-09 17:28:44 +0800
-tags: 文本编辑器
-excerpt: 
+tags:
+  - 文本编辑器
+excerpt:
 ---
 
 

@@ -1,10 +1,12 @@
 ---
-title: "vim-move"
-author: 
-categories: 
+title: vim-move
+author:
+categories:
 date: 2022-10-02 09:58:27 +0800
-tags: Vim 文本编辑
-excerpt: 
+tags:
+  - Vim
+  - 文本编辑
+excerpt:
 ---
 
 

@@ -1,9 +1,11 @@
 ---
-title: "el-get"
-categories: 
+title: el-get
+categories:
 date: 2022-09-30 04:00:35 +0800
-tags: Emacs 包管理器
-excerpt: 
+tags:
+  - Emacs
+  - 包管理器
+excerpt:
 ---
 
 [[Emacs 插件]]

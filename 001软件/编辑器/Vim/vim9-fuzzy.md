@@ -1,9 +1,12 @@
 ---
 title: ""
-categories: 
+categories:
 date: 2022-09-25 18:09:14 +0800
-tags: Vim 文件搜索 vim9
-excerpt: 
+tags:
+  - Vim
+  - 文件搜索
+  - vim9
+excerpt:
 ---
 
 

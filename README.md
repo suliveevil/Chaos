@@ -1,8 +1,10 @@
 ---
-title: "Obsidian"
+title: Obsidian
 categories: Software
 date: 2022-09-04 00:34:33 +0800
-tags: Markdown 知识管理
+tags:
+  - Markdown
+  - 知识管理
 excerpt: Obsidian 既是一个 Markdown 编辑器，也是一个知识管理软件。
 ---
 

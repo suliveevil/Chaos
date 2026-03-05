@@ -1,7 +1,13 @@
 ---
-title: "mermaid"
+title: mermaid
 categories: IT Software
-tags: Markdown mermaid 图表 流程图 时序图 甘特图
+tags:
+  - Markdown
+  - mermaid
+  - 图表
+  - 流程图
+  - 时序图
+  - 甘特图
 excerpt: presenting graphs(diagram and chart) in markdown using mermaid.
 ---
 

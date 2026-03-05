@@ -1,9 +1,10 @@
 ---
-title: "Ctrl+K"
-categories: 
+title: Ctrl+K
+categories:
 date: 2022-09-30 04:33:42 +0800
-tags: 快捷键
-excerpt: 
+tags:
+  - 快捷键
+excerpt:
 ---
 
 

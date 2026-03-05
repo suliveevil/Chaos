@@ -1,9 +1,12 @@
 ---
-title: "emacs-evil"
-categories: 
+title: emacs-evil
+categories:
 date: 2022-09-27 20:36:54 +0800
-tags: Emacs Vim 快捷键管理
-excerpt: 
+tags:
+  - Emacs
+  - Vim
+  - 快捷键管理
+excerpt:
 ---
 
 [[Emacs 插件]]

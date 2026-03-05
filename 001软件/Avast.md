@@ -1,9 +1,11 @@
 ---
-title: "Avast"
-categories: 
+title: Avast
+categories:
 date: 2022-09-24 00:40:53 +0800
-tags: 软件 安全
-excerpt: 
+tags:
+  - 软件
+  - 安全
+excerpt:
 ---
 
 [TOC]

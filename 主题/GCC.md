@@ -1,8 +1,9 @@
 ---
-title: "GCC"
+title: GCC
 categories:
 date: 2022-10-05 03:46:31 +0800
-tags: GNU
+tags:
+  - GNU
 excerpt: GNU Compiler Collection，原 GNU C Complier
 ---
 

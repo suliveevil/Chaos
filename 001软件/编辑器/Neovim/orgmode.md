@@ -1,9 +1,10 @@
 ---
-title: "nvim-orgmode"
-categories: 
+title: nvim-orgmode
+categories:
 date: 2022-09-23 23:18:45 +0800
-tags: Neovim
-excerpt: 
+tags:
+  - Neovim
+excerpt:
 ---
 
 [[Neovim 插件]]

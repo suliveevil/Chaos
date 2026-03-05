@@ -1,9 +1,11 @@
 ---
-title: "modes.nvim"
-categories: 
+title: modes.nvim
+categories:
 date: 2022-09-30 11:57:47 +0800
-tags: Neovim UI
-excerpt: 
+tags:
+  - Neovim
+  - UI
+excerpt:
 ---
 
 

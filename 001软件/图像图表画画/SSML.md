@@ -1,9 +1,10 @@
 ---
-title: "SSML"
-categories: 
+title: SSML
+categories:
 date: 2022-09-25 06:16:08 +0800
-tags: 标记语言
-excerpt: 
+tags:
+  - 标记语言
+excerpt:
 ---
 
 [[语音合成]][[标记语言]]

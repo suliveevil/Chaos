@@ -1,9 +1,11 @@
 ---
-title: "hydra"
-categories: 
+title: hydra
+categories:
 date: 2022-09-30 00:25:00 +0800
-tags: Emacs 快捷键管理
-excerpt: 
+tags:
+  - Emacs
+  - 快捷键管理
+excerpt:
 ---
 
 

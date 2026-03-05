@@ -1,8 +1,10 @@
 ---
-title: "Geany"
+title: Geany
 categories: Software
 date: 2022-09-21 22:08:08 +0800
-tags: Python IDE
+tags:
+  - Python
+  - IDE
 excerpt: Geany - The Flyweight IDE
 ---
 

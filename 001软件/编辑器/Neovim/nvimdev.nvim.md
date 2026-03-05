@@ -1,10 +1,11 @@
 ---
-title: "nvimdev.nvim"
-author: 
-categories: 
+title: nvimdev.nvim
+author:
+categories:
 date: 2022-10-02 09:15:46 +0800
-tags: Neovim
-excerpt: 
+tags:
+  - Neovim
+excerpt:
 ---
 
 

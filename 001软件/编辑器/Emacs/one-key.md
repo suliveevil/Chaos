@@ -1,9 +1,11 @@
 ---
-title: "one-key"
-categories: 
+title: one-key
+categories:
 date: 2022-09-30 00:38:51 +0800
-tags: Emacs 快捷键管理
-excerpt: 
+tags:
+  - Emacs
+  - 快捷键管理
+excerpt:
 ---
 
 [manateelazycat/one-key](https://github.com/manateelazycat/one-key): Many commands share one key.

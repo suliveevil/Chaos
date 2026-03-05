@@ -1,9 +1,12 @@
 ---
-title: "alfred-github-workflow"
-categories: 
+title: alfred-github-workflow
+categories:
 date: 2022-09-23 19:20:06 +0800
-tags: Alfred GitHub TypeScript
-excerpt: 
+tags:
+  - Alfred
+  - GitHub
+  - TypeScript
+excerpt:
 ---
 
 

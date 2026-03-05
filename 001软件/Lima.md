@@ -1,9 +1,11 @@
 ---
 title: ""
-categories: 
+categories:
 date: 2022-09-27 05:26:00 +0800
-tags: Linux macOS
-excerpt: 
+tags:
+  - Linux
+  - macOS
+excerpt:
 ---
 
 

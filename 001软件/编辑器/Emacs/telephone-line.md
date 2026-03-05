@@ -1,9 +1,10 @@
 ---
-title: "telephone-line"
-categories: 
+title: telephone-line
+categories:
 date: 2022-10-01 10:15:54 +0800
-tags: Emacs
-excerpt: 
+tags:
+  - Emacs
+excerpt:
 ---
 
 [dbordak/telephone-line](https://github.com/dbordak/telephone-line): A new implementation of Powerline for Emacs

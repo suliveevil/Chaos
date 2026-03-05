@@ -1,9 +1,11 @@
 ---
-title: "nvim-treesitter-context"
-categories: 
+title: nvim-treesitter-context
+categories:
 date: 2022-09-24 22:03:56 +0800
-tags: Neovim UI
-excerpt: 
+tags:
+  - Neovim
+  - UI
+excerpt:
 ---
 
 

@@ -1,9 +1,10 @@
 ---
-title: "DSL"
-categories: 
+title: DSL
+categories:
 date: 2022-09-25 18:30:51 +0800
-tags: 编程语言
-excerpt: 
+tags:
+  - 编程语言
+excerpt:
 ---
 
 领域特定语言

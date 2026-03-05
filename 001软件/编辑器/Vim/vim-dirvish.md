@@ -1,10 +1,11 @@
 ---
-title: "vim-dirvish"
-author: 
-categories: 
+title: vim-dirvish
+author:
+categories:
 date: 2022-10-01 12:19:58 +0800
-tags: Vim
-excerpt: 
+tags:
+  - Vim
+excerpt:
 ---
 
 [justinmk/vim-dirvish](https://github.com/justinmk/vim-dirvish): Directory viewer for Vim.

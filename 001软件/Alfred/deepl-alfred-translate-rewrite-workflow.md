@@ -1,9 +1,12 @@
 ---
-title: "deepl-alfred-translate-rewrite-workflow"
-categories: 
+title: deepl-alfred-translate-rewrite-workflow
+categories:
 date: 2022-09-23 19:52:48 +0800
-tags: Alfred 翻译 Ruby
-excerpt: 
+tags:
+  - Alfred
+  - 翻译
+  - Ruby
+excerpt:
 ---
 
 

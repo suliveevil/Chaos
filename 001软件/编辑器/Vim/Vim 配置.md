@@ -1,9 +1,11 @@
 ---
-title: "Vim 配置"
-categories: 
+title: Vim 配置
+categories:
 date: 2022-09-25 18:06:48 +0800
-tags: Vim 配置
-excerpt: 
+tags:
+  - Vim
+  - 配置
+excerpt:
 ---
 
 

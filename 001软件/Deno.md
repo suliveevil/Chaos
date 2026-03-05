@@ -1,9 +1,11 @@
 ---
-title: "Deno"
-categories: 
+title: Deno
+categories:
 date: 2022-09-23 19:20:56 +0800
-tags: JavaScript TypeScript
-excerpt: 
+tags:
+  - JavaScript
+  - TypeScript
+excerpt:
 ---
 
 

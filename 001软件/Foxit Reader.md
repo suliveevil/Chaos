@@ -1,9 +1,10 @@
 ---
-title: "Foxit Reader"
-categories: 
+title: Foxit Reader
+categories:
 date: 2022-09-25 06:42:48 +0800
-tags: PDF
-excerpt: 
+tags:
+  - PDF
+excerpt:
 ---
 
 

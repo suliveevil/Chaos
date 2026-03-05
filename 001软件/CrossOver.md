@@ -1,9 +1,12 @@
 ---
-title: "CrossOver"
-categories: 
+title: CrossOver
+categories:
 date: 2022-09-26 23:36:51 +0800
-tags: Linux macOS Windows
-excerpt: 
+tags:
+  - Linux
+  - macOS
+  - Windows
+excerpt:
 ---
 
 

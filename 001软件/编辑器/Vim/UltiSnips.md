@@ -1,9 +1,14 @@
 ---
-title: "UltiSnips"
-categories: 
+title: UltiSnips
+categories:
 date: 2022-09-24 22:25:51 +0800
-tags: 补全 Snippets 文本替换 Vim Neovim
-excerpt: 
+tags:
+  - 补全
+  - Snippets
+  - 文本替换
+  - Vim
+  - Neovim
+excerpt:
 ---
 
 [[Vim 插件]]

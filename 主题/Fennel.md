@@ -1,10 +1,11 @@
 ---
-title: "Fennel"
-author: 
-categories: 
+title: Fennel
+author:
+categories:
 date: 2022-10-02 10:07:32 +0800
-tags: 编程语言
-excerpt: 
+tags:
+  - 编程语言
+excerpt:
 ---
 
 

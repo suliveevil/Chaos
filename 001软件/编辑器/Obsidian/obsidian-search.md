@@ -1,9 +1,12 @@
 ---
-title: "obsidian-search"
-categories: 
+title: obsidian-search
+categories:
 date: 2022-10-24 07:36:16 +0800
-tags: Obsidian 文本搜索 模糊搜索
-excerpt: 
+tags:
+  - Obsidian
+  - 文本搜索
+  - 模糊搜索
+excerpt:
 ---
 
 

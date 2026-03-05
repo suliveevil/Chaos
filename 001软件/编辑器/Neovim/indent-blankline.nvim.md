@@ -1,10 +1,13 @@
 ---
-title: "indent-blankline.nvim"
-author: 
-categories: 
+title: indent-blankline.nvim
+author:
+categories:
 date: 2022-10-01 08:37:11 +0800
-tags: Neovim 缩进 UI
-excerpt: 
+tags:
+  - Neovim
+  - 缩进
+  - UI
+excerpt:
 ---
 
 [[Neovim 插件]]

@@ -1,9 +1,11 @@
 ---
-title: "emacs-which-key"
-categories: 
+title: emacs-which-key
+categories:
 date: 2022-09-25 19:16:20 +0800
-tags: Emacs 快捷键管理
-excerpt: 
+tags:
+  - Emacs
+  - 快捷键管理
+excerpt:
 ---
 [[Emacs 插件]]
 [justbur/emacs-which-key](https://github.com/justbur/emacs-which-key): Emacs package that displays available keybindings in popup

@@ -1,8 +1,10 @@
 ---
-title: "Vim"
+title: Vim
 categories:
 date: 2022-09-25 21:20:35 +0800
-tags: 文本编辑器 自由软件
+tags:
+  - 文本编辑器
+  - 自由软件
 excerpt: 编辑器之神
 ---
 

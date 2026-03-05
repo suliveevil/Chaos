@@ -1,9 +1,10 @@
 ---
-title: "JSON"
-categories: 
+title: JSON
+categories:
 date: 2022-09-24 03:04:01 +0800
-tags: 文件格式
-excerpt: 
+tags:
+  - 文件格式
+excerpt:
 ---
 
 

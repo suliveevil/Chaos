@@ -1,9 +1,11 @@
 ---
 title: ""
-categories: 
+categories:
 date: 2022-09-27 09:23:33 +0800
-tags: Emacs 输入法
-excerpt: 
+tags:
+  - Emacs
+  - 输入法
+excerpt:
 ---
 
 

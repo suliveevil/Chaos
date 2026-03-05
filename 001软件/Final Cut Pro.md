@@ -1,9 +1,10 @@
 ---
-title: "Final Cut Pro"
-categories: 
+title: Final Cut Pro
+categories:
 date: 2022-09-24 10:00:34 +0800
-tags: 视频编辑器
-excerpt: 
+tags:
+  - 视频编辑器
+excerpt:
 ---
 
 [[视频]]制作工具

@@ -1,10 +1,12 @@
 ---
-title: "hologram.nvim"
-author: 
-categories: 
+title: hologram.nvim
+author:
+categories:
 date: 2022-10-01 08:06:46 +0800
-tags: Neovim 图像
-excerpt: 
+tags:
+  - Neovim
+  - 图像
+excerpt:
 ---
 
 

@@ -1,8 +1,11 @@
 ---
-title: "lsp-bridge"
+title: lsp-bridge
 categories:
 date: 2022-09-29 01:37:18 +0800
-tags: Emacs 补全 LSP
+tags:
+  - Emacs
+  - 补全
+  - LSP
 excerpt:
 ---
 

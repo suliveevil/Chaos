@@ -1,8 +1,10 @@
 ---
-title: "chezmoi"
+title: chezmoi
 categories: Software
 date:
-tags: 文件管理 自由软件
+tags:
+  - 文件管理
+  - 自由软件
 excerpt:
 ---
 

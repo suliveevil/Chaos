@@ -1,8 +1,9 @@
 ---
-title: "Emacs-plus"
+title: Emacs-plus
 categories:
 date: 2022-09-30 03:51:59 +0800
-tags: Emacs
+tags:
+  - Emacs
 excerpt:
 ---
 

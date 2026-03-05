@@ -1,9 +1,10 @@
 ---
-title: "Super+C"
-categories: 
+title: Super+C
+categories:
 date: 2022-09-30 04:56:13 +0800
-tags: 拷贝
-excerpt: 
+tags:
+  - 拷贝
+excerpt:
 ---
 
 

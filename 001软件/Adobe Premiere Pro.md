@@ -1,9 +1,10 @@
 ---
-title: "Adobe Premiere Pro"
-categories: 
+title: Adobe Premiere Pro
+categories:
 date: 2022-09-25 06:39:34 +0800
-tags: 视频编辑器
-excerpt: 
+tags:
+  - 视频编辑器
+excerpt:
 ---
 
 

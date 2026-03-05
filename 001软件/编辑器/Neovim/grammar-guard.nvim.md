@@ -1,9 +1,11 @@
 ---
-title: "grammar-guard.nvim"
-categories: 
+title: grammar-guard.nvim
+categories:
 date: 2022-09-30 04:14:03 +0800
-tags: Neovim LSP
-excerpt: 
+tags:
+  - Neovim
+  - LSP
+excerpt:
 ---
 
 [brymer-meneses/grammar-guard.nvim](https://github.com/brymer-meneses/grammar-guard.nvim): Grammar Guard is a Neovim plugin that checks your grammar as you write your [[LaTeX]], [[Markdown]] or plain text document.

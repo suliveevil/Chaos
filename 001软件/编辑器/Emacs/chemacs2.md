@@ -1,9 +1,10 @@
 ---
-title: "chemacs2"
-categories: 
+title: chemacs2
+categories:
 date: 2022-10-03 13:07:46 +0800
-tags: Neovim
-excerpt: 
+tags:
+  - Neovim
+excerpt:
 ---
 
 

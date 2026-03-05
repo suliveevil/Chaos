@@ -1,9 +1,10 @@
 ---
-title: "audacious"
-categories: 
+title: audacious
+categories:
 date: 2022-09-23 23:43:07 +0800
-tags: 音频播放器
-excerpt: 
+tags:
+  - 音频播放器
+excerpt:
 ---
 
 [Audacious - An Advanced Audio Player](https://audacious-media-player.org/)

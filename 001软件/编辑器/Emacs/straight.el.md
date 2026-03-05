@@ -1,9 +1,11 @@
 ---
-title: "straight.el"
-categories: 
+title: straight.el
+categories:
 date: 2022-09-30 03:48:42 +0800
-tags: Emacs 包管理器
-excerpt: 
+tags:
+  - Emacs
+  - 包管理器
+excerpt:
 ---
 
 [[Emacs 插件]]

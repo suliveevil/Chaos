@@ -1,10 +1,12 @@
 ---
-title: "voyager.vim"
-author: 
-categories: 
+title: voyager.vim
+author:
+categories:
 date: 2022-10-01 11:52:50 +0800
-tags: Vim vim9
-excerpt: 
+tags:
+  - Vim
+  - vim9
+excerpt:
 ---
 
 [obcat/voyager.vim](https://github.com/obcat/voyager.vim): 🛰 Minimal file explorer written in Vim9 script

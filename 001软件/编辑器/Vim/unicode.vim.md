@@ -1,9 +1,12 @@
 ---
-title: "unicode.vim"
-categories: 
+title: unicode.vim
+categories:
 date: 2022-09-24 17:27:49 +0800
-tags: Vim 字符 Unicode
-excerpt: 
+tags:
+  - Vim
+  - 字符
+  - Unicode
+excerpt:
 ---
 
 

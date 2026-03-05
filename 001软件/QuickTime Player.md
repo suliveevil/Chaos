@@ -1,9 +1,11 @@
 ---
-title: "QuickTime Player"
-categories: 
+title: QuickTime Player
+categories:
 date: 2022-09-23 23:38:26 +0800
-tags: macOS 视频播放器
-excerpt: 
+tags:
+  - macOS
+  - 视频播放器
+excerpt:
 ---
 
 # QuickTime Player

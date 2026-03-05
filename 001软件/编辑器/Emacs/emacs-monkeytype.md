@@ -1,10 +1,12 @@
 ---
-title: "emacs-monkeytype"
-author: 
-categories: 
+title: emacs-monkeytype
+author:
+categories:
 date: 2022-10-02 00:51:27 +0800
-tags: Emacs 键盘
-excerpt: 
+tags:
+  - Emacs
+  - 键盘
+excerpt:
 ---
 
 

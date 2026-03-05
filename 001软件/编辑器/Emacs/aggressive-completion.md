@@ -1,9 +1,11 @@
 ---
-title: "aggressive-completion"
-categories: 
+title: aggressive-completion
+categories:
 date: 2022-09-28 18:23:24 +0800
-tags: Emacs 补全
-excerpt: 
+tags:
+  - Emacs
+  - 补全
+excerpt:
 ---
 
 [[Emacs 插件]]

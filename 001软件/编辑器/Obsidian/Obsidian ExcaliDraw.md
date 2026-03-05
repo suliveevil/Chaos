@@ -1,9 +1,10 @@
 ---
-title: "Obsidian ExcaliDraw"
-categories: 
+title: Obsidian ExcaliDraw
+categories:
 date: 2022-09-26 20:44:33 +0800
-tags: 开箱即用
-excerpt: 
+tags:
+  - 开箱即用
+excerpt:
 ---
 
 

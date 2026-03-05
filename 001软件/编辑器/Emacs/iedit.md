@@ -1,9 +1,10 @@
 ---
-title: "iedit"
-categories: 
+title: iedit
+categories:
 date: 2022-09-30 00:35:50 +0800
-tags: Emacs
-excerpt: 
+tags:
+  - Emacs
+excerpt:
 ---
 
 

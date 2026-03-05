@@ -1,10 +1,12 @@
 ---
-title: "Vim 快捷键"
-author: 
-categories: 
+title: Vim 快捷键
+author:
+categories:
 date: 2022-10-10 15:22:52 +0800
-tags: Vim 快捷键
-excerpt: 
+tags:
+  - Vim
+  - 快捷键
+excerpt:
 ---
 
 

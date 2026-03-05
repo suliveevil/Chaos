@@ -1,9 +1,10 @@
 ---
-title: "Firefox"
-categories: 
+title: Firefox
+categories:
 date: 2022-09-26 23:59:20 +0800
-tags: 浏览器
-excerpt: 
+tags:
+  - 浏览器
+excerpt:
 ---
 
 开源[[浏览器]]，隶属于 Mozilla（Netscape 网景）

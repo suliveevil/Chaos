@@ -1,10 +1,12 @@
 ---
-title: "Bdash"
-author: 
-categories: 
+title: Bdash
+author:
+categories:
 date: 2022-10-01 22:24:43 +0800
-tags: 数据库 SQL
-excerpt: 
+tags:
+  - 数据库
+  - SQL
+excerpt:
 ---
 
 

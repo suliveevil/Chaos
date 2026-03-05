@@ -1,9 +1,11 @@
 ---
-title: "nvim-dap"
-categories: 
+title: nvim-dap
+categories:
 date: 2022-09-30 04:12:25 +0800
-tags: Neovim DAP
-excerpt: 
+tags:
+  - Neovim
+  - DAP
+excerpt:
 ---
 
 [[Neovim 插件]]

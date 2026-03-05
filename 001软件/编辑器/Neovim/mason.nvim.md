@@ -1,9 +1,11 @@
 ---
-title: "mason.nvim"
-categories: 
+title: mason.nvim
+categories:
 date: 2022-09-30 04:16:02 +0800
-tags: Neovim 包管理器
-excerpt: 
+tags:
+  - Neovim
+  - 包管理器
+excerpt:
 ---
 
 

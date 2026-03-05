@@ -1,10 +1,11 @@
 ---
-title: "miniSnip"
-author: 
-categories: 
+title: miniSnip
+author:
+categories:
 date: 2022-10-01 11:57:53 +0800
-tags: Vim
-excerpt: 
+tags:
+  - Vim
+excerpt:
 ---
 
 

@@ -1,9 +1,10 @@
 ---
-title: "PLIST"
-categories: 
+title: PLIST
+categories:
 date: 2022-09-24 03:02:51 +0800
-tags: 文件格式
-excerpt: 
+tags:
+  - 文件格式
+excerpt:
 ---
 
 

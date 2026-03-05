@@ -1,9 +1,11 @@
 ---
-title: "emacs-guess-word-game"
-categories: 
+title: emacs-guess-word-game
+categories:
 date: 2022-11-10 20:38:04 +0800
-tags: 学习 游戏
-excerpt: 
+tags:
+  - 学习
+  - 游戏
+excerpt:
 ---
 
 

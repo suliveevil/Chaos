@@ -1,9 +1,13 @@
 ---
-title: "CopyQ"
-categories: 
+title: CopyQ
+categories:
 date: 2022-09-24 09:24:45 +0800
-tags: macOS Linux Windows 剪贴板
-excerpt: 
+tags:
+  - macOS
+  - Linux
+  - Windows
+  - 剪贴板
+excerpt:
 ---
 
 [hluk/CopyQ](https://github.com/hluk/CopyQ): Clipboard manager with advanced features

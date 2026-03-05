@@ -1,10 +1,12 @@
 ---
-title: "better-digraphs.nvim"
-author: 
-categories: 
+title: better-digraphs.nvim
+author:
+categories:
 date: 2022-10-06 05:32:12 +0800
-tags: Neovim Unicode
-excerpt: 
+tags:
+  - Neovim
+  - Unicode
+excerpt:
 ---
 
 [[Neovim 插件]]

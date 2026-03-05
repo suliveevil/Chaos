@@ -1,9 +1,10 @@
 ---
-title: "Mastodon"
-categories: 
+title: Mastodon
+categories:
 date: 2022-11-29 04:05:40 +0800
-tags: 社交软件
-excerpt: 
+tags:
+  - 社交软件
+excerpt:
 ---
 
 

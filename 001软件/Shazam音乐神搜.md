@@ -1,9 +1,11 @@
 ---
 title: ""
-categories: 
+categories:
 date: 2022-09-25 23:18:59 +0800
-tags: 语音识别 音乐
-excerpt: 
+tags:
+  - 语音识别
+  - 音乐
+excerpt:
 ---
 
 

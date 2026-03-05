@@ -1,8 +1,11 @@
 ---
-title: "nvim-cmp"
-categories: 
+title: nvim-cmp
+categories:
 date: 2022-09-24 18:20:54 +0800
-tags: 补全 Neovim Lua
+tags:
+  - 补全
+  - Neovim
+  - Lua
 excerpt: Completion Engine
 ---
 

@@ -1,10 +1,12 @@
 ---
-title: "vim-tips"
-author: 
-categories: 
+title: vim-tips
+author:
+categories:
 date: 2022-10-01 11:01:32 +0800
-tags: Vim 开箱即用
-excerpt: 
+tags:
+  - Vim
+  - 开箱即用
+excerpt:
 ---
 
 [michaelb/vim-tips](https://github.com/michaelb/vim-tips): Short plugin to display tips at startup

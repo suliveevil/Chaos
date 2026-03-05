@@ -1,10 +1,12 @@
 ---
-title: "xah-fly-keys"
-author: 
-categories: 
+title: xah-fly-keys
+author:
+categories:
 date: 2022-10-01 22:17:54 +0800
-tags: Emacs 快捷键
-excerpt: 
+tags:
+  - Emacs
+  - 快捷键
+excerpt:
 ---
 
 [xahlee/xah-fly-keys - GitHub](https://github.com/xahlee/xah-fly-keys): the most efficient keybinding for emacs

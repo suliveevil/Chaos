@@ -1,9 +1,13 @@
 ---
-title: "Minecraft 我的世界"
+title: Minecraft 我的世界
 categories: 游戏
 date: 2022-09-24 00:37:54 +0800
-tags: 创造 建筑 沙盒 游戏
-excerpt: 
+tags:
+  - 创造
+  - 建筑
+  - 沙盒
+  - 游戏
+excerpt:
 ---
 
 

@@ -1,9 +1,10 @@
 ---
-title: "lines9"
-categories: 
+title: lines9
+categories:
 date: 2022-09-23 14:08:25 +0800
-tags: vim9
-excerpt: 
+tags:
+  - vim9
+excerpt:
 ---
 
 

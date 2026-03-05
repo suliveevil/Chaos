@@ -1,9 +1,13 @@
 ---
-title: "DaVinci Resolve"
-categories: 
+title: DaVinci Resolve
+categories:
 date: 2022-09-24 10:01:02 +0800
-tags: iPadOS macOS 音频编辑器 视频编辑器
-excerpt: 
+tags:
+  - iPadOS
+  - macOS
+  - 音频编辑器
+  - 视频编辑器
+excerpt:
 ---
 
 

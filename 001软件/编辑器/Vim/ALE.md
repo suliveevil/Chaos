@@ -1,9 +1,11 @@
 ---
-title: "ALE"
-categories: 
+title: ALE
+categories:
 date: 2022-09-30 04:10:06 +0800
-tags: Vim LSP
-excerpt: 
+tags:
+  - Vim
+  - LSP
+excerpt:
 ---
 
 [[Vim 插件]]

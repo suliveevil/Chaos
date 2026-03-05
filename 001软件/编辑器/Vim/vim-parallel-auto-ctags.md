@@ -1,9 +1,10 @@
 ---
 title: ""
-categories: 
+categories:
 date: 2022-09-28 04:18:34 +0800
-tags: Vim
-excerpt: 
+tags:
+  - Vim
+excerpt:
 ---
 
 [[Vim 插件]]

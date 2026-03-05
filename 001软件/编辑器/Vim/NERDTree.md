@@ -1,9 +1,11 @@
 ---
-title: "NERDTree"
-categories: 
+title: NERDTree
+categories:
 date: 2022-09-28 03:56:37 +0800
-tags: Vim 文件管理
-excerpt: 
+tags:
+  - Vim
+  - 文件管理
+excerpt:
 ---
 
 

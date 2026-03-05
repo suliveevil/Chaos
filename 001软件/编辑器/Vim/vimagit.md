@@ -1,9 +1,11 @@
 ---
-title: "vimagit"
-categories: 
+title: vimagit
+categories:
 date: 2022-09-25 06:34:58 +0800
-tags: Vim Git
-excerpt: 
+tags:
+  - Vim
+  - Git
+excerpt:
 ---
 
 

@@ -1,9 +1,11 @@
 ---
-title: "Ditto"
-categories: 
+title: Ditto
+categories:
 date: 2022-09-24 09:26:44 +0800
-tags: Windows 剪贴板
-excerpt: 
+tags:
+  - Windows
+  - 剪贴板
+excerpt:
 ---
 
 [Ditto clipboard manager](https://ditto-cp.sourceforge.io/index.php)

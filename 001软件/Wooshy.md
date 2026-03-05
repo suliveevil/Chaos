@@ -1,9 +1,11 @@
 ---
-title: "Wooshy"
-categories: 
+title: Wooshy
+categories:
 date: 2022-09-26 23:28:44 +0800
-tags: macOS GUI
-excerpt: 
+tags:
+  - macOS
+  - GUI
+excerpt:
 ---
 
 [Wooshy 官网](https://wooshy.app/)

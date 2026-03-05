@@ -1,9 +1,11 @@
 ---
-title: "pyim"
-categories: 
+title: pyim
+categories:
 date: 2022-09-25 06:19:07 +0800
-tags: Emacs 输入法
-excerpt: 
+tags:
+  - Emacs
+  - 输入法
+excerpt:
 ---
 
 [tumashu/pyim](https://github.com/tumashu/pyim): 一个 [[Emacs]] [[中文]][[输入法]]，支持全拼（[[拼音]]），[[双拼]]，[[五笔]]，仓颉和[[RIME]]，pyim 是 GNU elpa 包。

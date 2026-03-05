@@ -1,10 +1,13 @@
 ---
-title: "sourcekit-lsp"
-author: 
-categories: 
+title: sourcekit-lsp
+author:
+categories:
 date: 2022-10-11 08:14:40 +0800
-tags: C Swift LSP
-excerpt: 
+tags:
+  - C
+  - Swift
+  - LSP
+excerpt:
 ---
 
 

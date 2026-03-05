@@ -1,9 +1,12 @@
 ---
-title: "Textastic"
-categories: 
+title: Textastic
+categories:
 date: 2022-09-26 23:56:44 +0800
-tags: iOS iPadOS macOS
-excerpt: 
+tags:
+  - iOS
+  - iPadOS
+  - macOS
+excerpt:
 ---
 
 Universal App：iOS、iPadOS

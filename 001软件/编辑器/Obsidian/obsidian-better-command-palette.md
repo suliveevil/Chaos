@@ -1,10 +1,11 @@
 ---
-title: "obsidian-better-command-palette"
-author: 
-categories: 
+title: obsidian-better-command-palette
+author:
+categories:
 date: 2022-10-02 00:25:03 +0800
-tags: Obsidian
-excerpt: 
+tags:
+  - Obsidian
+excerpt:
 ---
 
 

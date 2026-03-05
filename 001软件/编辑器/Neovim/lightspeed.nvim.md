@@ -1,9 +1,11 @@
 ---
-title: "lightspeed.nvim"
-categories: 
+title: lightspeed.nvim
+categories:
 date: 2022-09-30 23:45:30 +0800
-tags: Neovim Fennel
-excerpt: 
+tags:
+  - Neovim
+  - Fennel
+excerpt:
 ---
 
 

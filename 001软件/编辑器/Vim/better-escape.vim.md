@@ -1,10 +1,12 @@
 ---
-title: "better-escape.vim"
-author: 
-categories: 
+title: better-escape.vim
+author:
+categories:
 date: 2022-10-01 07:41:30 +0800
-tags: Vim 快捷键
-excerpt: 
+tags:
+  - Vim
+  - 快捷键
+excerpt:
 ---
 
 

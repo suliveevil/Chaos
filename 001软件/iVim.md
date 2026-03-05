@@ -1,10 +1,12 @@
 ---
-title: "iVim"
-author: 
-categories: 
+title: iVim
+author:
+categories:
 date: 2022-10-07 06:15:02 +0800
-tags: Vim iPadOS
-excerpt: 
+tags:
+  - Vim
+  - iPadOS
+excerpt:
 ---
 
 

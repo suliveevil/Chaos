@@ -1,9 +1,11 @@
 ---
-title: "context.vim"
-categories: 
+title: context.vim
+categories:
 date: 2022-09-24 21:58:08 +0800
-tags: Vim UI
-excerpt: 
+tags:
+  - Vim
+  - UI
+excerpt:
 ---
 
 [[Vim 插件]]

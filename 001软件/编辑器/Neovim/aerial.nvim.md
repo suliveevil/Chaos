@@ -1,10 +1,12 @@
 ---
-title: "aerial.nvim"
-author: 
-categories: 
+title: aerial.nvim
+author:
+categories:
 date: 2022-10-01 06:33:49 +0800
-tags: Neovim UI
-excerpt: 
+tags:
+  - Neovim
+  - UI
+excerpt:
 ---
 
 

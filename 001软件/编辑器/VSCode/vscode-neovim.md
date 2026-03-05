@@ -1,10 +1,12 @@
 ---
-title: "vscode-neovim"
-author: 
-categories: 
+title: vscode-neovim
+author:
+categories:
 date: 2022-10-12 13:20:08 +0800
-tags: VSCode Neovim
-excerpt: 
+tags:
+  - VSCode
+  - Neovim
+excerpt:
 ---
 
 

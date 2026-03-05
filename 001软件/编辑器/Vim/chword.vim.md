@@ -1,9 +1,12 @@
 ---
-title: "chword.vim"
-categories: 
+title: chword.vim
+categories:
 date: 2022-09-28 06:50:40 +0800
-tags: 中文 分词 Vim
-excerpt: 
+tags:
+  - 中文
+  - 分词
+  - Vim
+excerpt:
 ---
 
 

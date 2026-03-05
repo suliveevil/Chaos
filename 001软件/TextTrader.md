@@ -1,9 +1,13 @@
 ---
-title: "TextTrader"
-categories: 
+title: TextTrader
+categories:
 date: 2022-09-27 22:12:02 +0800
-tags: FreeBSD Linux macOS Windows
-excerpt: 
+tags:
+  - FreeBSD
+  - Linux
+  - macOS
+  - Windows
+excerpt:
 ---
 
 

@@ -1,10 +1,12 @@
 ---
-title: "macOS 输入法"
-author: 
-categories: 
+title: macOS 输入法
+author:
+categories:
 date: 2022-10-11 06:33:31 +0800
-tags: macOS 输入法
-excerpt: 
+tags:
+  - macOS
+  - 输入法
+excerpt:
 ---
 
 

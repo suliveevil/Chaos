@@ -1,9 +1,13 @@
 ---
-title: "Menu-Bar-Search"
-categories: 
+title: Menu-Bar-Search
+categories:
 date: 2022-09-23 19:27:05 +0800
-tags: Alfred macOS GUI Swift
-excerpt: 
+tags:
+  - Alfred
+  - macOS
+  - GUI
+  - Swift
+excerpt:
 ---
 
 

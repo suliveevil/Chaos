@@ -1,9 +1,12 @@
 ---
-title: "gitsigns.nvim"
-categories: 
+title: gitsigns.nvim
+categories:
 date: 2022-09-26 00:59:16 +0800
-tags: Neovim Git UI
-excerpt: 
+tags:
+  - Neovim
+  - Git
+  - UI
+excerpt:
 ---
 
 

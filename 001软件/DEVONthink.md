@@ -1,9 +1,11 @@
 ---
-title: "DEVONthink"
-categories: 
+title: DEVONthink
+categories:
 date: 2022-09-26 23:38:47 +0800
-tags: macOS 文件管理
-excerpt: 
+tags:
+  - macOS
+  - 文件管理
+excerpt:
 ---
 
 [DEVONthink - DEVONtechnologies](https://devontechnologies.com/apps/devonthink)：professional document and information management

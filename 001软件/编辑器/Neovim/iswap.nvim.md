@@ -1,9 +1,10 @@
 ---
-title: "iswap.nvim"
-categories: 
+title: iswap.nvim
+categories:
 date: 2022-09-27 00:55:04 +0800
-tags: Neovim
-excerpt: 
+tags:
+  - Neovim
+excerpt:
 ---
 
 

@@ -1,9 +1,10 @@
 ---
-title: "JavaScript"
-categories: 
+title: JavaScript
+categories:
 date: 2022-09-25 18:48:39 +0800
-tags: 编程语言
-excerpt: 
+tags:
+  - 编程语言
+excerpt:
 ---
 
 StackOverflow 的联合创始人Atwood 定律：Any application that can be written in JavaScript, will eventually be written in JavaScript.

@@ -1,9 +1,10 @@
 ---
-title: "coreutils"
-categories: 
+title: coreutils
+categories:
 date: 2022-09-30 19:37:54 +0800
-tags: GNU
-excerpt: 
+tags:
+  - GNU
+excerpt:
 ---
 
 [Coreutils - GNU core utilities](https://www.gnu.org/software/coreutils/)

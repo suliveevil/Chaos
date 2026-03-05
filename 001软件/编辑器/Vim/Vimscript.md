@@ -1,9 +1,11 @@
 ---
-title: "Vimscript"
-categories: 
+title: Vimscript
+categories:
 date: 2022-09-25 18:30:51 +0800
-tags: Vim 编程语言
-excerpt: 
+tags:
+  - Vim
+  - 编程语言
+excerpt:
 ---
 
 [[DSL]] for [[Vim]]

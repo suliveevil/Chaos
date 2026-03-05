@@ -1,10 +1,12 @@
 ---
-title: "highlight-current-n.nvim"
-author: 
-categories: 
+title: highlight-current-n.nvim
+author:
+categories:
 date: 2022-10-02 10:06:19 +0800
-tags: Neovim Fennel
-excerpt: 
+tags:
+  - Neovim
+  - Fennel
+excerpt:
 ---
 
 

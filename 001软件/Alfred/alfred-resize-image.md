@@ -1,9 +1,10 @@
 ---
-title: "alfred-resize-image"
-categories: 
+title: alfred-resize-image
+categories:
 date: 2022-09-29 06:40:58 +0800
-tags: Alfred 
-excerpt: 
+tags:
+  - Alfred
+excerpt:
 ---
 
 

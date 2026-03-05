@@ -1,9 +1,12 @@
 ---
 title: ""
-categories: 
+categories:
 date: 2022-09-25 10:07:01 +0800
-tags: 中文 英文 OCR
-excerpt: 
+tags:
+  - 中文
+  - 英文
+  - OCR
+excerpt:
 ---
 
 

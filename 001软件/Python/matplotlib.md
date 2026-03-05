@@ -1,10 +1,11 @@
 ---
-title: "matplotlib"
-author: 
-categories: 
+title: matplotlib
+author:
+categories:
 date: 2022-10-12 16:25:17 +0800
-tags: Python
-excerpt: 
+tags:
+  - Python
+excerpt:
 ---
 
 

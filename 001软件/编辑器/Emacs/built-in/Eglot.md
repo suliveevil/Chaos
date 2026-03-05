@@ -1,9 +1,11 @@
 ---
-title: "Eglot"
-categories: 
+title: Eglot
+categories:
 date: 2022-09-30 04:09:01 +0800
-tags: Emacs LSP
-excerpt: 
+tags:
+  - Emacs
+  - LSP
+excerpt:
 ---
 
 [joaotavora/eglot](https://github.com/joaotavora/eglot): A client for [[Language Server Protocol]] servers.

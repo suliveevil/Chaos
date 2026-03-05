@@ -1,9 +1,10 @@
 ---
-title: "meow-edit"
-categories: 
+title: meow-edit
+categories:
 date: 2022-09-27 20:32:02 +0800
-tags: 快捷键管理
-excerpt: 
+tags:
+  - 快捷键管理
+excerpt:
 ---
 
 [[Emacs 插件]]

@@ -1,9 +1,12 @@
 ---
-title: "macism.vim"
-categories: 
+title: macism.vim
+categories:
 date: 2022-09-27 00:01:21 +0800
-tags: macOS Vim 输入法
-excerpt: 
+tags:
+  - macOS
+  - Vim
+  - 输入法
+excerpt:
 ---
 
 [suliveevil/macism.vim](https://github.com/suliveevil/macism.vim): Keep and restore macOS input method state when leaving/re-entering insert mode or search mode.

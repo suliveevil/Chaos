@@ -1,0 +1,826 @@
+{
+  "display_language": "display",
+  "filter_mode": "0",
+  "translation_service": "bergamot",
+  "security_setting": "none",
+  "switch_button_action": "switch-both",
+  "apply_glossary": false,
+  "case_insensitive_glossary": false,
+  "enable_animations": true,
+  "quicksettings_default": [
+    "change-service",
+    "automatic-translation",
+    "change-layout",
+    "apply-filter",
+    "open-settings"
+  ],
+  "layout_default": 0,
+  "left_quickactions_default": [
+    "paste",
+    "clear"
+  ],
+  "right_quickactions_default": [
+    "copy"
+  ],
+  "hide_attribution_default": false,
+  "default_source_language": "auto",
+  "default_target_language": "zh-cn",
+  "filtered_services": [
+    "bergamot",
+    "fanyi_baidu",
+    "azure_translator",
+    "libre_translate",
+    "fanyi_qq",
+    "fanyi_youdao"
+  ],
+  "hotkeys": [
+    {
+      "id": "view-translate",
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "Enter"
+    },
+    {
+      "id": "view-language-switch",
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "S"
+    },
+    {
+      "id": "view-action-copy",
+      "modifiers": [],
+      "key": ""
+    },
+    {
+      "id": "view-action-clear",
+      "modifiers": [],
+      "key": ""
+    },
+    {
+      "id": "view-action-paste",
+      "modifiers": [],
+      "key": ""
+    }
+  ],
+  "service_settings": {
+    "google_translate": {
+      "selected_languages": [
+        "zh-cn"
+      ],
+      "api_key": "",
+      "auto_translate": false,
+      "auto_translate_interval": 500,
+      "validated": null,
+      "available_languages": [
+        "af",
+        "ak",
+        "am",
+        "ar",
+        "as",
+        "ay",
+        "az",
+        "be",
+        "bg",
+        "bho",
+        "bm",
+        "bn",
+        "bs",
+        "ca",
+        "ceb",
+        "ckb",
+        "co",
+        "cs",
+        "cy",
+        "da",
+        "de",
+        "doi",
+        "dv",
+        "ee",
+        "el",
+        "en",
+        "eo",
+        "es",
+        "et",
+        "eu",
+        "fa",
+        "fi",
+        "fr",
+        "fy",
+        "ga",
+        "gd",
+        "gl",
+        "gn",
+        "gom",
+        "gu",
+        "ha",
+        "haw",
+        "he",
+        "hi",
+        "hmn",
+        "hr",
+        "ht",
+        "hu",
+        "hy",
+        "id",
+        "ig",
+        "ilo",
+        "is",
+        "it",
+        "iw",
+        "ja",
+        "jv",
+        "jw",
+        "ka",
+        "kk",
+        "km",
+        "kn",
+        "ko",
+        "kri",
+        "ku",
+        "ky",
+        "la",
+        "lb",
+        "lg",
+        "ln",
+        "lo",
+        "lt",
+        "lus",
+        "lv",
+        "mai",
+        "mg",
+        "mi",
+        "mk",
+        "ml",
+        "mn",
+        "mni-Mtei",
+        "mr",
+        "ms",
+        "mt",
+        "my",
+        "ne",
+        "nl",
+        "no",
+        "nso",
+        "ny",
+        "om",
+        "or",
+        "pa",
+        "pl",
+        "ps",
+        "pt",
+        "qu",
+        "ro",
+        "ru",
+        "rw",
+        "sa",
+        "sd",
+        "si",
+        "sk",
+        "sl",
+        "sm",
+        "sn",
+        "so",
+        "sq",
+        "sr",
+        "st",
+        "su",
+        "sv",
+        "sw",
+        "ta",
+        "te",
+        "tg",
+        "th",
+        "ti",
+        "tk",
+        "tl",
+        "tr",
+        "ts",
+        "tt",
+        "ug",
+        "uk",
+        "ur",
+        "uz",
+        "vi",
+        "xh",
+        "yi",
+        "yo",
+        "zh",
+        "zh-CN",
+        "zh-TW",
+        "zu"
+      ],
+      "version": "1.1.0"
+    },
+    "bergamot": {
+      "selected_languages": [
+        "zh-cn"
+      ],
+      "validated": null,
+      "auto_translate": false,
+      "auto_translate_interval": 500,
+      "available_languages": [],
+      "version": "0.3.3",
+      "downloadable_models": [
+        {
+          "size": 46992539,
+          "locale": "bg",
+          "files": [
+            {
+              "name": "model.bgen.intgemm.alphas.bin",
+              "size": 17140899,
+              "usage": "from"
+            },
+            {
+              "name": "lex.50.50.bgen.s2t.bin",
+              "size": 6182512,
+              "usage": "from"
+            },
+            {
+              "name": "vocab.bgen.spm",
+              "size": 920621,
+              "usage": "both"
+            },
+            {
+              "name": "model.enbg.intgemm.alphas.bin",
+              "size": 17140899,
+              "usage": "to"
+            },
+            {
+              "name": "lex.50.50.enbg.s2t.bin",
+              "size": 5607608,
+              "usage": "to"
+            }
+          ],
+          "dev": false
+        },
+        {
+          "size": 43143255,
+          "locale": "cs",
+          "files": [
+            {
+              "name": "model.csen.intgemm.alphas.bin",
+              "size": 17140756,
+              "usage": "from"
+            },
+            {
+              "name": "lex.50.50.csen.s2t.bin",
+              "size": 4535788,
+              "usage": "from"
+            },
+            {
+              "name": "vocab.csen.spm",
+              "size": 769763,
+              "usage": "both"
+            },
+            {
+              "name": "model.encs.intgemm.alphas.bin",
+              "size": 17140756,
+              "usage": "to"
+            },
+            {
+              "name": "lex.50.50.encs.s2t.bin",
+              "size": 3556124,
+              "usage": "to"
+            },
+            {
+              "name": "qualityModel.encs.bin",
+              "size": 68,
+              "usage": "to"
+            }
+          ],
+          "dev": false
+        },
+        {
+          "size": 44057153,
+          "locale": "de",
+          "files": [
+            {
+              "name": "model.deen.intgemm.alphas.bin",
+              "size": 17140837,
+              "usage": "from"
+            },
+            {
+              "name": "lex.50.50.deen.s2t.bin",
+              "size": 5047568,
+              "usage": "from"
+            },
+            {
+              "name": "vocab.deen.spm",
+              "size": 784269,
+              "usage": "both"
+            },
+            {
+              "name": "model.ende.intgemm.alphas.bin",
+              "size": 17140835,
+              "usage": "to"
+            },
+            {
+              "name": "lex.50.50.ende.s2t.bin",
+              "size": 3943644,
+              "usage": "to"
+            }
+          ],
+          "dev": false
+        },
+        {
+          "size": 42315033,
+          "locale": "es",
+          "files": [
+            {
+              "name": "model.esen.intgemm.alphas.bin",
+              "size": 17140755,
+              "usage": "from"
+            },
+            {
+              "name": "lex.50.50.esen.s2t.bin",
+              "size": 3860888,
+              "usage": "from"
+            },
+            {
+              "name": "vocab.esen.spm",
+              "size": 825463,
+              "usage": "both"
+            },
+            {
+              "name": "model.enes.intgemm.alphas.bin",
+              "size": 17140755,
+              "usage": "to"
+            },
+            {
+              "name": "lex.50.50.enes.s2t.bin",
+              "size": 3347104,
+              "usage": "to"
+            },
+            {
+              "name": "qualityModel.enes.bin",
+              "size": 68,
+              "usage": "to"
+            }
+          ],
+          "dev": false
+        },
+        {
+          "size": 41785726,
+          "locale": "et",
+          "files": [
+            {
+              "name": "model.eten.intgemm.alphas.bin",
+              "size": 17140754,
+              "usage": "from"
+            },
+            {
+              "name": "lex.50.50.eten.s2t.bin",
+              "size": 3974944,
+              "usage": "from"
+            },
+            {
+              "name": "vocab.eten.spm",
+              "size": 828426,
+              "usage": "both"
+            },
+            {
+              "name": "model.enet.intgemm.alphas.bin",
+              "size": 17140754,
+              "usage": "to"
+            },
+            {
+              "name": "lex.50.50.enet.s2t.bin",
+              "size": 2700780,
+              "usage": "to"
+            },
+            {
+              "name": "qualityModel.enet.bin",
+              "size": 68,
+              "usage": "to"
+            }
+          ],
+          "dev": false
+        },
+        {
+          "size": 51818572,
+          "locale": "fr",
+          "files": [
+            {
+              "name": "model.fren.intgemm.alphas.bin",
+              "size": 17140961,
+              "usage": "from"
+            },
+            {
+              "name": "lex.50.50.fren.s2t.bin",
+              "size": 8818768,
+              "usage": "from"
+            },
+            {
+              "name": "vocab.fren.spm",
+              "size": 831382,
+              "usage": "both"
+            },
+            {
+              "name": "model.enfr.intgemm.alphas.bin",
+              "size": 17140961,
+              "usage": "to"
+            },
+            {
+              "name": "lex.50.50.enfr.s2t.bin",
+              "size": 7886500,
+              "usage": "to"
+            }
+          ],
+          "dev": false
+        },
+        {
+          "size": 45379864,
+          "locale": "it",
+          "files": [
+            {
+              "name": "model.iten.intgemm.alphas.bin",
+              "size": 17140899,
+              "usage": "from"
+            },
+            {
+              "name": "lex.50.50.iten.s2t.bin",
+              "size": 4977500,
+              "usage": "from"
+            },
+            {
+              "name": "vocab.iten.spm",
+              "size": 812781,
+              "usage": "from"
+            },
+            {
+              "name": "model.enit.intgemm.alphas.bin",
+              "size": 17140899,
+              "usage": "to"
+            },
+            {
+              "name": "lex.50.50.enit.s2t.bin",
+              "size": 4495004,
+              "usage": "to"
+            },
+            {
+              "name": "vocab.enit.spm",
+              "size": 812781,
+              "usage": "to"
+            }
+          ],
+          "dev": false
+        },
+        {
+          "size": 44467108,
+          "locale": "pl",
+          "files": [
+            {
+              "name": "model.plen.intgemm.alphas.bin",
+              "size": 17140899,
+              "usage": "from"
+            },
+            {
+              "name": "lex.50.50.plen.s2t.bin",
+              "size": 4898024,
+              "usage": "from"
+            },
+            {
+              "name": "vocab.plen.spm",
+              "size": 822587,
+              "usage": "from"
+            },
+            {
+              "name": "model.enpl.intgemm.alphas.bin",
+              "size": 17140899,
+              "usage": "to"
+            },
+            {
+              "name": "lex.50.50.enpl.s2t.bin",
+              "size": 3642112,
+              "usage": "to"
+            },
+            {
+              "name": "vocab.enpl.spm",
+              "size": 822587,
+              "usage": "to"
+            }
+          ],
+          "dev": false
+        },
+        {
+          "size": 45063626,
+          "locale": "pt",
+          "files": [
+            {
+              "name": "model.pten.intgemm.alphas.bin",
+              "size": 17140899,
+              "usage": "from"
+            },
+            {
+              "name": "lex.50.50.pten.s2t.bin",
+              "size": 4801740,
+              "usage": "from"
+            },
+            {
+              "name": "vocab.pten.spm",
+              "size": 817234,
+              "usage": "from"
+            },
+            {
+              "name": "model.enpt.intgemm.alphas.bin",
+              "size": 17140899,
+              "usage": "to"
+            },
+            {
+              "name": "lex.50.50.enpt.s2t.bin",
+              "size": 4345620,
+              "usage": "to"
+            },
+            {
+              "name": "vocab.enpt.spm",
+              "size": 817234,
+              "usage": "to"
+            }
+          ],
+          "dev": false
+        },
+        {
+          "size": 47215849,
+          "locale": "fa",
+          "files": [
+            {
+              "name": "model.faen.intgemm.alphas.bin",
+              "size": 17140837,
+              "usage": "from"
+            },
+            {
+              "name": "lex.50.50.faen.s2t.bin",
+              "size": 6197320,
+              "usage": "from"
+            },
+            {
+              "name": "vocab.faen.spm",
+              "size": 845020,
+              "usage": "from"
+            },
+            {
+              "name": "model.enfa.intgemm.alphas.bin",
+              "size": 17140835,
+              "usage": "to"
+            },
+            {
+              "name": "lex.50.50.enfa.s2t.bin",
+              "size": 5097656,
+              "usage": "to"
+            },
+            {
+              "name": "vocab.enfa.spm",
+              "size": 794181,
+              "usage": "to"
+            }
+          ],
+          "dev": true
+        },
+        {
+          "size": 45332265,
+          "locale": "nl",
+          "files": [
+            {
+              "name": "model.nlen.intgemm.alphas.bin",
+              "size": 17140899,
+              "usage": "from"
+            },
+            {
+              "name": "lex.50.50.nlen.s2t.bin",
+              "size": 4940304,
+              "usage": "from"
+            },
+            {
+              "name": "vocab.nlen.spm",
+              "size": 807730,
+              "usage": "from"
+            },
+            {
+              "name": "model.ennl.intgemm.alphas.bin",
+              "size": 17140899,
+              "usage": "to"
+            },
+            {
+              "name": "lex.50.50.ennl.s2t.bin",
+              "size": 4494892,
+              "usage": "to"
+            },
+            {
+              "name": "vocab.ennl.spm",
+              "size": 807541,
+              "usage": "to"
+            }
+          ],
+          "dev": true
+        },
+        {
+          "size": 44295337,
+          "locale": "ru",
+          "files": [
+            {
+              "name": "model.ruen.intgemm.alphas.bin",
+              "size": 17140836,
+              "usage": "from"
+            },
+            {
+              "name": "lex.50.50.ruen.s2t.bin",
+              "size": 5090836,
+              "usage": "from"
+            },
+            {
+              "name": "vocab.ruen.spm",
+              "size": 936576,
+              "usage": "from"
+            },
+            {
+              "name": "model.enru.intgemm.alphas.bin",
+              "size": 17140836,
+              "usage": "to"
+            },
+            {
+              "name": "lex.50.50.enru.s2t.bin",
+              "size": 3049096,
+              "usage": "to"
+            },
+            {
+              "name": "vocab.enru.spm",
+              "size": 937157,
+              "usage": "to"
+            }
+          ],
+          "dev": true
+        },
+        {
+          "size": 74267492,
+          "locale": "uk",
+          "files": [
+            {
+              "name": "model.uken.intgemm8.bin",
+              "size": 25315747,
+              "usage": "from"
+            },
+            {
+              "name": "lex.uken.s2t.bin",
+              "size": 9761460,
+              "usage": "from"
+            },
+            {
+              "name": "srcvocab.uken.spm",
+              "size": 984214,
+              "usage": "from"
+            },
+            {
+              "name": "trgvocab.uken.spm",
+              "size": 803064,
+              "usage": "from"
+            },
+            {
+              "name": "model.enuk.intgemm8.bin",
+              "size": 25315747,
+              "usage": "to"
+            },
+            {
+              "name": "lex.enuk.s2t.bin",
+              "size": 10294724,
+              "usage": "to"
+            },
+            {
+              "name": "trgvocab.enuk.spm",
+              "size": 1003426,
+              "usage": "to"
+            },
+            {
+              "name": "srcvocab.enuk.spm",
+              "size": 789110,
+              "usage": "to"
+            }
+          ],
+          "dev": true
+        }
+      ]
+    },
+    "fasttext": {
+      "default_usage": false,
+      "version": "1.0.0"
+    },
+    "deepl": {
+      "selected_languages": [
+        "zh-cn"
+      ],
+      "api_key": "",
+      "auto_translate": false,
+      "auto_translate_interval": 500,
+      "validated": null,
+      "available_languages": [
+        "bg",
+        "cs",
+        "da",
+        "de",
+        "el",
+        "en",
+        "es",
+        "et",
+        "fi",
+        "fr",
+        "hu",
+        "id",
+        "it",
+        "ja",
+        "lt",
+        "lv",
+        "nl",
+        "pl",
+        "pt",
+        "ro",
+        "ru",
+        "sk",
+        "sl",
+        "sv",
+        "tr",
+        "uk",
+        "zh"
+      ],
+      "glossary_languages": {
+        "de": [
+          "en",
+          "fr"
+        ],
+        "en": [
+          "de",
+          "es",
+          "fr",
+          "ja",
+          "it",
+          "pl",
+          "nl"
+        ],
+        "es": [
+          "en"
+        ],
+        "fr": [
+          "de",
+          "en"
+        ],
+        "ja": [
+          "en"
+        ],
+        "it": [
+          "en"
+        ],
+        "pl": [
+          "en"
+        ],
+        "nl": [
+          "en"
+        ]
+      },
+      "version": "1.0.2"
+    },
+    "libre_translate": {
+      "selected_languages": [
+        "zh-cn"
+      ],
+      "host": "",
+      "auto_translate": false,
+      "auto_translate_interval": 500,
+      "validated": null,
+      "available_languages": [
+        "en",
+        "ar",
+        "az",
+        "zh",
+        "cs",
+        "da",
+        "nl",
+        "eo",
+        "fi",
+        "fr",
+        "de",
+        "el",
+        "he",
+        "hi",
+        "hu",
+        "id",
+        "ga",
+        "it",
+        "ja",
+        "ko",
+        "fa",
+        "pl",
+        "pt",
+        "ru",
+        "sk",
+        "es",
+        "sv",
+        "tr",
+        "uk"
+      ],
+      "version": "1.0.1"
+    }
+  },
+  "glossary_preference": "online",
+  "target_language_preference": "specific",
+  "last_used_target_languages": []
+}

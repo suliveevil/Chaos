@@ -1,9 +1,13 @@
 ---
-title: "iVim 配置"
-categories: 
+title: iVim 配置
+categories:
 date: 2022-09-25 18:07:28 +0800
-tags: Vim iOS iPadOS 配置
-excerpt: 
+tags:
+  - Vim
+  - iOS
+  - iPadOS
+  - 配置
+excerpt:
 ---
 
 

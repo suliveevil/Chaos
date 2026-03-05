@@ -1,10 +1,12 @@
 ---
-title: "vim-vimlparser"
-author: 
-categories: 
+title: vim-vimlparser
+author:
+categories:
 date: 2022-10-07 06:58:42 +0800
-tags: Vim vimscript
-excerpt: 
+tags:
+  - Vim
+  - vimscript
+excerpt:
 ---
 
 

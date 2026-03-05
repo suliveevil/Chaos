@@ -1,9 +1,10 @@
 ---
-title: "ctrlf.el"
-categories: 
+title: ctrlf.el
+categories:
 date: 2022-09-26 20:11:26 +0800
-tags: 文本搜索
-excerpt: 
+tags:
+  - 文本搜索
+excerpt:
 ---
 
 [[Emacs 插件]]

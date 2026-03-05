@@ -1,9 +1,14 @@
 ---
-title: "emacs-key-source.nvim"
-categories: 
+title: emacs-key-source.nvim
+categories:
 date: 2022-10-01 07:46:22 +0800
-tags: Neovim Emacs 快捷键 Fennel Lua
-excerpt: 
+tags:
+  - Neovim
+  - Emacs
+  - 快捷键
+  - Fennel
+  - Lua
+excerpt:
 ---
 
 

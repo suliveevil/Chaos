@@ -1,9 +1,11 @@
 ---
-title: "navigator.lua"
-categories: 
+title: navigator.lua
+categories:
 date: 2022-09-30 04:16:24 +0800
-tags: Neovim LSP
-excerpt: 
+tags:
+  - Neovim
+  - LSP
+excerpt:
 ---
 
 [[Neovim 插件]]

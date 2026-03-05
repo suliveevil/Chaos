@@ -1,9 +1,11 @@
 ---
 title: ""
-categories: 
+categories:
 date: 2022-09-26 07:26:39 +0800
-tags: Emacs 光标移动
-excerpt: 
+tags:
+  - Emacs
+  - 光标移动
+excerpt:
 ---
 
 

@@ -1,9 +1,11 @@
 ---
-title: "alfred-pdf2image"
-categories: 
+title: alfred-pdf2image
+categories:
 date: 2022-09-25 19:45:26 +0800
-tags: Alfred PDF
-excerpt: 
+tags:
+  - Alfred
+  - PDF
+excerpt:
 ---
 
 [[Alfred Workflow]]

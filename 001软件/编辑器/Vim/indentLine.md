@@ -1,9 +1,12 @@
 ---
-title: "indentLine"
-categories: 
+title: indentLine
+categories:
 date: 2022-09-28 03:57:48 +0800
-tags: Vim 缩进 UI
-excerpt: 
+tags:
+  - Vim
+  - 缩进
+  - UI
+excerpt:
 ---
 
 [[Vim 插件]]

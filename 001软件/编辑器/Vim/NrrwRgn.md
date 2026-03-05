@@ -1,9 +1,10 @@
 ---
-title: "NrrwRgn"
-categories: 
+title: NrrwRgn
+categories:
 date: 2022-09-28 03:31:23 +0800
-tags: Vim
-excerpt: 
+tags:
+  - Vim
+excerpt:
 ---
 
 

@@ -1,8 +1,11 @@
 ---
-title: "MWeb"
+title: MWeb
 categories: macOS Software
 date: 2022-09-04 07:24:07 +0800
-tags: markdown macOS 买断制付费软件
+tags:
+  - markdown
+  - macOS
+  - 买断制付费软件
 excerpt: MWeb 是专业的 Markdown 写作、记笔记、静态博客生成软件。
 ---
 

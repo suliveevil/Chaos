@@ -1,9 +1,11 @@
 ---
-title: "LunarVim"
-categories: 
+title: LunarVim
+categories:
 date: 2022-09-26 00:57:37 +0800
-tags: Neovim 配置
-excerpt: 
+tags:
+  - Neovim
+  - 配置
+excerpt:
 ---
 
 

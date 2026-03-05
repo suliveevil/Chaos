@@ -1,9 +1,10 @@
 ---
-title: "Debookee"
-categories: 
+title: Debookee
+categories:
 date: 2022-09-26 23:52:53 +0800
-tags: macOS
-excerpt: 
+tags:
+  - macOS
+excerpt:
 ---
 
 

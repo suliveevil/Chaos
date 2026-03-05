@@ -1,9 +1,10 @@
 ---
-title: "use-package"
-categories: 
+title: use-package
+categories:
 date: 2022-09-30 04:00:55 +0800
-tags: Emacs
-excerpt: 
+tags:
+  - Emacs
+excerpt:
 ---
 
 管理 [[Emacs 配置]]，而不是包管理器。

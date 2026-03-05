@@ -1,9 +1,10 @@
 ---
-title: "PDF"
-categories: 
+title: PDF
+categories:
 date: 2022-09-23 23:35:42 +0800
-tags: 文件格式
-excerpt: 
+tags:
+  - 文件格式
+excerpt:
 ---
 
 PDF、[[PostScript]]

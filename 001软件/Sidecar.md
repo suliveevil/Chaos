@@ -1,9 +1,11 @@
 ---
-title: "Sidecar"
-categories: 
+title: Sidecar
+categories:
 date: 2022-09-27 00:07:51 +0800
-tags: iPadOS macOS
-excerpt: 
+tags:
+  - iPadOS
+  - macOS
+excerpt:
 ---
 中文名：随航
 

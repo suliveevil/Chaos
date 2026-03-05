@@ -1,9 +1,12 @@
 ---
-title: "blurred"
+title: blurred
 categories: macOS Software
 date: 2022-09-04 07:24:07 +0800
-tags: macOS GUI 精力管理
-excerpt: 
+tags:
+  - macOS
+  - GUI
+  - 精力管理
+excerpt:
 ---
 
 

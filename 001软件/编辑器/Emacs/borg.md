@@ -1,8 +1,10 @@
 ---
-title: "borg"
-categories: 
+title: borg
+categories:
 date: 2022-09-29 08:01:49 +0800
-tags: Emacs 包管理器
+tags:
+  - Emacs
+  - 包管理器
 excerpt: A secondary package manager of Emacs
 ---
 

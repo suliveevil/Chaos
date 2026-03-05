@@ -1,9 +1,12 @@
 ---
-title: "alfred-workflow-cheatsheet"
-categories: 
+title: alfred-workflow-cheatsheet
+categories:
 date: 2022-09-23 19:49:41 +0800
-tags: Alfred 快捷键 Python
-excerpt: 
+tags:
+  - Alfred
+  - 快捷键
+  - Python
+excerpt:
 ---
 
 

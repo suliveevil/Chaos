@@ -1,10 +1,13 @@
 ---
-title: "vim-highlightedyank"
-author: 
-categories: 
+title: vim-highlightedyank
+author:
+categories:
 date: 2022-10-12 05:11:29 +0800
-tags: Vim 剪贴板 UI
-excerpt: 
+tags:
+  - Vim
+  - 剪贴板
+  - UI
+excerpt:
 ---
 
 

@@ -1,10 +1,12 @@
 ---
-title: "multiple-cursors.el"
-author: 
-categories: 
+title: multiple-cursors.el
+author:
+categories:
 date: 2022-10-04 00:58:30 +0800
-tags: Emacs 光标
-excerpt: 
+tags:
+  - Emacs
+  - 光标
+excerpt:
 ---
 
 

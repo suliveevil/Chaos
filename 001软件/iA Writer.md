@@ -1,9 +1,12 @@
 ---
-title: "iA Writer"
-categories: 
+title: iA Writer
+categories:
 date: 2022-09-26 23:49:41 +0800
-tags: iOS iPadOS macOS
-excerpt: 
+tags:
+  - iOS
+  - iPadOS
+  - macOS
+excerpt:
 ---
 
 [[Markdown]]编辑器

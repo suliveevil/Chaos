@@ -1,9 +1,11 @@
 ---
-title: "zone.nvim"
-categories: 
+title: zone.nvim
+categories:
 date: 2022-09-29 08:58:35 +0800
-tags: Neovim UI
-excerpt: 
+tags:
+  - Neovim
+  - UI
+excerpt:
 ---
 
 

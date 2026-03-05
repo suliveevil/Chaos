@@ -175,6 +175,52 @@ var langCodes = [
 ];
 var langCodes_default = langCodes;
 
+// src/regions.ts
+var regions = [
+  { text: "Global", code: "global" },
+  { text: "East Asia", code: "eastasia" },
+  { text: "Southeast Asia", code: "southeastasia" },
+  { text: "Central US", code: "centralus" },
+  { text: "East US", code: "eastus" },
+  { text: "East US 2", code: "eastus2" },
+  { text: "West US", code: "westus" },
+  { text: "North Central US", code: "northcentralus" },
+  { text: "South Central US", code: "southcentralus" },
+  { text: "North Europe", code: "northeurope" },
+  { text: "West Europe", code: "westeurope" },
+  { text: "Japan West", code: "japanwest" },
+  { text: "Japan East", code: "japaneast" },
+  { text: "Brazil South", code: "brazilsouth" },
+  { text: "Australia East", code: "australiaeast" },
+  { text: "Australia Southeast", code: "australiasoutheast" },
+  { text: "South India", code: "southindia" },
+  { text: "Central India", code: "centralindia" },
+  { text: "West India", code: "westindia" },
+  { text: "Canada Central", code: "canadacentral" },
+  { text: "Canada East", code: "canadaeast" },
+  { text: "UK South", code: "uksouth" },
+  { text: "UK West", code: "ukwest" },
+  { text: "West Central US", code: "westcentralus" },
+  { text: "West US 2", code: "westus2" },
+  { text: "Korea Central", code: "koreacentral" },
+  { text: "Korea South", code: "koreasouth" },
+  { text: "France Central", code: "francecentral" },
+  { text: "France South", code: "francesouth" },
+  { text: "Australia Central", code: "australiacentral" },
+  { text: "Australia Central 2", code: "australiacentral2" },
+  { text: "UAE Central", code: "uaecentral" },
+  { text: "UAE North", code: "uaenorth" },
+  { text: "South Africa North", code: "southafricanorth" },
+  { text: "South Africa West", code: "southafricawest" },
+  { text: "Switzerland North", code: "switzerlandnorth" },
+  { text: "Switzerland West", code: "switzerlandwest" },
+  { text: "Germany North", code: "germanynorth" },
+  { text: "Germany West Central", code: "germanywestcentral" },
+  { text: "Norway West", code: "norwaywest" },
+  { text: "Norway East", code: "norwayeast" }
+];
+var regions_default = regions;
+
 // src/settingsTab.ts
 var apiEntries = [
   {
@@ -220,6 +266,10 @@ var LanguageTranslatorSettingsTab = class extends import_obsidian.PluginSettingT
           case apiTypes_default.Azure:
             this.plugin.settings.translateApiUrl = apiUrls_default.AZURE_TRANSLATE_API_URL;
             this.apiUrlTextSetting.setValue(apiUrls_default.AZURE_TRANSLATE_API_URL);
+            this.plugin.settings.region = {
+              text: "Global",
+              code: "global"
+            };
             break;
           case apiTypes_default.LibreTranslate:
             this.plugin.settings.translateApiUrl = apiUrls_default.LIBRE_TRANSLATE_API_URL;
@@ -233,6 +283,16 @@ var LanguageTranslatorSettingsTab = class extends import_obsidian.PluginSettingT
         yield this.plugin.saveSettings();
       }));
       dropDown.setValue(this.plugin.settings.apiType.value);
+    });
+    new import_obsidian.Setting(containerEl).setName("Azure Translator Region").setDesc("Set regions").addDropdown((dropDown) => {
+      regions_default.forEach((el) => {
+        dropDown.addOption(el.code, el.text);
+      });
+      dropDown.onChange((value) => __async(this, null, function* () {
+        this.plugin.settings.region = regions_default.find((l) => l.code == value);
+        yield this.plugin.saveSettings();
+      }));
+      dropDown.setValue(this.plugin.settings.region.code);
     });
     new import_obsidian.Setting(containerEl).setName("API Url").addTextArea((text) => {
       text.setPlaceholder("Enter url").setValue(this.plugin.settings.translateApiUrl).onChange((value) => __async(this, null, function* () {
@@ -286,13 +346,13 @@ function getTextLibreTranslate(text, lang, token, translateApiUrl) {
     return res;
   });
 }
-function getTextAzure(text, lang, token, translateApiUrl) {
+function getTextAzure(text, lang, region, token, translateApiUrl) {
   return __async(this, null, function* () {
     let res = "";
     const payload = JSON.stringify([{ text }]);
     const myHeaders = new Headers({
       "Ocp-Apim-Subscription-Key": token,
-      "Ocp-Apim-Subscription-Region": "WestEurope",
+      "Ocp-Apim-Subscription-Region": region,
       "Content-type": "application/json"
     });
     try {
@@ -315,13 +375,12 @@ function getTextAzure(text, lang, token, translateApiUrl) {
 }
 
 // src/translationServiceImplementation.ts
-var AZURE_AUTH_URL = "https://func-language-worker-auth.azurewebsites.net/api/GetAuthToken";
+var AZURE_BUILTIN_KEY = "0bb27e8d40864db0a9854d8793e4fbb7";
 var TranslationServiceImplementation = class {
   constructor(plugin) {
     this.getBuiltinAzureToken = () => __async(this, null, function* () {
       try {
-        const response = yield fetch(AZURE_AUTH_URL);
-        return yield response.text();
+        return AZURE_BUILTIN_KEY;
       } catch (err) {
         console.log(err);
         new import_obsidian2.Notice(err.message);
@@ -335,10 +394,10 @@ var TranslationServiceImplementation = class {
       switch (Number(this.plugin.settings.apiType.value)) {
         case apiTypes_default.Builtin:
           let token = yield this.getBuiltinAzureToken();
-          result = yield getTextAzure(text, lang, token, this.plugin.settings.translateApiUrl);
+          result = yield getTextAzure(text, lang, "westeurope", token, this.plugin.settings.translateApiUrl);
           break;
         case apiTypes_default.Azure:
-          result = yield getTextAzure(text, lang, this.plugin.settings.token, this.plugin.settings.translateApiUrl);
+          result = yield getTextAzure(text, lang, this.plugin.settings.region.code, this.plugin.settings.token, this.plugin.settings.translateApiUrl);
           break;
         case apiTypes_default.LibreTranslate:
           result = yield getTextLibreTranslate(text, lang, this.plugin.settings.token, this.plugin.settings.translateApiUrl);
@@ -362,7 +421,11 @@ var DEFAULT_SETTINGS = {
   },
   translateApiUrl: apiUrls_default.AZURE_TRANSLATE_API_URL,
   maxCharacters: MAX_CHARACTERS,
-  token: ""
+  token: "",
+  region: {
+    text: "Global",
+    code: "global"
+  }
 };
 var LanguageTranslator = class extends import_obsidian3.Plugin {
   constructor() {
@@ -425,3 +488,5 @@ var LanguageTranslator = class extends import_obsidian3.Plugin {
     });
   }
 };
+
+/* nosourcemap */

@@ -1,10 +1,12 @@
 ---
-title: "vscode-swift"
+title: vscode-swift
 author: Swift Server Work Group
-categories: 
+categories:
 date: 2022-09-27 11:03:19 +0800
-tags: VSCode Swift
-excerpt: 
+tags:
+  - VSCode
+  - Swift
+excerpt:
 ---
 
 [[VSCode 插件]]

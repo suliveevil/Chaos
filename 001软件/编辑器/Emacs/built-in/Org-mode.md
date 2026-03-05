@@ -1,8 +1,9 @@
 ---
-title: "Org-mode"
+title: Org-mode
 categories:
 date: 2022-09-23 23:19:35 +0800
-tags: Emacs
+tags:
+  - Emacs
 excerpt:
 ---
 

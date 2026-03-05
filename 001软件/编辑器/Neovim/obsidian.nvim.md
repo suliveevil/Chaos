@@ -1,9 +1,11 @@
 ---
-title: "obsidian.nvim"
-categories: 
+title: obsidian.nvim
+categories:
 date: 2022-09-25 02:05:22 +0800
-tags: Neovim Obsidian
-excerpt: 
+tags:
+  - Neovim
+  - Obsidian
+excerpt:
 ---
 
 [[Neovim 插件]]

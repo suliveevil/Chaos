@@ -1,9 +1,11 @@
 ---
-title: "ZFVimIM"
-categories: 
+title: ZFVimIM
+categories:
 date: 2022-09-25 06:20:09 +0800
-tags: Vim 输入法
-excerpt: 
+tags:
+  - Vim
+  - 输入法
+excerpt:
 ---
 
 [[Vim 插件]]

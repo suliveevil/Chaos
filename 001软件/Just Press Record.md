@@ -1,8 +1,9 @@
 ---
-title: "Just Press Record"
-categories: 
+title: Just Press Record
+categories:
 date: 2022-10-07 19:28:08 +0800
-tags: 语音识别
+tags:
+  - 语音识别
 excerpt: Open Planet Software
 ---
 

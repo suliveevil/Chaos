@@ -1,9 +1,12 @@
 ---
 title: ""
-categories: 
+categories:
 date: 2022-09-30 08:19:57 +0800
-tags: macOS 模糊搜索 GUI
-excerpt: 
+tags:
+  - macOS
+  - 模糊搜索
+  - GUI
+excerpt:
 ---
 
 

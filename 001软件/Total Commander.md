@@ -1,9 +1,11 @@
 ---
-title: "Total Commander"
-categories: 
+title: Total Commander
+categories:
 date: 2022-09-24 09:28:37 +0800
-tags: Windows 文件管理
-excerpt: 
+tags:
+  - Windows
+  - 文件管理
+excerpt:
 ---
 
 

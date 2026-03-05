@@ -1,10 +1,12 @@
 ---
-title: "limelight.vim"
-author: 
-categories: 
+title: limelight.vim
+author:
+categories:
 date: 2022-10-01 22:34:39 +0800
-tags: Vim UI
-excerpt: 
+tags:
+  - Vim
+  - UI
+excerpt:
 ---
 
 

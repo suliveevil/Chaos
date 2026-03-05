@@ -1,8 +1,9 @@
 ---
-title: "Blender"
+title: Blender
 categories:
 date: 2022-09-26 01:55:28 +0800
-tags: 自由软件
+tags:
+  - 自由软件
 excerpt:
 ---
 # Blender

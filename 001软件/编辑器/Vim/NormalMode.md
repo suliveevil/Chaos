@@ -1,9 +1,11 @@
 ---
-title: "Normal Mode"
-categories: 
+title: Normal Mode
+categories:
 date: 2022-09-25 18:00:40 +0800
-tags: Vim 模式
-excerpt: 
+tags:
+  - Vim
+  - 模式
+excerpt:
 ---
 
 [[文本对象]]

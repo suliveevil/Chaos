@@ -1,9 +1,10 @@
 ---
-title: "Accessibility Inspector"
-categories: 
+title: Accessibility Inspector
+categories:
 date: 2022-09-26 23:56:20 +0800
-tags: macOS
-excerpt: 
+tags:
+  - macOS
+excerpt:
 ---
 
 

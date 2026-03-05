@@ -1,9 +1,12 @@
 ---
-title: "KindaVim"
-categories: 
+title: KindaVim
+categories:
 date: 2022-09-27 00:14:40 +0800
-tags: macOS GUI Vim
-excerpt: 
+tags:
+  - macOS
+  - GUI
+  - Vim
+excerpt:
 ---
 
 [kindaVim 官网](https://kindavim.app/)

@@ -1,9 +1,10 @@
 ---
-title: "Ammonite"
-categories: 
+title: Ammonite
+categories:
 date: 2022-09-26 23:32:30 +0800
-tags: macOS
-excerpt: 
+tags:
+  - macOS
+excerpt:
 ---
 
 

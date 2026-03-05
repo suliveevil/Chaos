@@ -1,10 +1,12 @@
 ---
-title: "mixed-pitch"
-author: 
-categories: 
+title: mixed-pitch
+author:
+categories:
 date: 2022-10-17 00:52:29 +0800
-tags: Emacs 字体
-excerpt: 
+tags:
+  - Emacs
+  - 字体
+excerpt:
 ---
 
 

@@ -1,9 +1,11 @@
 ---
-title: "MacVim"
-categories: 
+title: MacVim
+categories:
 date: 2022-09-26 23:55:15 +0800
-tags: macOS Vim
-excerpt: 
+tags:
+  - macOS
+  - Vim
+excerpt:
 ---
 
 

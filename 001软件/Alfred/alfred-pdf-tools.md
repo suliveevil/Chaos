@@ -1,9 +1,11 @@
 ---
-title: "alfred-pdf-tools"
-categories: 
+title: alfred-pdf-tools
+categories:
 date: 2022-09-25 19:47:31 +0800
-tags: Alfred PDF
-excerpt: 
+tags:
+  - Alfred
+  - PDF
+excerpt:
 ---
 
 

@@ -1,9 +1,11 @@
 ---
-title: "Shottr"
-categories: 
+title: Shottr
+categories:
 date: 2020-09-05 08:08:48 +0800
-tags: 截图 OCR
-excerpt: 
+tags:
+  - 截图
+  - OCR
+excerpt:
 ---
 
 [Shottr – Screenshot Annotation App For Mac](https://shottr.cc/)

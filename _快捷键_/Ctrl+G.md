@@ -1,9 +1,11 @@
 ---
-title: "Ctrl+G"
-categories: 
+title: Ctrl+G
+categories:
 date: 2022-09-30 05:05:14 +0800
-tags: Emacs 撤销
-excerpt: 
+tags:
+  - Emacs
+  - 撤销
+excerpt:
 ---
 
 

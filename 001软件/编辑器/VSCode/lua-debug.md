@@ -1,10 +1,13 @@
 ---
-title: "lua-debug"
-author: 
-categories: 
+title: lua-debug
+author:
+categories:
 date: 2022-10-11 08:34:28 +0800
-tags: VSCode Lua DAP
-excerpt: 
+tags:
+  - VSCode
+  - Lua
+  - DAP
+excerpt:
 ---
 
 

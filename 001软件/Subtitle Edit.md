@@ -1,10 +1,11 @@
 ---
-title: "Subtitle Edit"
-author: 
-categories: 
+title: Subtitle Edit
+author:
+categories:
 date: 2022-10-03 13:26:09 +0800
-tags: 字幕
-excerpt: 
+tags:
+  - 字幕
+excerpt:
 ---
 
 

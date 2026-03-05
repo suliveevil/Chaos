@@ -1,10 +1,11 @@
 ---
-title: "urlview.nvim"
-author: 
-categories: 
+title: urlview.nvim
+author:
+categories:
 date: 2022-10-06 12:19:56 +0800
-tags: Neovim
-excerpt: 
+tags:
+  - Neovim
+excerpt:
 ---
 
 [[Neovim 插件]]

@@ -1,8 +1,11 @@
 ---
-title: "Obsidian Dataview"
+title: Obsidian Dataview
 categories:
 date: 2022-09-24 03:18:10 +0800
-tags: Obsidian 数据库 SQL
+tags:
+  - Obsidian
+  - 数据库
+  - SQL
 excerpt:
 ---
 

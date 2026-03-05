@@ -1,9 +1,12 @@
 ---
-title: "nvim-snippy"
-categories: 
+title: nvim-snippy
+categories:
 date: 2022-09-25 19:24:06 +0800
-tags: 补全 Snippets Neovim
-excerpt: 
+tags:
+  - 补全
+  - Snippets
+  - Neovim
+excerpt:
 ---
 
 [[Neovim 插件]]

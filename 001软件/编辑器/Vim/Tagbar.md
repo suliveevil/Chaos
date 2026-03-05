@@ -1,10 +1,11 @@
 ---
-title: "Tagbar"
-author: 
-categories: 
+title: Tagbar
+author:
+categories:
 date: 2022-10-01 06:34:35 +0800
-tags: Vim
-excerpt: 
+tags:
+  - Vim
+excerpt:
 ---
 
 [[Vim 插件]]

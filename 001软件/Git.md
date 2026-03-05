@@ -1,9 +1,11 @@
 ---
-title: "Git"
-categories: 
+title: Git
+categories:
 date: 2022-09-30 22:48:07 +0800
-tags: 文件同步 版本控制
-excerpt: 
+tags:
+  - 文件同步
+  - 版本控制
+excerpt:
 ---
 
 [[Linus Torvalds]]

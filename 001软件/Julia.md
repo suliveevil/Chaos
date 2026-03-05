@@ -1,9 +1,11 @@
 ---
-title: "Julia"
-categories: 
+title: Julia
+categories:
 date: 2022-10-12 14:08:57 +0800
-tags: Julia 编程语言
-excerpt: 
+tags:
+  - Julia
+  - 编程语言
+excerpt:
 ---
 
 

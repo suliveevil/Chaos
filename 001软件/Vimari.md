@@ -1,9 +1,12 @@
 ---
-title: "Vimari"
-categories: 
+title: Vimari
+categories:
 date: 2022-09-25 06:25:37 +0800
-tags: macOS Safari Vim
-excerpt: 
+tags:
+  - macOS
+  - Safari
+  - Vim
+excerpt:
 ---
 
 

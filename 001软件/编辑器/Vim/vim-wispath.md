@@ -1,10 +1,12 @@
 ---
-title: "vim-wispath"
-author: 
-categories: 
+title: vim-wispath
+author:
+categories:
 date: 2022-10-06 02:23:41 +0800
-tags: Vim vim9
-excerpt: 
+tags:
+  - Vim
+  - vim9
+excerpt:
 ---
 
 

@@ -1,9 +1,11 @@
 ---
-title: "nui.nvim"
-categories: 
+title: nui.nvim
+categories:
 date: 2022-09-26 00:49:10 +0800
-tags: Neovim UI
-excerpt: 
+tags:
+  - Neovim
+  - UI
+excerpt:
 ---
 
 

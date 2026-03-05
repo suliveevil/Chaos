@@ -1,9 +1,10 @@
 ---
-title: "C++"
-categories: 
+title: C++
+categories:
 date: 2022-09-25 12:36:26 +0800
-tags: 编程语言
-excerpt: 
+tags:
+  - 编程语言
+excerpt:
 ---
 
 C++ 三大内存安全问题：空指针、悬空指针、内存泄漏

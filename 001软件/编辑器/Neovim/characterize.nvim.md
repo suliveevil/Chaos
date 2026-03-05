@@ -1,10 +1,13 @@
 ---
-title: "characterize.nvim"
-author: 
-categories: 
+title: characterize.nvim
+author:
+categories:
 date: 2022-10-01 08:36:16 +0800
-tags: Neovim Unicode 字符
-excerpt: 
+tags:
+  - Neovim
+  - Unicode
+  - 字符
+excerpt:
 ---
 
 

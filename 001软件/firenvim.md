@@ -1,9 +1,10 @@
 ---
-title: "firenvim"
-categories: 
+title: firenvim
+categories:
 date: 2022-10-02 06:18:11 +0800
-tags: Neovim
-excerpt: 
+tags:
+  - Neovim
+excerpt:
 ---
 
 

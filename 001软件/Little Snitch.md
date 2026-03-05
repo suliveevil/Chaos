@@ -1,8 +1,11 @@
 ---
-title: "Little Snitch"
+title: Little Snitch
 categories:
 date: 2022-09-26 23:51:37 +0800
-tags: macOS 网络 防火墙
+tags:
+  - macOS
+  - 网络
+  - 防火墙
 excerpt:
 ---
 

@@ -1,10 +1,12 @@
 ---
-title: "nvim-lsp-compl"
-author: 
-categories: 
+title: nvim-lsp-compl
+author:
+categories:
 date: 2022-10-16 02:10:44 +0800
-tags: Neovim 补全
-excerpt: 
+tags:
+  - Neovim
+  - 补全
+excerpt:
 ---
 
 

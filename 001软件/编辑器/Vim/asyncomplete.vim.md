@@ -1,9 +1,11 @@
 ---
-title: "asyncomplete.vim"
-categories: 
+title: asyncomplete.vim
+categories:
 date: 2022-09-30 04:11:04 +0800
-tags: Vim 补全
-excerpt: 
+tags:
+  - Vim
+  - 补全
+excerpt:
 ---
 
 [[Vim 插件]]

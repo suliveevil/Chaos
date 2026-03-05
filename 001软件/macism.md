@@ -1,9 +1,12 @@
 ---
 title: ""
-categories: 
+categories:
 date: 2022-09-27 00:00:56 +0800
-tags: macOS 输入法 Swift
-excerpt: 
+tags:
+  - macOS
+  - 输入法
+  - Swift
+excerpt:
 ---
 
 [[输入法]]切换工具

@@ -1,9 +1,13 @@
 ---
-title: "alfred-latex-symbols"
-categories: 
+title: alfred-latex-symbols
+categories:
 date: 2022-09-23 19:59:54 +0800
-tags: Alfred LaTeX Ruby JavaScript
-excerpt: 
+tags:
+  - Alfred
+  - LaTeX
+  - Ruby
+  - JavaScript
+excerpt:
 ---
 
 

@@ -3006,7 +3006,8 @@ var import_obsidian2 = __toModule(require("obsidian"));
 var import_obsidian = __toModule(require("obsidian"));
 var DEFAULT_SETTINGS = {
   dotPath: "dot",
-  renderer: "dot"
+  renderer: "dot",
+  imageFormat: "png"
 };
 var GraphvizSettingsTab = class extends import_obsidian.PluginSettingTab {
   constructor(plugin) {
@@ -3024,6 +3025,10 @@ var GraphvizSettingsTab = class extends import_obsidian.PluginSettingTab {
       this.plugin.settings.dotPath = value;
       yield this.plugin.saveSettings();
     })));
+    new import_obsidian.Setting(containerEl).setName("Image format").setDesc("Graphviz output format.").addDropdown((dropdown) => dropdown.addOption("png", "png").addOption("svg", "svg").setValue(this.plugin.settings.imageFormat).onChange((value) => __async(this, null, function* () {
+      this.plugin.settings.imageFormat = value;
+      yield this.plugin.saveSettings();
+    })));
   }
 };
 
@@ -3034,13 +3039,18 @@ var import_child_process = __toModule(require("child_process"));
 var import_crypto = __toModule(require("crypto"));
 var Processors = class {
   constructor(plugin) {
+    this.imageMimeType = new Map([
+      ["png", "image/png"],
+      ["svg", "image/svg+xml"]
+    ]);
     this.plugin = plugin;
   }
   writeDotFile(sourceFile) {
     return __async(this, null, function* () {
       return new Promise((resolve, reject) => {
         const cmdPath = this.plugin.settings.dotPath;
-        const parameters = ["-Tpng", sourceFile];
+        const imageFormat = this.plugin.settings.imageFormat;
+        const parameters = [`-T${imageFormat}`, sourceFile];
         console.debug(`Starting dot process ${cmdPath}, ${parameters}`);
         const dotProcess = (0, import_child_process.spawn)(cmdPath, parameters);
         const outData = [];
@@ -3065,7 +3075,7 @@ var Processors = class {
       });
     });
   }
-  convertToPng(source) {
+  convertToImage(source) {
     return __async(this, null, function* () {
       const self = this;
       return new Promise((resolve, reject) => {
@@ -3093,15 +3103,15 @@ var Processors = class {
     return __async(this, null, function* () {
       try {
         console.debug("Call image processor");
-        const pngData = yield this.convertToPng(source);
-        const blob = new Blob([pngData], { "type": "image/png" });
+        const imageData = yield this.convertToImage(source);
+        const blob = new Blob([imageData], { "type": this.imageMimeType.get(this.plugin.settings.imageFormat) });
         const url = window.URL || window.webkitURL;
         const blobUrl = url.createObjectURL(blob);
         const img = document.createElement("img");
         img.src = blobUrl;
         el.appendChild(img);
       } catch (errMessage) {
-        console.error("convert to png error", errMessage);
+        console.error("convert to image error", errMessage);
         const pre = document.createElement("pre");
         const code = document.createElement("code");
         pre.appendChild(code);
@@ -3185,3 +3195,5 @@ var GraphvizPlugin = class extends import_obsidian2.Plugin {
  *
  * MIT Licensed
  */
+
+/* nosourcemap */

@@ -1,9 +1,12 @@
 ---
-title: "Wordle"
+title: Wordle
 categories: 游戏
 date: 2022-09-24 00:38:18 +0800
-tags: 英文 单词 游戏
-excerpt: 
+tags:
+  - 英文
+  - 单词
+  - 游戏
+excerpt:
 ---
 
 [[英语]][[单词]][[游戏]]

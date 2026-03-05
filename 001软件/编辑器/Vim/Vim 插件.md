@@ -1,9 +1,11 @@
 ---
-title: "Vim 插件"
-categories: 
+title: Vim 插件
+categories:
 date: 2022-09-25 17:58:51 +0800
-tags: Vim 插件
-excerpt: 
+tags:
+  - Vim
+  - 插件
+excerpt:
 ---
 
 [[Vim]] [[插件]]

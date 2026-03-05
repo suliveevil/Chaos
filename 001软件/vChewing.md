@@ -1,8 +1,10 @@
 ---
-title: "vChewing"
-categories: 
+title: vChewing
+categories:
 date: 2022-09-27 09:04:48 +0800
-tags: 输入法 macOS
+tags:
+  - 输入法
+  - macOS
 excerpt: vChewing：威注音输入法
 ---
 

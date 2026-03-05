@@ -1,9 +1,11 @@
 ---
-title: "obsidian-vimrc-support"
-categories: 
+title: obsidian-vimrc-support
+categories:
 date: 2022-09-29 06:15:56 +0800
-tags: Obsidian Vim
-excerpt: 
+tags:
+  - Obsidian
+  - Vim
+excerpt:
 ---
 
 

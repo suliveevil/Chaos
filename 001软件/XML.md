@@ -1,9 +1,10 @@
 ---
-title: "XML"
-categories: 
+title: XML
+categories:
 date: 2022-09-24 03:03:18 +0800
-tags: 文件格式
-excerpt: 
+tags:
+  - 文件格式
+excerpt:
 ---
 
 XML：Extensible Markup Language

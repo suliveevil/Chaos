@@ -1,10 +1,12 @@
 ---
-title: "nvim-mapper"
-author: 
-categories: 
+title: nvim-mapper
+author:
+categories:
 date: 2022-10-01 07:48:27 +0800
-tags: Neovim 快捷键
-excerpt: 
+tags:
+  - Neovim
+  - 快捷键
+excerpt:
 ---
 
 

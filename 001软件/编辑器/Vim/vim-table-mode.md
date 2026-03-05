@@ -1,9 +1,10 @@
 ---
-title: "vim-table-mode"
-categories: 
+title: vim-table-mode
+categories:
 date: 2022-09-28 04:02:41 +0800
-tags: Vim
-excerpt: 
+tags:
+  - Vim
+excerpt:
 ---
 
 

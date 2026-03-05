@@ -1,9 +1,11 @@
 ---
-title: "eww-history-ext"
-categories: 
+title: eww-history-ext
+categories:
 date: 2022-10-26 17:28:59 +0800
-tags: Emacs Rust
-excerpt: 
+tags:
+  - Emacs
+  - Rust
+excerpt:
 ---
 
 

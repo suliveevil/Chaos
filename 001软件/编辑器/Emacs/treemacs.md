@@ -1,9 +1,11 @@
 ---
-title: "treemacs"
-categories: 
+title: treemacs
+categories:
 date: 2022-09-30 02:55:09 +0800
-tags: Emacs 文件管理
-excerpt: 
+tags:
+  - Emacs
+  - 文件管理
+excerpt:
 ---
 
 [Alexander-Miller/treemacs](https://github.com/Alexander-Miller/treemacs): Treemacs: a tree layout file explorer for Emacs

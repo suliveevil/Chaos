@@ -1,9 +1,11 @@
 ---
-title: "insert-translated-name"
-categories: 
+title: insert-translated-name
+categories:
 date: 2022-09-30 00:36:59 +0800
-tags: Emacs 翻译
-excerpt: 
+tags:
+  - Emacs
+  - 翻译
+excerpt:
 ---
 
 

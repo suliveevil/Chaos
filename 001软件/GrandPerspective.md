@@ -1,9 +1,10 @@
 ---
 title: ""
-categories: 
+categories:
 date: 2022-09-26 23:39:35 +0800
-tags: macOS
-excerpt: 
+tags:
+  - macOS
+excerpt:
 ---
 
 

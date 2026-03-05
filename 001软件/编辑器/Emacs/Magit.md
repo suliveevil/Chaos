@@ -1,9 +1,11 @@
 ---
-title: "Magit"
-categories: 
+title: Magit
+categories:
 date: 2022-09-25 06:34:15 +0800
-tags: Emacs Git
-excerpt: 
+tags:
+  - Emacs
+  - Git
+excerpt:
 ---
 
 [magit/magit](https://github.com/magit/magit): It's Magit! A [[Git]] porcelain inside Emacs.

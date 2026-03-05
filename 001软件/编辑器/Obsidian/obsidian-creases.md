@@ -1,10 +1,12 @@
 ---
-title: "obsidian-creases"
-author: 
-categories: 
+title: obsidian-creases
+author:
+categories:
 date: 2022-10-07 04:21:53 +0800
-tags: Obsidian 折叠
-excerpt: 
+tags:
+  - Obsidian
+  - 折叠
+excerpt:
 ---
 
 

@@ -1,9 +1,11 @@
 ---
-title: "vim9-syntax"
-categories: 
+title: vim9-syntax
+categories:
 date: 2022-09-25 18:04:33 +0800
-tags: Vim vim9
-excerpt: 
+tags:
+  - Vim
+  - vim9
+excerpt:
 ---
 
 

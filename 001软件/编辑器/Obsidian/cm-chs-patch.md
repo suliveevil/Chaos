@@ -1,8 +1,12 @@
 ---
-title: "cm-chs-patch"
-categories: 
+title: cm-chs-patch
+categories:
 date: 2022-09-23 20:11:32 +0800
-tags: 中文 分词 开箱即用 Obsidian
+tags:
+  - 中文
+  - 分词
+  - 开箱即用
+  - Obsidian
 excerpt: 为 Obsidian 提供中文分词
 ---
 

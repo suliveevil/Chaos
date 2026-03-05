@@ -1,10 +1,13 @@
 ---
-title: "vscode-clangd"
-author: 
-categories: 
+title: vscode-clangd
+author:
+categories:
 date: 2022-10-12 14:10:51 +0800
-tags: C C++ LSP
-excerpt: 
+tags:
+  - C
+  - C++
+  - LSP
+excerpt:
 ---
 
 

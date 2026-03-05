@@ -1,9 +1,11 @@
 ---
-title: "vim-PinyinSearch"
-categories: 
+title: vim-PinyinSearch
+categories:
 date: 2022-10-23 12:11:21 +0800
-tags: Vim 文本搜索
-excerpt: 
+tags:
+  - Vim
+  - 文本搜索
+excerpt:
 ---
 
 [[Vim 插件]]：[[中文]][[拼音]]搜索

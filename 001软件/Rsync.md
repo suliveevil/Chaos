@@ -1,9 +1,11 @@
 ---
-title: "rsync"
+title: rsync
 author:
 categories:
 date: 2022-10-14 10:33:47 +0800
-tags: 文件下载 文件同步
+tags:
+  - 文件下载
+  - 文件同步
 excerpt: rsync：远程同步（remote synchronize）
 ---
 

@@ -1,9 +1,11 @@
 ---
-title: "vim9asm"
-categories: 
+title: vim9asm
+categories:
 date: 2022-09-30 03:22:25 +0800
-tags: Vim vim9
-excerpt: 
+tags:
+  - Vim
+  - vim9
+excerpt:
 ---
 
 

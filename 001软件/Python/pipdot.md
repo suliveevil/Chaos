@@ -1,8 +1,9 @@
 ---
-title: "pipdot"
+title: pipdot
 categories:
 date: 2022-10-07 21:26:42 +0800
-tags: 依赖
+tags:
+  - 依赖
 excerpt:
 ---
 

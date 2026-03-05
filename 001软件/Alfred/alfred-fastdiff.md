@@ -1,10 +1,11 @@
 ---
-title: "alfred-fastdiff"
-author: 
-categories: 
+title: alfred-fastdiff
+author:
+categories:
 date: 2022-10-09 00:26:21 +0800
-tags: 文本对比
-excerpt: 
+tags:
+  - 文本对比
+excerpt:
 ---
 
 

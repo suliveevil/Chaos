@@ -1,9 +1,12 @@
 ---
-title: "Snippets"
-categories: 
+title: Snippets
+categories:
 date: 2022-09-24 22:25:22 +0800
-tags: Snippets 补全 文本替换
-excerpt: 
+tags:
+  - Snippets
+  - 补全
+  - 文本替换
+excerpt:
 ---
 
 

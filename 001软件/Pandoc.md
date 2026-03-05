@@ -1,9 +1,12 @@
 ---
-title: "Pandoc"
-categories: 
+title: Pandoc
+categories:
 date: 2022-09-25 01:57:14 +0800
-tags: 标记语言 格式转换 Haskell
-excerpt: 
+tags:
+  - 标记语言
+  - 格式转换
+  - Haskell
+excerpt:
 ---
 
 [jgm/pandoc](https://github.com/jgm/pandoc): Universal markup converter

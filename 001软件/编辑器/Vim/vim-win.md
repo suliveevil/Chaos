@@ -1,9 +1,11 @@
 ---
-title: "vim-win"
-categories: 
+title: vim-win
+categories:
 date: 2022-09-28 06:17:11 +0800
-tags: Vim 窗口管理
-excerpt: 
+tags:
+  - Vim
+  - 窗口管理
+excerpt:
 ---
 
 

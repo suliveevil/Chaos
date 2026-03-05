@@ -1,10 +1,12 @@
 ---
-title: "CodeEdit"
-author: 
-categories: 
+title: CodeEdit
+author:
+categories:
 date: 2022-10-07 15:06:43 +0800
-tags: macOS 文本编辑器
-excerpt: 
+tags:
+  - macOS
+  - 文本编辑器
+excerpt:
 ---
 
 

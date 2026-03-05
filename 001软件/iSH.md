@@ -1,8 +1,12 @@
 ---
-title: "iSH Shell"
-categories: 
+title: iSH Shell
+categories:
 date: 2022-09-27 05:27:45 +0800
-tags: iOS iPadOS Linux 自由软件
+tags:
+  - iOS
+  - iPadOS
+  - Linux
+  - 自由软件
 excerpt: iSH is a project to get a Linux shell environment running locally on your iOS device, using a usermode x86 emulator.
 ---
 

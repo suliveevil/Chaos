@@ -1,9 +1,10 @@
 ---
-title: "chezmoi.el"
-categories: 
+title: chezmoi.el
+categories:
 date: 2022-09-30 01:04:25 +0800
-tags: Emacs
-excerpt: 
+tags:
+  - Emacs
+excerpt:
 ---
 
 [[Emacs 插件]]

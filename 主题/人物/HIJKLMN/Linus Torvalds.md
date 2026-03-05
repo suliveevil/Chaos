@@ -1,9 +1,11 @@
 ---
-title: "Linus Torvalds"
-categories: 
+title: Linus Torvalds
+categories:
 date: 2022-09-23 20:29:59 +0800
-tags: Linux Git
-excerpt: 
+tags:
+  - Linux
+  - Git
+excerpt:
 ---
 
 

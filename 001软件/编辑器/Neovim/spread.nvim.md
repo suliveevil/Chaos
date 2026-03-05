@@ -1,10 +1,11 @@
 ---
-title: "spread.nvim"
-author: 
-categories: 
+title: spread.nvim
+author:
+categories:
 date: 2022-10-01 07:59:49 +0800
-tags: Neovim
-excerpt: 
+tags:
+  - Neovim
+excerpt:
 ---
 
 

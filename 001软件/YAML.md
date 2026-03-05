@@ -1,9 +1,10 @@
 ---
-title: "YAML"
-categories: 
+title: YAML
+categories:
 date: 2022-09-24 03:03:49 +0800
-tags: 文件格式
-excerpt: 
+tags:
+  - 文件格式
+excerpt:
 ---
 
 

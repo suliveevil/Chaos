@@ -1,8 +1,11 @@
 ---
-title: "ignore-in-alfred"
-categories: 
+title: ignore-in-alfred
+categories:
 date: 2022-09-23 19:32:41 +0800
-tags: Alfred 文件搜索 Swift
+tags:
+  - Alfred
+  - 文件搜索
+  - Swift
 excerpt: Exclude files and folders from Alfred’s search results.
 ---
 

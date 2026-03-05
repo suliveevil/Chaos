@@ -1,10 +1,13 @@
 ---
-title: "centered-cursor-mode.el"
-author: 
-categories: 
+title: centered-cursor-mode.el
+author:
+categories:
 date: 2022-10-16 16:09:00 +0800
-tags: Emacs 光标 UI
-excerpt: 
+tags:
+  - Emacs
+  - 光标
+  - UI
+excerpt:
 ---
 
 

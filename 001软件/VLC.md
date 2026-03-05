@@ -1,9 +1,17 @@
 ---
-title: "VLC"
-categories: 
+title: VLC
+categories:
 date: 2022-09-23 23:37:43 +0800
-tags: 安卓 Linux iOS iPadOS macOS Windows 视频播放器 自由软件
-excerpt: 
+tags:
+  - 安卓
+  - Linux
+  - iOS
+  - iPadOS
+  - macOS
+  - Windows
+  - 视频播放器
+  - 自由软件
+excerpt:
 ---
 
 

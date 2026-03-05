@@ -1,8 +1,9 @@
 ---
-title: "grep"
+title: grep
 categories:
 date: 2022-10-06 05:57:47 +0800
-tags: 正则表达式
+tags:
+  - 正则表达式
 excerpt:
 ---
 

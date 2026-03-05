@@ -1,9 +1,10 @@
 ---
-title: "LaunchBar"
-categories: 
+title: LaunchBar
+categories:
 date: 2022-09-26 04:10:48 +0800
-tags: macOS
-excerpt: 
+tags:
+  - macOS
+excerpt:
 ---
 
 macOS 启动器

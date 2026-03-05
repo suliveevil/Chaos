@@ -1,9 +1,12 @@
 ---
-title: "csv.vim"
-categories: 
+title: csv.vim
+categories:
 date: 2022-09-25 00:08:56 +0800
-tags: Vim 文件格式 CSV
-excerpt: 
+tags:
+  - Vim
+  - 文件格式
+  - CSV
+excerpt:
 ---
 
 [[Vim 插件]]

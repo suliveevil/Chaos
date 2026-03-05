@@ -1,9 +1,10 @@
 ---
-title: "PopClip"
-categories: 
+title: PopClip
+categories:
 date: 2022-09-27 00:12:03 +0800
-tags: macOS
-excerpt: 
+tags:
+  - macOS
+excerpt:
 ---
 
 

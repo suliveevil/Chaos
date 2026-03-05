@@ -1,8 +1,10 @@
 ---
-title: "Emacs 插件"
+title: Emacs 插件
 categories:
 date: 2022-10-10 15:20:57 +0800
-tags: Emacs 插件
+tags:
+  - Emacs
+  - 插件
 excerpt:
 ---
 

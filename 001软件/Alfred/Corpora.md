@@ -1,9 +1,11 @@
 ---
-title: "Corpora"
-categories: 
+title: Corpora
+categories:
 date: 2022-09-23 19:45:55 +0800
-tags: Alfred 词典
-excerpt: 
+tags:
+  - Alfred
+  - 词典
+excerpt:
 ---
 
 

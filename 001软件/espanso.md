@@ -1,9 +1,17 @@
 ---
-title: "espanso"
-categories: 
+title: espanso
+categories:
 date: 2022-09-25 19:32:18 +0800
-tags: 补全 Snippets 文本替换 自由软件 Linux macOS Windows Rust
-excerpt: 
+tags:
+  - 补全
+  - Snippets
+  - 文本替换
+  - 自由软件
+  - Linux
+  - macOS
+  - Windows
+  - Rust
+excerpt:
 ---
 
 

@@ -1,9 +1,10 @@
 ---
-title: "Linux"
-categories: 
+title: Linux
+categories:
 date: 2022-09-25 23:16:56 +0800
-tags: 操作系统
-excerpt: 
+tags:
+  - 操作系统
+excerpt:
 ---
 
 [[Linus Torvalds]]

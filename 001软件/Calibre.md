@@ -1,9 +1,12 @@
 ---
-title: "Calibre"
-categories: 
+title: Calibre
+categories:
 date: 2022-09-26 23:36:12 +0800
-tags: Linux macOS Windows
-excerpt: 
+tags:
+  - Linux
+  - macOS
+  - Windows
+excerpt:
 ---
 
 

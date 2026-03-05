@@ -1,8 +1,10 @@
 ---
-title: "Go"
-categories: 
+title: Go
+categories:
 date: 2022-09-25 19:10:04 +0800
-tags: 单词 编程语言
+tags:
+  - 单词
+  - 编程语言
 excerpt: Golang
 ---
 

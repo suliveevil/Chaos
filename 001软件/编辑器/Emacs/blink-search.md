@@ -1,8 +1,10 @@
 ---
-title: "blink-search"
+title: blink-search
 categories:
 date: 2022-09-30 00:43:00 +0800
-tags: Emacs 模糊搜索
+tags:
+  - Emacs
+  - 模糊搜索
 excerpt:
 ---
 

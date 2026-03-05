@@ -1,9 +1,11 @@
 ---
-title: "telega.el"
-categories: 
+title: telega.el
+categories:
 date: 2022-11-15 05:21:29 +0800
-tags: Emacs 社交
-excerpt: 
+tags:
+  - Emacs
+  - 社交
+excerpt:
 ---
 
 

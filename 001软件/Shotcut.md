@@ -1,9 +1,10 @@
 ---
-title: "Shotcut"
-categories: 
+title: Shotcut
+categories:
 date: 2022-09-24 09:57:56 +0800
-tags: 视频编辑器
-excerpt: 
+tags:
+  - 视频编辑器
+excerpt:
 ---
 
 [[视频编辑]]

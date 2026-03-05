@@ -1,9 +1,11 @@
 ---
-title: "nlsp-settings.nvim"
-categories: 
+title: nlsp-settings.nvim
+categories:
 date: 2022-09-30 04:16:55 +0800
-tags: Neovim LSP
-excerpt: 
+tags:
+  - Neovim
+  - LSP
+excerpt:
 ---
 
 

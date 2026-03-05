@@ -1,9 +1,10 @@
 ---
-title: "tvOS"
-categories: 
+title: tvOS
+categories:
 date: 2022-09-25 23:16:13 +0800
-tags: 操作系统
-excerpt: 
+tags:
+  - 操作系统
+excerpt:
 ---
 
 Apple tvOS

@@ -1,9 +1,12 @@
 ---
-title: "cnhl"
-categories: 
+title: cnhl
+categories:
 date: 2022-11-14 02:43:47 +0800
-tags: 中文 NLP Emacs
-excerpt: 
+tags:
+  - 中文
+  - NLP
+  - Emacs
+excerpt:
 ---
 
 [[Emacs 插件]]：[[中文]]分词/词性高亮

@@ -1,9 +1,10 @@
 ---
-title: "微力同步 VerySync"
-categories: 
+title: 微力同步 VerySync
+categories:
 date: 2022-09-23 21:31:06 +0800
-tags: 文件同步
-excerpt: 
+tags:
+  - 文件同步
+excerpt:
 ---
 
 [[文件]][[同步]]软件，官网：[微力同步 - 私有云盘 企业文件同步 团队文件共享协助工具](http://www.verysync.com/)

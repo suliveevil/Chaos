@@ -1,10 +1,11 @@
 ---
-title: "Logseq"
-author: 
-categories: 
+title: Logseq
+author:
+categories:
 date: 2022-10-09 17:34:46 +0800
-tags: Clojure
-excerpt: 
+tags:
+  - Clojure
+excerpt:
 ---
 
 

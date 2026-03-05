@@ -1,9 +1,12 @@
 ---
-title: "sh - Safari History Fuzzy Search"
-categories: 
+title: sh - Safari History Fuzzy Search
+categories:
 date: 2022-09-23 23:53:51 +0800
-tags: Alfred Safari 模糊搜索
-excerpt: 
+tags:
+  - Alfred
+  - Safari
+  - 模糊搜索
+excerpt:
 ---
 
 [[Alfred Workflow]]

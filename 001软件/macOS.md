@@ -1,8 +1,9 @@
 ---
-title: "macOS"
+title: macOS
 categories:
 date: 2022-09-25 23:15:46 +0800
-tags: 操作系统
+tags:
+  - 操作系统
 excerpt:
 ---
 

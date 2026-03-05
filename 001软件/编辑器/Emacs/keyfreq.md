@@ -1,9 +1,11 @@
 ---
-title: "keyfreq"
-categories: 
+title: keyfreq
+categories:
 date: 2022-09-29 09:05:58 +0800
-tags: Emacs 键盘
-excerpt: 
+tags:
+  - Emacs
+  - 键盘
+excerpt:
 ---
 
 [[Emacs 插件]]

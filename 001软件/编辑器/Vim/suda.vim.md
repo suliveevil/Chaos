@@ -1,10 +1,11 @@
 ---
-title: "suda.vim"
-author: 
-categories: 
+title: suda.vim
+author:
+categories:
 date: 2022-10-02 06:31:09 +0800
-tags: Vim
-excerpt: 
+tags:
+  - Vim
+excerpt:
 ---
 
 

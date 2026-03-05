@@ -1,9 +1,10 @@
 ---
-title: "traces.vim"
-categories: 
+title: traces.vim
+categories:
 date: 2022-09-28 04:00:04 +0800
-tags: Vim
-excerpt: 
+tags:
+  - Vim
+excerpt:
 ---
 
 

@@ -1,9 +1,13 @@
 ---
-title: "mackup"
-categories: 
+title: mackup
+categories:
 date: 2022-09-26 01:54:24 +0800
-tags: Linux macOS 文件管理 Python
-excerpt: 
+tags:
+  - Linux
+  - macOS
+  - 文件管理
+  - Python
+excerpt:
 ---
 
 

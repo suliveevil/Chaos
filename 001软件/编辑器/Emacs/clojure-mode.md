@@ -1,9 +1,11 @@
 ---
-title: "clojure-mode"
-categories: 
+title: clojure-mode
+categories:
 date: 2022-09-29 11:48:40 +0800
-tags: Emacs Clojure
-excerpt: 
+tags:
+  - Emacs
+  - Clojure
+excerpt:
 ---
 
 

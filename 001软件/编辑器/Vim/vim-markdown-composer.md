@@ -1,10 +1,12 @@
 ---
-title: "vim-markdown-composer"
-author: 
-categories: 
+title: vim-markdown-composer
+author:
+categories:
 date: 2022-10-02 02:46:48 +0800
-tags: Vim Markdown
-excerpt: 
+tags:
+  - Vim
+  - Markdown
+excerpt:
 ---
 
 

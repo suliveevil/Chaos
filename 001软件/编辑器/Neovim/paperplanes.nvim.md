@@ -1,10 +1,12 @@
 ---
-title: "paperplanes.nvim"
-author: 
-categories: 
+title: paperplanes.nvim
+author:
+categories:
 date: 2022-10-01 08:57:24 +0800
-tags: Neovim Fennel
-excerpt: 
+tags:
+  - Neovim
+  - Fennel
+excerpt:
 ---
 
 

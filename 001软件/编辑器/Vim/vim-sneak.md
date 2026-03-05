@@ -1,9 +1,11 @@
 ---
-title: "vim-sneak"
-categories: 
+title: vim-sneak
+categories:
 date: 2022-09-26 03:53:54 +0800
-tags: Vim 模式
-excerpt: 
+tags:
+  - Vim
+  - 模式
+excerpt:
 ---
 
 [[Vim 插件]]

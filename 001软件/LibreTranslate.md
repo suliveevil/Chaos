@@ -1,10 +1,12 @@
 ---
-title: "LibreTranslate"
-author: 
-categories: 
+title: LibreTranslate
+author:
+categories:
 date: 2022-10-06 05:09:21 +0800
-tags: 翻译 自由软件
-excerpt: 
+tags:
+  - 翻译
+  - 自由软件
+excerpt:
 ---
 
 

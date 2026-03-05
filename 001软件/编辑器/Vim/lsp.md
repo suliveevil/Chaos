@@ -1,9 +1,13 @@
 ---
-title: "lsp"
-categories: 
+title: lsp
+categories:
 date: 2022-09-23 14:04:32 +0800
-tags: Vim LSP Vimscript vim9
-excerpt: 
+tags:
+  - Vim
+  - LSP
+  - Vimscript
+  - vim9
+excerpt:
 ---
 
 [[Vim 插件]]

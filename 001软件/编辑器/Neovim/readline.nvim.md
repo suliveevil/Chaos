@@ -1,9 +1,11 @@
 ---
-title: "readline.nvim"
-categories: 
+title: readline.nvim
+categories:
 date: 2022-10-01 07:43:48 +0800
-tags: Neovim 快捷键
-excerpt: 
+tags:
+  - Neovim
+  - 快捷键
+excerpt:
 ---
 
 [linty-org/readline.nvim](https://github.com/linty-org/readline.nvim): Readline motions and deletions in Neovim

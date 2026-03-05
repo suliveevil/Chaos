@@ -1,9 +1,10 @@
 ---
-title: "Debug Adapter Protocol"
-categories: 
+title: Debug Adapter Protocol
+categories:
 date: 2022-09-30 04:12:14 +0800
-tags: DAP
-excerpt: 
+tags:
+  - DAP
+excerpt:
 ---
 
 

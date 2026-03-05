@@ -1,10 +1,14 @@
 ---
-title: "VoiceExpress"
-author: 
-categories: 
+title: VoiceExpress
+author:
+categories:
 date: 2022-10-02 12:15:28 +0800
-tags: iOS iPadOS macOS 语音识别
-excerpt: 
+tags:
+  - iOS
+  - iPadOS
+  - macOS
+  - 语音识别
+excerpt:
 ---
 
 

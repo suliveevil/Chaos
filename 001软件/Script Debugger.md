@@ -1,9 +1,10 @@
 ---
-title: "Script Debugger"
-categories: 
+title: Script Debugger
+categories:
 date: 2022-09-27 00:12:14 +0800
-tags: macOS
-excerpt: 
+tags:
+  - macOS
+excerpt:
 ---
 
 

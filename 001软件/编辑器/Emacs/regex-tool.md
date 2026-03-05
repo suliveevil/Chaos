@@ -1,9 +1,10 @@
 ---
-title: "regex-tool"
-categories: 
+title: regex-tool
+categories:
 date: 2022-11-15 05:43:36 +0800
-tags: 正则表达式
-excerpt: 
+tags:
+  - 正则表达式
+excerpt:
 ---
 
 

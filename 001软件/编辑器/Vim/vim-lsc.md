@@ -1,10 +1,13 @@
 ---
-title: "vim-lsc"
-author: 
-categories: 
+title: vim-lsc
+author:
+categories:
 date: 2022-10-06 02:40:34 +0800
-tags: Vim LSP vim9
-excerpt: 
+tags:
+  - Vim
+  - LSP
+  - vim9
+excerpt:
 ---
 
 [[Vim 插件]]

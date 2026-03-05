@@ -1,10 +1,12 @@
 ---
-title: "siefe.vim"
-author: 
-categories: 
+title: siefe.vim
+author:
+categories:
 date: 2022-10-09 12:44:13 +0800
-tags: Vim 文件搜索
-excerpt: 
+tags:
+  - Vim
+  - 文件搜索
+excerpt:
 ---
 
 

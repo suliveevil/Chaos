@@ -1,9 +1,11 @@
 ---
-title: "闪卡WinkNotes"
-categories: 
+title: 闪卡WinkNotes
+categories:
 date: 2022-09-27 05:48:06 +0800
-tags: iOS macOS 
-excerpt: 
+tags:
+  - iOS
+  - macOS
+excerpt:
 ---
 
 闪卡官网：[奈斯应用](https://www.appnice.cn/)

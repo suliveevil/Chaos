@@ -1,9 +1,10 @@
 ---
-title: "CheatSheet"
-categories: 
+title: CheatSheet
+categories:
 date: 2022-09-26 23:36:30 +0800
-tags: macOS
-excerpt: 
+tags:
+  - macOS
+excerpt:
 ---
 
 [CheatSheet - 了解你的快捷键](https://www.mediaatelier.com/CheatSheet/)

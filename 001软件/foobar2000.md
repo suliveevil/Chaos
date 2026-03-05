@@ -1,9 +1,10 @@
 ---
-title: "foobar2000"
-categories: 
+title: foobar2000
+categories:
 date: 2022-09-24 09:33:22 +0800
-tags: 音频播放器
-excerpt: 
+tags:
+  - 音频播放器
+excerpt:
 ---
 
 

@@ -1,9 +1,12 @@
 ---
-title: "vim-vsnip"
-categories: 
+title: vim-vsnip
+categories:
 date: 2022-09-25 19:27:43 +0800
-tags: 补全 Snippets LSP
-excerpt: 
+tags:
+  - 补全
+  - Snippets
+  - LSP
+excerpt:
 ---
 
 [hrsh7th/vim-vsnip](https://github.com/hrsh7th/vim-vsnip/): Snippet plugin for vim/nvim that supports LSP/VSCode's snippet format.

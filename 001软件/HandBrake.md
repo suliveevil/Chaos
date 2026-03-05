@@ -1,9 +1,12 @@
 ---
-title: "HandBrake"
-categories: 
+title: HandBrake
+categories:
 date: 2022-09-24 09:40:11 +0800
-tags: 音频 视频 格式转换
-excerpt: 
+tags:
+  - 音频
+  - 视频
+  - 格式转换
+excerpt:
 ---
 
 [[音频]]、[[视频]]格式转换

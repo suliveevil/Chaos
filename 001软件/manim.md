@@ -1,10 +1,14 @@
 ---
-title: "manim"
-author: 
-categories: 
+title: manim
+author:
+categories:
 date: 2022-10-07 12:04:41 +0800
-tags: 动画 视频 数学 Python
-excerpt: 
+tags:
+  - 动画
+  - 视频
+  - 数学
+  - Python
+excerpt:
 ---
 
 [[3Blue1Brown]]

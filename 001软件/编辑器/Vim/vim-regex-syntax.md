@@ -1,9 +1,10 @@
 ---
-title: "vim-regex-syntax"
-categories: 
+title: vim-regex-syntax
+categories:
 date: 2022-11-16 01:38:22 +0800
-tags: 正则表达式
-excerpt: 
+tags:
+  - 正则表达式
+excerpt:
 ---
 
 [[Vim 插件]]

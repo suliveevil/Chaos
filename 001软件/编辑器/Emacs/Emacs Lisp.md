@@ -1,8 +1,10 @@
 ---
-title: "Emacs Lisp"
+title: Emacs Lisp
 categories:
 date: 2022-09-25 18:30:51 +0800
-tags: Emacs 编程语言
+tags:
+  - Emacs
+  - 编程语言
 excerpt: Elisp
 ---
 

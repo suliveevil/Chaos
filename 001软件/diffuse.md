@@ -1,9 +1,10 @@
 ---
-title: "diffuse"
-categories: 
+title: diffuse
+categories:
 date: 2022-09-30 22:36:30 +0800
-tags: 文件对比
-excerpt: 
+tags:
+  - 文件对比
+excerpt:
 ---
 
 

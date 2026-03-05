@@ -1,10 +1,12 @@
 ---
-title: "tabout.nvim"
-author: 
-categories: 
+title: tabout.nvim
+author:
+categories:
 date: 2022-10-10 00:06:49 +0800
-tags: Neovim 快捷键
-excerpt: 
+tags:
+  - Neovim
+  - 快捷键
+excerpt:
 ---
 
 

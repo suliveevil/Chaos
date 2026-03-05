@@ -1,9 +1,10 @@
 ---
-title: "a-Shell"
-categories: 
+title: a-Shell
+categories:
 date: 2022-09-25 06:36:13 +0800
-tags: WebAssembly
-excerpt: 
+tags:
+  - WebAssembly
+excerpt:
 ---
 
 

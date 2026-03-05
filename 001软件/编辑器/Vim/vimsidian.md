@@ -1,9 +1,11 @@
 ---
-title: "vimsidian"
-categories: 
+title: vimsidian
+categories:
 date: 2022-10-06 11:30:47 +0800
-tags: Vim Obsidian
-excerpt: 
+tags:
+  - Vim
+  - Obsidian
+excerpt:
 ---
 
 

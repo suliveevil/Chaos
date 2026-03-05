@@ -1,10 +1,12 @@
 ---
-title: "nvim-neoclip.lua"
-author: 
-categories: 
+title: nvim-neoclip.lua
+author:
+categories:
 date: 2022-10-01 08:02:19 +0800
-tags: Neovim 剪贴板
-excerpt: 
+tags:
+  - Neovim
+  - 剪贴板
+excerpt:
 ---
 
 

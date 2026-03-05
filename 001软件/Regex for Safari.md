@@ -1,9 +1,11 @@
 ---
-title: "Regex for Safari"
-categories: 
+title: Regex for Safari
+categories:
 date: 2022-09-23 23:54:22 +0800
-tags: 正则表达式 Safari
-excerpt: 
+tags:
+  - 正则表达式
+  - Safari
+excerpt:
 ---
 
 

@@ -1,9 +1,10 @@
 ---
-title: "watchOS"
-categories: 
+title: watchOS
+categories:
 date: 2022-09-25 23:15:59 +0800
-tags: 操作系统
-excerpt: 
+tags:
+  - 操作系统
+excerpt:
 ---
 
 

@@ -1,9 +1,11 @@
 ---
-title: "Colorizer"
-categories: 
+title: Colorizer
+categories:
 date: 2022-09-28 03:28:40 +0800
-tags: Vim 开箱即用
-excerpt: 
+tags:
+  - Vim
+  - 开箱即用
+excerpt:
 ---
 
 [[Vim 插件]]

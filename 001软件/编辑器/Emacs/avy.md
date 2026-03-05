@@ -1,9 +1,10 @@
 ---
-title: "avy"
-categories: 
+title: avy
+categories:
 date: 2022-09-30 23:47:17 +0800
-tags: Emacs
-excerpt: 
+tags:
+  - Emacs
+excerpt:
 ---
 
 [abo-abo/avy](https://github.com/abo-abo/avy): Jump to things in Emacs tree-style

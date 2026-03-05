@@ -1,10 +1,12 @@
 ---
-title: "hydra.nvim"
-author: 
-categories: 
+title: hydra.nvim
+author:
+categories:
 date: 2022-10-01 07:49:40 +0800
-tags: Neovim 快捷键
-excerpt: 
+tags:
+  - Neovim
+  - 快捷键
+excerpt:
 ---
 
 

@@ -1,10 +1,11 @@
 ---
-title: "Apple Arcade"
-author: 
-categories: 
+title: Apple Arcade
+author:
+categories:
 date: 2022-10-02 00:03:29 +0800
-tags: 游戏
-excerpt: 
+tags:
+  - 游戏
+excerpt:
 ---
 
 

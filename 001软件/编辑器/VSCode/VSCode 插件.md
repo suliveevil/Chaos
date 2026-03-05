@@ -1,10 +1,12 @@
 ---
-title: "VSCode 插件"
-author: 
-categories: 
+title: VSCode 插件
+author:
+categories:
 date: 2022-10-09 17:19:33 +0800
-tags: VSCode 插件
-excerpt: 
+tags:
+  - VSCode
+  - 插件
+excerpt:
 ---
 
 [[Visual Studio Code]] [[插件]]

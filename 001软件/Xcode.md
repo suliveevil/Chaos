@@ -1,8 +1,12 @@
 ---
-title: "Xcode"
+title: Xcode
 categories:
 date: 2022-09-25 23:13:51 +0800
-tags: macOS Swift IDE 编译器
+tags:
+  - macOS
+  - Swift
+  - IDE
+  - 编译器
 excerpt:
 ---
 

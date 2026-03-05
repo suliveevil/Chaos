@@ -1,9 +1,12 @@
 ---
-title: "alfred-kill-process"
-categories: 
+title: alfred-kill-process
+categories:
 date: 2022-09-23 20:01:24 +0800
-tags: Alfred 进程 Rust
-excerpt: 
+tags:
+  - Alfred
+  - 进程
+  - Rust
+excerpt:
 ---
 
 

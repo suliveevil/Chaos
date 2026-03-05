@@ -1,10 +1,13 @@
 ---
-title: "emacs-clippo"
-author: 
-categories: 
+title: emacs-clippo
+author:
+categories:
 date: 2022-10-16 16:16:02 +0800
-tags: Emacs 剪贴板 UI
-excerpt: 
+tags:
+  - Emacs
+  - 剪贴板
+  - UI
+excerpt:
 ---
 
 

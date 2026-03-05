@@ -1,9 +1,11 @@
 ---
-title: "OpenWebMonitor"
-categories: 
+title: OpenWebMonitor
+categories:
 date: 2022-10-01 01:16:03 +0800
-tags: 网页 网站
-excerpt: 
+tags:
+  - 网页
+  - 网站
+excerpt:
 ---
 
 

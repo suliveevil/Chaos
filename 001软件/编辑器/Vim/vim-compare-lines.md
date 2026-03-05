@@ -1,10 +1,12 @@
 ---
-title: "vim-compare-lines"
-author: 
-categories: 
+title: vim-compare-lines
+author:
+categories:
 date: 2022-10-08 23:51:44 +0800
-tags: Vim 文本对比
-excerpt: 
+tags:
+  - Vim
+  - 文本对比
+excerpt:
 ---
 
 

@@ -1,9 +1,13 @@
 ---
-title: "xSearch"
-categories: 
+title: xSearch
+categories:
 date: 2022-09-25 06:30:35 +0800
-tags: Safari iOS iPadOS macOS
-excerpt: 
+tags:
+  - Safari
+  - iOS
+  - iPadOS
+  - macOS
+excerpt:
 ---
 
 

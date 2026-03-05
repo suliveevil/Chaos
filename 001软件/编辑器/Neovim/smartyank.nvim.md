@@ -1,10 +1,12 @@
 ---
-title: "smartyank.nvim"
-author: 
-categories: 
+title: smartyank.nvim
+author:
+categories:
 date: 2022-10-09 15:16:48 +0800
-tags: Vim 剪贴板
-excerpt: 
+tags:
+  - Vim
+  - 剪贴板
+excerpt:
 ---
 
 

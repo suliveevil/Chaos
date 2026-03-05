@@ -1,9 +1,12 @@
 ---
-title: "Obsidian"
-categories: 
+title: Obsidian
+categories:
 date: 2022-09-23 19:36:29 +0800
-tags: Markdown 双向链接 知识图谱
-excerpt: 
+tags:
+  - Markdown
+  - 双向链接
+  - 知识图谱
+excerpt:
 ---
 
 

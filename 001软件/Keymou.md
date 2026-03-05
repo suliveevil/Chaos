@@ -1,8 +1,12 @@
 ---
-title: "Keymou"
+title: Keymou
 categories:
 date: 2022-09-24 03:11:42 +0800
-tags: macOS 键盘 鼠标 触控板
+tags:
+  - macOS
+  - 键盘
+  - 鼠标
+  - 触控板
 excerpt:
 ---
 

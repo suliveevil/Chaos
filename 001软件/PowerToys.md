@@ -1,9 +1,10 @@
 ---
-title: "PowerToys"
-categories: 
+title: PowerToys
+categories:
 date: 2022-09-24 09:43:30 +0800
-tags: Windows
-excerpt: 
+tags:
+  - Windows
+excerpt:
 ---
 
 

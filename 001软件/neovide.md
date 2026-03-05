@@ -1,8 +1,12 @@
 ---
-title: "neovide"
+title: neovide
 categories:
 date: 2022-09-24 19:42:52 +0800
-tags: Neovim GUI macOS Rust
+tags:
+  - Neovim
+  - GUI
+  - macOS
+  - Rust
 excerpt:
 ---
 

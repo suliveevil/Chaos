@@ -1,9 +1,10 @@
 ---
-title: "redguardtoo"
-categories: 
+title: redguardtoo
+categories:
 date: 2022-09-30 00:03:37 +0800
-tags: Emacs
-excerpt: 
+tags:
+  - Emacs
+excerpt:
 ---
 
 [[陈斌]]的 Emacs 配置：[redguardtoo/emacs.d](https://github.com/redguardtoo/emacs.d): Fast and robust Emacs setup.

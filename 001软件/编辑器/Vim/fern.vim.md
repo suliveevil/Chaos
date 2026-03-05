@@ -1,9 +1,11 @@
 ---
-title: "fern.vim"
-categories: 
+title: fern.vim
+categories:
 date: 2022-09-28 03:38:35 +0800
-tags: Vim 文件管理
-excerpt: 
+tags:
+  - Vim
+  - 文件管理
+excerpt:
 ---
 
 [[Vim 插件]]

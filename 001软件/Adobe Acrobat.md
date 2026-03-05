@@ -1,9 +1,10 @@
 ---
-title: "Adobe Acrobat"
-categories: 
+title: Adobe Acrobat
+categories:
 date: 2022-09-25 06:42:13 +0800
-tags: PDF
-excerpt: 
+tags:
+  - PDF
+excerpt:
 ---
 
 

@@ -1,10 +1,12 @@
 ---
-title: "overlength.nvim"
-author: 
-categories: 
+title: overlength.nvim
+author:
+categories:
 date: 2022-10-01 07:16:35 +0800
-tags: Neovim UI
-excerpt: 
+tags:
+  - Neovim
+  - UI
+excerpt:
 ---
 
 [lcheylus/overlength.nvim](https://github.com/lcheylus/overlength.nvim): A small Neovim plugin to highlight too long lines

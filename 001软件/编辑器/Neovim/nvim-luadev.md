@@ -1,10 +1,12 @@
 ---
-title: "nvim-luadev"
-author: 
-categories: 
+title: nvim-luadev
+author:
+categories:
 date: 2022-10-02 09:01:37 +0800
-tags: Neovim Lua
-excerpt: 
+tags:
+  - Neovim
+  - Lua
+excerpt:
 ---
 
 

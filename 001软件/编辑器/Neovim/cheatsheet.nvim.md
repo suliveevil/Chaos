@@ -1,9 +1,10 @@
 ---
-title: "cheatsheet.nvim"
-categories: 
+title: cheatsheet.nvim
+categories:
 date: 2022-09-30 02:01:55 +0800
-tags: Neovim
-excerpt: 
+tags:
+  - Neovim
+excerpt:
 ---
 
 

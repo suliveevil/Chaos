@@ -1,10 +1,12 @@
 ---
-title: "cmp-emoji"
-author: 
-categories: 
+title: cmp-emoji
+author:
+categories:
 date: 2022-10-01 07:38:08 +0800
-tags: Neovim Unicode
-excerpt: 
+tags:
+  - Neovim
+  - Unicode
+excerpt:
 ---
 
 

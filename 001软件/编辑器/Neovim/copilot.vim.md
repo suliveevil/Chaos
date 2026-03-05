@@ -1,10 +1,13 @@
 ---
-title: "copilot.vim"
-author: 
-categories: 
+title: copilot.vim
+author:
+categories:
 date: 2022-10-01 06:59:54 +0800
-tags: AI 补全 Vim
-excerpt: 
+tags:
+  - AI
+  - 补全
+  - Vim
+excerpt:
 ---
 
 

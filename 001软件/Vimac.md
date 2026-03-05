@@ -1,9 +1,11 @@
 ---
-title: "Vimac"
-categories: 
+title: Vimac
+categories:
 date: 2022-09-26 23:54:06 +0800
-tags: macOS GUI
-excerpt: 
+tags:
+  - macOS
+  - GUI
+excerpt:
 ---
 
 [dexterleng/vimac](https://github.com/dexterleng/vimac): Productive macOS keyboard-driven navigation

@@ -1,8 +1,10 @@
 ---
-title: "yabai"
-categories: 
+title: yabai
+categories:
 date: 2022-09-24 03:09:37 +0800
-tags: macOS 窗口管理
+tags:
+  - macOS
+  - 窗口管理
 excerpt: A tiling window manager for macOS based on binary space partitioning
 ---
 

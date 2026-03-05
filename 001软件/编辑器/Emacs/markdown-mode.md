@@ -1,9 +1,11 @@
 ---
-title: "markdown-mode"
-categories: 
+title: markdown-mode
+categories:
 date: 2022-09-29 01:42:30 +0800
-tags: Emacs Markdown
-excerpt: 
+tags:
+  - Emacs
+  - Markdown
+excerpt:
 ---
 
 

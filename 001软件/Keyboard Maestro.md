@@ -1,8 +1,11 @@
 ---
-title: "Keyboard Maestro"
+title: Keyboard Maestro
 categories:
 date: 2022-09-23 23:30:33 +0800
-tags: macOS 键盘 快捷键
+tags:
+  - macOS
+  - 键盘
+  - 快捷键
 excerpt: The Premier Mac Automation Software
 ---
 

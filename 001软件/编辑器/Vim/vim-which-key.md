@@ -1,9 +1,11 @@
 ---
-title: "vim-which-key"
-categories: 
+title: vim-which-key
+categories:
 date: 2022-09-25 19:16:08 +0800
-tags: Vim 快捷键管理
-excerpt: 
+tags:
+  - Vim
+  - 快捷键管理
+excerpt:
 ---
 
 [[Vim 插件]]

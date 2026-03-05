@@ -1,9 +1,11 @@
 ---
-title: "neo-tree.nvim"
-categories: 
+title: neo-tree.nvim
+categories:
 date: 2022-09-26 00:53:43 +0800
-tags: Neovim 文件管理
-excerpt: 
+tags:
+  - Neovim
+  - 文件管理
+excerpt:
 ---
 
 [[Neovim 插件]]

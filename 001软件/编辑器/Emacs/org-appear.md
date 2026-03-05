@@ -1,9 +1,10 @@
 ---
-title: "org-appear"
-categories: 
+title: org-appear
+categories:
 date: 2022-09-30 02:59:33 +0800
-tags: Emacs
-excerpt: 
+tags:
+  - Emacs
+excerpt:
 ---
 
 

@@ -1,9 +1,11 @@
 ---
-title: "obsidian-various-complements"
-categories: 
+title: obsidian-various-complements
+categories:
 date: 2022-09-24 23:04:48 +0800
-tags: 补全 Obsidian
-excerpt: 
+tags:
+  - 补全
+  - Obsidian
+excerpt:
 ---
 
 

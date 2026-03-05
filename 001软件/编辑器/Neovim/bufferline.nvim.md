@@ -1,9 +1,11 @@
 ---
-title: "bufferline.nvim"
-categories: 
+title: bufferline.nvim
+categories:
 date: 2022-09-24 18:34:10 +0800
-tags: Neovim UI
-excerpt: 
+tags:
+  - Neovim
+  - UI
+excerpt:
 ---
 
 

@@ -1,9 +1,10 @@
 ---
-title: "iTerm2"
-categories: 
+title: iTerm2
+categories:
 date: 2022-09-26 23:47:55 +0800
-tags: macOS
-excerpt: 
+tags:
+  - macOS
+excerpt:
 ---
 
 [gnachman/iTerm2](https://github.com/gnachman/iTerm2): a terminal emulator for macOS that does amazing things.

@@ -1,10 +1,12 @@
 ---
-title: "alfred-fuzzyfolders"
-author: 
-categories: 
+title: alfred-fuzzyfolders
+author:
+categories:
 date: 2022-10-15 12:41:47 +0800
-tags: Alfred 模糊搜索
-excerpt: 
+tags:
+  - Alfred
+  - 模糊搜索
+excerpt:
 ---
 
 [[Alfred Workflow]]

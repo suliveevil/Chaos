@@ -1,9 +1,12 @@
 ---
-title: "coq_nvim"
-categories: 
+title: coq_nvim
+categories:
 date: 2022-09-24 22:12:37 +0800
-tags: Neovim 补全 Python
-excerpt: 
+tags:
+  - Neovim
+  - 补全
+  - Python
+excerpt:
 ---
 
 [[Neovim 插件]]

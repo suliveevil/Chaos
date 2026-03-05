@@ -1,9 +1,13 @@
 ---
-title: "7-Zip"
-categories: 
+title: 7-Zip
+categories:
 date: 2022-09-24 09:38:25 +0800
-tags: Linux Windows 文件压缩 自由软件
-excerpt: 
+tags:
+  - Linux
+  - Windows
+  - 文件压缩
+  - 自由软件
+excerpt:
 ---
 
 

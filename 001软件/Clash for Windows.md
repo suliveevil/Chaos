@@ -1,9 +1,11 @@
 ---
-title: "Clash for Windows"
-categories: 
+title: Clash for Windows
+categories:
 date: 2022-09-29 14:51:36 +0800
-tags: macOS Windows
-excerpt: 
+tags:
+  - macOS
+  - Windows
+excerpt:
 ---
 
 

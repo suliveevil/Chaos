@@ -1,9 +1,11 @@
 ---
-title: "piemenu.nvim"
-categories: 
+title: piemenu.nvim
+categories:
 date: 2022-09-25 02:16:54 +0800
-tags: Neovim UI
-excerpt: 
+tags:
+  - Neovim
+  - UI
+excerpt:
 ---
 
 [[Neovim 插件]]

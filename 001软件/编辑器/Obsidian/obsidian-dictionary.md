@@ -1,9 +1,11 @@
 ---
-title: "Obsidian Dictionary"
-categories: 
+title: Obsidian Dictionary
+categories:
 date: 2022-09-24 03:28:49 +0800
-tags: Obsidian 词典
-excerpt: 
+tags:
+  - Obsidian
+  - 词典
+excerpt:
 ---
 
 [[Obsidian 插件]]

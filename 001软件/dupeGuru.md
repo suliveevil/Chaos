@@ -1,9 +1,11 @@
 ---
-title: "dupeGuru"
-categories: 
+title: dupeGuru
+categories:
 date: 2022-09-26 23:40:10 +0800
-tags: macOS 文件对比
-excerpt: 
+tags:
+  - macOS
+  - 文件对比
+excerpt:
 ---
 
 

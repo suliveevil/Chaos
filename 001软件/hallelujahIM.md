@@ -1,9 +1,11 @@
 ---
 title: ""
-categories: 
+categories:
 date: 2022-09-25 10:11:02 +0800
-tags: macOS 输入法
-excerpt: 
+tags:
+  - macOS
+  - 输入法
+excerpt:
 ---
 
 

@@ -1,9 +1,10 @@
 ---
-title: "RSSBud"
-categories: 
+title: RSSBud
+categories:
 date: 2022-10-01 01:08:25 +0800
-tags: RSS
-excerpt: 
+tags:
+  - RSS
+excerpt:
 ---
 
 

@@ -1,10 +1,12 @@
 ---
-title: "nvim-cursorline"
-author: 
-categories: 
+title: nvim-cursorline
+author:
+categories:
 date: 2022-10-06 18:12:28 +0800
-tags: Neovim 光标
-excerpt: 
+tags:
+  - Neovim
+  - 光标
+excerpt:
 ---
 
 

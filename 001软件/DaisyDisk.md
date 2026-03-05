@@ -1,9 +1,10 @@
 ---
-title: "DaisyDisk"
-categories: 
+title: DaisyDisk
+categories:
 date: 2022-09-26 23:39:23 +0800
-tags: macOS
-excerpt: 
+tags:
+  - macOS
+excerpt:
 ---
 
 

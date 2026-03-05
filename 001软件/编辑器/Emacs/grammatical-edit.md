@@ -1,9 +1,10 @@
 ---
-title: "grammatical-edit"
-categories: 
+title: grammatical-edit
+categories:
 date: 2022-09-30 00:34:36 +0800
-tags: Emacs
-excerpt: 
+tags:
+  - Emacs
+excerpt:
 ---
 
 [[Emacs 插件]]

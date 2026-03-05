@@ -1,9 +1,10 @@
 ---
-title: "MongoDB"
-categories: 
+title: MongoDB
+categories:
 date: 2022-09-24 00:25:32 +0800
-tags: 数据库
-excerpt: 
+tags:
+  - 数据库
+excerpt:
 ---
 
 

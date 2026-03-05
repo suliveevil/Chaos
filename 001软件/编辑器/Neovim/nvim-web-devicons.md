@@ -1,9 +1,11 @@
 ---
-title: "nvim-web-devicons"
-categories: 
+title: nvim-web-devicons
+categories:
 date: 2022-09-30 01:58:37 +0800
-tags: 图标 Neovim
-excerpt: 
+tags:
+  - 图标
+  - Neovim
+excerpt:
 ---
 
 [[Neovim 插件]]

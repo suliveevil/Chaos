@@ -1,9 +1,11 @@
 ---
 title: ""
-categories: 
+categories:
 date: 2022-09-27 00:08:10 +0800
-tags: macOS Vim
-excerpt: 
+tags:
+  - macOS
+  - Vim
+excerpt:
 ---
 
 [FelixKratz/SketchyVim](https://github.com/FelixKratz/SketchyVim): Adds all Vim moves and modes to macOS text fields

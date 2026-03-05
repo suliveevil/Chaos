@@ -1,10 +1,12 @@
 ---
-title: "lazy-lsp.nvim"
-author: 
-categories: 
+title: lazy-lsp.nvim
+author:
+categories:
 date: 2022-10-10 09:36:46 +0800
-tags: Neovim LSP
-excerpt: 
+tags:
+  - Neovim
+  - LSP
+excerpt:
 ---
 
 

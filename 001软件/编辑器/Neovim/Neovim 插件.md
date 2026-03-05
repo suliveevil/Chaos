@@ -1,10 +1,11 @@
 ---
-title: "Neovim 插件"
-author: 
-categories: 
+title: Neovim 插件
+author:
+categories:
 date: 2022-10-01 05:39:30 +0800
-tags: Neovim
-excerpt: 
+tags:
+  - Neovim
+excerpt:
 ---
 
 [[Neovim]] 插件

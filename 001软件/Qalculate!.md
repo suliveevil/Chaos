@@ -1,9 +1,11 @@
 ---
-title: "Qalculate!"
-categories: 
+title: Qalculate!
+categories:
 date: 2022-09-30 01:29:30 +0800
-tags: 计算器 自由软件
-excerpt: 
+tags:
+  - 计算器
+  - 自由软件
+excerpt:
 ---
 
 [Qalculate! - the ultimate desktop calculator](https://qalculate.github.io/index.html)

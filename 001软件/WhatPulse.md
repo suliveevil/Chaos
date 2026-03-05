@@ -1,9 +1,12 @@
 ---
-title: "WhatPulse"
-categories: 
+title: WhatPulse
+categories:
 date: 2022-09-29 09:35:38 +0800
-tags: macOS 键盘 鼠标
-excerpt: 
+tags:
+  - macOS
+  - 键盘
+  - 鼠标
+excerpt:
 ---
 
 

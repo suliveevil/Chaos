@@ -1,10 +1,12 @@
 ---
-title: "lspsaga.nvim"
-author: 
-categories: 
+title: lspsaga.nvim
+author:
+categories:
 date: 2022-10-04 01:38:11 +0800
-tags: Neovim LSP
-excerpt: 
+tags:
+  - Neovim
+  - LSP
+excerpt:
 ---
 
 

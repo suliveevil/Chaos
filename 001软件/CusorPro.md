@@ -1,9 +1,10 @@
 ---
-title: "Cursor Pro"
-categories: 
+title: Cursor Pro
+categories:
 date: 2022-09-24 00:21:21 +0800
-tags: macOS
-excerpt: 
+tags:
+  - macOS
+excerpt:
 ---
 
 https://ixeau.com/apps/cursor-pro/

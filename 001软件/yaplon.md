@@ -1,9 +1,16 @@
 ---
-title: "yaplon"
-categories: 
+title: yaplon
+categories:
 date: 2022-09-23 22:53:00 +0800
-tags: 格式转换 CSV JSON PLIST XML YAML Python
-excerpt: 
+tags:
+  - 格式转换
+  - CSV
+  - JSON
+  - PLIST
+  - XML
+  - YAML
+  - Python
+excerpt:
 ---
 
 [twardoch/yaplon](https://github.com/twardoch/yaplon): Python 3-based commandline converter YAML ↔ JSON ↔ PLIST

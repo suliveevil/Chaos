@@ -1,9 +1,11 @@
 ---
-title: "topsy.el"
-categories: 
+title: topsy.el
+categories:
 date: 2022-09-24 20:27:27 +0800
-tags: Emacs UI
-excerpt: 
+tags:
+  - Emacs
+  - UI
+excerpt:
 ---
 
 [[Emacs 插件]]

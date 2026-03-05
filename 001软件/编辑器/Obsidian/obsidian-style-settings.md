@@ -1,9 +1,10 @@
 ---
 title: ""
-categories: 
+categories:
 date: 2022-09-26 20:43:38 +0800
-tags: 开箱即用
-excerpt: 
+tags:
+  - 开箱即用
+excerpt:
 ---
 
 

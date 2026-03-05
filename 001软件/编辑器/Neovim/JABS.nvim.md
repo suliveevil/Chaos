@@ -1,9 +1,11 @@
 ---
-title: "JABS.nvim"
-categories: 
+title: JABS.nvim
+categories:
 date: 2022-09-23 19:35:41 +0800
-tags: Neovim Buffer
-excerpt: 
+tags:
+  - Neovim
+  - Buffer
+excerpt:
 ---
 
 [[Neovim 插件]]

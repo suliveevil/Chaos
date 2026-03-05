@@ -1,9 +1,11 @@
 ---
-title: "FastFold"
-categories: 
+title: FastFold
+categories:
 date: 2022-09-28 03:29:37 +0800
-tags: Vim 折叠
-excerpt: 
+tags:
+  - Vim
+  - 折叠
+excerpt:
 ---
 
 [[Vim 插件]]

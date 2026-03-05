@@ -1,10 +1,13 @@
 ---
-title: "Analyser"
+title: Analyser
 author: You Hui Yan
-categories: 
+categories:
 date: 2022-10-07 08:04:09 +0800
-tags: Python iOS iPadOS
-excerpt: 
+tags:
+  - Python
+  - iOS
+  - iPadOS
+excerpt:
 ---
 
 

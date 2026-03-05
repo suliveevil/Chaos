@@ -1,9 +1,11 @@
 ---
-title: "YG"
-categories: 
+title: YG
+categories:
 date: 2022-09-25 07:17:56 +0800
-tags: 男性 黑人
-excerpt: 
+tags:
+  - 男性
+  - 黑人
+excerpt:
 ---
 
 

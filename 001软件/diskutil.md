@@ -1,9 +1,10 @@
 ---
 title: ""
-categories: 
+categories:
 date: 2022-09-27 00:17:20 +0800
-tags: macOS
-excerpt: 
+tags:
+  - macOS
+excerpt:
 ---
 
 macOS [[硬盘]]工具

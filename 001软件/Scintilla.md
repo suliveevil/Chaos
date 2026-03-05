@@ -1,8 +1,9 @@
 ---
-title: "Scintilla"
-categories: 
+title: Scintilla
+categories:
 date: 2022-09-30 07:25:57 +0800
-tags: 文本编辑器
+tags:
+  - 文本编辑器
 excerpt: A free source code editing component for Win32, GTK, and macOS
 ---
 

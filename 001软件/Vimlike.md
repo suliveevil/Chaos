@@ -1,10 +1,14 @@
 ---
-title: "Vimlike"
-author: 
-categories: 
+title: Vimlike
+author:
+categories:
 date: 2022-10-14 22:47:04 +0800
-tags: iOS iPadOS macOS 快捷键
-excerpt: 
+tags:
+  - iOS
+  - iPadOS
+  - macOS
+  - 快捷键
+excerpt:
 ---
 
 

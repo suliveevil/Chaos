@@ -1795,7 +1795,16 @@ function handleTranslate(q, config, cb) {
     const hashArray = Array.from(new Uint8Array(hashBuffer));
     const sign = hashArray.map((b) => b.toString(16).padStart(2, "0")).join("");
     const from = config.from || "auto";
-    const params = { q, appKey: config.appId, salt, from, to: config.to, sign, curtime, signType: "v3" };
+    const params = {
+      q,
+      appKey: config.appId,
+      salt,
+      from,
+      to: config.to,
+      sign,
+      curtime,
+      signType: "v3"
+    };
     const query = Object.keys(params).map((key) => `${key}=${params[key]}`).join("&");
     getRequest(`https://openapi.youdao.com/api?${query}`, cb);
   });
@@ -1957,117 +1966,117 @@ var LANGUAGES = {
   \u81EA\u52A8\u8BC6\u522B: "auto"
 };
 var MICROSOFT_LANGUAGES = {
-  "\u5357\u975E\u8377\u5170\u8BED": "af",
-  "\u963F\u5C14\u5DF4\u5C3C\u4E9A\u8BED": "sq",
-  "\u963F\u59C6\u54C8\u62C9\u8BED": "am",
-  "\u963F\u62C9\u4F2F\u8BED": "ar",
-  "\u4E9A\u7F8E\u5C3C\u4E9A\u8BED": "hy",
-  "\u963F\u8428\u59C6\u8BED": "as",
+  \u5357\u975E\u8377\u5170\u8BED: "af",
+  \u963F\u5C14\u5DF4\u5C3C\u4E9A\u8BED: "sq",
+  \u963F\u59C6\u54C8\u62C9\u8BED: "am",
+  \u963F\u62C9\u4F2F\u8BED: "ar",
+  \u4E9A\u7F8E\u5C3C\u4E9A\u8BED: "hy",
+  \u963F\u8428\u59C6\u8BED: "as",
   "\u963F\u585E\u62DC\u7586\u8BED(\u62C9\u4E01\u8BED)": "az",
-  "Bangla": "bn",
-  "\u5DF4\u4EC0\u57FA\u5C14\u8BED": "ba",
-  "\u5DF4\u65AF\u514B\u8BED": "eu",
+  Bangla: "bn",
+  \u5DF4\u4EC0\u57FA\u5C14\u8BED: "ba",
+  \u5DF4\u65AF\u514B\u8BED: "eu",
   "\u6CE2\u65AF\u5C3C\u4E9A\u8BED(\u62C9\u4E01\u8BED\u7CFB)": "bs",
-  "\u4FDD\u52A0\u5229\u4E9A\u8BED": "bg",
-  "\u4E2D\u6587\u7CA4\u8BED": "yue",
-  "\u52A0\u6CF0\u7F57\u5C3C\u4E9A\u8BED": "ca",
-  "\u4E2D\u6587\u6587\u5B66": "lzh",
-  "\u7B80\u4F53\u4E2D\u6587": "zh-Hans",
-  "\u7E41\u4F53\u4E2D\u6587": "zh-Hant",
-  "\u514B\u7F57\u5730\u4E9A\u8BED": "hr",
-  "\u6377\u514B\u8BED": "cs",
-  "\u4E39\u9EA6\u8BED": "da",
-  "\u8FBE\u91CC\u8BED": "prs",
-  "\u9A6C\u5C14\u4EE3\u592B\u8BED": "dv",
-  "\u8377\u5170\u8BED": "nl",
-  "\u82F1\u8BED": "en",
-  "\u7231\u6C99\u5C3C\u4E9A\u8BED": "et",
-  "\u6CD5\u7F57\u8BED": "fo",
-  "\u6590\u6D4E\u8BED": "fj",
-  "\u83F2\u5F8B\u5BBE\u8BED": "fil",
-  "\u82AC\u5170\u8BED": "fi",
-  "\u6CD5\u8BED": "fr",
+  \u4FDD\u52A0\u5229\u4E9A\u8BED: "bg",
+  \u4E2D\u6587\u7CA4\u8BED: "yue",
+  \u52A0\u6CF0\u7F57\u5C3C\u4E9A\u8BED: "ca",
+  \u4E2D\u6587\u6587\u5B66: "lzh",
+  \u7B80\u4F53\u4E2D\u6587: "zh-Hans",
+  \u7E41\u4F53\u4E2D\u6587: "zh-Hant",
+  \u514B\u7F57\u5730\u4E9A\u8BED: "hr",
+  \u6377\u514B\u8BED: "cs",
+  \u4E39\u9EA6\u8BED: "da",
+  \u8FBE\u91CC\u8BED: "prs",
+  \u9A6C\u5C14\u4EE3\u592B\u8BED: "dv",
+  \u8377\u5170\u8BED: "nl",
+  \u82F1\u8BED: "en",
+  \u7231\u6C99\u5C3C\u4E9A\u8BED: "et",
+  \u6CD5\u7F57\u8BED: "fo",
+  \u6590\u6D4E\u8BED: "fj",
+  \u83F2\u5F8B\u5BBE\u8BED: "fil",
+  \u82AC\u5170\u8BED: "fi",
+  \u6CD5\u8BED: "fr",
   "\u6CD5\u8BED\uFF08\u52A0\u62FF\u5927\uFF09": "fr-ca",
-  "\u52A0\u5229\u897F\u4E9A\u8BED": "gl",
-  "\u683C\u9C81\u5409\u4E9A\u8BED": "ka",
-  "\u5FB7\u8BED": "de",
-  "\u5E0C\u814A\u8BED": "el",
-  "\u53E4\u5409\u62C9\u7279\u8BED": "gu",
-  "\u6D77\u5730\u514B\u91CC\u5965\u5C14\u8BED": "ht",
-  "\u5E0C\u4F2F\u6765\u8BED": "he",
-  "Hindi": "hi",
+  \u52A0\u5229\u897F\u4E9A\u8BED: "gl",
+  \u683C\u9C81\u5409\u4E9A\u8BED: "ka",
+  \u5FB7\u8BED: "de",
+  \u5E0C\u814A\u8BED: "el",
+  \u53E4\u5409\u62C9\u7279\u8BED: "gu",
+  \u6D77\u5730\u514B\u91CC\u5965\u5C14\u8BED: "ht",
+  \u5E0C\u4F2F\u6765\u8BED: "he",
+  Hindi: "hi",
   "\u767D\u82D7\u8BED\uFF08\u62C9\u4E01\u8BED\uFF09": "mww",
-  "\u5308\u7259\u5229\u8BED": "hu",
-  "\u51B0\u5C9B\u8BED": "is",
-  "\u5370\u5EA6\u5C3C\u897F\u4E9A\u8BED": "id",
-  "\u56E0\u7EBD\u7EB3\u6566\u8BED": "ikt",
-  "\u56E0\u7EBD\u7279\u8BED": "iu",
+  \u5308\u7259\u5229\u8BED: "hu",
+  \u51B0\u5C9B\u8BED: "is",
+  \u5370\u5EA6\u5C3C\u897F\u4E9A\u8BED: "id",
+  \u56E0\u7EBD\u7EB3\u6566\u8BED: "ikt",
+  \u56E0\u7EBD\u7279\u8BED: "iu",
   "\u56E0\u7EBD\u7279\u8BED(\u62C9\u4E01\u8BED)": "iu-Latn",
-  "\u7231\u5C14\u5170\u8BED": "ga",
-  "\u610F\u5927\u5229\u8BED": "it",
-  "\u65E5\u8BED": "ja",
-  "\u5361\u7EB3\u8FBE\u8BED": "kn",
-  "\u54C8\u8428\u514B\u8BED": "kk",
-  "\u9AD8\u68C9\u8BED": "km",
-  "\u514B\u6797\u8D21\u8BED": "tlh-Latn",
+  \u7231\u5C14\u5170\u8BED: "ga",
+  \u610F\u5927\u5229\u8BED: "it",
+  \u65E5\u8BED: "ja",
+  \u5361\u7EB3\u8FBE\u8BED: "kn",
+  \u54C8\u8428\u514B\u8BED: "kk",
+  \u9AD8\u68C9\u8BED: "km",
+  \u514B\u6797\u8D21\u8BED: "tlh-Latn",
   "\u514B\u6797\u8D21\u8BED(plqaD)": "tlh-Piqd",
-  "\u97E9\u8BED": "ko",
+  \u97E9\u8BED: "ko",
   "\u5E93\u5C14\u5FB7\u8BED(\u4E2D\u90E8)": "ku",
   "\u5E93\u5C14\u5FB7\u8BED(\u5317\u90E8)": "kmr",
   "\u5409\u5C14\u5409\u65AF\u8BED(\u897F\u91CC\u5C14\u8BED)": "ky",
-  "\u8001\u631D\u8BED": "lo",
-  "\u62C9\u8131\u7EF4\u4E9A\u8BED": "lv",
-  "\u7ACB\u9676\u5B9B\u8BED": "lt",
-  "\u9A6C\u5176\u987F\u8BED": "mk",
-  "\u9A6C\u8FBE\u52A0\u65AF\u52A0\u8BED": "mg",
+  \u8001\u631D\u8BED: "lo",
+  \u62C9\u8131\u7EF4\u4E9A\u8BED: "lv",
+  \u7ACB\u9676\u5B9B\u8BED: "lt",
+  \u9A6C\u5176\u987F\u8BED: "mk",
+  \u9A6C\u8FBE\u52A0\u65AF\u52A0\u8BED: "mg",
   "\u9A6C\u6765\u8BED(\u62C9\u4E01\u8BED\u7CFB)": "ms",
-  "\u9A6C\u62C9\u96C5\u62C9\u59C6\u8BED": "ml",
-  "\u9A6C\u8033\u4ED6\u8BED": "mt",
-  "\u6BDB\u5229\u8BED": "mi",
-  "\u9A6C\u62C9\u5730\u8BED": "mr",
+  \u9A6C\u62C9\u96C5\u62C9\u59C6\u8BED: "ml",
+  \u9A6C\u8033\u4ED6\u8BED: "mt",
+  \u6BDB\u5229\u8BED: "mi",
+  \u9A6C\u62C9\u5730\u8BED: "mr",
   "\u8499\u53E4\u8BED(\u897F\u91CC\u5C14\u6587)": "mn-Cyrl",
   "\u8499\u53E4\u8BED(\u4F20\u7EDF)": "mn-Mong",
-  "\u7F05\u7538": "my",
-  "\u5C3C\u6CCA\u5C14\u8BED": "ne",
-  "\u632A\u5A01\u8BED": "nb",
-  "\u5965\u91CC\u4E9A\u8BED": "or",
-  "\u666E\u4EC0\u56FE\u8BED": "ps",
-  "\u6CE2\u65AF\u8BED": "fa",
-  "\u6CE2\u5170\u8BED": "pl",
+  \u7F05\u7538: "my",
+  \u5C3C\u6CCA\u5C14\u8BED: "ne",
+  \u632A\u5A01\u8BED: "nb",
+  \u5965\u91CC\u4E9A\u8BED: "or",
+  \u666E\u4EC0\u56FE\u8BED: "ps",
+  \u6CE2\u65AF\u8BED: "fa",
+  \u6CE2\u5170\u8BED: "pl",
   "\u8461\u8404\u7259\u8BED\uFF08\u5DF4\u897F\uFF09": "pt",
   "\u8461\u8404\u7259\u8BED(\u8461\u8404\u7259)": "pt-pt",
-  "\u65C1\u906E\u666E\u8BED": "pa",
-  "\u514B\u96F7\u5854\u7F57\u5965\u6258\u7C73\u8BED": "otq",
-  "\u7F57\u9A6C\u5C3C\u4E9A\u8BED": "ro",
-  "\u4FC4\u8BED": "ru",
+  \u65C1\u906E\u666E\u8BED: "pa",
+  \u514B\u96F7\u5854\u7F57\u5965\u6258\u7C73\u8BED: "otq",
+  \u7F57\u9A6C\u5C3C\u4E9A\u8BED: "ro",
+  \u4FC4\u8BED: "ru",
   "\u8428\u6469\u4E9A\u8BED(\u62C9\u4E01\u8BED)": "sm",
   "\u585E\u5C14\u7EF4\u4E9A\u8BED\uFF08\u897F\u91CC\u5C14\uFF09": "sr-Cyrl",
   "\u585E\u5C14\u7EF4\u4E9A\u8BED\uFF08\u62C9\u4E01\uFF09": "sr-Latn",
-  "\u65AF\u6D1B\u4F10\u514B\u8BED": "sk",
-  "\u65AF\u6D1B\u6587\u5C3C\u4E9A\u8BED": "sl",
+  \u65AF\u6D1B\u4F10\u514B\u8BED: "sk",
+  \u65AF\u6D1B\u6587\u5C3C\u4E9A\u8BED: "sl",
   "\u7D22\u9A6C\u91CC\u8BED\uFF08\u963F\u62C9\u4F2F\u8BED\uFF09": "so",
-  "\u897F\u73ED\u7259\u8BED": "es",
+  \u897F\u73ED\u7259\u8BED: "es",
   "\u65AF\u74E6\u5E0C\u91CC\u8BED\uFF08\u62C9\u4E01\u8BED\uFF09": "sw",
-  "\u745E\u5178\u8BED": "sv",
-  "\u5854\u5E0C\u63D0\u8BED": "ty",
-  "\u6CF0\u7C73\u5C14\u8BED": "ta",
+  \u745E\u5178\u8BED: "sv",
+  \u5854\u5E0C\u63D0\u8BED: "ty",
+  \u6CF0\u7C73\u5C14\u8BED: "ta",
   "\u9791\u977C\u8BED\uFF08\u62C9\u4E01\u8BED\uFF09": "tt",
-  "\u6CF0\u5362\u56FA\u8BED": "te",
-  "\u6CF0\u8BED": "th",
-  "\u85CF\u8BED": "bo",
-  "\u63D0\u683C\u91CC\u5C3C\u4E9A\u8BED": "ti",
-  "\u6C64\u52A0\u8BED": "to",
-  "\u571F\u8033\u5176\u8BED": "tr",
+  \u6CF0\u5362\u56FA\u8BED: "te",
+  \u6CF0\u8BED: "th",
+  \u85CF\u8BED: "bo",
+  \u63D0\u683C\u91CC\u5C3C\u4E9A\u8BED: "ti",
+  \u6C64\u52A0\u8BED: "to",
+  \u571F\u8033\u5176\u8BED: "tr",
   "\u571F\u5E93\u66FC\u8BED(\u62C9\u4E01\u8BED)": "tk",
-  "\u4E4C\u514B\u5170\u8BED": "uk",
-  "\u4E0A\u7D22\u5E03\u8BED": "hsb",
-  "\u4E4C\u5C14\u90FD\u8BED": "ur",
+  \u4E4C\u514B\u5170\u8BED: "uk",
+  \u4E0A\u7D22\u5E03\u8BED: "hsb",
+  \u4E4C\u5C14\u90FD\u8BED: "ur",
   "\u7EF4\u543E\u5C14\u8BED\uFF08\u963F\u62C9\u4F2F\u8BED\uFF09": "ug",
   "\u4E4C\u5179\u522B\u514B\u8BED(\u62C9\u4E01\u8BED)": "uz",
-  "\u8D8A\u5357\u8BED": "vi",
-  "\u5A01\u5C14\u58EB\u8BED": "cy",
-  "\u5C24\u5361\u5766\u739B\u96C5\u8BED": "yua",
-  "\u7956\u9C81\u8BED": "zu"
+  \u8D8A\u5357\u8BED: "vi",
+  \u5A01\u5C14\u58EB\u8BED: "cy",
+  \u5C24\u5361\u5766\u739B\u96C5\u8BED: "yua",
+  \u7956\u9C81\u8BED: "zu"
 };
 var BAIDU_LANGUAGES = {
   \u963F\u62C9\u4F2F\u8BED: "ara",
@@ -2292,6 +2301,13 @@ function validator(items, cb) {
     cb();
   }
 }
+var cleanMarkup = (md) => {
+  let output = md || "";
+  output = output.replace(/^(-\s*?|\*\s*?|_\s*?){3,}\s*/gm, "");
+  output = output.replace(/<[^>]*>/g, "");
+  output = output.replace(/<[^>]*>/g, "").replace(/^[=-]{2,}\s*$/g, "").replace(/\[\^.+?\](: .*?$)?/g, "").replace(/\s{0,2}\[.*?\]: .*?$/g, "").replace(/!\[(.*?)\][[(].*?[\])]/g, "$1").replace(/\[([^\]]*?)\][[(].*?[\])]/g, "$1").replace(/^(\n)?\s{0,3}>\s?/gm, "$1").replace(/^\s{1,2}\[(.*?)\]: (\S+)( ".*?")?\s*$/g, "").replace(/^(\n)?\s{0,}#{1,6}\s*( (.+))? +#+$|^(\n)?\s{0,}#{1,6}\s*( (.+))?$/gm, "$1$3$4$6").replace(/([*]+)(\S)(.*?\S)??\1/g, "$2$3").replace(/(^|\W)([_]+)(\S)(.*?\S)??\2($|\W)/g, "$1$3$4$5").replace(/^```\w*$\n?/gm, "").replace(/`(.+?)`/g, "$1").replace(/~(.*?)~/g, "$1").replace(/\[\s*@[\w,\s]+\s*\]/g, "").replace(/\{>>.*?<<\}/g, "");
+  return output;
+};
 
 // settings.ts
 var SETTING_BLOCKS = [
@@ -2299,7 +2315,11 @@ var SETTING_BLOCKS = [
     title: "Youdao Translator Settings",
     desc: [
       { type: "text", text: "Before using this plugin, you need browse to " },
-      { type: "href", href: "https://ai.youdao.com/#/", text: "https://ai.youdao.com/#/" },
+      {
+        type: "href",
+        href: "https://ai.youdao.com/#/",
+        text: "https://ai.youdao.com/#/"
+      },
       { type: "text", text: "to register first!" }
     ],
     settings: [
@@ -2404,7 +2424,11 @@ var SETTING_BLOCKS = [
     title: "Baidu Translator Settings",
     desc: [
       { type: "text", text: "Before using this plugin, you need browse to " },
-      { type: "href", href: "http://api.fanyi.baidu.com/", text: "http://api.fanyi.baidu.com/" },
+      {
+        type: "href",
+        href: "http://api.fanyi.baidu.com/",
+        text: "http://api.fanyi.baidu.com/"
+      },
       { type: "text", text: "to register first!" }
     ],
     settings: [
@@ -2488,7 +2512,7 @@ var TranslatorSettingTab = class extends import_obsidian2.PluginSettingTab {
             })));
             break;
           case "select":
-            el.addDropdown((dp) => dp.addOptions(options).setValue(val || defaultValue).onChange((value) => __async(this, null, function* () {
+            el.addDropdown((dp) => dp.addOptions(options || {}).setValue(val || defaultValue).onChange((value) => __async(this, null, function* () {
               this.plugin.settings[key] = value;
               yield this.plugin.saveSettings();
             })));
@@ -2519,6 +2543,7 @@ var LANGUAGES_MAP = {
 var TranslatorModal = class extends import_obsidian3.Modal {
   constructor(app, text, settings) {
     super(app);
+    this.prevText = "";
     this.text = text;
     this.empty = createEl("div", {
       cls: "translator_container-empty",
@@ -2527,9 +2552,9 @@ var TranslatorModal = class extends import_obsidian3.Modal {
     this.settings = settings;
     this.text = text;
     this.customTo = {
-      "youdao": "zh-CHS",
-      "microsoft": "zh-Hans",
-      "baidu": "zh"
+      youdao: "zh-CHS",
+      microsoft: "zh-Hans",
+      baidu: "zh"
     };
     this.customToPre = {};
   }
@@ -2540,7 +2565,7 @@ var TranslatorModal = class extends import_obsidian3.Modal {
       text: title,
       cls: `translator_container-block-title translator_container-block-title-${type}`
     }));
-    new import_obsidian3.Setting(titleContainer).addDropdown((dp) => dp.addOptions(options).setValue(this.customTo[type]).onChange((value) => {
+    new import_obsidian3.Setting(titleContainer).addDropdown((dp) => dp.addOptions(options).setValue(this.customTo[type] || "").onChange((value) => {
       this.customTo[type] = value;
     }));
   }
@@ -2574,16 +2599,30 @@ var TranslatorModal = class extends import_obsidian3.Modal {
         if (isEmptyObject(data)) {
           containerEl.appendChild(this.empty);
         } else {
-          const { query, translation, web, basic, l, webdict, tSpeakUrl, speakUrl } = data;
+          const {
+            query,
+            translation,
+            web,
+            basic,
+            l,
+            webdict,
+            tSpeakUrl,
+            speakUrl
+          } = data;
           const [FROM, TO] = l.split("2");
           containerEl.appendChild(createEl("a", {
             cls: "translator_container-title",
             text: query,
             href: webdict ? webdict.url : ""
           }));
-          const audioesContainer = createEl("div", { cls: "translator_container-audioes" });
+          const audioesContainer = createEl("div", {
+            cls: "translator_container-audioes"
+          });
           if (audio) {
-            const speakUrls = { origin: speakUrl, result: tSpeakUrl };
+            const speakUrls = {
+              origin: speakUrl,
+              result: tSpeakUrl
+            };
             Object.keys(speakUrls).forEach((key) => {
               new import_obsidian3.Setting(audioesContainer).setName(`${key}:`).addButton((btn) => {
                 btn.setIcon("audio-file").onClick(() => {
@@ -2655,12 +2694,23 @@ var TranslatorModal = class extends import_obsidian3.Modal {
   }
   microsoftTranslateHandler(containerEl) {
     const loadingEl = this.createLoadingElement();
-    const { mTo: to, mFrom: from, microsoftSecretKey, microsoftLocation } = this.settings;
+    const {
+      mTo: to,
+      mFrom: from,
+      microsoftSecretKey,
+      microsoftLocation
+    } = this.settings;
     const preMessage = `Microsoft translation service's`;
     const lastMessage = `shouldn't be empty.`;
     validator([
-      { value: microsoftSecretKey, message: `${preMessage} secret key ${lastMessage}` },
-      { value: microsoftLocation, message: `${preMessage} location ${lastMessage}` }
+      {
+        value: microsoftSecretKey,
+        message: `${preMessage} secret key ${lastMessage}`
+      },
+      {
+        value: microsoftLocation,
+        message: `${preMessage} location ${lastMessage}`
+      }
     ], () => {
       this.createBlockTitleElement(containerEl, "Microsoft translation results", "microsoft");
       containerEl.appendChild(loadingEl);
@@ -2685,12 +2735,20 @@ var TranslatorModal = class extends import_obsidian3.Modal {
     const lastMessage = `shouldn't be empty.`;
     validator([
       { value: baiduAppId, message: `${preMessage} appId ${lastMessage}` },
-      { value: baiduSecretKey, message: `${preMessage} secretKey ${lastMessage}` }
+      {
+        value: baiduSecretKey,
+        message: `${preMessage} secretKey ${lastMessage}`
+      }
     ], () => {
       const loadingEl = this.createLoadingElement();
       this.createBlockTitleElement(containerEl, "Baidu translation results", "baidu");
       containerEl.appendChild(loadingEl);
-      handleBaiduTranslate(this.text, { to: this.customTo.baidu || to, appId: baiduAppId, secretKey: baiduSecretKey, from }, (res) => {
+      handleBaiduTranslate(this.text, {
+        to: this.customTo.baidu || to,
+        appId: baiduAppId,
+        secretKey: baiduSecretKey,
+        from
+      }, (res) => {
         if (isEmptyObject(res)) {
           containerEl.appendChild(this.empty);
         } else {
@@ -2719,14 +2777,17 @@ var TranslatorModal = class extends import_obsidian3.Modal {
         containerEl.empty();
         switch (key) {
           case "youdaoEnable": {
+            this.customTo[type] = this.settings.yTo;
             this.youdaoTranslateHandler(containerEl);
             break;
           }
           case "microsoftEnable": {
+            this.customTo[type] = this.settings.mTo;
             this.microsoftTranslateHandler(containerEl);
             break;
           }
           case "baiduEnable": {
+            this.customTo[type] = this.settings.bTo;
             this.baiduTranslateHandler(containerEl);
             break;
           }
@@ -2745,7 +2806,11 @@ var TranslatorModal = class extends import_obsidian3.Modal {
     const setting = new import_obsidian3.Setting(contentEl).setClass("translator_search").addText((text) => text.setValue(this.text).setPlaceholder("To be translated").onChange((value) => {
       this.text = value;
     }));
-    const containerEls = enableKeys.reduce((els, key) => __spreadProps(__spreadValues({}, els), { [key]: contentEl.createDiv({ cls: `translator_container translator_container-${key.replace("Enable", "")}` }) }), {});
+    const containerEls = enableKeys.reduce((els, key) => __spreadProps(__spreadValues({}, els), {
+      [key]: contentEl.createDiv({
+        cls: `translator_container translator_container-${key.replace("Enable", "")}`
+      })
+    }), {});
     const translatorHandler = () => {
       if (this.text) {
         this.translate(containerEls);
@@ -2768,7 +2833,7 @@ var TranslatorModal = class extends import_obsidian3.Modal {
 };
 
 // main.ts
-var DEFAULT_SETTINGSF = {
+var DEFAULT_SETTINGS = {
   youdaoEnable: false,
   appId: "",
   secretKey: "",
@@ -2787,6 +2852,10 @@ var DEFAULT_SETTINGSF = {
   bTo: ""
 };
 var TranslatorPlugin = class extends import_obsidian4.Plugin {
+  constructor() {
+    super(...arguments);
+    this.settings = DEFAULT_SETTINGS;
+  }
   onload() {
     return __async(this, null, function* () {
       yield this.loadSettings();
@@ -2826,7 +2895,7 @@ var TranslatorPlugin = class extends import_obsidian4.Plugin {
           if (enableKeys.length) {
             const messages = validator2();
             if (!messages.length) {
-              const sel = editor.getSelection();
+              const sel = cleanMarkup(editor.getSelection()).replace(/[^\w\s]/gi, " ").trim();
               new TranslatorModal(this.app, sel, settings).open();
             } else {
               noticeHandler(`${messages.join(", ")} can not be empty!`);
@@ -2839,7 +2908,7 @@ var TranslatorPlugin = class extends import_obsidian4.Plugin {
   loadSettings() {
     return __async(this, null, function* () {
       const settings = yield this.loadData();
-      this.settings = __spreadValues(__spreadValues({}, DEFAULT_SETTINGSF), settings || {});
+      this.settings = __spreadValues(__spreadValues({}, DEFAULT_SETTINGS), settings || {});
     });
   }
   saveSettings() {
@@ -2848,3 +2917,5 @@ var TranslatorPlugin = class extends import_obsidian4.Plugin {
     });
   }
 };
+
+/* nosourcemap */

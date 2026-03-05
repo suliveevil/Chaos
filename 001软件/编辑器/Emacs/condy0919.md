@@ -1,9 +1,10 @@
 ---
-title: "condy0919"
-categories: 
+title: condy0919
+categories:
 date: 2022-09-30 02:21:46 +0800
-tags: Emacs
-excerpt: 
+tags:
+  - Emacs
+excerpt:
 ---
 
 

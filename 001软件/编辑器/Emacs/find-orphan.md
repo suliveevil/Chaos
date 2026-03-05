@@ -1,9 +1,10 @@
 ---
-title: "find-orphan"
-categories: 
+title: find-orphan
+categories:
 date: 2022-09-29 01:39:16 +0800
-tags: Emacs
-excerpt: 
+tags:
+  - Emacs
+excerpt:
 ---
 
 

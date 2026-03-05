@@ -1,9 +1,10 @@
 ---
-title: "kommentary"
-categories: 
+title: kommentary
+categories:
 date: 2022-09-25 19:18:33 +0800
-tags: 注释
-excerpt: 
+tags:
+  - 注释
+excerpt:
 ---
 
 [[Neovim 插件]]

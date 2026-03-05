@@ -1,8 +1,9 @@
 ---
-title: "GTK"
-categories: 
+title: GTK
+categories:
 date: 2022-10-24 14:16:09 +0800
-tags: GUI
+tags:
+  - GUI
 excerpt: GIMP Toolkit
 ---
 

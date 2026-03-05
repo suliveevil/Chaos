@@ -1,9 +1,10 @@
 ---
-title: "Guix"
-categories: 
+title: Guix
+categories:
 date: 2022-10-05 03:47:08 +0800
-tags: GNU
-excerpt: 
+tags:
+  - GNU
+excerpt:
 ---
 
 

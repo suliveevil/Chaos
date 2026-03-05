@@ -1,8 +1,11 @@
 ---
-title: "OBS Studio"
-categories: 
+title: OBS Studio
+categories:
 date: 2022-09-24 10:11:06 +0800
-tags: 流媒体 录屏 自由软件
+tags:
+  - 流媒体
+  - 录屏
+  - 自由软件
 excerpt: 原名 Open Broadcast Studio
 ---
 

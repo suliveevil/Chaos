@@ -1,10 +1,12 @@
 ---
-title: "twilight.nvim"
-author: 
-categories: 
+title: twilight.nvim
+author:
+categories:
 date: 2022-10-01 07:24:19 +0800
-tags: Neovim UI
-excerpt: 
+tags:
+  - Neovim
+  - UI
+excerpt:
 ---
 
 [folke/twilight.nvim](https://github.com/folke/twilight.nvim): 🌅 Twilight is a Lua plugin for Neovim 0.5 that dims inactive portions of the code you're editing using TreeSitter.

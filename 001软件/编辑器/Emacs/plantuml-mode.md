@@ -1,9 +1,10 @@
 ---
-title: "plantuml-mode"
-categories: 
+title: plantuml-mode
+categories:
 date: 2022-09-29 11:24:02 +0800
-tags: Emacs
-excerpt: 
+tags:
+  - Emacs
+excerpt:
 ---
 
 

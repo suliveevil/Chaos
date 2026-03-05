@@ -1,9 +1,10 @@
 ---
 title: ""
-categories: 
+categories:
 date: 2022-09-25 19:17:38 +0800
-tags: 注释
-excerpt: 
+tags:
+  - 注释
+excerpt:
 ---
 
 [[Neovim 插件]]

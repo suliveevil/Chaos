@@ -1,9 +1,10 @@
 ---
-title: "vim-lookup"
-categories: 
+title: vim-lookup
+categories:
 date: 2022-09-24 07:33:42 +0800
-tags: Vimscript
-excerpt: 
+tags:
+  - Vimscript
+excerpt:
 ---
 
 [[Vim 插件]]

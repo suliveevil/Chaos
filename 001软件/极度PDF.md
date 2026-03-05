@@ -1,10 +1,12 @@
 ---
-title: "极度 PDF"
-author: 
-categories: 
+title: 极度 PDF
+author:
+categories:
 date: 2022-10-01 06:38:12 +0800
-tags: OCR PDF
-excerpt: 
+tags:
+  - OCR
+  - PDF
+excerpt:
 ---
 
 [[PDF]] [[OCR]] 工具

@@ -1,10 +1,12 @@
 ---
-title: "Vimkey"
-author: 
-categories: 
+title: Vimkey
+author:
+categories:
 date: 2022-10-14 18:25:58 +0800
-tags: Vim 快捷键
-excerpt: 
+tags:
+  - Vim
+  - 快捷键
+excerpt:
 ---
 
 

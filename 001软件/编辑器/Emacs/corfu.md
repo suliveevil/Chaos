@@ -1,9 +1,11 @@
 ---
-title: "corfu"
-categories: 
+title: corfu
+categories:
 date: 2022-09-30 05:39:48 +0800
-tags: Emacs 补全
-excerpt: 
+tags:
+  - Emacs
+  - 补全
+excerpt:
 ---
 
 [minad/corfu](https://github.com/minad/corfu): corfu.el - Completion Overlay Region FUnction

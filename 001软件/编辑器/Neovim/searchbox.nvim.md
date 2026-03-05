@@ -1,10 +1,12 @@
 ---
-title: "searchbox.nvim"
-author: 
-categories: 
+title: searchbox.nvim
+author:
+categories:
 date: 2022-10-01 07:51:05 +0800
-tags: Neovim 文本搜索
-excerpt: 
+tags:
+  - Neovim
+  - 文本搜索
+excerpt:
 ---
 
 

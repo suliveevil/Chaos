@@ -1,9 +1,11 @@
 ---
-title: "hiPairs"
-categories: 
+title: hiPairs
+categories:
 date: 2022-09-28 03:58:05 +0800
-tags: Vim UI
-excerpt: 
+tags:
+  - Vim
+  - UI
+excerpt:
 ---
 
 [[Vim 插件]]

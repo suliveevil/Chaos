@@ -1,9 +1,10 @@
 ---
-title: "Adobe Acrobat Reader"
-categories: 
+title: Adobe Acrobat Reader
+categories:
 date: 2022-09-25 06:42:28 +0800
-tags: PDF
-excerpt: 
+tags:
+  - PDF
+excerpt:
 ---
 
 

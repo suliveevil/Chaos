@@ -1,10 +1,13 @@
 ---
-title: "vim-cool"
-author: 
-categories: 
+title: vim-cool
+author:
+categories:
 date: 2022-10-01 11:29:01 +0800
-tags: Vim 文本搜索 UI
-excerpt: 
+tags:
+  - Vim
+  - 文本搜索
+  - UI
+excerpt:
 ---
 [[Vim 插件]]
 

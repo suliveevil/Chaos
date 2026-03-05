@@ -1,10 +1,12 @@
 ---
-title: "vim-bettergrep"
-author: 
-categories: 
+title: vim-bettergrep
+author:
+categories:
 date: 2022-10-06 12:18:38 +0800
-tags: Vim 文件搜索
-excerpt: 
+tags:
+  - Vim
+  - 文件搜索
+excerpt:
 ---
 
 

@@ -1,9 +1,10 @@
 ---
-title: "obsidian-path-title-plugin"
-categories: 
+title: obsidian-path-title-plugin
+categories:
 date: 2022-09-25 21:03:27 +0800
-tags: Obsidian
-excerpt: 
+tags:
+  - Obsidian
+excerpt:
 ---
 
 

@@ -1,8 +1,9 @@
 ---
-title: "emacs-application-framework"
-categories: 
+title: emacs-application-framework
+categories:
 date: 2022-09-23 23:44:24 +0800
-tags: Emacs
+tags:
+  - Emacs
 excerpt: EAF
 ---
 

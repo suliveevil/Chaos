@@ -1,10 +1,12 @@
 ---
-title: "vim-sents"
-author: 
-categories: 
+title: vim-sents
+author:
+categories:
 date: 2022-10-01 11:41:31 +0800
-tags: Vim vim9
-excerpt: 
+tags:
+  - Vim
+  - vim9
+excerpt:
 ---
 
 

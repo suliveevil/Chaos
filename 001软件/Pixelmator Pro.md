@@ -1,9 +1,10 @@
 ---
-title: "Pixelmator Pro"
-categories: 
+title: Pixelmator Pro
+categories:
 date: 2022-09-26 23:18:23 +0800
-tags: macOS
-excerpt: 
+tags:
+  - macOS
+excerpt:
 ---
 
 

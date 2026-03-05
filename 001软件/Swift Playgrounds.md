@@ -1,9 +1,13 @@
 ---
-title: "Swift Playgrounds"
-categories: 
+title: Swift Playgrounds
+categories:
 date: 2022-09-25 23:14:45 +0800
-tags: Swift 编译器 macOS iPadOS
-excerpt: 
+tags:
+  - Swift
+  - 编译器
+  - macOS
+  - iPadOS
+excerpt:
 ---
 
 

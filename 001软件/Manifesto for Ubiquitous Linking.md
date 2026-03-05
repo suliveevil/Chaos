@@ -1,9 +1,10 @@
 ---
-title: "Manifesto for Ubiquitous Linking"
-categories: 
+title: Manifesto for Ubiquitous Linking
+categories:
 date: 2022-09-27 00:01:57 +0800
-tags: macOS
-excerpt: 
+tags:
+  - macOS
+excerpt:
 ---
 
 [Manifesto for Ubiquitous Linking](https://linkingmanifesto.org)

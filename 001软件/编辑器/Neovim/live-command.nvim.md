@@ -1,9 +1,10 @@
 ---
-title: "live-command.nvim"
-categories: 
+title: live-command.nvim
+categories:
 date: 2022-10-01 08:14:02 +0800
-tags: Neovim
-excerpt: 
+tags:
+  - Neovim
+excerpt:
 ---
 
 

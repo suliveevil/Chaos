@@ -1,9 +1,12 @@
 ---
-title: "evil-motion-trainer"
-categories: 
+title: evil-motion-trainer
+categories:
 date: 2022-09-30 01:47:55 +0800
-tags: Emacs Vim 快捷键
-excerpt: 
+tags:
+  - Emacs
+  - Vim
+  - 快捷键
+excerpt:
 ---
 
 

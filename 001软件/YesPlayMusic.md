@@ -1,9 +1,13 @@
 ---
-title: "YesPlayMusic"
-categories: 
+title: YesPlayMusic
+categories:
 date: 2022-09-26 23:22:19 +0800
-tags: 音频播放器 Linux macOS Windows
-excerpt: 
+tags:
+  - 音频播放器
+  - Linux
+  - macOS
+  - Windows
+excerpt:
 ---
 
 

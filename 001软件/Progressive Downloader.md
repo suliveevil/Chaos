@@ -1,9 +1,10 @@
 ---
-title: "Progressive Downloader"
-categories: 
+title: Progressive Downloader
+categories:
 date: 2022-09-24 09:37:10 +0800
-tags: 文件下载
-excerpt: 
+tags:
+  - 文件下载
+excerpt:
 ---
 
 PD：Progressive Downloader

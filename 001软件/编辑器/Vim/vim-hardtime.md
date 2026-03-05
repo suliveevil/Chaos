@@ -1,9 +1,11 @@
 ---
-title: "vim-hardtime"
-categories: 
+title: vim-hardtime
+categories:
 date: 2022-09-30 01:49:23 +0800
-tags: Vim 快捷键
-excerpt: 
+tags:
+  - Vim
+  - 快捷键
+excerpt:
 ---
 
 

@@ -1,9 +1,10 @@
 ---
-title: "NGINX"
-categories: 
+title: NGINX
+categories:
 date: 2022-09-26 02:01:54 +0800
-tags: 自由软件
-excerpt: 
+tags:
+  - 自由软件
+excerpt:
 ---
 
 # Nginx

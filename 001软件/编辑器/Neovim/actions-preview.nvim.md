@@ -1,10 +1,12 @@
 ---
-title: "actions-preview.nvim"
-author: 
-categories: 
+title: actions-preview.nvim
+author:
+categories:
 date: 2022-10-09 15:22:32 +0800
-tags: Neovim LSP
-excerpt: 
+tags:
+  - Neovim
+  - LSP
+excerpt:
 ---
 
 

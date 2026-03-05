@@ -1,9 +1,11 @@
 ---
-title: "Plain Org"
-categories: 
+title: Plain Org
+categories:
 date: 2022-09-29 08:14:04 +0800
-tags: iOS iPadOS
-excerpt: 
+tags:
+  - iOS
+  - iPadOS
+excerpt:
 ---
 
 

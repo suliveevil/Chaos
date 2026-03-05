@@ -1,9 +1,11 @@
 ---
-title: "Alfred"
-categories: 
+title: Alfred
+categories:
 date: 2022-09-23 23:30:49 +0800
-tags: macOS 键盘
-excerpt: 
+tags:
+  - macOS
+  - 键盘
+excerpt:
 ---
 
 Powerpack：Single License、Mega Supporter（Free Lifetime Upgrades）、Legendary Supporter

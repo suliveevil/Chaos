@@ -1,9 +1,11 @@
 ---
-title: "dirvish"
-categories: 
+title: dirvish
+categories:
 date: 2022-10-01 12:19:47 +0800
-tags: Emacs macOS
-excerpt: 
+tags:
+  - Emacs
+  - macOS
+excerpt:
 ---
 
 [alexluigit/dirvish](https://github.com/alexluigit/dirvish): Dired can be a nice file manager.

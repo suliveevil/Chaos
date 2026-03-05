@@ -1,9 +1,10 @@
 ---
 title: ""
-categories: 
+categories:
 date: 2022-09-26 20:46:44 +0800
-tags: 开箱即用
-excerpt: 
+tags:
+  - 开箱即用
+excerpt:
 ---
 
 [[Obsidian 插件]]

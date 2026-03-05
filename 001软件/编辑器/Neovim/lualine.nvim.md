@@ -1,10 +1,12 @@
 ---
-title: "lualine.nvim"
-author: 
-categories: 
+title: lualine.nvim
+author:
+categories:
 date: 2022-10-02 20:08:33 +0800
-tags: Neovim UI
-excerpt: 
+tags:
+  - Neovim
+  - UI
+excerpt:
 ---
 
 [[Neovim 插件]]

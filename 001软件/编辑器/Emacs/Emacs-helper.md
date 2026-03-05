@@ -1,9 +1,10 @@
 ---
-title: "Emacs-helper"
-categories: 
+title: Emacs-helper
+categories:
 date: 2022-09-30 00:04:16 +0800
-tags: Emacs
-excerpt: 
+tags:
+  - Emacs
+excerpt:
 ---
 
 [emacs-helper](https://github.com/tumashu/emacs-helper)

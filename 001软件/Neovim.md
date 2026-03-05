@@ -1,8 +1,10 @@
 ---
-title: "Neovim"
+title: Neovim
 categories:
 date: 2022-09-24 18:48:38 +0800
-tags: 文本编辑器 自由软件
+tags:
+  - 文本编辑器
+  - 自由软件
 excerpt:
 ---
 

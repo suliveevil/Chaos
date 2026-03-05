@@ -1,9 +1,10 @@
 ---
-title: "Tesseract"
-categories: 
+title: Tesseract
+categories:
 date: 2022-09-24 00:16:31 +0800
-tags: OCR
-excerpt: 
+tags:
+  - OCR
+excerpt:
 ---
 
 

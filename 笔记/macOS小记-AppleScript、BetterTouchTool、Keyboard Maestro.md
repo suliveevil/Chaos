@@ -1,9 +1,11 @@
 ---
-title: "macOS小记-AppleScript、BTT、KM"
-categories: 
+title: macOS小记-AppleScript、BTT、KM
+categories:
 date: 2022-09-24 00:11:37 +0800
-tags: macOS AppleScript
-excerpt: 
+tags:
+  - macOS
+  - AppleScript
+excerpt:
 ---
 
 [TOC]

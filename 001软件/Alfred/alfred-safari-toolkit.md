@@ -1,9 +1,11 @@
 ---
-title: "alfred-safari-toolkit"
-categories: 
+title: alfred-safari-toolkit
+categories:
 date: 2022-09-23 23:54:41 +0800
-tags: Alfred Safari
-excerpt: 
+tags:
+  - Alfred
+  - Safari
+excerpt:
 ---
 
 

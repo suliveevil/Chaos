@@ -1,9 +1,11 @@
 ---
-title: "dap-mode"
-categories: 
+title: dap-mode
+categories:
 date: 2022-09-30 04:11:49 +0800
-tags: Emacs DAP
-excerpt: 
+tags:
+  - Emacs
+  - DAP
+excerpt:
 ---
 
 

@@ -1,9 +1,11 @@
 ---
-title: "lsp-mode"
-categories: 
+title: lsp-mode
+categories:
 date: 2022-09-30 02:54:27 +0800
-tags: Emacs LSP
-excerpt: 
+tags:
+  - Emacs
+  - LSP
+excerpt:
 ---
 
 [[Emacs 插件]]

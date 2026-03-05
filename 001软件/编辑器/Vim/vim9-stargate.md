@@ -1,9 +1,10 @@
 ---
-title: "vim9-stargate"
-categories: 
+title: vim9-stargate
+categories:
 date: 2022-09-23 14:03:34 +0800
-tags: vim9
-excerpt: 
+tags:
+  - vim9
+excerpt:
 ---
 
 

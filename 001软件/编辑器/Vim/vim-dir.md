@@ -1,9 +1,12 @@
 ---
 title: ""
-categories: 
+categories:
 date: 2022-09-25 17:57:08 +0800
-tags: Vim 文件管理 vim9
-excerpt: 
+tags:
+  - Vim
+  - 文件管理
+  - vim9
+excerpt:
 ---
 
 [[Vim 插件]]

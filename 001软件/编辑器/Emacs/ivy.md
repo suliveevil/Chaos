@@ -1,9 +1,11 @@
 ---
-title: "ivy"
-categories: 
+title: ivy
+categories:
 date: 2022-09-28 18:20:42 +0800
-tags: Emacs 补全
-excerpt: 
+tags:
+  - Emacs
+  - 补全
+excerpt:
 ---
 
 

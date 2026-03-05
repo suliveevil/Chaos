@@ -1,10 +1,12 @@
 ---
-title: "markdown-preview.nvim"
-author: 
-categories: 
+title: markdown-preview.nvim
+author:
+categories:
 date: 2022-10-01 11:48:39 +0800
-tags: Neovim Markdown
-excerpt: 
+tags:
+  - Neovim
+  - Markdown
+excerpt:
 ---
 
 

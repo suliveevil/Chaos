@@ -1,9 +1,10 @@
 ---
-title: "QuickAdd"
-categories: 
+title: QuickAdd
+categories:
 date: 2022-09-24 05:25:59 +0800
-tags: Obsidian
-excerpt: 
+tags:
+  - Obsidian
+excerpt:
 ---
 
 

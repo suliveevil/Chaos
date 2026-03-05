@@ -1,9 +1,12 @@
 ---
-title: "Be My Ears"
-categories: 
+title: Be My Ears
+categories:
 date: 2022-09-23 23:42:15 +0800
-tags: 语音识别 字幕 macOS
-excerpt: 
+tags:
+  - 语音识别
+  - 字幕
+  - macOS
+excerpt:
 ---
 
 [Be My Ears - Mac App Store](https://apps.apple.com/cn/app/be-my-ears/id1577662679?mt=12)

@@ -1,9 +1,10 @@
 ---
-title: "Obsidian Charts"
-categories: 
+title: Obsidian Charts
+categories:
 date: 2022-09-24 03:25:30 +0800
-tags: Obsidian
-excerpt: 
+tags:
+  - Obsidian
+excerpt:
 ---
 
 [[Obsidian 插件]]

@@ -1,9 +1,11 @@
 ---
-title: "nerdcommenter"
-categories: 
+title: nerdcommenter
+categories:
 date: 2022-09-25 19:14:35 +0800
-tags: Vim 注释
-excerpt: 
+tags:
+  - Vim
+  - 注释
+excerpt:
 ---
 
 [[Vim 插件]]

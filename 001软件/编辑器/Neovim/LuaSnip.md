@@ -1,9 +1,12 @@
 ---
-title: "LuaSnip"
-categories: 
+title: LuaSnip
+categories:
 date: 2022-09-25 19:22:19 +0800
-tags: 补全 Snippets Neovim
-excerpt: 
+tags:
+  - 补全
+  - Snippets
+  - Neovim
+excerpt:
 ---
 
 [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip): Snippet Engine for [[Neovim]] written in [[Lua]].

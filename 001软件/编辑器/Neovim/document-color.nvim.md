@@ -1,10 +1,12 @@
 ---
-title: "document-color.nvim"
-author: 
-categories: 
+title: document-color.nvim
+author:
+categories:
 date: 2022-10-01 07:14:06 +0800
-tags: Neovim UI
-excerpt: 
+tags:
+  - Neovim
+  - UI
+excerpt:
 ---
 
 

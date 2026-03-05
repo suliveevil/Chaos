@@ -1,9 +1,10 @@
 ---
-title: "fzf.vim"
-categories: 
+title: fzf.vim
+categories:
 date: 2022-09-24 19:22:31 +0800
-tags: 模糊搜索
-excerpt: 
+tags:
+  - 模糊搜索
+excerpt:
 ---
 
 [[Vim 插件]]

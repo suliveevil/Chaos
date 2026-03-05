@@ -1,10 +1,12 @@
 ---
-title: "texlab-vscode"
-author: 
-categories: 
+title: texlab-vscode
+author:
+categories:
 date: 2022-10-18 23:25:51 +0800
-tags: VSCode LaTeX
-excerpt: 
+tags:
+  - VSCode
+  - LaTeX
+excerpt:
 ---
 
 

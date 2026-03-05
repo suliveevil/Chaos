@@ -1,9 +1,11 @@
 ---
-title: "DAMA"
-categories: 
+title: DAMA
+categories:
 date: 2022-10-19 20:31:46 +0800
-tags: iOS iPadOS
-excerpt: 
+tags:
+  - iOS
+  - iPadOS
+excerpt:
 ---
 
 

@@ -1,9 +1,11 @@
 ---
-title: "EDN"
-categories: 
+title: EDN
+categories:
 date: 2022-09-24 03:04:27 +0800
-tags: 文件格式 Clojure
-excerpt: 
+tags:
+  - 文件格式
+  - Clojure
+excerpt:
 ---
 
 

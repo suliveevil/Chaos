@@ -1,9 +1,11 @@
 ---
-title: "fold-cycle.nvim"
-categories: 
+title: fold-cycle.nvim
+categories:
 date: 2022-09-27 18:22:53 +0800
-tags: Neovim 折叠
-excerpt: 
+tags:
+  - Neovim
+  - 折叠
+excerpt:
 ---
 
 

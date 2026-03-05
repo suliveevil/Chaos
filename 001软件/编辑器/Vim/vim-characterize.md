@@ -1,9 +1,11 @@
 ---
-title: "characterize.vim"
-categories: 
+title: characterize.vim
+categories:
 date: 2022-09-24 17:27:49 +0800
-tags: 字符 Unicode
-excerpt: 
+tags:
+  - 字符
+  - Unicode
+excerpt:
 ---
 
 

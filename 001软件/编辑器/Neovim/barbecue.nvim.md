@@ -1,9 +1,10 @@
 ---
-title: "barbecue.nvim"
-categories: 
+title: barbecue.nvim
+categories:
 date: 2022-10-01 05:31:50 +0800
-tags: Neovim
-excerpt: 
+tags:
+  - Neovim
+excerpt:
 ---
 
 

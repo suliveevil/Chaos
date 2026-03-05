@@ -1,10 +1,11 @@
 ---
-title: "GNOME"
-author: 
-categories: 
+title: GNOME
+author:
+categories:
 date: 2022-10-05 03:46:51 +0800
-tags: GNU
-excerpt: 
+tags:
+  - GNU
+excerpt:
 ---
 
 The GNU Network Object Model Environment

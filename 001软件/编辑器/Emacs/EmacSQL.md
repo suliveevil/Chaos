@@ -1,9 +1,11 @@
 ---
-title: "EmacSQL"
-categories: 
+title: EmacSQL
+categories:
 date: 2022-09-29 08:18:11 +0800
-tags: Emacs 数据库
-excerpt: 
+tags:
+  - Emacs
+  - 数据库
+excerpt:
 ---
 
 

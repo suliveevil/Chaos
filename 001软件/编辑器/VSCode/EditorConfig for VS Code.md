@@ -1,10 +1,11 @@
 ---
-title: "EditorConfig for VS Code"
-author: 
-categories: 
+title: EditorConfig for VS Code
+author:
+categories:
 date: 2022-10-03 01:42:18 +0800
-tags: VSCode
-excerpt: 
+tags:
+  - VSCode
+excerpt:
 ---
 
 [EditorConfig for VS Code - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)

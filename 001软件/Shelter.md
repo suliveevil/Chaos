@@ -1,9 +1,11 @@
 ---
-title: "Shelter"
-categories: 
+title: Shelter
+categories:
 date: 2022-10-07 04:29:41 +0800
-tags: 安卓 自由软件
-excerpt: 
+tags:
+  - 安卓
+  - 自由软件
+excerpt:
 ---
 
 

@@ -1,10 +1,12 @@
 ---
-title: "vim-yoink"
-author: 
-categories: 
+title: vim-yoink
+author:
+categories:
 date: 2022-10-05 11:01:05 +0800
-tags: Vim 剪贴板
-excerpt: 
+tags:
+  - Vim
+  - 剪贴板
+excerpt:
 ---
 
 

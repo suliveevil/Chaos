@@ -1,9 +1,11 @@
 ---
-title: "wordsmith-mode"
-categories: 
+title: wordsmith-mode
+categories:
 date: 2022-09-26 23:23:31 +0800
-tags: Emacs NLP
-excerpt: 
+tags:
+  - Emacs
+  - NLP
+excerpt:
 ---
 
 [[英语]]语法分析

@@ -1,9 +1,12 @@
 ---
-title: "YASnippet"
-categories: 
+title: YASnippet
+categories:
 date: 2022-09-24 22:27:25 +0800
-tags: 补全 文本替换 Emacs
-excerpt: 
+tags:
+  - 补全
+  - 文本替换
+  - Emacs
+excerpt:
 ---
 
 [[Emacs 插件]]

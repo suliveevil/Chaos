@@ -1,10 +1,13 @@
 ---
-title: "Vectorize!"
-author: 
-categories: 
+title: Vectorize!
+author:
+categories:
 date: 2022-10-01 23:52:06 +0800
-tags: iOS iPadOS macOS
-excerpt: 
+tags:
+  - iOS
+  - iPadOS
+  - macOS
+excerpt:
 ---
 
 

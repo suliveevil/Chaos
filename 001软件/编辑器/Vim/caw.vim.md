@@ -1,9 +1,11 @@
 ---
-title: "caw.vim"
-categories: 
+title: caw.vim
+categories:
 date: 2022-09-28 03:35:56 +0800
-tags: Vim 注释
-excerpt: 
+tags:
+  - Vim
+  - 注释
+excerpt:
 ---
 
 

@@ -1,10 +1,12 @@
 ---
-title: "feline.nvim"
-author: 
-categories: 
+title: feline.nvim
+author:
+categories:
 date: 2022-10-02 20:08:16 +0800
-tags: Neovim UI
-excerpt: 
+tags:
+  - Neovim
+  - UI
+excerpt:
 ---
 
 

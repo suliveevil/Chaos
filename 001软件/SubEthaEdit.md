@@ -1,10 +1,13 @@
 ---
-title: "SubEthaEdit"
-author: 
-categories: 
+title: SubEthaEdit
+author:
+categories:
 date: 2022-10-01 10:48:54 +0800
-tags: macOS 文本编辑器 自由软件
-excerpt: 
+tags:
+  - macOS
+  - 文本编辑器
+  - 自由软件
+excerpt:
 ---
 
 

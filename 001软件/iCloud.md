@@ -1,9 +1,12 @@
 ---
-title: "iCloud"
-categories: 
+title: iCloud
+categories:
 date: 2022-10-24 08:53:20 +0800
-tags: iOS iPadOS macOS
-excerpt: 
+tags:
+  - iOS
+  - iPadOS
+  - macOS
+excerpt:
 ---
 
 [[Apple苹果]]

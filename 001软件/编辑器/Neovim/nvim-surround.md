@@ -1,9 +1,10 @@
 ---
-title: "nvim-surround"
-categories: 
+title: nvim-surround
+categories:
 date: 2022-09-28 06:09:45 +0800
-tags: Neovim
-excerpt: 
+tags:
+  - Neovim
+excerpt:
 ---
 
 [kylechui/nvim-surround](https://github.com/kylechui/nvim-surround): Add/change/delete surrounding delimiter pairs with ease. Written with in Lua.

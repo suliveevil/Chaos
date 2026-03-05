@@ -1,10 +1,12 @@
 ---
-title: "ivy.nvim"
-author: 
-categories: 
+title: ivy.nvim
+author:
+categories:
 date: 2022-10-03 01:32:55 +0800
-tags: Neovim 补全
-excerpt: 
+tags:
+  - Neovim
+  - 补全
+excerpt:
 ---
 
 

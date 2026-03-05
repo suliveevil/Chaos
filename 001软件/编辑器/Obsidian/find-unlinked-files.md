@@ -1,9 +1,11 @@
 ---
 title: ""
-categories: 
+categories:
 date: 2022-09-26 20:47:38 +0800
-tags: Obsidian 开箱即用
-excerpt: 
+tags:
+  - Obsidian
+  - 开箱即用
+excerpt:
 ---
 
 

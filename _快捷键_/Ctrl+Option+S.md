@@ -1,9 +1,12 @@
 ---
-title: "Ctrl+Option+S"
-categories: 
+title: Ctrl+Option+S
+categories:
 date: 2022-09-30 05:02:19 +0800
-tags: Emacs 正则表达式 搜索
-excerpt: 
+tags:
+  - Emacs
+  - 正则表达式
+  - 搜索
+excerpt:
 ---
 
 

@@ -1,9 +1,12 @@
 ---
-title: "Doughnut"
-categories: 
+title: Doughnut
+categories:
 date: 2022-09-23 19:27:46 +0800
-tags: macOS 播客 Swift
-excerpt: 
+tags:
+  - macOS
+  - 播客
+  - Swift
+excerpt:
 ---
 
 [dyerc/Doughnut](https://github.com/dyerc/Doughnut): [[播客]] client (podcatcher) for macOS

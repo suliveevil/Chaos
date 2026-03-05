@@ -1,9 +1,11 @@
 ---
-title: "vimspector"
-categories: 
+title: vimspector
+categories:
 date: 2022-09-30 04:12:35 +0800
-tags: Vim DAP
-excerpt: 
+tags:
+  - Vim
+  - DAP
+excerpt:
 ---
 
 

@@ -1,10 +1,11 @@
 ---
-title: "marks.nvim"
-author: 
-categories: 
+title: marks.nvim
+author:
+categories:
 date: 2022-10-01 08:05:36 +0800
-tags: Neovim
-excerpt: 
+tags:
+  - Neovim
+excerpt:
 ---
 
 

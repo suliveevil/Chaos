@@ -1,9 +1,10 @@
 ---
-title: "Octave"
-categories: 
+title: Octave
+categories:
 date: 2022-10-05 03:47:27 +0800
-tags: GNU
-excerpt: 
+tags:
+  - GNU
+excerpt:
 ---
 
 [GNU Octave](https://www.gnu.org/software/octave/)

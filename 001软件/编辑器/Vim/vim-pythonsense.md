@@ -1,10 +1,13 @@
 ---
-title: "vim-pythonsense"
-author: 
-categories: 
+title: vim-pythonsense
+author:
+categories:
 date: 2022-10-07 06:03:35 +0800
-tags: Vim Python 文本对象
-excerpt: 
+tags:
+  - Vim
+  - Python
+  - 文本对象
+excerpt:
 ---
 
 

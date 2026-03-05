@@ -1,9 +1,11 @@
 ---
-title: "vim-fugitive"
-categories: 
+title: vim-fugitive
+categories:
 date: 2022-09-25 06:35:18 +0800
-tags: Vim Git
-excerpt: 
+tags:
+  - Vim
+  - Git
+excerpt:
 ---
 
 [[Vim 插件]]

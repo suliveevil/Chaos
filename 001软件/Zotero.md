@@ -1,9 +1,11 @@
 ---
-title: "Zotero"
-categories: 
+title: Zotero
+categories:
 date: 2022-09-26 23:21:17 +0800
-tags: 文件管理 自由软件
-excerpt: 
+tags:
+  - 文件管理
+  - 自由软件
+excerpt:
 ---
 
 [Zotero](https://github.com/zotero/zotero) is a free, easy-to-use tool to help you collect, organize, cite, and share your research sources.

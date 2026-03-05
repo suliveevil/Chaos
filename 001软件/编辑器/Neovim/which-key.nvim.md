@@ -1,9 +1,11 @@
 ---
-title: "which-key.nvim"
-categories: 
+title: which-key.nvim
+categories:
 date: 2022-09-25 19:15:54 +0800
-tags: Neovim 快捷键管理
-excerpt: 
+tags:
+  - Neovim
+  - 快捷键管理
+excerpt:
 ---
 
 [[Neovim 插件]]

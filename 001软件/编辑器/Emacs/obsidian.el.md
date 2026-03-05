@@ -1,9 +1,11 @@
 ---
-title: "obsidian.el"
-categories: 
+title: obsidian.el
+categories:
 date: 2022-10-04 06:46:28 +0800
-tags: Emacs Obsidian
-excerpt: 
+tags:
+  - Emacs
+  - Obsidian
+excerpt:
 ---
 
 [licht1stein/obsidian.el](https://github.com/licht1stein/obsidian.el): [[Obsidian]] Notes for Emacs

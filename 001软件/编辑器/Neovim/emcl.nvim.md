@@ -1,10 +1,14 @@
 ---
-title: "emcl.nvim"
-author: 
-categories: 
+title: emcl.nvim
+author:
+categories:
 date: 2022-10-06 18:15:45 +0800
-tags: Neovim Emacs 光标 快捷键
-excerpt: 
+tags:
+  - Neovim
+  - Emacs
+  - 光标
+  - 快捷键
+excerpt:
 ---
 
 

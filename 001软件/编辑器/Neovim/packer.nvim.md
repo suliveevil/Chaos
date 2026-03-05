@@ -1,10 +1,12 @@
 ---
-title: "packer.nvim"
-author: 
-categories: 
+title: packer.nvim
+author:
+categories:
 date: 2022-10-01 07:02:47 +0800
-tags: Neovim 插件管理器
-excerpt: 
+tags:
+  - Neovim
+  - 插件管理器
+excerpt:
 ---
 
 [[Neovim 插件]]

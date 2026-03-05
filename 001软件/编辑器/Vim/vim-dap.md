@@ -1,9 +1,10 @@
 ---
-title: "vim-dap"
-categories: 
+title: vim-dap
+categories:
 date: 2022-11-15 04:33:48 +0800
-tags: DAP
-excerpt: 
+tags:
+  - DAP
+excerpt:
 ---
 
 [dradtke/vim-dap](https://github.com/dradtke/vim-dap): [[Vim]]/[[Neovim]] debugger plugin providing a terminal interface to the [[Debug Adapter Protocol]]

@@ -1,9 +1,11 @@
 ---
-title: "sourcetree-alfred-workflow"
-categories: 
+title: sourcetree-alfred-workflow
+categories:
 date: 2022-09-23 19:39:45 +0800
-tags: Alfred Swift
-excerpt: 
+tags:
+  - Alfred
+  - Swift
+excerpt:
 ---
 
 

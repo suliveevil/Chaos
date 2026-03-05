@@ -1,10 +1,12 @@
 ---
-title: "inspect.lua"
-author: 
-categories: 
+title: inspect.lua
+author:
+categories:
 date: 2022-10-02 18:50:42 +0800
-tags: Neovim Lua
-excerpt: 
+tags:
+  - Neovim
+  - Lua
+excerpt:
 ---
 
 

@@ -1,9 +1,16 @@
 ---
-title: "Anki"
-categories: 
+title: Anki
+categories:
 date: 2022-09-24 09:29:41 +0800
-tags: 记忆 安卓 Linux iOS iPadOS macOS Windows
-excerpt: 
+tags:
+  - 记忆
+  - 安卓
+  - Linux
+  - iOS
+  - iPadOS
+  - macOS
+  - Windows
+excerpt:
 ---
 
 

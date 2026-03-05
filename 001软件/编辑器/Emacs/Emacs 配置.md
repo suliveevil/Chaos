@@ -1,8 +1,10 @@
 ---
-title: "Emacs 配置"
+title: Emacs 配置
 categories:
 date: 2022-09-25 18:08:04 +0800
-tags: Emacs 配置
+tags:
+  - Emacs
+  - 配置
 excerpt:
 ---
 

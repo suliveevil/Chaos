@@ -1,9 +1,11 @@
 ---
-title: "tree-sitter"
-categories: 
+title: tree-sitter
+categories:
 date: 2022-09-25 01:04:02 +0800
-tags: 代码 语法
-excerpt: 
+tags:
+  - 代码
+  - 语法
+excerpt:
 ---
 
 [tree-sitter/tree-sitter](https://github.com/tree-sitter/tree-sitter): An incremental parsing system for programming tools

@@ -1,9 +1,11 @@
 ---
-title: "nvim-lilypond-suite"
-categories: 
+title: nvim-lilypond-suite
+categories:
 date: 2022-09-24 18:19:10 +0800
-tags: Neovim 乐谱
-excerpt: 
+tags:
+  - Neovim
+  - 乐谱
+excerpt:
 ---
 
 

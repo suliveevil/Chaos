@@ -1,9 +1,10 @@
 ---
-title: "quick-explorer"
-categories: 
+title: quick-explorer
+categories:
 date: 2022-09-25 20:54:03 +0800
-tags: Obsidian
-excerpt: 
+tags:
+  - Obsidian
+excerpt:
 ---
 
 [[Obsidian 插件]]

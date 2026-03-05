@@ -1,9 +1,10 @@
 ---
-title: "cs.vim"
-categories: 
+title: cs.vim
+categories:
 date: 2022-09-28 06:25:53 +0800
-tags: Vim
-excerpt: 
+tags:
+  - Vim
+excerpt:
 ---
 
 

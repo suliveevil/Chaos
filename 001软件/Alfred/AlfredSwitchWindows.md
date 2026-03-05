@@ -1,9 +1,12 @@
 ---
 title: ""
-categories: 
+categories:
 date: 2022-09-26 23:20:41 +0800
-tags: Alfred macOS 窗口管理
-excerpt: 
+tags:
+  - Alfred
+  - macOS
+  - 窗口管理
+excerpt:
 ---
 
 [[Alfred Workflow]]

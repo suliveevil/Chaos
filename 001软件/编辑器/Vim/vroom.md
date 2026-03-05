@@ -1,9 +1,11 @@
 ---
 title: ""
-categories: 
+categories:
 date: 2022-09-30 13:18:22 +0800
-tags: Vim Vimscript
-excerpt: 
+tags:
+  - Vim
+  - Vimscript
+excerpt:
 ---
 
 

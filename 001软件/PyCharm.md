@@ -1,10 +1,12 @@
 ---
-title: "PyCharm"
-author: 
-categories: 
+title: PyCharm
+author:
+categories:
 date: 2022-10-02 05:47:04 +0800
-tags: Python IDE
-excerpt: 
+tags:
+  - Python
+  - IDE
+excerpt:
 ---
 
 [[JetBrains]] 开发的面向专业开发者的 [[Python]] [[IDE]]

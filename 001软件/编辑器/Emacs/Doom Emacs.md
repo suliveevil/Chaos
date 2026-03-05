@@ -1,9 +1,10 @@
 ---
-title: "Doom Emacs"
-categories: 
+title: Doom Emacs
+categories:
 date: 2022-09-30 00:07:16 +0800
-tags: Emacs
-excerpt: 
+tags:
+  - Emacs
+excerpt:
 ---
 
 Emacs distribution

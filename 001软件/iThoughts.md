@@ -1,9 +1,15 @@
 ---
-title: "iThoughts"
-categories: 
+title: iThoughts
+categories:
 date: 2022-09-24 09:47:33 +0800
-tags: 思维导图 图表编辑器 iOS iPadOS macOS Windows
-excerpt: 
+tags:
+  - 思维导图
+  - 图表编辑器
+  - iOS
+  - iPadOS
+  - macOS
+  - Windows
+excerpt:
 ---
 
 [toketaWare](https://www.toketaware.com/)

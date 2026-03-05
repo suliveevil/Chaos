@@ -1,9 +1,12 @@
 ---
-title: "qrcode-alfred-workflow"
-categories: 
+title: qrcode-alfred-workflow
+categories:
 date: 2022-09-23 19:41:18 +0800
-tags: Alfred 二维码 Swift
-excerpt: 
+tags:
+  - Alfred
+  - 二维码
+  - Swift
+excerpt:
 ---
 
 

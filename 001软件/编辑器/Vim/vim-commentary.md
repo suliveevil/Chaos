@@ -1,9 +1,10 @@
 ---
 title: ""
-categories: 
+categories:
 date: 2022-09-25 19:15:33 +0800
-tags: 注释
-excerpt: 
+tags:
+  - 注释
+excerpt:
 ---
 
 [[Vim 插件]]

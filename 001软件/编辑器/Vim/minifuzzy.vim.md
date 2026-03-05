@@ -1,9 +1,10 @@
 ---
-title: "minifuzzy.vim"
-categories: 
+title: minifuzzy.vim
+categories:
 date: 2022-09-23 14:07:38 +0800
-tags: vim9
-excerpt: 
+tags:
+  - vim9
+excerpt:
 ---
 
 [[Vim 插件]]

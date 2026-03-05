@@ -1,9 +1,10 @@
 ---
-title: "Working Copy"
-categories: 
+title: Working Copy
+categories:
 date: 2022-09-25 06:35:40 +0800
-tags: Git
-excerpt: 
+tags:
+  - Git
+excerpt:
 ---
 
 

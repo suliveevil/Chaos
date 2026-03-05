@@ -1,9 +1,13 @@
 ---
-title: "LanguageTool"
-categories: 
+title: LanguageTool
+categories:
 date: 2022-10-02 02:08:44 +0800
-tags: 中文 英文 多语种 校对
-excerpt: 
+tags:
+  - 中文
+  - 英文
+  - 多语种
+  - 校对
+excerpt:
 ---
 
 [LanguageTool](https://languagetool.org/): Grammar, Style & Spell Checker

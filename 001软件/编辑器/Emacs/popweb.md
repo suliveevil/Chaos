@@ -1,9 +1,11 @@
 ---
-title: "popweb"
-categories: 
+title: popweb
+categories:
 date: 2022-09-30 00:40:46 +0800
-tags: Emacs UI
-excerpt: 
+tags:
+  - Emacs
+  - UI
+excerpt:
 ---
 
 [manateelazycat/popweb](https://github.com/manateelazycat/popweb): Show popup web window for Emacs

@@ -1,9 +1,11 @@
 ---
-title: "company-mode"
-categories: 
+title: company-mode
+categories:
 date: 2022-09-27 21:13:21 +0800
-tags: Emacs 补全
-excerpt: 
+tags:
+  - Emacs
+  - 补全
+excerpt:
 ---
 
 

@@ -1,9 +1,11 @@
 ---
-title: "Hammerspoon"
-categories: 
+title: Hammerspoon
+categories:
 date: 2022-09-24 09:19:48 +0800
-tags: macOS Lua
-excerpt: 
+tags:
+  - macOS
+  - Lua
+excerpt:
 ---
 
 [[Lua]]

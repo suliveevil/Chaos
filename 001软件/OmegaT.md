@@ -1,9 +1,14 @@
 ---
-title: "OmegaT"
-categories: 
+title: OmegaT
+categories:
 date: 2022-09-27 00:04:44 +0800
-tags: 翻译 Linux macOS Windows 自由软件
-excerpt: 
+tags:
+  - 翻译
+  - Linux
+  - macOS
+  - Windows
+  - 自由软件
+excerpt:
 ---
 
 [OmegaT - The Free Translation Memory Tool](https://omegat.org/)

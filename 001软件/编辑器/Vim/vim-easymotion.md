@@ -1,9 +1,11 @@
 ---
-title: "vim-easymotion"
-categories: 
+title: vim-easymotion
+categories:
 date: 2022-09-25 06:24:43 +0800
-tags: Vim 模式
-excerpt: 
+tags:
+  - Vim
+  - 模式
+excerpt:
 ---
 
 [[Vim 插件]]

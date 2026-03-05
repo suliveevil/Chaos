@@ -1,9 +1,11 @@
 ---
-title: "AutoHotkey"
-categories: 
+title: AutoHotkey
+categories:
 date: 2022-09-28 10:58:40 +0800
-tags: Windows 键盘
-excerpt: 
+tags:
+  - Windows
+  - 键盘
+excerpt:
 ---
 
 

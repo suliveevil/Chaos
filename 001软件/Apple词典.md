@@ -1,9 +1,11 @@
 ---
-title: "Apple 词典"
-categories: 
+title: Apple 词典
+categories:
 date: 2022-09-24 00:43:36 +0800
-tags: macOS 词典
-excerpt: 
+tags:
+  - macOS
+  - 词典
+excerpt:
 ---
 
 Apple Dictionary

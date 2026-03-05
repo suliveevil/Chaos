@@ -1,9 +1,11 @@
 ---
-title: "Markdown"
-categories: 
+title: Markdown
+categories:
 date: 2022-09-23 23:45:59 +0800
-tags: 标记语言 文件格式
-excerpt: 
+tags:
+  - 标记语言
+  - 文件格式
+excerpt:
 ---
 
 一种标记语言、[[文件格式]]、语法，使用标记代替排版。

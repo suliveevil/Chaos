@@ -1,9 +1,12 @@
 ---
 title: ""
-categories: 
+categories:
 date: 2022-09-26 23:54:26 +0800
-tags: Linux macOS Windows
-excerpt: 
+tags:
+  - Linux
+  - macOS
+  - Windows
+excerpt:
 ---
 
 

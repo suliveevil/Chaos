@@ -1,9 +1,12 @@
 ---
-title: "BetterTouchTool"
-categories: 
+title: BetterTouchTool
+categories:
 date: 2022-09-24 03:13:12 +0800
-tags: macOS 触控板 鼠标
-excerpt: 
+tags:
+  - macOS
+  - 触控板
+  - 鼠标
+excerpt:
 ---
 
 

@@ -1,10 +1,13 @@
 ---
-title: "WinZoZ"
-author: 
-categories: 
+title: WinZoZ
+author:
+categories:
 date: 2022-10-01 11:45:05 +0800
-tags: 窗口管理 Vim vim9
-excerpt: 
+tags:
+  - 窗口管理
+  - Vim
+  - vim9
+excerpt:
 ---
 
 

@@ -1,9 +1,13 @@
 ---
-title: "RainingPlayer"
-categories: 
+title: RainingPlayer
+categories:
 date: 2022-09-30 01:25:02 +0800
-tags: 白噪音 iOS iPadOS macOS
-excerpt: 
+tags:
+  - 白噪音
+  - iOS
+  - iPadOS
+  - macOS
+excerpt:
 ---
 
 

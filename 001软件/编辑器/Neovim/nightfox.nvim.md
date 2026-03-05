@@ -1,10 +1,12 @@
 ---
-title: "nightfox.nvim"
-author: 
-categories: 
+title: nightfox.nvim
+author:
+categories:
 date: 2022-10-02 19:37:12 +0800
-tags: Neovim UI
-excerpt: 
+tags:
+  - Neovim
+  - UI
+excerpt:
 ---
 
 

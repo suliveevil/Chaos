@@ -1,8 +1,10 @@
 ---
-title: "I Got Smoke"
-categories: 
+title: I Got Smoke
+categories:
 date: 2022-09-23 20:59:21 +0800
-tags: 说唱 歌曲
+tags:
+  - 说唱
+  - 歌曲
 excerpt: 创作者：V的燃烧
 ---
 

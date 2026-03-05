@@ -1,10 +1,12 @@
 ---
-title: "one-small-step-for-vimkind"
-author: 
-categories: 
+title: one-small-step-for-vimkind
+author:
+categories:
 date: 2022-10-08 21:54:32 +0800
-tags: Neovim DAP
-excerpt: 
+tags:
+  - Neovim
+  - DAP
+excerpt:
 ---
 
 

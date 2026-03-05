@@ -1,9 +1,11 @@
 ---
-title: "ReplaceMode"
-categories: 
+title: ReplaceMode
+categories:
 date: 2022-09-25 18:02:43 +0800
-tags: Vim 模式
-excerpt: 
+tags:
+  - Vim
+  - 模式
+excerpt:
 ---
 
 

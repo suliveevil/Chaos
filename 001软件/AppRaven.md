@@ -1,9 +1,12 @@
 ---
-title: "AppRaven"
-categories: 
+title: AppRaven
+categories:
 date: 2022-09-26 23:34:56 +0800
-tags: iOS iPadOS macOS
-excerpt: 
+tags:
+  - iOS
+  - iPadOS
+  - macOS
+excerpt:
 ---
 
 App 降价提醒（Premium 可提醒 App 内购价格降价）

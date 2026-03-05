@@ -1,9 +1,10 @@
 ---
-title: "ClashX Pro"
-categories: 
+title: ClashX Pro
+categories:
 date: 2022-09-27 00:17:55 +0800
-tags: macOS
-excerpt: 
+tags:
+  - macOS
+excerpt:
 ---
 
 

@@ -1,10 +1,11 @@
 ---
-title: "gitignore"
-author: 
-categories: 
+title: gitignore
+author:
+categories:
 date: 2022-10-07 13:37:56 +0800
-tags: Git
-excerpt: 
+tags:
+  - Git
+excerpt:
 ---
 
 [github/gitignore](https://github.com/github/gitignore): A collection of useful .gitignore templates

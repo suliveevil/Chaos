@@ -1,9 +1,10 @@
 ---
-title: "difftastic"
-categories: 
+title: difftastic
+categories:
 date: 2022-09-30 22:32:09 +0800
-tags: 文件对比
-excerpt: 
+tags:
+  - 文件对比
+excerpt:
 ---
 
 

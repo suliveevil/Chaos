@@ -1,9 +1,11 @@
 ---
-title: "Neovim 配置"
-categories: 
+title: Neovim 配置
+categories:
 date: 2022-09-24 19:21:30 +0800
-tags: Neovim 配置
-excerpt: 
+tags:
+  - Neovim
+  - 配置
+excerpt:
 ---
 
 

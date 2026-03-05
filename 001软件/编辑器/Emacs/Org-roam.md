@@ -1,8 +1,10 @@
 ---
-title: "Org-roam"
+title: Org-roam
 categories:
 date: 2022-09-25 05:31:38 +0800
-tags: 知识管理 知识图谱
+tags:
+  - 知识管理
+  - 知识图谱
 excerpt:
 ---
 

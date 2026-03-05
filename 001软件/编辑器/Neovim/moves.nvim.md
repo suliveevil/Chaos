@@ -1,10 +1,12 @@
 ---
-title: "moves.nvim"
-author: 
-categories: 
+title: moves.nvim
+author:
+categories:
 date: 2022-10-01 07:21:24 +0800
-tags: Neovim UI
-excerpt: 
+tags:
+  - Neovim
+  - UI
+excerpt:
 ---
 
 

@@ -1,9 +1,11 @@
 ---
-title: "vim-easycomplete"
-categories: 
+title: vim-easycomplete
+categories:
 date: 2022-09-24 22:28:59 +0800
-tags: 补全 Vim
-excerpt: 
+tags:
+  - 补全
+  - Vim
+excerpt:
 ---
 
 

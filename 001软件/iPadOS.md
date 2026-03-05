@@ -1,8 +1,9 @@
 ---
-title: "iPadOS"
+title: iPadOS
 categories:
 date: 2022-09-25 23:15:32 +0800
-tags: 操作系统
+tags:
+  - 操作系统
 excerpt:
 ---
 

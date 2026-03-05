@@ -1,9 +1,11 @@
 ---
-title: "Insert Mode"
-categories: 
+title: Insert Mode
+categories:
 date: 2022-09-24 23:03:51 +0800
-tags: Vim 模式
-excerpt: 
+tags:
+  - Vim
+  - 模式
+excerpt:
 ---
 
 

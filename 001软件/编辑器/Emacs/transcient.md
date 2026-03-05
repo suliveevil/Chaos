@@ -1,9 +1,10 @@
 ---
-title: "transcient"
-categories: 
+title: transcient
+categories:
 date: 2022-09-30 00:46:46 +0800
-tags: Emacs
-excerpt: 
+tags:
+  - Emacs
+excerpt:
 ---
 
 

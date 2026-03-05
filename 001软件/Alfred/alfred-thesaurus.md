@@ -1,9 +1,12 @@
 ---
-title: "alfred-thesaurus"
-categories: 
+title: alfred-thesaurus
+categories:
 date: 2022-09-23 19:46:55 +0800
-tags: Alfred 词典 Rust
-excerpt: 
+tags:
+  - Alfred
+  - 词典
+  - Rust
+excerpt:
 ---
 
 

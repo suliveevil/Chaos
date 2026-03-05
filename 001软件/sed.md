@@ -1,8 +1,9 @@
 ---
-title: "sed"
-categories: 
+title: sed
+categories:
 date: 2022-10-05 03:48:45 +0800
-tags: GNU
+tags:
+  - GNU
 excerpt: Stream Editor：流编辑器
 ---
 

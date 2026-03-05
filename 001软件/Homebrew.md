@@ -1,9 +1,11 @@
 ---
-title: "Homebrew"
-categories: 
+title: Homebrew
+categories:
 date: 2022-09-26 23:59:48 +0800
-tags: macOS 自由软件
-excerpt: 
+tags:
+  - macOS
+  - 自由软件
+excerpt:
 ---
 
 macOS [[包管理器]]

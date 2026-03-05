@@ -1,9 +1,10 @@
 ---
-title: "libgit2"
+title: libgit2
 author:
 categories:
 date: 2022-10-07 14:26:56 +0800
-tags: Git
+tags:
+  - Git
 excerpt:
 ---
 

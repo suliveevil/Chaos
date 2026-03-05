@@ -1,9 +1,11 @@
 ---
-title: "elpaca"
-categories: 
+title: elpaca
+categories:
 date: 2022-09-30 03:56:58 +0800
-tags: Emacs 包管理器
-excerpt: 
+tags:
+  - Emacs
+  - 包管理器
+excerpt:
 ---
 
 

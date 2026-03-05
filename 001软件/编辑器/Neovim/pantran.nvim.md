@@ -1,9 +1,11 @@
 ---
-title: "pantran.nvim"
-categories: 
+title: pantran.nvim
+categories:
 date: 2022-10-29 01:52:59 +0800
-tags: Neovim 翻译
-excerpt: 
+tags:
+  - Neovim
+  - 翻译
+excerpt:
 ---
 
 

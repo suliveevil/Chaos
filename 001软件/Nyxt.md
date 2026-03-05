@@ -1,9 +1,10 @@
 ---
-title: "Nyxt"
-categories: 
+title: Nyxt
+categories:
 date: 2022-09-27 00:02:26 +0800
-tags: Linux
-excerpt: 
+tags:
+  - Linux
+excerpt:
 ---
 
 键盘驱动的[[浏览器]]，灵感来自 [[Emacs]] 和 [[Vim]]，使用 [[Common Lisp]] 编写。

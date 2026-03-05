@@ -1,9 +1,11 @@
 ---
-title: "deepl-alfred-workflow"
-categories: 
+title: deepl-alfred-workflow
+categories:
 date: 2022-09-23 19:56:21 +0800
-tags: Alfred 翻译
-excerpt: 
+tags:
+  - Alfred
+  - 翻译
+excerpt:
 ---
 
 

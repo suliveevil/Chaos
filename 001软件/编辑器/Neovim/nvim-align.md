@@ -1,9 +1,11 @@
 ---
-title: "nvim-align"
-categories: 
+title: nvim-align
+categories:
 date: 2022-09-30 09:25:42 +0800
-tags: Neovim 对齐
-excerpt: 
+tags:
+  - Neovim
+  - 对齐
+excerpt:
 ---
 
 

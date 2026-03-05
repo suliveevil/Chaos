@@ -1,10 +1,12 @@
 ---
-title: "vim-bracketed-paste"
-author: 
-categories: 
+title: vim-bracketed-paste
+author:
+categories:
 date: 2022-10-07 06:38:17 +0800
-tags: Vim 剪贴板
-excerpt: 
+tags:
+  - Vim
+  - 剪贴板
+excerpt:
 ---
 
 

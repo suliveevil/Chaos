@@ -1,9 +1,11 @@
 ---
-title: "global-interactive-emacs"
-categories: 
+title: global-interactive-emacs
+categories:
 date: 2022-09-29 15:44:56 +0800
-tags: Emacs Alfred
-excerpt: 
+tags:
+  - Emacs
+  - Alfred
+excerpt:
 ---
 
 

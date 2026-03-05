@@ -1,9 +1,12 @@
 ---
 title: ""
-categories: 
+categories:
 date: 2022-09-28 06:20:11 +0800
-tags: Vim 模糊搜索 无依赖
-excerpt: 
+tags:
+  - Vim
+  - 模糊搜索
+  - 无依赖
+excerpt:
 ---
 
 

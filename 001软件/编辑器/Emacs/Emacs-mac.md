@@ -1,8 +1,9 @@
 ---
-title: "Emacs-mac"
+title: Emacs-mac
 categories:
 date: 2022-09-30 03:53:08 +0800
-tags: Emacs
+tags:
+  - Emacs
 excerpt:
 ---
 

@@ -1,9 +1,12 @@
 ---
-title: "vim-easymotion-zh"
-categories: 
+title: vim-easymotion-zh
+categories:
 date: 2022-09-26 03:57:29 +0800
-tags: Vim 模式 中文
-excerpt: 
+tags:
+  - Vim
+  - 模式
+  - 中文
+excerpt:
 ---
 
 

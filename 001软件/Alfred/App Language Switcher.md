@@ -1,9 +1,12 @@
 ---
-title: "App Language Switcher"
-categories: 
+title: App Language Switcher
+categories:
 date: 2022-09-23 19:26:08 +0800
-tags: Alfred 语言 Swift
-excerpt: 
+tags:
+  - Alfred
+  - 语言
+  - Swift
+excerpt:
 ---
 
 [[Alfred Workflow]]

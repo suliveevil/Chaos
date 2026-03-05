@@ -1,9 +1,12 @@
 ---
-title: "Ctrl+Option+R"
-categories: 
+title: Ctrl+Option+R
+categories:
 date: 2022-09-30 05:02:43 +0800
-tags: Emacs 正则表达式 搜索
-excerpt: 
+tags:
+  - Emacs
+  - 正则表达式
+  - 搜索
+excerpt:
 ---
 
 

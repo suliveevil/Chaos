@@ -1,9 +1,12 @@
 ---
-title: "git-lens.vim"
-categories: 
+title: git-lens.vim
+categories:
 date: 2022-09-23 14:03:34 +0800
-tags: Vim Git vim9
-excerpt: 
+tags:
+  - Vim
+  - Git
+  - vim9
+excerpt:
 ---
 
 [[Vim 插件]]

@@ -1,9 +1,10 @@
 ---
-title: "Unix"
-categories: 
+title: Unix
+categories:
 date: 2022-09-26 02:20:24 +0800
-tags: 操作系统
-excerpt: 
+tags:
+  - 操作系统
+excerpt:
 ---
 
 Unix 之父：[[Ken Thompson]]

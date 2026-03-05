@@ -1,10 +1,11 @@
 ---
-title: "到了 2018 年，还有学习 Emacs 的必要吗？"
+title: 到了 2018 年，还有学习 Emacs 的必要吗？
 author: JoyerHuang_悦
-categories: 
+categories:
 date: 2022-09-25 03:31:52 +0800
-tags: Emacs
-excerpt: 
+tags:
+  - Emacs
+excerpt:
 ---
 
 

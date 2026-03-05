@@ -1,10 +1,12 @@
 ---
-title: "dressing.nvim"
-author: 
-categories: 
+title: dressing.nvim
+author:
+categories:
 date: 2022-10-05 10:56:42 +0800
-tags: Neovim UI
-excerpt: 
+tags:
+  - Neovim
+  - UI
+excerpt:
 ---
 
 

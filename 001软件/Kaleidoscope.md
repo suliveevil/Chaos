@@ -1,9 +1,10 @@
 ---
-title: "Kaleidoscope"
-categories: 
+title: Kaleidoscope
+categories:
 date: 2022-09-26 23:48:51 +0800
-tags: macOS
-excerpt: 
+tags:
+  - macOS
+excerpt:
 ---
 
 

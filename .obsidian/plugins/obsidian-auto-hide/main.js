@@ -60,8 +60,8 @@ var AutoHidePlugin = class extends import_obsidian.Plugin {
     return __async(this, null, function* () {
       yield this.loadSettings();
       this.addSettingTab(new AutoHideSettingTab(this.app, this));
-      (0, import_obsidian.addIcon)("oah-pin", `<g transform="matrix(.87777 .88112 -.87777 .88112 43.03 -31.116)" style="fill:none"><g transform="translate(3.0597 -.53266)" stroke="currentColor" stroke-linejoin="round" stroke-width="2.3821" style="fill:none"><path d="m27.884 53.709c-2.1049-8.9245 4.547-11.436 9.5283-14.888l1.5881-23.821c-7.9403-1.4888-7.9403-2.3554-7.9403-8.9328h31.761c0 6.5774 0 7.444-7.9403 8.9328l1.5881 23.821c4.9814 3.4517 11.633 5.9636 9.5283 14.888l-19.057 1.4e-5z" style="fill:none"/><path d="m43.764 53.709v33.349l3.1761 7.9403 3.1761-7.9403v-33.349" style="fill:none"/></g></g>`);
-      (0, import_obsidian.addIcon)("oah-filled-pin", `<g transform="matrix(.87777 .88112 -.87777 .88112 43.03 -31.116)"><g transform="translate(3.0597 -.53266)" stroke="currentColor" fill="currentColor" stroke-linejoin="round" stroke-width="2.3821"><path d="m27.884 53.709c-2.1049-8.9245 4.547-11.436 9.5283-14.888l1.5881-23.821c-7.9403-1.4888-7.9403-2.3554-7.9403-8.9328h31.761c0 6.5774 0 7.444-7.9403 8.9328l1.5881 23.821c4.9814 3.4517 11.633 5.9636 9.5283 14.888l-19.057 1.4e-5z"/><path d="m43.764 53.709v33.349l3.1761 7.9403 3.1761-7.9403v-33.349"/></g></g>`);
+      (0, import_obsidian.addIcon)("oah-pin", `<g transform="matrix(.87777 .88112 -.87777 .88112 43.03 -31.116)" style="fill:none"><g transform="translate(3.0597 -.53266)" stroke="currentColor" stroke-linejoin="round" stroke-width="3" style="fill:none"><path d="m27.884 53.709c-2.1049-8.9245 4.547-11.436 9.5283-14.888l1.5881-23.821c-7.9403-1.4888-7.9403-2.3554-7.9403-8.9328h31.761c0 6.5774 0 7.444-7.9403 8.9328l1.5881 23.821c4.9814 3.4517 11.633 5.9636 9.5283 14.888l-19.057 1.4e-5z" style="fill:none"/><path d="m43.764 53.709v33.349l3.1761 7.9403 3.1761-7.9403v-33.349" style="fill:none"/></g></g>`);
+      (0, import_obsidian.addIcon)("oah-filled-pin", `<g transform="matrix(.87777 .88112 -.87777 .88112 43.03 -31.116)"><g transform="translate(3.0597 -.53266)" stroke="currentColor" fill="currentColor" stroke-linejoin="round" stroke-width="3"><path d="m27.884 53.709c-2.1049-8.9245 4.547-11.436 9.5283-14.888l1.5881-23.821c-7.9403-1.4888-7.9403-2.3554-7.9403-8.9328h31.761c0 6.5774 0 7.444-7.9403 8.9328l1.5881 23.821c4.9814 3.4517 11.633 5.9636 9.5283 14.888l-19.057 1.4e-5z"/><path d="m43.764 53.709v33.349l3.1761 7.9403 3.1761-7.9403v-33.349"/></g></g>`);
       this.app.workspace.onLayoutReady(() => {
         this.init();
         this.registerEvents();
@@ -101,13 +101,20 @@ var AutoHidePlugin = class extends import_obsidian.Plugin {
   }
   registerEvents() {
     this.registerDomEvent(this.app.workspace.containerEl, "click", (evt) => {
-      if (!evt.path.contains(this.rootSplitEl)) {
+      if (!this.rootSplitEl.contains(evt.target)) {
         return;
       }
-      if (evt.path.some((element) => element.className === "workspace-tab-header-container")) {
+      if (evt.target.closest(".workspace-tab-header-container") !== null) {
         return;
       }
       if (evt.target.classList.contains("cm-hashtag") || evt.target.classList.contains("tag")) {
+        return;
+      }
+      if (evt.target.closest(".multi-select-pill-content") !== null) {
+        return;
+      }
+      const preventsClassList = ["snw-reference"];
+      if (preventsClassList.some((e) => evt.target.classList.contains(e))) {
         return;
       }
       if (evt.target.classList.contains("view-header-breadcrumb")) {
@@ -206,3 +213,5 @@ var AutoHideSettingTab = class extends import_obsidian.PluginSettingTab {
     })));
   }
 };
+
+/* nosourcemap */

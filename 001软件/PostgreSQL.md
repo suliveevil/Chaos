@@ -1,9 +1,10 @@
 ---
-title: "PostgreSQL"
+title: PostgreSQL
 author:
 categories:
 date: 2022-10-15 12:11:04 +0800
-tags: 数据库
+tags:
+  - 数据库
 excerpt:
 ---
 

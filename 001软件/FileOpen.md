@@ -1,9 +1,11 @@
 ---
-title: "FileOpen"
-categories: 
+title: FileOpen
+categories:
 date: 2022-09-25 06:43:11 +0800
-tags: DRM PDF
-excerpt: 
+tags:
+  - DRM
+  - PDF
+excerpt:
 ---
 
 [FileOpen DRM Software](https://www.fileopen.com/)

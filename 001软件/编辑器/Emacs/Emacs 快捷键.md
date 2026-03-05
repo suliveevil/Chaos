@@ -1,9 +1,11 @@
 ---
-title: "Emacs 快捷键"
-categories: 
+title: Emacs 快捷键
+categories:
 date: 2022-10-10 15:18:55 +0800
-tags: Emacs 快捷键
-excerpt: 
+tags:
+  - Emacs
+  - 快捷键
+excerpt:
 ---
 
 [emacs-keybindings table](https://wttools.sourceforge.net/emacs-stuff/emacs-keybindings.html)

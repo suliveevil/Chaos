@@ -1,10 +1,12 @@
 ---
-title: "vscode-markdown"
-author: 
-categories: 
+title: vscode-markdown
+author:
+categories:
 date: 2022-10-12 13:00:20 +0800
-tags: VSCode Markdown
-excerpt: 
+tags:
+  - VSCode
+  - Markdown
+excerpt:
 ---
 
 

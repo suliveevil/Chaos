@@ -1,9 +1,10 @@
 ---
-title: "elisp-tree-sitter"
-categories: 
+title: elisp-tree-sitter
+categories:
 date: 2022-09-30 00:47:54 +0800
-tags: Emacs
-excerpt: 
+tags:
+  - Emacs
+excerpt:
 ---
 
 

@@ -1,9 +1,11 @@
 ---
-title: "dash.el"
-categories: 
+title: dash.el
+categories:
 date: 2022-09-30 00:33:21 +0800
-tags: Emacs API
-excerpt: 
+tags:
+  - Emacs
+  - API
+excerpt:
 ---
 
 

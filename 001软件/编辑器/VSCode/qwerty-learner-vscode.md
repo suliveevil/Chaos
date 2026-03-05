@@ -1,10 +1,12 @@
 ---
-title: "qwerty-learner-vscode"
-author: 
-categories: 
+title: qwerty-learner-vscode
+author:
+categories:
 date: 2022-10-02 00:47:54 +0800
-tags: 英文 单词
-excerpt: 
+tags:
+  - 英文
+  - 单词
+excerpt:
 ---
 
 

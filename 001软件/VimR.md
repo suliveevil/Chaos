@@ -1,9 +1,12 @@
 ---
-title: "VimR"
-categories: 
+title: VimR
+categories:
 date: 2022-09-24 19:27:27 +0800
-tags: Neovim macOS Swift
-excerpt: 
+tags:
+  - Neovim
+  - macOS
+  - Swift
+excerpt:
 ---
 
 

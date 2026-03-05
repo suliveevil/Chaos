@@ -1,10 +1,13 @@
 ---
-title: "obsidian-vim-multibyte-char-search"
-author: 
-categories: 
+title: obsidian-vim-multibyte-char-search
+author:
+categories:
 date: 2022-10-06 11:28:11 +0800
-tags: Obsidian Vim 光标
-excerpt: 
+tags:
+  - Obsidian
+  - Vim
+  - 光标
+excerpt:
 ---
 
 [[Obsidian 插件]]

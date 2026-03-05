@@ -1,9 +1,10 @@
 ---
-title: "Tencent-Lemon"
-categories: 
+title: Tencent-Lemon
+categories:
 date: 2022-09-26 23:57:33 +0800
-tags: macOS
-excerpt: 
+tags:
+  - macOS
+excerpt:
 ---
 
 [Tencent/lemon-cleaner](https://github.com/Tencent/lemon-cleaner): [[腾讯]]柠檬清理是针对 macOS 系统专属制定的清理工具。

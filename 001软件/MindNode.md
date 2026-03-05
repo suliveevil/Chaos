@@ -1,9 +1,10 @@
 ---
-title: "MindNode"
-categories: 
+title: MindNode
+categories:
 date: 2022-09-24 09:47:20 +0800
-tags: 思维导图
-excerpt: 
+tags:
+  - 思维导图
+excerpt:
 ---
 
 

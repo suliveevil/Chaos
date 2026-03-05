@@ -1,9 +1,10 @@
 ---
-title: "wucuo"
-categories: 
+title: wucuo
+categories:
 date: 2022-09-30 00:28:37 +0800
-tags: Emacs
-excerpt: 
+tags:
+  - Emacs
+excerpt:
 ---
 
 

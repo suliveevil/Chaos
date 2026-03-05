@@ -1,9 +1,10 @@
 ---
-title: "PotPlayer"
-categories: 
+title: PotPlayer
+categories:
 date: 2022-10-10 17:52:53 +0800
-tags: 视频播放器
-excerpt: 
+tags:
+  - 视频播放器
+excerpt:
 ---
 
 

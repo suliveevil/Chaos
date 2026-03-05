@@ -1,9 +1,10 @@
 ---
-title: "winget"
-categories: 
+title: winget
+categories:
 date: 2022-09-28 03:08:57 +0800
-tags: Windows
-excerpt: 
+tags:
+  - Windows
+excerpt:
 ---
 
 

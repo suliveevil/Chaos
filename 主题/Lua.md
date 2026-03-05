@@ -1,9 +1,10 @@
 ---
-title: "Lua"
-categories: 
+title: Lua
+categories:
 date: 2022-09-25 06:09:18 +0800
-tags: 编程语言
-excerpt: 
+tags:
+  - 编程语言
+excerpt:
 ---
 
 

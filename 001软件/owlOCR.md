@@ -1,9 +1,10 @@
 ---
-title: "OwlOCR"
-categories: 
+title: OwlOCR
+categories:
 date: 2022-09-24 08:09:08 +0800
-tags: OCR
-excerpt: 
+tags:
+  - OCR
+excerpt:
 ---
 
 

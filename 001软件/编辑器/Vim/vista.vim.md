@@ -1,9 +1,10 @@
 ---
-title: "vista.vim"
-categories: 
+title: vista.vim
+categories:
 date: 2022-09-30 04:18:55 +0800
-tags: Vim
-excerpt: 
+tags:
+  - Vim
+excerpt:
 ---
 
 [[Vim 插件]]

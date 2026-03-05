@@ -1,10 +1,12 @@
 ---
-title: "auto-pairs"
-author: 
-categories: 
+title: auto-pairs
+author:
+categories:
 date: 2022-10-01 11:40:57 +0800
-tags: Vim vim9
-excerpt: 
+tags:
+  - Vim
+  - vim9
+excerpt:
 ---
 
 

@@ -1,9 +1,11 @@
 ---
-title: "quelpa"
-categories: 
+title: quelpa
+categories:
 date: 2022-09-30 21:21:20 +0800
-tags: Emacs 包管理器
-excerpt: 
+tags:
+  - Emacs
+  - 包管理器
+excerpt:
 ---
 
 

@@ -1,9 +1,12 @@
 ---
-title: "DEVONthink To Go"
+title: DEVONthink To Go
 author:
 categories:
 date: 2022-10-02 00:06:33 +0800
-tags: iOS iPadOS 文件管理
+tags:
+  - iOS
+  - iPadOS
+  - 文件管理
 excerpt:
 ---
 

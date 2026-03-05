@@ -1,9 +1,10 @@
 ---
-title: "obsidian-digital-garden"
-categories: 
+title: obsidian-digital-garden
+categories:
 date: 2022-09-26 20:55:16 +0800
-tags: Obsidian
-excerpt: 
+tags:
+  - Obsidian
+excerpt:
 ---
 
 [[Obsidian 插件]]

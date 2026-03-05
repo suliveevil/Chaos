@@ -1,10 +1,11 @@
 ---
-title: "vimux"
-author: 
-categories: 
+title: vimux
+author:
+categories:
 date: 2022-10-01 06:35:17 +0800
-tags: Vim
-excerpt: 
+tags:
+  - Vim
+excerpt:
 ---
 
 

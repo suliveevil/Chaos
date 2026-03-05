@@ -1,9 +1,10 @@
 ---
-title: "SnippetsLab"
-categories: 
+title: SnippetsLab
+categories:
 date: 2022-09-25 06:32:04 +0800
-tags: Snippets
-excerpt: 
+tags:
+  - Snippets
+excerpt:
 ---
 
 

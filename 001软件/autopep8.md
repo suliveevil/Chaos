@@ -1,9 +1,10 @@
 ---
-title: "autopep8"
-categories: 
+title: autopep8
+categories:
 date: 2022-09-25 20:32:28 +0800
-tags: Python
-excerpt: 
+tags:
+  - Python
+excerpt:
 ---
 
 [TOC]

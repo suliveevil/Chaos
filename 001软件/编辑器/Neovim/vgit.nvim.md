@@ -1,9 +1,11 @@
 ---
-title: "vgit.nvim"
-categories: 
+title: vgit.nvim
+categories:
 date: 2022-10-07 12:51:53 +0800
-tags: Neovim Git
-excerpt: 
+tags:
+  - Neovim
+  - Git
+excerpt:
 ---
 
 

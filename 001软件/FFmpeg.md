@@ -1,8 +1,10 @@
 ---
-title: "FFmpeg"
+title: FFmpeg
 categories:
 date: 2022-09-24 09:40:40 +0800
-tags: 音频 视频
+tags:
+  - 音频
+  - 视频
 excerpt:
 ---
 

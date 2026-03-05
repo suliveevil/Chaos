@@ -1,10 +1,12 @@
 ---
-title: "renamer.nvim"
-author: 
-categories: 
+title: renamer.nvim
+author:
+categories:
 date: 2022-10-01 07:55:09 +0800
-tags: Neovim 文本替换
-excerpt: 
+tags:
+  - Neovim
+  - 文本替换
+excerpt:
 ---
 
 

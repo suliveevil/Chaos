@@ -1,9 +1,12 @@
 ---
-title: "obsidian-language-learner"
-categories: 
+title: obsidian-language-learner
+categories:
 date: 2022-09-23 20:09:42 +0800
-tags: Obsidian 词典 翻译
-excerpt: 
+tags:
+  - Obsidian
+  - 词典
+  - 翻译
+excerpt:
 ---
 
 [[Obsidian 插件]]

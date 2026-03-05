@@ -1,9 +1,10 @@
 ---
-title: "cheovim"
-categories: 
+title: cheovim
+categories:
 date: 2022-10-03 13:08:32 +0800
-tags: Neovim
-excerpt: 
+tags:
+  - Neovim
+excerpt:
 ---
 
 

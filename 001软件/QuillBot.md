@@ -1,10 +1,11 @@
 ---
-title: "QuillBot"
-author: 
-categories: 
+title: QuillBot
+author:
+categories:
 date: 2022-10-04 11:32:50 +0800
-tags: 英文
-excerpt: 
+tags:
+  - 英文
+excerpt:
 ---
 
 

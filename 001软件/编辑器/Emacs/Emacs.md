@@ -1,8 +1,11 @@
 ---
-title: "Emacs"
+title: Emacs
 categories:
 date: 2022-09-24 04:33:01 +0800
-tags: 文本编辑器 GNU 自由软件
+tags:
+  - 文本编辑器
+  - GNU
+  - 自由软件
 excerpt:
 ---
 

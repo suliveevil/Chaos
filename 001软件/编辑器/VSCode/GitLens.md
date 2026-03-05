@@ -1,9 +1,12 @@
 ---
-title: "GitLens"
-categories: 
+title: GitLens
+categories:
 date: 2022-10-12 12:53:29 +0800
-tags: VSCode Git 插件
-excerpt: 
+tags:
+  - VSCode
+  - Git
+  - 插件
+excerpt:
 ---
 
 [[VSCode 插件]]

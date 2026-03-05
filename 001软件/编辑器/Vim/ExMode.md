@@ -1,9 +1,11 @@
 ---
-title: "ExMode"
-categories: 
+title: ExMode
+categories:
 date: 2022-09-25 18:00:09 +0800
-tags: Vim 模式
-excerpt: 
+tags:
+  - Vim
+  - 模式
+excerpt:
 ---
 
 Vim 主帮助文件

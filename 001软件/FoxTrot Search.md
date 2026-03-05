@@ -1,9 +1,11 @@
 ---
 title: ""
-categories: 
+categories:
 date: 2022-09-26 23:44:51 +0800
-tags: macOS 全文检索
-excerpt: 
+tags:
+  - macOS
+  - 全文检索
+excerpt:
 ---
 
 

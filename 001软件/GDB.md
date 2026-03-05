@@ -1,9 +1,10 @@
 ---
-title: "GDB"
-author: 
-categories: 
+title: GDB
+author:
+categories:
 date: 2022-10-04 10:43:52 +0800
-tags: GNU
+tags:
+  - GNU
 excerpt: GNU Symbolic Debugger
 ---
 

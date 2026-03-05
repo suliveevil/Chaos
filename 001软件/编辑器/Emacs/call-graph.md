@@ -1,9 +1,12 @@
 ---
-title: "call-graph"
-categories: 
+title: call-graph
+categories:
 date: 2022-09-30 02:24:46 +0800
-tags: Emacs C C++
-excerpt: 
+tags:
+  - Emacs
+  - C
+  - C++
+excerpt:
 ---
 
 

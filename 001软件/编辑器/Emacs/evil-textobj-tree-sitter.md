@@ -1,9 +1,10 @@
 ---
-title: "evil-textobj-tree-sitter"
-categories: 
+title: evil-textobj-tree-sitter
+categories:
 date: 2022-09-25 01:39:27 +0800
-tags: Emacs
-excerpt: 
+tags:
+  - Emacs
+excerpt:
 ---
 
 [[Emacs 插件]]

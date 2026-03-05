@@ -1,9 +1,11 @@
 ---
-title: "Visual Studio Code"
-categories: 
+title: Visual Studio Code
+categories:
 date: 2022-09-25 19:28:17 +0800
-tags: VSCode 文本编辑器
-excerpt: 
+tags:
+  - VSCode
+  - 文本编辑器
+excerpt:
 ---
 
 [[Microsoft]] 旗下文本编辑器，简称：VS Code、code

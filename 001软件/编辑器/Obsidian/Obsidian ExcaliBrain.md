@@ -1,9 +1,10 @@
 ---
-title: "Obsidian ExcaliBrain"
-categories: 
+title: Obsidian ExcaliBrain
+categories:
 date: 2022-09-26 20:44:16 +0800
-tags: 开箱即用
-excerpt: 
+tags:
+  - 开箱即用
+excerpt:
 ---
 
 

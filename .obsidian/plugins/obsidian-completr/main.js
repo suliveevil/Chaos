@@ -78100,6 +78100,8 @@ var Suggestion = class {
 var DEFAULT_SETTINGS = {
   characterRegex: "a-zA-Z\xF6\xE4\xFC\xD6\xC4\xDC\xDF",
   maxLookBackDistance: 50,
+  autoFocus: true,
+  autoTrigger: true,
   minWordLength: 2,
   minWordTriggerLength: 3,
   wordInsertionMode: "Ignore-Case & Replace" /* IGNORE_CASE_REPLACE */,
@@ -78114,7 +78116,8 @@ var DEFAULT_SETTINGS = {
   frontMatterProviderEnabled: true,
   frontMatterTagAppendSuffix: true,
   frontMatterIgnoreCase: true,
-  calloutProviderEnabled: true
+  calloutProviderEnabled: true,
+  calloutProviderSource: "Completr" /* COMPLETR */
 };
 function intoCompletrPath(vault, ...path) {
   return vault.configDir + "/plugins/obsidian-completr/" + path.join("/");
@@ -79509,7 +79512,7 @@ function findTagCompletionType(keyInfo, editor, currentLineIndex, currentLine, i
   const isList = keyInfo.isList;
   if (currentLine.startsWith(key + ": "))
     return "inline";
-  if (!currentLine.startsWith("- ") || !isList)
+  if (!currentLine.trimStart().startsWith("- ") || !isList)
     return "none";
   let foundListStart = false;
   for (let i = currentLineIndex - 1; i >= 1; i--) {
@@ -79564,7 +79567,7 @@ var FrontMatterSuggestionProvider = class {
     };
   }
   getSuggestions(context, settings) {
-    var _a;
+    var _a, _b, _c;
     if (!settings.frontMatterProviderEnabled)
       return [];
     const firstLine = context.editor.getLine(0);
@@ -79617,11 +79620,24 @@ var FrontMatterSuggestionProvider = class {
       (char) => new RegExp("[" + settings.characterRegex + "/\\-_]", "u").test(char),
       settings.maxLookBackDistance
     ).query, ignoreCase);
-    return [...key.completions].filter((tag) => maybeLowerCase(tag, ignoreCase).startsWith(customQuery)).map((tag) => new Suggestion(
-      tag,
-      tag + (settings.frontMatterTagAppendSuffix && key.isList ? type === "inline" ? ", " : "\n- " : ""),
-      { ...context.end, ch: context.end.ch - customQuery.length }
-    )).sort((a, b) => a.displayName.length - b.displayName.length);
+    let replacementSuffix = "";
+    if (settings.frontMatterTagAppendSuffix && key.isList) {
+      if (type === "inline") {
+        replacementSuffix = ", ";
+      } else {
+        const line = context.editor.getLine(context.start.line);
+        const indentation = (_c = (_b = line.match(/^\s*/)) == null ? void 0 : _b[0]) != null ? _c : "";
+        replacementSuffix = `
+${indentation}- `;
+      }
+    }
+    return [...key.completions].filter((tag) => maybeLowerCase(tag, ignoreCase).startsWith(customQuery)).map((tag) => {
+      return new Suggestion(
+        tag,
+        tag + replacementSuffix,
+        { ...context.end, ch: context.end.ch - customQuery.length }
+      );
+    }).sort((a, b) => a.displayName.length - b.displayName.length);
   }
   loadYAMLKeyCompletions(cache, files) {
     for (let file of files) {
@@ -79675,6 +79691,67 @@ var FrontMatterSuggestionProvider = class {
 };
 var FrontMatter = new FrontMatterSuggestionProvider();
 
+// node_modules/obsidian-callout-manager/dist/api-esm.mjs
+function __awaiter(thisArg, _arguments, P, generator) {
+  function adopt(value) {
+    return value instanceof P ? value : new P(function(resolve) {
+      resolve(value);
+    });
+  }
+  return new (P || (P = Promise))(function(resolve, reject) {
+    function fulfilled(value) {
+      try {
+        step(generator.next(value));
+      } catch (e) {
+        reject(e);
+      }
+    }
+    function rejected(value) {
+      try {
+        step(generator["throw"](value));
+      } catch (e) {
+        reject(e);
+      }
+    }
+    function step(result) {
+      result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+    }
+    step((generator = generator.apply(thisArg, _arguments || [])).next());
+  });
+}
+var PLUGIN_ID = "callout-manager";
+var PLUGIN_API_VERSION = "v1";
+function getApi(plugin) {
+  var _a;
+  return __awaiter(this, void 0, void 0, function* () {
+    const app = (_a = plugin === null || plugin === void 0 ? void 0 : plugin.app) !== null && _a !== void 0 ? _a : globalThis.app;
+    const { plugins } = app;
+    if (!plugins.enabledPlugins.has(PLUGIN_ID)) {
+      return void 0;
+    }
+    const calloutManagerInstance = yield new Promise((resolve, reject) => {
+      const instance = plugins.plugins[PLUGIN_ID];
+      if (instance !== void 0) {
+        return resolve(instance);
+      }
+      const interval = setInterval(() => {
+        const instance2 = plugins.plugins[PLUGIN_ID];
+        if (instance2 !== void 0) {
+          clearInterval(interval);
+          resolve(instance2);
+        }
+      }, 10);
+    });
+    return calloutManagerInstance.newApiHandle(PLUGIN_API_VERSION, plugin, () => {
+      calloutManagerInstance.destroyApiHandle(PLUGIN_API_VERSION, plugin);
+    });
+  });
+}
+function isInstalled(app) {
+  const appWithPlugins = app !== null && app !== void 0 ? app : globalThis.app;
+  return appWithPlugins.plugins.enabledPlugins.has(PLUGIN_ID);
+}
+
 // src/provider/callout_provider.ts
 var import_obsidian3 = require("obsidian");
 var CALLOUT_SUGGESTIONS_FILE = "callout_suggestions.json";
@@ -79685,6 +79762,7 @@ var CalloutSuggestionProvider = class {
   constructor() {
     this.blocksAllOtherProviders = true;
     this.loadedSuggestions = [];
+    this.boundLoadSuggestionsUsingCalloutManager = this.loadSuggestionsUsingCalloutManager.bind(this);
   }
   getSuggestions(context, settings) {
     if (!settings.calloutProviderEnabled)
@@ -79724,7 +79802,20 @@ var CalloutSuggestionProvider = class {
       });
     });
   }
-  async loadSuggestions(vault) {
+  async loadSuggestions(vault, plugin) {
+    const source = plugin.settings.calloutProviderSource;
+    const calloutManagerApi = await getApi(plugin);
+    if (calloutManagerApi != null) {
+      calloutManagerApi.off("change", this.boundLoadSuggestionsUsingCalloutManager);
+      if (source === "Callout Manager" /* CALLOUT_MANAGER */) {
+        calloutManagerApi.on("change", this.boundLoadSuggestionsUsingCalloutManager);
+        await this.loadSuggestionsUsingCalloutManager();
+        return;
+      }
+    }
+    await this.loadSuggestionsUsingCompletr(vault);
+  }
+  async loadSuggestionsUsingCompletr(vault) {
     const path = intoCompletrPath(vault, CALLOUT_SUGGESTIONS_FILE);
     if (!await vault.adapter.exists(path)) {
       const defaultCommands = generateDefaulCalloutOptions();
@@ -79742,6 +79833,15 @@ var CalloutSuggestionProvider = class {
       }
     }
     this.loadedSuggestions = SuggestionBlacklist.filter(this.loadedSuggestions);
+  }
+  async loadSuggestionsUsingCalloutManager() {
+    const api = await getApi();
+    this.loadedSuggestions = Array.from(api.getCallouts()).sort(({ id: a }, { id: b }) => a.localeCompare(b)).map((callout) => newSuggestion(
+      api.getTitle(callout),
+      callout.id,
+      callout.icon,
+      `rgb(${callout.color})`
+    ));
   }
 };
 var Callout = new CalloutSuggestionProvider();
@@ -79893,11 +79993,24 @@ var SuggestionPopup = class extends import_obsidian4.EditorSuggest {
   constructor(app, settings, snippetManager) {
     var _a;
     super(app);
+    this.focused = false;
     this.disableSnippets = (_a = app.vault.config) == null ? void 0 : _a.legacyEditor;
     this.settings = settings;
     this.snippetManager = snippetManager;
     let self = this;
     self.scope.keys = [];
+  }
+  open() {
+    super.open();
+    this.focused = this.settings.autoFocus;
+    if (!this.focused) {
+      for (const c of this.suggestions.containerEl.children)
+        c.removeClass("is-selected");
+    }
+  }
+  close() {
+    super.close();
+    this.focused = false;
   }
   getSuggestions(context) {
     let suggestions = [];
@@ -79925,8 +80038,15 @@ var SuggestionPopup = class extends import_obsidian4.EditorSuggest {
     return suggestions.length === 0 ? null : suggestions.filter((s) => !SuggestionBlacklist.has(s));
   }
   onTrigger(cursor, editor, file) {
+    return this.internalOnTrigger(editor, cursor, !file);
+  }
+  internalOnTrigger(editor, cursor, manualTrigger) {
     if (this.justClosed) {
       this.justClosed = false;
+      return null;
+    }
+    if (!this.settings.autoTrigger && !manualTrigger) {
+      this.close();
       return null;
     }
     let {
@@ -79982,6 +80102,10 @@ var SuggestionPopup = class extends import_obsidian4.EditorSuggest {
     this.justClosed = true;
   }
   selectNextItem(dir) {
+    if (!this.focused) {
+      this.focused = true;
+      dir = dir === SelectionDirection.PREVIOUS ? dir : SelectionDirection.NONE;
+    }
     const self = this;
     self.suggestions.setSelectedItem(self.suggestions.selectedItem + dir, new KeyboardEvent("keydown"));
   }
@@ -79996,6 +80120,9 @@ var SuggestionPopup = class extends import_obsidian4.EditorSuggest {
   isVisible() {
     return this.isOpen;
   }
+  isFocused() {
+    return this.focused;
+  }
   preventNextTrigger() {
     this.justClosed = true;
   }
@@ -80005,6 +80132,12 @@ var SuggestionPopup = class extends import_obsidian4.EditorSuggest {
     return this.compiledCharacterRegex;
   }
 };
+var SelectionDirection = /* @__PURE__ */ ((SelectionDirection2) => {
+  SelectionDirection2[SelectionDirection2["NEXT"] = 1] = "NEXT";
+  SelectionDirection2[SelectionDirection2["PREVIOUS"] = -1] = "PREVIOUS";
+  SelectionDirection2[SelectionDirection2["NONE"] = 0] = "NONE";
+  return SelectionDirection2;
+})(SelectionDirection || {});
 
 // src/settings_tab.ts
 var import_obsidian5 = require("obsidian");
@@ -80027,6 +80160,14 @@ var CompletrSettingsTab = class extends import_obsidian5.PluginSettingTab {
       } catch (e) {
         text.inputEl.addClass("completr-settings-error");
       }
+    }));
+    new import_obsidian5.Setting(containerEl).setName("Auto focus").setDesc("Whether the popup is automatically focused once it opens.").addToggle((toggle) => toggle.setValue(this.plugin.settings.autoFocus).onChange(async (val) => {
+      this.plugin.settings.autoFocus = val;
+      await this.plugin.saveSettings();
+    }));
+    new import_obsidian5.Setting(containerEl).setName("Auto trigger").setDesc("Whether the popup opens automatically when typing.").addToggle((toggle) => toggle.setValue(this.plugin.settings.autoTrigger).onChange(async (val) => {
+      this.plugin.settings.autoTrigger = val;
+      await this.plugin.saveSettings();
     }));
     new import_obsidian5.Setting(containerEl).setName("Minimum word length").setDesc("The minimum length a word has to be, to count as a valid suggestion. This value is used by the file scanner and word list provider.").addText((text) => {
       text.inputEl.type = "number";
@@ -80172,6 +80313,18 @@ var CompletrSettingsTab = class extends import_obsidian5.PluginSettingTab {
     });
     new import_obsidian5.Setting(containerEl).setName("Callout provider").setHeading();
     this.createEnabledSetting("calloutProviderEnabled", "Whether or not the callout provider is enabled", containerEl);
+    new import_obsidian5.Setting(containerEl).setName("Source").setDesc("Where callout suggestions come from.").addDropdown((component) => {
+      component.addOption("Completr", "Completr" /* COMPLETR */).setValue("Completr" /* COMPLETR */).onChange(async (value) => {
+        this.plugin.settings.calloutProviderSource = value;
+        await this.plugin.saveSettings();
+      });
+      if (isInstalled()) {
+        component.addOption("Callout Manager", "Callout Manager" /* CALLOUT_MANAGER */);
+        if (this.plugin.settings.calloutProviderSource === "Callout Manager" /* CALLOUT_MANAGER */) {
+          component.setValue(this.plugin.settings.calloutProviderSource);
+        }
+      }
+    });
   }
   async reloadWords() {
     if (this.isReloadingWords)
@@ -80234,25 +80387,27 @@ var CompletrPlugin = class extends import_obsidian6.Plugin {
   setupCommands() {
     const app = this.app;
     app.scope.keys = [];
-    const isHotkeyMatch = (hotkey, context, id) => {
+    const isHotkeyMatch = (hotkey, context, isBypassCommand) => {
       const modifiers = hotkey.modifiers, key = hotkey.key;
-      if (modifiers !== null && (id.contains("completr-bypass") ? !context.modifiers.contains(modifiers) : modifiers !== context.modifiers))
+      if (modifiers !== null && (isBypassCommand ? !context.modifiers.contains(modifiers) : modifiers !== context.modifiers))
         return false;
       return !key || (key === context.vkey || !(!context.key || key.toLowerCase() !== context.key.toLowerCase()));
     };
     this.app.scope.register(null, null, (e, t) => {
+      var _a;
       const hotkeyManager = app.hotkeyManager;
       hotkeyManager.bake();
       for (let bakedHotkeys = hotkeyManager.bakedHotkeys, bakedIds = hotkeyManager.bakedIds, r = 0; r < bakedHotkeys.length; r++) {
         const hotkey = bakedHotkeys[r];
         const id = bakedIds[r];
-        if (isHotkeyMatch(hotkey, t, id)) {
-          const command = app.commands.findCommand(id);
+        const command = app.commands.findCommand(id);
+        const isBypassCommand = (_a = command == null ? void 0 : command.isBypassCommand) == null ? void 0 : _a.call(command);
+        if (isHotkeyMatch(hotkey, t, isBypassCommand)) {
           if (!command || e.repeat && !command.repeatable) {
             continue;
           } else if (command.isVisible && !command.isVisible()) {
             continue;
-          } else if (id.contains("completr-bypass")) {
+          } else if (isBypassCommand) {
             this._suggestionPopup.close();
             const validMods = t.modifiers.replace(new RegExp(`${hotkey.modifiers},*`), "").split(",");
             let event = new KeyboardEvent("keydown", {
@@ -80280,7 +80435,7 @@ var CompletrPlugin = class extends import_obsidian6.Plugin {
         }
       ],
       editorCallback: (editor) => {
-        this._suggestionPopup.trigger(editor, this.app.workspace.getActiveFile(), true);
+        this._suggestionPopup.trigger(editor, null, true);
       },
       isVisible: () => !this._suggestionPopup.isVisible()
     });
@@ -80294,7 +80449,7 @@ var CompletrPlugin = class extends import_obsidian6.Plugin {
         }
       ],
       repeatable: true,
-      editorCallback: (editor) => {
+      editorCallback: (_) => {
         this.suggestionPopup.selectNextItem(1 /* NEXT */);
       },
       isVisible: () => this._suggestionPopup.isVisible()
@@ -80309,7 +80464,7 @@ var CompletrPlugin = class extends import_obsidian6.Plugin {
         }
       ],
       repeatable: true,
-      editorCallback: (editor) => {
+      editorCallback: (_) => {
         this.suggestionPopup.selectNextItem(-1 /* PREVIOUS */);
       },
       isVisible: () => this._suggestionPopup.isVisible()
@@ -80323,9 +80478,8 @@ var CompletrPlugin = class extends import_obsidian6.Plugin {
           modifiers: []
         }
       ],
-      editorCallback: (editor) => {
-        this.suggestionPopup.applySelectedItem();
-      },
+      editorCallback: (_) => this.suggestionPopup.applySelectedItem(),
+      isBypassCommand: () => !this._suggestionPopup.isFocused(),
       isVisible: () => this._suggestionPopup.isVisible()
     });
     this.addCommand({
@@ -80337,8 +80491,9 @@ var CompletrPlugin = class extends import_obsidian6.Plugin {
           modifiers: ["Ctrl"]
         }
       ],
-      editorCallback: (editor) => {
+      editorCallback: (_) => {
       },
+      isBypassCommand: () => true,
       isVisible: () => this._suggestionPopup.isVisible()
     });
     this.addCommand({
@@ -80350,8 +80505,9 @@ var CompletrPlugin = class extends import_obsidian6.Plugin {
           modifiers: ["Ctrl"]
         }
       ],
-      editorCallback: (editor) => {
+      editorCallback: (_) => {
       },
+      isBypassCommand: () => true,
       isVisible: () => this._suggestionPopup.isVisible()
     });
     this.addCommand({
@@ -80368,6 +80524,7 @@ var CompletrPlugin = class extends import_obsidian6.Plugin {
         SuggestionBlacklist.saveData(this.app.vault);
         this._suggestionPopup.trigger(editor, this.app.workspace.getActiveFile(), true);
       },
+      isBypassCommand: () => !this._suggestionPopup.isFocused(),
       isVisible: () => this._suggestionPopup.isVisible()
     });
     this.addCommand({
@@ -80379,9 +80536,7 @@ var CompletrPlugin = class extends import_obsidian6.Plugin {
           modifiers: []
         }
       ],
-      editorCallback: (editor) => {
-        this.suggestionPopup.close();
-      },
+      editorCallback: (_) => this.suggestionPopup.close(),
       isVisible: () => this._suggestionPopup.isVisible()
     });
     this.addCommand({
@@ -80393,7 +80548,7 @@ var CompletrPlugin = class extends import_obsidian6.Plugin {
           modifiers: []
         }
       ],
-      editorCallback: (editor, view) => {
+      editorCallback: (editor, _) => {
         const placeholder = this.snippetManager.placeholderAtPos(editor.getCursor());
         if (!placeholder)
           return;
@@ -80415,6 +80570,62 @@ var CompletrPlugin = class extends import_obsidian6.Plugin {
         return placeholder != null;
       }
     });
+    this.addCommand({
+      id: "completr-fake-tab",
+      name: "(internal)",
+      hotkeys: [
+        {
+          key: "Tab",
+          modifiers: []
+        }
+      ],
+      editorCallback: (_) => {
+      },
+      isBypassCommand: () => true,
+      isVisible: () => this._suggestionPopup.isVisible()
+    });
+    this.addCommand({
+      id: "completr-fake-enter",
+      name: "(internal)",
+      hotkeys: [
+        {
+          key: "Enter",
+          modifiers: []
+        }
+      ],
+      editorCallback: (_) => {
+      },
+      isBypassCommand: () => true,
+      isVisible: () => this._suggestionPopup.isVisible()
+    });
+    this.addCommand({
+      id: "completr-fake-arrow-up",
+      name: "(internal)",
+      hotkeys: [
+        {
+          key: "ArrowUp",
+          modifiers: []
+        }
+      ],
+      editorCallback: (_) => {
+      },
+      isBypassCommand: () => true,
+      isVisible: () => this._suggestionPopup.isVisible()
+    });
+    this.addCommand({
+      id: "completr-fake-arrow-down",
+      name: "(internal)",
+      hotkeys: [
+        {
+          key: "ArrowDown",
+          modifiers: []
+        }
+      ],
+      editorCallback: (_) => {
+      },
+      isBypassCommand: () => true,
+      isVisible: () => this._suggestionPopup.isVisible()
+    });
   }
   async onunload() {
     this.snippetManager.onunload();
@@ -80426,7 +80637,7 @@ var CompletrPlugin = class extends import_obsidian6.Plugin {
       WordList.loadFromFiles(this.app.vault, this.settings);
       FileScanner.loadData(this.app.vault);
       Latex.loadCommands(this.app.vault);
-      Callout.loadSuggestions(this.app.vault);
+      Callout.loadSuggestions(this.app.vault, this);
     });
   }
   get suggestionPopup() {
@@ -80452,7 +80663,8 @@ var CursorActivityListener = class {
       this.cursorTriggeredByChange = true;
     };
     this.handleCursorActivity = (cursor) => {
-      if (this.lastCursorLine == cursor.line + 1)
+      const didChangeLine = this.lastCursorLine != cursor.line;
+      if (didChangeLine)
         this.suggestionPopup.preventNextTrigger();
       this.lastCursorLine = cursor.line;
       if (!this.snippetManager.placeholderAtPos(cursor)) {
@@ -80460,7 +80672,8 @@ var CursorActivityListener = class {
       }
       if (this.cursorTriggeredByChange) {
         this.cursorTriggeredByChange = false;
-        return;
+        if (!didChangeLine)
+          return;
       }
       this.suggestionPopup.close();
     };
@@ -80468,3 +80681,5 @@ var CursorActivityListener = class {
     this.suggestionPopup = suggestionPopup;
   }
 };
+
+/* nosourcemap */

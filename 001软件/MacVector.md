@@ -1,10 +1,11 @@
 ---
-title: "MacVector"
-author: 
-categories: 
+title: MacVector
+author:
+categories:
 date: 2022-10-02 10:32:50 +0800
-tags: AppleScript
-excerpt: 
+tags:
+  - AppleScript
+excerpt:
 ---
 
 sequence analysis application

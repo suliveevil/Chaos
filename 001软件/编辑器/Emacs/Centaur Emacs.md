@@ -1,9 +1,10 @@
 ---
-title: "Centaur Emacs"
-categories: 
+title: Centaur Emacs
+categories:
 date: 2022-09-30 00:02:29 +0800
-tags: Emacs
-excerpt: 
+tags:
+  - Emacs
+excerpt:
 ---
 
 

@@ -1,8 +1,11 @@
 ---
-title: "Vectornator"
-categories: 
+title: Vectornator
+categories:
 date: 2022-10-01 23:52:53 +0800
-tags: iOS iPadOS macOS
+tags:
+  - iOS
+  - iPadOS
+  - macOS
 excerpt: Vectornator：Vector Design
 ---
 

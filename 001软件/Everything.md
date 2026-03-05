@@ -1,9 +1,11 @@
 ---
-title: "Everything"
-categories: 
+title: Everything
+categories:
 date: 2022-09-26 23:43:57 +0800
-tags: Windows 文件搜索
-excerpt: 
+tags:
+  - Windows
+  - 文件搜索
+excerpt:
 ---
 
 

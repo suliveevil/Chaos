@@ -1,9 +1,12 @@
 ---
-title: "LumaFusion"
-categories: 
+title: LumaFusion
+categories:
 date: 2022-09-24 10:00:01 +0800
-tags: iOS iPadOS 视频编辑器
-excerpt: 
+tags:
+  - iOS
+  - iPadOS
+  - 视频编辑器
+excerpt:
 ---
 
 

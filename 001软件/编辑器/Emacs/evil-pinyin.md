@@ -1,9 +1,11 @@
 ---
-title: "evil-pinyin"
-categories: 
+title: evil-pinyin
+categories:
 date: 2022-09-29 08:21:10 +0800
-tags: Emacs 中文
-excerpt: 
+tags:
+  - Emacs
+  - 中文
+excerpt:
 ---
 
 [laishulu/evil-pinyin](https://github.com/laishulu/evil-pinyin): Evil search Chinese characters by pinyin

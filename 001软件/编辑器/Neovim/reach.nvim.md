@@ -1,10 +1,11 @@
 ---
-title: "reach.nvim"
-author: 
-categories: 
+title: reach.nvim
+author:
+categories:
 date: 2022-10-06 03:09:59 +0800
-tags: Neovim
-excerpt: 
+tags:
+  - Neovim
+excerpt:
 ---
 
 

@@ -1,10 +1,12 @@
 ---
-title: "keymap-amend.nvim"
-author: 
-categories: 
+title: keymap-amend.nvim
+author:
+categories:
 date: 2022-10-01 07:45:22 +0800
-tags: Neovim 快捷键
-excerpt: 
+tags:
+  - Neovim
+  - 快捷键
+excerpt:
 ---
 
 

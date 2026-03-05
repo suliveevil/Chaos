@@ -1,9 +1,10 @@
 ---
-title: "RemoveQuarantine"
-categories: 
+title: RemoveQuarantine
+categories:
 date: 2022-09-29 06:23:06 +0800
-tags: Alfred
-excerpt: 
+tags:
+  - Alfred
+excerpt:
 ---
 
 [[Alfred Workflow]]

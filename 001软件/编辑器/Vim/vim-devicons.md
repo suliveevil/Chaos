@@ -1,9 +1,12 @@
 ---
-title: "vim-devicons"
-categories: 
+title: vim-devicons
+categories:
 date: 2022-09-30 01:58:08 +0800
-tags: Vim 文件格式 图标
-excerpt: 
+tags:
+  - Vim
+  - 文件格式
+  - 图标
+excerpt:
 ---
 
 [[Vim 插件]]

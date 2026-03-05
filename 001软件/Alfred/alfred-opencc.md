@@ -1,9 +1,11 @@
 ---
-title: "alfred-opencc"
-categories: 
+title: alfred-opencc
+categories:
 date: 2022-09-25 19:52:16 +0800
-tags: Alfred 中文
-excerpt: 
+tags:
+  - Alfred
+  - 中文
+excerpt:
 ---
 
 

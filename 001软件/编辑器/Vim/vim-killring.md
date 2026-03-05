@@ -1,10 +1,12 @@
 ---
-title: "vim-killring"
-author: 
-categories: 
+title: vim-killring
+author:
+categories:
 date: 2022-10-01 11:15:42 +0800
-tags: Vim 剪贴板
-excerpt: 
+tags:
+  - Vim
+  - 剪贴板
+excerpt:
 ---
 
 [[Vim 插件]]

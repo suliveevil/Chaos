@@ -1,10 +1,13 @@
 ---
-title: "ShowyEdge"
-author: 
-categories: 
+title: ShowyEdge
+author:
+categories:
 date: 2022-10-11 14:12:46 +0800
-tags: macOS UI 输入法
-excerpt: 
+tags:
+  - macOS
+  - UI
+  - 输入法
+excerpt:
 ---
 
 [ShowyEdge](https://showyedge.pqrs.org/): A visible indicator of the current input source for macOS.

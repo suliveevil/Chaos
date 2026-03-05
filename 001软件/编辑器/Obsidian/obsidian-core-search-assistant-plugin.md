@@ -1,9 +1,11 @@
 ---
-title: "obsidian-core-search-assistant-plugin"
-categories: 
+title: obsidian-core-search-assistant-plugin
+categories:
 date: 2022-10-24 07:34:21 +0800
-tags: Obsidian 文本搜索
-excerpt: 
+tags:
+  - Obsidian
+  - 文本搜索
+excerpt:
 ---
 
 

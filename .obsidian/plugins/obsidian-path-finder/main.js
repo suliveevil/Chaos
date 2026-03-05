@@ -27,47 +27,49 @@ __export(main_exports, {
   default: () => PathFinderPlugin
 });
 module.exports = __toCommonJS(main_exports);
-var import_obsidian7 = require("obsidian");
+var import_obsidian8 = require("obsidian");
 
-// src/algorithms/graph/types.ts
+// src/algorithms/graph/weighted_graph.ts
 var Edge = class {
-  constructor(u, v, w, next) {
-    this.u = u;
-    this.v = v;
-    this.w = w;
+  constructor(source, target, weight, next) {
+    this.source = source;
+    this.target = target;
+    this.weight = weight;
     this.next = next;
   }
   toString() {
-    return `u: ${this.u}, v: ${this.v}, w: ${this.w}, next:${this.next}`;
+    return `u: ${this.source}, v: ${this.target}, w: ${this.weight}, next:${this.next}`;
   }
 };
-var Graph = class {
+var WeightedGraph = class {
   constructor() {
-    this.n = 0;
+    this.nodeCount = 0;
     this.edges = [new Edge(0, 0, 0, -1)];
     this.head = [0];
     this.edgeID = /* @__PURE__ */ new Map();
   }
-  addEdge(u, v, w) {
-    if (this.edgeID.has(`${u},${v}`))
+  addEdge(source, target, weight) {
+    this.nodeCount = Math.max(this.nodeCount, Math.max(source, target));
+    if (this.edgeID.has(`${source},${target}`))
       return;
-    this.edges.push(new Edge(u, v, w, this.head[u] ?? -1));
-    this.head[u] = this.edges.length - 1;
-    this.edgeID.set(`${u},${v}`, this.head[u]);
+    this.edges.push(
+      new Edge(source, target, weight, this.head[source] ?? -1)
+    );
+    this.head[source] = this.edges.length - 1;
+    this.edgeID.set(`${source},${target}`, this.head[source]);
   }
-  getOutEdges(u) {
-    if (this.head[u] === void 0)
-      return [];
-    let ret = new Array();
-    for (let i = this.head[u]; this.edges[i] !== void 0; i = this.edges[i].next) {
-      ret.push(this.edges[i]);
+  *getOutEdges(source) {
+    if (this.head[source] === void 0)
+      return;
+    for (let i = this.head[source]; this.edges[i] !== void 0; i = this.edges[i].next) {
+      yield this.edges[i];
     }
-    return ret;
+    return;
   }
-  getN() {
-    return this.n;
+  getNodeCount() {
+    return this.nodeCount;
   }
-  getM() {
+  getEdgeCount() {
     return this.edges.length - 1;
   }
   toString() {
@@ -82,29 +84,36 @@ var Graph = class {
     return ret;
   }
 };
-var ExtendedGraph = class extends Graph {
+
+// src/algorithms/graph/weighted_graph_with_node_id.ts
+var WeightedGraphWithNodeID = class extends WeightedGraph {
   constructor() {
     super();
     this.nameToID = /* @__PURE__ */ new Map();
     this.IDToName = /* @__PURE__ */ new Map();
   }
-  addVertice(x2) {
-    this.n++;
-    this.nameToID.set(x2, this.n);
-    this.IDToName.set(this.n, x2);
-    return this.n;
+  addVerticeAndReturnID(name) {
+    if (this.getID(name) === void 0)
+      this.addVertice(name);
+    return this.getID(name);
   }
-  getID(x2) {
-    return this.nameToID.get(x2);
+  addVertice(name) {
+    this.nodeCount++;
+    this.nameToID.set(name, this.nodeCount);
+    this.IDToName.set(this.nodeCount, name);
   }
-  getName(u) {
-    return this.IDToName.get(u);
+  getID(name) {
+    return this.nameToID.get(name);
   }
-  getOutEdgesExtended(u) {
-    return super.getOutEdges(this.getID(u) ?? this.addVertice(u));
+  getName(id2) {
+    return this.IDToName.get(id2);
   }
-  addEdgeExtended(u, v, w) {
-    super.addEdge(this.getID(u) ?? this.addVertice(u), this.getID(v) ?? this.addVertice(v), w);
+  addEdgeExtended(source, target, weight) {
+    super.addEdge(
+      this.addVerticeAndReturnID(source),
+      this.addVerticeAndReturnID(target),
+      weight
+    );
   }
 };
 
@@ -256,33 +265,52 @@ var max = Math.max;
 var min = Math.min;
 var round = Math.round;
 
+// node_modules/@popperjs/core/lib/utils/userAgent.js
+function getUAString() {
+  var uaData = navigator.userAgentData;
+  if (uaData != null && uaData.brands && Array.isArray(uaData.brands)) {
+    return uaData.brands.map(function(item) {
+      return item.brand + "/" + item.version;
+    }).join(" ");
+  }
+  return navigator.userAgent;
+}
+
+// node_modules/@popperjs/core/lib/dom-utils/isLayoutViewport.js
+function isLayoutViewport() {
+  return !/^((?!chrome|android).)*safari/i.test(getUAString());
+}
+
 // node_modules/@popperjs/core/lib/dom-utils/getBoundingClientRect.js
-function getBoundingClientRect(element, includeScale) {
+function getBoundingClientRect(element, includeScale, isFixedStrategy) {
   if (includeScale === void 0) {
     includeScale = false;
   }
-  var rect = element.getBoundingClientRect();
+  if (isFixedStrategy === void 0) {
+    isFixedStrategy = false;
+  }
+  var clientRect = element.getBoundingClientRect();
   var scaleX = 1;
   var scaleY = 1;
-  if (isHTMLElement(element) && includeScale) {
-    var offsetHeight = element.offsetHeight;
-    var offsetWidth = element.offsetWidth;
-    if (offsetWidth > 0) {
-      scaleX = round(rect.width) / offsetWidth || 1;
-    }
-    if (offsetHeight > 0) {
-      scaleY = round(rect.height) / offsetHeight || 1;
-    }
+  if (includeScale && isHTMLElement(element)) {
+    scaleX = element.offsetWidth > 0 ? round(clientRect.width) / element.offsetWidth || 1 : 1;
+    scaleY = element.offsetHeight > 0 ? round(clientRect.height) / element.offsetHeight || 1 : 1;
   }
+  var _ref = isElement(element) ? getWindow(element) : window, visualViewport = _ref.visualViewport;
+  var addVisualOffsets = !isLayoutViewport() && isFixedStrategy;
+  var x2 = (clientRect.left + (addVisualOffsets && visualViewport ? visualViewport.offsetLeft : 0)) / scaleX;
+  var y2 = (clientRect.top + (addVisualOffsets && visualViewport ? visualViewport.offsetTop : 0)) / scaleY;
+  var width = clientRect.width / scaleX;
+  var height = clientRect.height / scaleY;
   return {
-    width: rect.width / scaleX,
-    height: rect.height / scaleY,
-    top: rect.top / scaleY,
-    right: rect.right / scaleX,
-    bottom: rect.bottom / scaleY,
-    left: rect.left / scaleX,
-    x: rect.left / scaleX,
-    y: rect.top / scaleY
+    width,
+    height,
+    top: y2,
+    right: x2 + width,
+    bottom: y2 + height,
+    left: x2,
+    x: x2,
+    y: y2
   };
 }
 
@@ -353,8 +381,8 @@ function getTrueOffsetParent(element) {
   return element.offsetParent;
 }
 function getContainingBlock(element) {
-  var isFirefox = navigator.userAgent.toLowerCase().indexOf("firefox") !== -1;
-  var isIE = navigator.userAgent.indexOf("Trident") !== -1;
+  var isFirefox = /firefox/i.test(getUAString());
+  var isIE = /Trident/i.test(getUAString());
   if (isIE && isHTMLElement(element)) {
     var elementCss = getComputedStyle(element);
     if (elementCss.position === "fixed") {
@@ -506,9 +534,8 @@ var unsetSides = {
   bottom: "auto",
   left: "auto"
 };
-function roundOffsetsByDPR(_ref) {
+function roundOffsetsByDPR(_ref, win) {
   var x2 = _ref.x, y2 = _ref.y;
-  var win = window;
   var dpr = win.devicePixelRatio || 1;
   return {
     x: round(x2 * dpr) / dpr || 0,
@@ -564,7 +591,7 @@ function mapToStyles(_ref2) {
   var _ref4 = roundOffsets === true ? roundOffsetsByDPR({
     x: x2,
     y: y2
-  }) : {
+  }, getWindow(popper2)) : {
     x: x2,
     y: y2
   };
@@ -702,7 +729,7 @@ function getWindowScrollBarX(element) {
 }
 
 // node_modules/@popperjs/core/lib/dom-utils/getViewportRect.js
-function getViewportRect(element) {
+function getViewportRect(element, strategy) {
   var win = getWindow(element);
   var html = getDocumentElement(element);
   var visualViewport = win.visualViewport;
@@ -713,7 +740,8 @@ function getViewportRect(element) {
   if (visualViewport) {
     width = visualViewport.width;
     height = visualViewport.height;
-    if (!/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
+    var layoutViewport = isLayoutViewport();
+    if (layoutViewport || !layoutViewport && strategy === "fixed") {
       x2 = visualViewport.offsetLeft;
       y2 = visualViewport.offsetTop;
     }
@@ -789,8 +817,8 @@ function rectToClientRect(rect) {
 }
 
 // node_modules/@popperjs/core/lib/dom-utils/getClippingRect.js
-function getInnerBoundingClientRect(element) {
-  var rect = getBoundingClientRect(element);
+function getInnerBoundingClientRect(element, strategy) {
+  var rect = getBoundingClientRect(element, false, strategy === "fixed");
   rect.top = rect.top + element.clientTop;
   rect.left = rect.left + element.clientLeft;
   rect.bottom = rect.top + element.clientHeight;
@@ -801,8 +829,8 @@ function getInnerBoundingClientRect(element) {
   rect.y = rect.top;
   return rect;
 }
-function getClientRectFromMixedType(element, clippingParent) {
-  return clippingParent === viewport ? rectToClientRect(getViewportRect(element)) : isElement(clippingParent) ? getInnerBoundingClientRect(clippingParent) : rectToClientRect(getDocumentRect(getDocumentElement(element)));
+function getClientRectFromMixedType(element, clippingParent, strategy) {
+  return clippingParent === viewport ? rectToClientRect(getViewportRect(element, strategy)) : isElement(clippingParent) ? getInnerBoundingClientRect(clippingParent, strategy) : rectToClientRect(getDocumentRect(getDocumentElement(element)));
 }
 function getClippingParents(element) {
   var clippingParents2 = listScrollParents(getParentNode(element));
@@ -815,18 +843,18 @@ function getClippingParents(element) {
     return isElement(clippingParent) && contains(clippingParent, clipperElement) && getNodeName(clippingParent) !== "body";
   });
 }
-function getClippingRect(element, boundary, rootBoundary) {
+function getClippingRect(element, boundary, rootBoundary, strategy) {
   var mainClippingParents = boundary === "clippingParents" ? getClippingParents(element) : [].concat(boundary);
   var clippingParents2 = [].concat(mainClippingParents, [rootBoundary]);
   var firstClippingParent = clippingParents2[0];
   var clippingRect = clippingParents2.reduce(function(accRect, clippingParent) {
-    var rect = getClientRectFromMixedType(element, clippingParent);
+    var rect = getClientRectFromMixedType(element, clippingParent, strategy);
     accRect.top = max(rect.top, accRect.top);
     accRect.right = min(rect.right, accRect.right);
     accRect.bottom = min(rect.bottom, accRect.bottom);
     accRect.left = max(rect.left, accRect.left);
     return accRect;
-  }, getClientRectFromMixedType(element, firstClippingParent));
+  }, getClientRectFromMixedType(element, firstClippingParent, strategy));
   clippingRect.width = clippingRect.right - clippingRect.left;
   clippingRect.height = clippingRect.bottom - clippingRect.top;
   clippingRect.x = clippingRect.left;
@@ -894,12 +922,12 @@ function detectOverflow(state, options) {
   if (options === void 0) {
     options = {};
   }
-  var _options = options, _options$placement = _options.placement, placement = _options$placement === void 0 ? state.placement : _options$placement, _options$boundary = _options.boundary, boundary = _options$boundary === void 0 ? clippingParents : _options$boundary, _options$rootBoundary = _options.rootBoundary, rootBoundary = _options$rootBoundary === void 0 ? viewport : _options$rootBoundary, _options$elementConte = _options.elementContext, elementContext = _options$elementConte === void 0 ? popper : _options$elementConte, _options$altBoundary = _options.altBoundary, altBoundary = _options$altBoundary === void 0 ? false : _options$altBoundary, _options$padding = _options.padding, padding = _options$padding === void 0 ? 0 : _options$padding;
+  var _options = options, _options$placement = _options.placement, placement = _options$placement === void 0 ? state.placement : _options$placement, _options$strategy = _options.strategy, strategy = _options$strategy === void 0 ? state.strategy : _options$strategy, _options$boundary = _options.boundary, boundary = _options$boundary === void 0 ? clippingParents : _options$boundary, _options$rootBoundary = _options.rootBoundary, rootBoundary = _options$rootBoundary === void 0 ? viewport : _options$rootBoundary, _options$elementConte = _options.elementContext, elementContext = _options$elementConte === void 0 ? popper : _options$elementConte, _options$altBoundary = _options.altBoundary, altBoundary = _options$altBoundary === void 0 ? false : _options$altBoundary, _options$padding = _options.padding, padding = _options$padding === void 0 ? 0 : _options$padding;
   var paddingObject = mergePaddingObject(typeof padding !== "number" ? padding : expandToHashMap(padding, basePlacements));
   var altContext = elementContext === popper ? reference : popper;
   var popperRect = state.rects.popper;
   var element = state.elements[altBoundary ? altContext : elementContext];
-  var clippingClientRect = getClippingRect(isElement(element) ? element : element.contextElement || getDocumentElement(state.elements.popper), boundary, rootBoundary);
+  var clippingClientRect = getClippingRect(isElement(element) ? element : element.contextElement || getDocumentElement(state.elements.popper), boundary, rootBoundary, strategy);
   var referenceClientRect = getBoundingClientRect(state.elements.reference);
   var popperOffsets2 = computeOffsets({
     reference: referenceClientRect,
@@ -1306,7 +1334,7 @@ function getCompositeRect(elementOrVirtualElement, offsetParent, isFixed) {
   var isOffsetParentAnElement = isHTMLElement(offsetParent);
   var offsetParentIsScaled = isHTMLElement(offsetParent) && isElementScaled(offsetParent);
   var documentElement = getDocumentElement(offsetParent);
-  var rect = getBoundingClientRect(elementOrVirtualElement, offsetParentIsScaled);
+  var rect = getBoundingClientRect(elementOrVirtualElement, offsetParentIsScaled, isFixed);
   var scroll = {
     scrollLeft: 0,
     scrollTop: 0
@@ -1674,8 +1702,16 @@ var Suggest = class {
   constructor(owner, containerEl, scope) {
     this.owner = owner;
     this.containerEl = containerEl;
-    containerEl.on("click", ".suggestion-item", this.onSuggestionClick.bind(this));
-    containerEl.on("mousemove", ".suggestion-item", this.onSuggestionMouseover.bind(this));
+    containerEl.on(
+      "click",
+      ".suggestion-item",
+      this.onSuggestionClick.bind(this)
+    );
+    containerEl.on(
+      "mousemove",
+      ".suggestion-item",
+      this.onSuggestionMouseover.bind(this)
+    );
     scope.register([], "ArrowUp", (event) => {
       if (!event.isComposing) {
         this.setSelectedItem(this.selectedItem - 1, true);
@@ -1747,9 +1783,13 @@ var TextInputSuggest = class {
     this.inputEl.addEventListener("input", this.onInputChanged.bind(this));
     this.inputEl.addEventListener("focus", this.onInputChanged.bind(this));
     this.inputEl.addEventListener("blur", this.close.bind(this));
-    this.suggestEl.on("mousedown", ".suggestion-container", (event) => {
-      event.preventDefault();
-    });
+    this.suggestEl.on(
+      "mousedown",
+      ".suggestion-container",
+      (event) => {
+        event.preventDefault();
+      }
+    );
   }
   onInputChanged() {
     const inputStr = this.inputEl.value;
@@ -1797,7 +1837,7 @@ var TextInputSuggest = class {
   }
 };
 
-// src/genericTextSuggester.ts
+// src/generic_text_suggester.ts
 var import_obsidian2 = require("obsidian");
 var SuggestFile = class {
   constructor(name, path, origin) {
@@ -1816,8 +1856,6 @@ var GenericTextSuggester = class extends TextInputSuggest {
   getSuggestions(inputStr) {
     const inputLowerCase = inputStr.toLowerCase();
     const filtered = this.items.filter((item) => {
-      if (!item.name.toLowerCase())
-        console.log(JSON.parse(JSON.stringify(item)));
       if (item.name?.toLowerCase()?.contains(inputLowerCase))
         return item;
       if (item.path?.toLowerCase()?.contains(inputLowerCase) && item?.origin)
@@ -1877,26 +1915,33 @@ function getFilesWithAliases() {
   let markdownFiles = app.vault.getMarkdownFiles();
   let markdownFilesWithAlias = [];
   for (let file of markdownFiles) {
-    markdownFilesWithAlias.push(new SuggestFile(file.basename, file.path, true));
+    markdownFilesWithAlias.push(
+      new SuggestFile(file.basename, file.path, true)
+    );
     let aliases = app.metadataCache.getFileCache(file)?.frontmatter?.alias;
     if (aliases !== void 0) {
       try {
         for (let alias of aliases) {
           if (typeof alias === "string")
-            markdownFilesWithAlias.push(new SuggestFile(alias, file.path, false));
+            markdownFilesWithAlias.push(
+              new SuggestFile(alias, file.path, false)
+            );
         }
       } catch (error) {
-        console.log(`Path Finder Plugin: Wrong alias format in file ${file.path}. Please consider change it.`);
+        console.log(
+          `Path Finder Plugin: Wrong alias format in file ${file.path}. Please consider change it.`
+        );
       }
     }
   }
   return markdownFilesWithAlias;
 }
 var PathsModal = class extends import_obsidian3.Modal {
-  constructor(app2, callback, operation) {
+  constructor(app2, callback, filter2, operation) {
     super(app2);
     this.length = 10;
     this.callback = callback;
+    this.filter = filter2;
     this.operation = operation;
   }
   onOpen() {
@@ -1912,26 +1957,52 @@ var PathsModal = class extends import_obsidian3.Modal {
     }
     const markdownFilesWithAlias = getFilesWithAliases();
     new import_obsidian3.Setting(contentEl).setDesc("The file to start from. Use full path from vault root.").setName("From").addText((textComponent) => {
-      new GenericTextSuggester(this.app, textComponent.inputEl, markdownFilesWithAlias);
+      new GenericTextSuggester(
+        this.app,
+        textComponent.inputEl,
+        markdownFilesWithAlias
+      );
       textComponent.onChange((path) => {
         this.from = path;
       });
     });
     new import_obsidian3.Setting(contentEl).setDesc("The file to end with. Use full path from vault root.").setName("To").addText((textComponent) => {
-      new GenericTextSuggester(this.app, textComponent.inputEl, markdownFilesWithAlias);
+      new GenericTextSuggester(
+        this.app,
+        textComponent.inputEl,
+        markdownFilesWithAlias
+      );
       textComponent.onChange((path) => {
         this.to = path;
       });
     });
     if (this.operation != "shortest_path") {
-      new import_obsidian3.Setting(contentEl).setName("Length").setDesc("The maximum length of paths. Set 0 to show all paths regardless of length.").addText((textComponent) => {
+      new import_obsidian3.Setting(contentEl).setName("Length").setDesc(
+        "The maximum length of paths. Set 0 to show all paths regardless of length."
+      ).addText((textComponent) => {
         textComponent.setPlaceholder("10").onChange((length) => {
           this.length = parseInt(length);
         });
       });
     }
+    new import_obsidian3.Setting(contentEl).setName("Filter").setDesc(
+      (0, import_obsidian3.sanitizeHTMLToDom)(
+        `Write plain text or regex.<br>
+The filter string will be matched everywhere in the file path(from vault root to file).<br>
+<a href="https://javascript.info/regular-expressions">Regex Tutorial</a>`
+      )
+    ).addText((text) => {
+      text.setValue(this.filter.regexp).onChange((filter2) => {
+        this.filter.regexp = filter2;
+      });
+    });
+    new import_obsidian3.Setting(contentEl).setName("Filter Mode").addDropdown((dropdown) => {
+      dropdown.addOption("Include", "Include").addOption("Exclude", "Exclude").setValue(this.filter.mode).onChange((mode) => {
+        this.filter.mode = mode;
+      });
+    });
     new import_obsidian3.Setting(contentEl).addButton((button) => {
-      button.setButtonText("Confirm").setCta().onClick(async (evt) => {
+      button.setButtonText("Confirm").setCta().onClick(async () => {
         if (app.vault.getAbstractFileByPath(this.from) === null) {
           new import_obsidian3.Notice(`${this.from} is not a legal path.`);
           return;
@@ -1947,9 +2018,14 @@ var PathsModal = class extends import_obsidian3.Modal {
         if (this.length == 0)
           this.length = Infinity;
         if (this.operation == "shortest_path") {
-          this.callback(this.from, this.to);
+          this.callback(this.filter, this.from, this.to);
         } else {
-          this.callback(this.from, this.to, this.length);
+          this.callback(
+            this.filter,
+            this.from,
+            this.to,
+            this.length
+          );
         }
         this.close();
       });
@@ -1962,7 +2038,7 @@ var PathsModal = class extends import_obsidian3.Modal {
 };
 
 // src/view.ts
-var import_obsidian5 = require("obsidian");
+var import_obsidian6 = require("obsidian");
 
 // node_modules/heap-js/dist/heap-js.es5.js
 var __generator = function(thisArg, body) {
@@ -2603,28 +2679,19 @@ function dijkstra(source, graph, forbiddenNodes, forbiddenEdges) {
   let dis = [];
   let from = [];
   let mk = [];
-  let n = graph.getN();
-  for (let i = 0; i <= n; i++) {
-    dis.push(Infinity);
-    from.push(-1);
-    mk.push(false);
-  }
-  from[source] = 0;
-  dis[source] = 0;
+  let n = graph.getNodeCount();
   let q = new Heap((a2, b) => a2.dis - b.dis);
-  q.push(new Vertice(source, 0));
+  initialize();
   while (!q.isEmpty()) {
-    while (!q.isEmpty() && (dis[q.peek().id] != q.peek().dis || mk[q.peek().id])) {
-      q.pop();
-    }
+    popIllegalNodes();
     if (q.isEmpty())
       break;
     let { id: u } = q.pop();
-    mk[u] = true;
-    for (let { v, w } of graph.getOutEdges(u)) {
-      if (forbiddenNodes !== void 0 && forbiddenNodes.get(v))
+    markNodeAsVisited(u);
+    for (let { target: v, weight: w } of graph.getOutEdges(u)) {
+      if (isForbiddenNode(v))
         continue;
-      if (forbiddenEdges !== void 0 && (forbiddenEdges.get(`${u},${v}`) || forbiddenEdges.get(`${v},${u}`)))
+      if (isForbiddenEdge(u, v))
         continue;
       if (!mk[v] && dis[u] + w < dis[v]) {
         dis[v] = dis[u] + w;
@@ -2634,9 +2701,33 @@ function dijkstra(source, graph, forbiddenNodes, forbiddenEdges) {
     }
   }
   return { dis, from };
+  function initialize() {
+    for (let i = 0; i <= n; i++) {
+      dis.push(Infinity);
+      from.push(-1);
+      mk.push(false);
+    }
+    from[source] = 0;
+    dis[source] = 0;
+    q.push(new Vertice(source, 0));
+  }
+  function popIllegalNodes() {
+    while (!q.isEmpty() && (dis[q.peek().id] != q.peek().dis || mk[q.peek().id])) {
+      q.pop();
+    }
+  }
+  function isForbiddenNode(u) {
+    return forbiddenNodes !== void 0 && forbiddenNodes.get(u);
+  }
+  function isForbiddenEdge(u, v) {
+    return forbiddenEdges !== void 0 && (forbiddenEdges.get(`${u},${v}`) || forbiddenEdges.get(`${v},${u}`));
+  }
+  function markNodeAsVisited(u) {
+    mk[u] = true;
+  }
 }
 
-// src/algorithms/graph/GetNextPath.ts
+// src/algorithms/graph/get_next_path.ts
 function buildPath(source, target, from) {
   let ret = [];
   for (let i = target; i > 0; i = from[i]) {
@@ -2672,19 +2763,31 @@ async function* getNextPath(source, target, length, graph) {
     return a2.id - b.id;
   });
   q.push(new Path(-1, path));
-  while (!q.isEmpty() && path.length <= graph.getN()) {
+  while (!q.isEmpty() && path.length <= graph.getNodeCount()) {
+    let setPathAsForbidden = function(path3) {
+      for (let i = 0; i < path3.length - 1; i++) {
+        if (forbiddenEdges.get(path3[i]) === void 0) {
+          forbiddenEdges.set(path3[i], /* @__PURE__ */ new Map());
+        }
+        forbiddenEdges.get(path3[i]).set(`${path3[i]},${path3[i + 1]}`, true);
+        forbiddenEdges.get(path3[i]).set(`${path3[i + 1]},${path3[i]}`, true);
+      }
+    };
     let { path: path2 } = q.pop();
     let forbiddenNodes = /* @__PURE__ */ new Map();
+    setPathAsForbidden(path2);
     for (let i = 0; i < path2.length - 1; i++) {
-      if (forbiddenEdges.get(path2[i]) === void 0) {
-        forbiddenEdges.set(path2[i], /* @__PURE__ */ new Map());
-      }
-      forbiddenEdges.get(path2[i]).set(`${path2[i]},${path2[i + 1]}`, true);
-      forbiddenEdges.get(path2[i]).set(`${path2[i + 1]},${path2[i]}`, true);
-    }
-    for (let i = 0; i < path2.length - 1; i++) {
-      let { from } = dijkstra(path2[i], graph, forbiddenNodes, forbiddenEdges.get(path2[i]));
-      let deviatePath = buildPath(path2[i], target, from);
+      let { from } = dijkstra(
+        path2[i],
+        graph,
+        forbiddenNodes,
+        forbiddenEdges.get(path2[i])
+      );
+      let deviatePath = buildPath(
+        path2[i],
+        target,
+        from
+      );
       if (deviatePath !== void 0) {
         let res = new Path(i, path2.slice(0, i).concat(deviatePath));
         q.push(res);
@@ -2696,7 +2799,7 @@ async function* getNextPath(source, target, length, graph) {
     if (q.isEmpty()) {
       return void 0;
     }
-    path2 = q.pop().path;
+    path2 = q.peek().path;
     if (path2.length > length) {
       return void 0;
     }
@@ -3946,18 +4049,23 @@ function drag_default() {
           p = pointer_default(touch2 || event2, container2), n = active;
           break;
       }
-      dispatch2.call(type2, that, new DragEvent(type2, {
-        sourceEvent: event2,
-        subject: s,
-        target: drag,
-        identifier,
-        active: n,
-        x: p[0] + dx,
-        y: p[1] + dy,
-        dx: p[0] - p0[0],
-        dy: p[1] - p0[1],
-        dispatch: dispatch2
-      }), d);
+      dispatch2.call(
+        type2,
+        that,
+        new DragEvent(type2, {
+          sourceEvent: event2,
+          subject: s,
+          target: drag,
+          identifier,
+          active: n,
+          x: p[0] + dx,
+          y: p[1] + dy,
+          dx: p[0] - p0[0],
+          dy: p[1] - p0[1],
+          dispatch: dispatch2
+        }),
+        d
+      );
     };
   }
   drag.filter = function(_) {
@@ -4313,7 +4421,12 @@ define_default(Hsl, hsl, extend(Color, {
   },
   rgb() {
     var h = this.h % 360 + (this.h < 0) * 360, s = isNaN(h) || isNaN(this.s) ? 0 : this.s, l = this.l, m2 = l + (l < 0.5 ? l : 1 - l) * s, m1 = 2 * l - m2;
-    return new Rgb(hsl2rgb(h >= 240 ? h - 240 : h + 120, m1, m2), hsl2rgb(h, m1, m2), hsl2rgb(h < 120 ? h + 240 : h - 120, m1, m2), this.opacity);
+    return new Rgb(
+      hsl2rgb(h >= 240 ? h - 240 : h + 120, m1, m2),
+      hsl2rgb(h, m1, m2),
+      hsl2rgb(h < 120 ? h + 240 : h - 120, m1, m2),
+      this.opacity
+    );
   },
   clamp() {
     return new Hsl(clamph(this.h), clampt(this.s), clampt(this.l), clampa(this.opacity));
@@ -4954,9 +5067,9 @@ function tween_default(name, value) {
   }
   return this.each((value == null ? tweenRemove : tweenFunction)(id2, name, value));
 }
-function tweenValue(transition2, name, value) {
-  var id2 = transition2._id;
-  transition2.each(function() {
+function tweenValue(transition3, name, value) {
+  var id2 = transition3._id;
+  transition3.each(function() {
     var schedule = set2(this, id2);
     (schedule.value || (schedule.value = {}))[name] = value.apply(this, arguments);
   });
@@ -5143,10 +5256,10 @@ function filter_default2(match) {
 }
 
 // node_modules/d3-transition/src/transition/merge.js
-function merge_default2(transition2) {
-  if (transition2._id !== this._id)
+function merge_default2(transition3) {
+  if (transition3._id !== this._id)
     throw new Error();
-  for (var groups0 = this._groups, groups1 = transition2._groups, m0 = groups0.length, m1 = groups1.length, m2 = Math.min(m0, m1), merges = new Array(m0), j = 0; j < m2; ++j) {
+  for (var groups0 = this._groups, groups1 = transition3._groups, m0 = groups0.length, m1 = groups1.length, m2 = Math.min(m0, m1), merges = new Array(m0), j = 0; j < m2; ++j) {
     for (var group0 = groups0[j], group1 = groups1[j], n = group0.length, merge = merges[j] = new Array(n), node, i = 0; i < n; ++i) {
       if (node = group0[i] || group1[i]) {
         merge[i] = node;
@@ -5531,37 +5644,6 @@ function type(t) {
   return { type: t };
 }
 
-// node_modules/d3-force/src/center.js
-function center_default(x2, y2) {
-  var nodes, strength = 1;
-  if (x2 == null)
-    x2 = 0;
-  if (y2 == null)
-    y2 = 0;
-  function force() {
-    var i, n = nodes.length, node, sx = 0, sy = 0;
-    for (i = 0; i < n; ++i) {
-      node = nodes[i], sx += node.x, sy += node.y;
-    }
-    for (sx = (sx / n - x2) * strength, sy = (sy / n - y2) * strength, i = 0; i < n; ++i) {
-      node = nodes[i], node.x -= sx, node.y -= sy;
-    }
-  }
-  force.initialize = function(_) {
-    nodes = _;
-  };
-  force.x = function(_) {
-    return arguments.length ? (x2 = +_, force) : x2;
-  };
-  force.y = function(_) {
-    return arguments.length ? (y2 = +_, force) : y2;
-  };
-  force.strength = function(_) {
-    return arguments.length ? (strength = +_, force) : strength;
-  };
-  return force;
-}
-
 // node_modules/d3-quadtree/src/add.js
 function add_default(d) {
   const x2 = +this._x.call(null, d), y2 = +this._y.call(null, d);
@@ -5708,7 +5790,12 @@ function find_default(x2, y2, radius) {
       continue;
     if (node.length) {
       var xm = (x1 + x22) / 2, ym = (y1 + y22) / 2;
-      quads.push(new quad_default(node[3], xm, ym, x22, y22), new quad_default(node[2], x1, ym, xm, y22), new quad_default(node[1], xm, y1, x22, ym), new quad_default(node[0], x1, y1, xm, ym));
+      quads.push(
+        new quad_default(node[3], xm, ym, x22, y22),
+        new quad_default(node[2], x1, ym, xm, y22),
+        new quad_default(node[1], xm, y1, x22, ym),
+        new quad_default(node[0], x1, y1, xm, ym)
+      );
       if (i = (y2 >= ym) << 1 | x2 >= xm) {
         q = quads[quads.length - 1];
         quads[quads.length - 1] = quads[quads.length - 1 - i];
@@ -6231,6 +6318,72 @@ function manyBody_default() {
   return force;
 }
 
+// node_modules/d3-force/src/x.js
+function x_default2(x2) {
+  var strength = constant_default5(0.1), nodes, strengths, xz;
+  if (typeof x2 !== "function")
+    x2 = constant_default5(x2 == null ? 0 : +x2);
+  function force(alpha) {
+    for (var i = 0, n = nodes.length, node; i < n; ++i) {
+      node = nodes[i], node.vx += (xz[i] - node.x) * strengths[i] * alpha;
+    }
+  }
+  function initialize() {
+    if (!nodes)
+      return;
+    var i, n = nodes.length;
+    strengths = new Array(n);
+    xz = new Array(n);
+    for (i = 0; i < n; ++i) {
+      strengths[i] = isNaN(xz[i] = +x2(nodes[i], i, nodes)) ? 0 : +strength(nodes[i], i, nodes);
+    }
+  }
+  force.initialize = function(_) {
+    nodes = _;
+    initialize();
+  };
+  force.strength = function(_) {
+    return arguments.length ? (strength = typeof _ === "function" ? _ : constant_default5(+_), initialize(), force) : strength;
+  };
+  force.x = function(_) {
+    return arguments.length ? (x2 = typeof _ === "function" ? _ : constant_default5(+_), initialize(), force) : x2;
+  };
+  return force;
+}
+
+// node_modules/d3-force/src/y.js
+function y_default2(y2) {
+  var strength = constant_default5(0.1), nodes, strengths, yz;
+  if (typeof y2 !== "function")
+    y2 = constant_default5(y2 == null ? 0 : +y2);
+  function force(alpha) {
+    for (var i = 0, n = nodes.length, node; i < n; ++i) {
+      node = nodes[i], node.vy += (yz[i] - node.y) * strengths[i] * alpha;
+    }
+  }
+  function initialize() {
+    if (!nodes)
+      return;
+    var i, n = nodes.length;
+    strengths = new Array(n);
+    yz = new Array(n);
+    for (i = 0; i < n; ++i) {
+      strengths[i] = isNaN(yz[i] = +y2(nodes[i], i, nodes)) ? 0 : +strength(nodes[i], i, nodes);
+    }
+  }
+  force.initialize = function(_) {
+    nodes = _;
+    initialize();
+  };
+  force.strength = function(_) {
+    return arguments.length ? (strength = typeof _ === "function" ? _ : constant_default5(+_), initialize(), force) : strength;
+  };
+  force.y = function(_) {
+    return arguments.length ? (y2 = typeof _ === "function" ? _ : constant_default5(+_), initialize(), force) : y2;
+  };
+  return force;
+}
+
 // node_modules/d3-scale/src/init.js
 function initRange(domain, range) {
   switch (arguments.length) {
@@ -6400,7 +6553,10 @@ function defaultTouchable2() {
 }
 function defaultConstrain(transform2, extent, translateExtent) {
   var dx0 = transform2.invertX(extent[0][0]) - translateExtent[0][0], dx1 = transform2.invertX(extent[1][0]) - translateExtent[1][0], dy0 = transform2.invertY(extent[0][1]) - translateExtent[0][1], dy1 = transform2.invertY(extent[1][1]) - translateExtent[1][1];
-  return transform2.translate(dx1 > dx0 ? (dx0 + dx1) / 2 : Math.min(0, dx0) || Math.max(0, dx1), dy1 > dy0 ? (dy0 + dy1) / 2 : Math.min(0, dy0) || Math.max(0, dy1));
+  return transform2.translate(
+    dx1 > dx0 ? (dx0 + dx1) / 2 : Math.min(0, dx0) || Math.max(0, dx1),
+    dy1 > dy0 ? (dy0 + dy1) / 2 : Math.min(0, dy0) || Math.max(0, dy1)
+  );
 }
 function zoom_default2() {
   var filter2 = defaultFilter2, extent = defaultExtent, constrain = defaultConstrain, wheelDelta = defaultWheelDelta, touchable = defaultTouchable2, scaleExtent = [0, Infinity], translateExtent = [[-Infinity, -Infinity], [Infinity, Infinity]], duration = 250, interpolate = zoom_default, listeners = dispatch_default("start", "zoom", "end"), touchstarting, touchfirst, touchending, touchDelay = 500, wheelDelay = 150, clickDistance2 = 0, tapDistance = 10;
@@ -6432,13 +6588,19 @@ function zoom_default2() {
   };
   zoom.translateBy = function(selection2, x2, y2, event) {
     zoom.transform(selection2, function() {
-      return constrain(this.__zoom.translate(typeof x2 === "function" ? x2.apply(this, arguments) : x2, typeof y2 === "function" ? y2.apply(this, arguments) : y2), extent.apply(this, arguments), translateExtent);
+      return constrain(this.__zoom.translate(
+        typeof x2 === "function" ? x2.apply(this, arguments) : x2,
+        typeof y2 === "function" ? y2.apply(this, arguments) : y2
+      ), extent.apply(this, arguments), translateExtent);
     }, null, event);
   };
   zoom.translateTo = function(selection2, x2, y2, p, event) {
     zoom.transform(selection2, function() {
       var e = extent.apply(this, arguments), t = this.__zoom, p0 = p == null ? centroid(e) : typeof p === "function" ? p.apply(this, arguments) : p;
-      return constrain(identity2.translate(p0[0], p0[1]).scale(t.k).translate(typeof x2 === "function" ? -x2.apply(this, arguments) : -x2, typeof y2 === "function" ? -y2.apply(this, arguments) : -y2), e, translateExtent);
+      return constrain(identity2.translate(p0[0], p0[1]).scale(t.k).translate(
+        typeof x2 === "function" ? -x2.apply(this, arguments) : -x2,
+        typeof y2 === "function" ? -y2.apply(this, arguments) : -y2
+      ), e, translateExtent);
     }, p, event);
   };
   function scale(transform2, k) {
@@ -6452,8 +6614,8 @@ function zoom_default2() {
   function centroid(extent2) {
     return [(+extent2[0][0] + +extent2[1][0]) / 2, (+extent2[0][1] + +extent2[1][1]) / 2];
   }
-  function schedule(transition2, transform2, point, event) {
-    transition2.on("start.zoom", function() {
+  function schedule(transition3, transform2, point, event) {
+    transition3.on("start.zoom", function() {
       gesture(this, arguments).event(event).start();
     }).on("interrupt.zoom end.zoom", function() {
       gesture(this, arguments).event(event).end();
@@ -6514,13 +6676,18 @@ function zoom_default2() {
     },
     emit: function(type2) {
       var d = select_default2(this.that).datum();
-      listeners.call(type2, this.that, new ZoomEvent(type2, {
-        sourceEvent: this.sourceEvent,
-        target: zoom,
-        type: type2,
-        transform: this.that.__zoom,
-        dispatch: listeners
-      }), d);
+      listeners.call(
+        type2,
+        this.that,
+        new ZoomEvent(type2, {
+          sourceEvent: this.sourceEvent,
+          target: zoom,
+          type: type2,
+          transform: this.that.__zoom,
+          dispatch: listeners
+        }),
+        d
+      );
     }
   };
   function wheeled(event, ...args) {
@@ -6702,8 +6869,119 @@ function zoom_default2() {
   return zoom;
 }
 
-// src/ui/d3ForceGraphWithLabels.ts
+// src/ui/d3_force_graph_with_labels.ts
+var import_obsidian5 = require("obsidian");
+
+// src/ui/graph_control.ts
 var import_obsidian4 = require("obsidian");
+var transition2 = "all 100ms cubic-bezier(0.02,0.01,0.47,1)";
+var GraphControlCategory = class {
+  constructor(graphControls, id2, header, collapse = true) {
+    this.adjustHeight = (0, import_obsidian4.debounce)(
+      function() {
+        if (!this.iscollapsed()) {
+          let height = 0;
+          for (let setting of this.settings) {
+            height += setting.settingEl.clientHeight;
+          }
+          this.settingsContainer.style("height", height + "px");
+        }
+      },
+      10,
+      true
+    );
+    this.settings = [];
+    this.graphControls = graphControls;
+    this.section = graphControls.container.append("div").classed(
+      `tree-item graph-control-section mod-${id2} is-collapsed`,
+      true
+    );
+    let self = this.section.append("div").classed("tree-item-self", true).on("click", this.toggleCollapsed.bind(this));
+    this.collapsibleIcon = self.append("div").classed("tree-item-icon collapse-icon", true);
+    (0, import_obsidian4.setIcon)(this.collapsibleIcon.node(), "right-triangle");
+    self.append("div").classed("tree-item-inner", true).append("header").classed("graph-control-section-header", true).text(header);
+    this.settingsContainer = create_default("div").classed("tree-item-children", true).style("height", "0px").style("transition", transition2).style("overflow", "hidden");
+    if (collapse === false) {
+      this.unfold();
+    }
+  }
+  iscollapsed() {
+    return this.section.classed("is-collapsed");
+  }
+  fold() {
+    this.collapsibleIcon.attr("transform", "rotate(-90deg)");
+    this.section.classed("is-collapsed", true);
+    this.settingsContainer.style("height", "0px").style("padding-top", "0px").style("padding-bottom", "0px");
+    setTimeout(
+      function() {
+        this.settingsContainer.remove();
+      }.bind(this),
+      100
+    );
+  }
+  unfold() {
+    this.collapsibleIcon.attr("transform", null);
+    this.section.classed("is-collapsed", false);
+    this.section.node().appendChild(this.settingsContainer.node());
+    this.settingsContainer.style("padding-top", "4px").style("padding-bottom", "4px");
+    this.adjustHeight();
+  }
+  toggleCollapsed(collapsed) {
+    if (collapsed === true) {
+      this.fold();
+    } else if (collapsed === false) {
+      this.unfold();
+    } else {
+      if (this.iscollapsed())
+        this.unfold();
+      else
+        this.fold();
+    }
+  }
+  addSetting() {
+    let setting = new import_obsidian4.Setting(this.settingsContainer.node());
+    this.settings.push(setting);
+    this.adjustHeight();
+    return setting;
+  }
+};
+var GraphControl = class {
+  isClose() {
+    return this.container.classed("is-close");
+  }
+  open() {
+    this.container.classed("is-close", false);
+    this.categories.forEach((category) => category.adjustHeight());
+  }
+  close() {
+    this.container.classed("is-close", true);
+  }
+  toggle() {
+    if (this.isClose())
+      this.open();
+    else
+      this.close();
+  }
+  constructor(containerEl) {
+    this.categories = [];
+    Array.from(
+      containerEl.getElementsByClassName("graph-controls")
+    ).forEach((x2) => containerEl.removeChild(x2));
+    this.container = create_default("div").classed("graph-controls is-close", true).style("background-color", "var(--graph-control-bg)").style("border", "none");
+    let closeButton = this.container.append("div").classed("clickable-icon graph-controls-button mod-close", true).attr("aria-lable", "Close").on("click", this.close.bind(this));
+    (0, import_obsidian4.setIcon)(closeButton.node(), "lucide-x");
+    let openButton = this.container.append("div").classed("clickable-icon graph-controls-button mod-open", true).attr("aria-lable", "Open graph settings").on("click", this.open.bind(this));
+    (0, import_obsidian4.setIcon)(openButton.node(), "gear");
+    containerEl.appendChild(this.container.node());
+  }
+  addCategory(id2, header, collapse) {
+    let category = new GraphControlCategory(this, id2, header, collapse);
+    this.categories.push(category);
+    return category;
+  }
+};
+
+// src/ui/d3_force_graph_with_labels.ts
 async function ForceGraphWithLabels(view, contentEl, nextPath, {
   graph,
   getNodes,
@@ -6718,7 +6996,7 @@ async function ForceGraphWithLabels(view, contentEl, nextPath, {
   nodeStrokeWidth = 1.5,
   nodeStrokeOpacity = 1,
   nodeRadius = 5,
-  nodeStrength = -400,
+  nodeStrength = -1500,
   linkSource = ({ source }) => source,
   linkTarget = ({ target }) => target,
   linkStroke = "#999",
@@ -6737,60 +7015,87 @@ async function ForceGraphWithLabels(view, contentEl, nextPath, {
 } = {}) {
   contentEl.id = Date.now().toString();
   let nodes = getNodes(graph), links = getLinks(graph);
-  let N = map(nodes, nodeId).map(intern);
-  let LS = map(links, linkSource).map(intern);
-  let LT = map(links, linkTarget).map(intern);
-  let LG = map(links, linkType).map(intern);
+  let nodeIdArray = map(nodes, nodeId).map(intern);
+  let linkSourceArray = map(links, linkSource).map(intern);
+  let linkTargetArray = map(links, linkTarget).map(intern);
+  let linkGroupArray = map(links, linkType).map(intern);
   if (nodeTitle === void 0)
-    nodeTitle = (_, i) => N[i];
-  let T = nodeTitle == null ? null : map(nodes, nodeTitle);
-  let G = nodeGroup == null ? null : map(nodes, nodeGroup).map(intern);
-  let W = typeof linkStrokeWidth !== "function" ? null : map(links, linkStrokeWidth);
-  let L = typeof linkStroke !== "function" ? null : map(links, linkStroke);
+    nodeTitle = (_, i) => nodeIdArray[i];
+  let nodeTitleArray = nodeTitle == null ? null : map(nodes, nodeTitle);
+  let nodeGroupArray = nodeGroup == null ? null : map(nodes, nodeGroup).map(intern);
+  let linkStrokeWidthArray = typeof linkStrokeWidth !== "function" ? null : map(links, linkStrokeWidth);
+  let linkStrokeArray = typeof linkStroke !== "function" ? null : map(links, linkStroke);
   let existLink = /* @__PURE__ */ new Map();
   nodes = nodes.map((d, i) => {
-    return { id: N[i], group: nodeGroup(d) };
+    return { id: nodeIdArray[i], group: nodeGroup(d) };
   });
   links = links.map((d, i) => {
-    existLink.set(`${LS[i]}|${LT[i]}`, true);
-    return { source: LS[i], target: LT[i], type: LG[i] };
+    existLink.set(`${linkSourceArray[i]}|${linkTargetArray[i]}`, true);
+    return {
+      source: linkSourceArray[i],
+      target: linkTargetArray[i],
+      type: linkGroupArray[i]
+    };
   });
-  if (G && nodeGroups === void 0)
-    nodeGroups = sort(G);
+  if (nodeGroupArray && nodeGroups === void 0)
+    nodeGroups = sort(nodeGroupArray);
   let color2 = nodeGroup == null ? null : ordinal(nodeGroups, colors);
   const forceNode = manyBody_default();
-  const forceLink = link_default(links).id(({ index: i }) => N[i]);
+  const forceLink = link_default(links).id(({ index: i }) => nodeIdArray[i]);
   if (nodeStrength !== void 0)
     forceNode.strength(nodeStrength);
   if (linkStrength !== void 0)
     forceLink.strength(linkStrength);
-  const simulation = simulation_default(nodes).force("link", forceLink).force("charge", forceNode).force("center", center_default());
-  contentEl.setAttribute("style", "padding: 0px; overflow: hidden; position: relative;");
+  let xCenter = 0, yCenter = 0;
+  const simulation = simulation_default(nodes).force("link", forceLink).force("charge", forceNode).force("x", x_default2(xCenter)).force("y", y_default2(yCenter));
+  contentEl.setAttribute(
+    "style",
+    "padding: 0px; overflow: hidden; position: relative;"
+  );
   const graphContainer = create_default("div").classed("path-finder force-graph", true);
   width = contentEl.clientWidth;
   height = contentEl.clientHeight;
-  const svg = graphContainer.append("svg").classed("path-finder path-graph", true).attr("width", width).attr("height", height).attr("viewBox", [-height / 2, -width / 2, height, width]).style("font", "12px sans-serif");
-  svg.append("defs").append("marker").attr("id", "arrow").attr("viewBox", "0 -5 10 10").attr("refX", 10).attr("refY", -0.5).attr("markerWidth", 6).attr("markerHeight", 6).attr("orient", "auto").append("path").attr("fill", "var(--path-finder-link-stroke,--text-normal)").attr("d", "M0,-5L10,0L0,5");
-  let link = svg.append("g").attr("fill", "none").selectAll("path").data(links).join("path").classed("path-finder link", true).attr("marker-end", `url(#arrow)`);
+  const svg = graphContainer.append("svg").classed("path-finder path-graph", true).attr("width", width).attr("height", height).attr("viewBox", [-height / 2, -width / 2, height, width]);
+  let defs = svg.append("defs").selectAll("marker").data(linkGroups).join("marker").attr("id", (d) => `arrow-${d}`).attr("viewBox", "0 -5 10 10").attr("refX", 10).attr("refY", -0.5).attr("markerWidth", 6).attr("markerHeight", 6).attr("orient", "auto").append("path").attr("fill", "var(--path-finder-link-stroke,--text-normal)").attr("d", "M0,-5L10,0L0,5");
+  let link = svg.append("g").attr("fill", "none").selectAll("path").data(links).join("path").classed("path-finder link", true).attr("marker-end", (d) => `url(#arrow-${d.type})`).text("test");
   let node = svg.append("g").attr("fill", nodeFill).attr("stroke-linecap", "round").attr("stroke-linejoin", "round").selectAll("g").data(nodes).join("g").classed("path-finder node", true).classed("fixed", (d) => d.fx !== void 0).call(drag(simulation)).on("click", click);
-  node.on("mouseover", setSelection(true)).on("mouseout", setSelection(false));
+  node.on("mouseover", setSelection(true)).on(
+    "mouseout",
+    setSelection(false)
+  );
   function setSelection(flag) {
     return function(evt, from) {
-      setNodeClass(node.filter((to) => {
-        let u = from.id, v = to.id;
-        return existLink.get(`${u}|${v}`) || existLink.get(`${v}|${u}`);
-      }), "selected", flag);
-      setNodeClass(node.filter((to) => {
-        let u = from.id, v = to.id;
-        return !(existLink.get(`${u}|${v}`) || existLink.get(`${v}|${u}`)) && u !== v;
-      }), "unselected", flag);
+      setNodeClass(
+        node.filter((to) => {
+          let u = from.id, v = to.id;
+          return existLink.get(`${u}|${v}`) || existLink.get(`${v}|${u}`);
+        }),
+        "selected",
+        flag
+      );
+      setNodeClass(
+        node.filter((to) => {
+          let u = from.id, v = to.id;
+          return !(existLink.get(`${u}|${v}`) || existLink.get(`${v}|${u}`)) && u !== v;
+        }),
+        "unselected",
+        flag
+      );
       setNodeClass(select_default2(this), "center", flag);
-      setLinkClass(link.filter((d) => {
-        return d.source.id == from.id || d.target.id == from.id;
-      }), "selected", flag);
-      setLinkClass(link.filter((d) => {
-        return !(d.source.id == from.id || d.target.id == from.id);
-      }), "unselected", flag);
+      setLinkClass(
+        link.filter((d) => {
+          return d.source.id == from.id || d.target.id == from.id;
+        }),
+        "selected",
+        flag
+      );
+      setLinkClass(
+        link.filter((d) => {
+          return !(d.source.id == from.id || d.target.id == from.id);
+        }),
+        "unselected",
+        flag
+      );
     };
   }
   function setNodeClass(selection2, cls, flag = true) {
@@ -6802,23 +7107,34 @@ async function ForceGraphWithLabels(view, contentEl, nextPath, {
     selection2.classed(cls, flag);
   }
   node.append("circle").classed("path-finder node-circle", true);
-  if (W)
-    link.attr("stroke-width", ({ index: i }) => W[i]);
-  if (L)
-    link.attr("stroke", ({ index: i }) => L[i]);
-  if (G)
-    node.attr("fill", ({ index: i }) => color2(G[i]));
-  if (T)
-    node.append("text").attr("x", 0).attr("y", -20).attr("align", "center").text(({ index: i }) => T[i]).classed("path-finder node-text", true);
+  if (linkStrokeWidthArray)
+    link.attr(
+      "stroke-width",
+      ({ index: i }) => linkStrokeWidthArray[i]
+    );
+  if (linkStrokeArray)
+    link.attr(
+      "stroke",
+      ({ index: i }) => linkStrokeArray[i]
+    );
+  if (nodeGroupArray)
+    node.attr(
+      "fill",
+      ({ index: i }) => color2(nodeGroupArray[i])
+    );
+  if (nodeTitleArray)
+    node.append("text").attr("x", 0).attr("y", -20).attr("align", "center").text(({ index: i }) => nodeTitleArray[i]).classed("path-finder node-text", true);
   if (invalidation != null)
     invalidation.then(() => simulation.stop());
   simulation.on("tick", ticked);
-  svg.call(zoom_default2().filter((evt) => {
-    return !evt.ctrlKey && evt.type !== "click" || evt.type === "mousedown";
-  }).extent([
-    [-width / 2, -height / 2],
-    [width / 2, height / 2]
-  ]).scaleExtent([0.1, 8]).on("zoom", zoomed));
+  svg.call(
+    zoom_default2().filter((evt) => {
+      return !evt.ctrlKey && evt.type !== "click" || evt.type === "mousedown";
+    }).extent([
+      [-width / 2, -height / 2],
+      [width / 2, height / 2]
+    ]).scaleExtent([0.1, 8]).on("zoom", zoomed)
+  );
   ``;
   function zoomed({ transform: transform2 }) {
     svg.selectAll("g").attr("transform", transform2);
@@ -6826,19 +7142,31 @@ async function ForceGraphWithLabels(view, contentEl, nextPath, {
   }
   function ticked() {
     link.attr("d", linkArc);
-    node.attr("transform", (d) => `translate(${d.x},${d.y})`);
+    node.attr(
+      "transform",
+      (d) => `translate(${d.x},${d.y})`
+    );
   }
   function linkArc(d) {
     if (d.type == "monodirectional") {
-      const angle = Math.atan2(d.source.y - d.target.y, d.source.x - d.target.x);
+      const angle = Math.atan2(
+        d.source.y - d.target.y,
+        d.source.x - d.target.x
+      );
       const fromX = d.source.x, fromY = d.source.y;
       const toX = d.target.x + (nodeRadius + nodeStrokeWidth) * Math.cos(angle), toY = d.target.y + (nodeRadius + nodeStrokeWidth) * Math.sin(angle);
       return `
                 M${fromX},${fromY}
                 L${toX},${toY}`;
     } else {
-      const dis = Math.hypot(d.target.x - d.source.x, d.target.y - d.source.y);
-      const angle = Math.atan2(d.source.y - d.target.y, d.source.x - d.target.x);
+      const dis = Math.hypot(
+        d.target.x - d.source.x,
+        d.target.y - d.source.y
+      );
+      const angle = Math.atan2(
+        d.source.y - d.target.y,
+        d.source.x - d.target.x
+      );
       const fromX = d.source.x, fromY = d.source.y;
       const toX = d.target.x + (nodeRadius + nodeStrokeWidth) * Math.cos(angle), toY = d.target.y + (nodeRadius + nodeStrokeWidth) * Math.sin(angle);
       return `
@@ -6921,28 +7249,40 @@ async function ForceGraphWithLabels(view, contentEl, nextPath, {
   function updateGraph() {
     let nodes2 = getNodes(graph);
     let links2 = getLinks(graph);
-    let N2 = map(nodes2, nodeId).map(intern);
-    let LS2 = map(links2, linkSource).map(intern);
-    let LT2 = map(links2, linkTarget).map(intern);
-    let LG2 = map(links2, linkType).map(intern);
+    let N = map(nodes2, nodeId).map(intern);
+    let LS = map(links2, linkSource).map(intern);
+    let LT = map(links2, linkTarget).map(intern);
+    let LG = map(links2, linkType).map(intern);
     if (nodeTitle === void 0)
-      nodeTitle = (_, i) => N2[i];
-    let T2 = nodeTitle == null ? null : map(nodes2, nodeTitle);
-    let G2 = nodeGroup == null ? null : map(nodes2, nodeGroup).map(intern);
-    if (G2 && nodeGroups === void 0)
-      nodeGroups = sort(G2);
+      nodeTitle = (_, i) => N[i];
+    let T = nodeTitle == null ? null : map(nodes2, nodeTitle);
+    let G = nodeGroup == null ? null : map(nodes2, nodeGroup).map(intern);
+    if (G && nodeGroups === void 0)
+      nodeGroups = sort(G);
     let color3 = nodeGroup == null ? null : ordinal(nodeGroups, colors);
-    nodes2 = map(nodes2, (_, i) => ({ id: N2[i], group: nodeGroup(_) }));
+    nodes2 = map(nodes2, (_, i) => ({ id: N[i], group: nodeGroup(_) }));
     links2 = map(links2, (_, i) => {
-      existLink.set(`${LS2[i]}|${LT2[i]}`, true);
-      return { source: LS2[i], target: LT2[i], type: LG2[i] };
+      existLink.set(`${LS[i]}|${LT[i]}`, true);
+      return { source: LS[i], target: LT[i], type: LG[i] };
     });
-    const old = new Map(node.data().map((d) => [d.id, d]));
-    nodes2 = nodes2.map((d) => Object.assign(old.get(d.id) || {}, d));
+    const old = new Map(
+      node.data().map((d) => [d.id, d])
+    );
+    nodes2 = nodes2.map(
+      (d) => Object.assign(old.get(d.id) || {}, d)
+    );
     links2 = links2.map((d) => Object.assign({}, d));
-    node = node.data(nodes2, (d) => d.id).join((enter) => enter.append("g").call((enter2) => enter2.append("circle").classed("path-finder node-circle", true)).call((enter2) => enter2.append("text").attr("x", 0).attr("y", -20).attr("align", "center").text((d) => nodeTitle(d)).classed("path-finder node-text", true)).call((enter2) => enter2.attr("fill", (d) => color3(nodeGroup(d))))).classed("path-finder node", true).classed("fixed", (d) => d.fx !== void 0).call(drag(simulation)).on("click", click).on("mouseover", setSelection(true)).on("mouseout", setSelection(false));
-    link = link.data(links2, (d) => `${d.source}|${d.target}`).join("path").classed("path-finder link", true).attr("marker-end", `url(#arrow)`);
-    const forceLink2 = link_default(links2).id(({ index: i }) => N2[i]);
+    node = node.data(nodes2, (d) => d.id).join(
+      (enter) => enter.append("g").call(
+        (enter2) => enter2.append("circle").classed("path-finder node-circle", true)
+      ).call(
+        (enter2) => enter2.append("text").attr("x", 0).attr("y", -20).attr("align", "center").text((d) => nodeTitle(d)).classed("path-finder node-text", true)
+      ).call(
+        (enter2) => enter2.attr("fill", (d) => color3(nodeGroup(d)))
+      )
+    ).classed("path-finder node", true).classed("fixed", (d) => d.fx !== void 0).call(drag(simulation)).on("click", click).on("mouseover", setSelection(true)).on("mouseout", setSelection(false));
+    link = link.data(links2, (d) => `${d.source}|${d.target}`).join("path").classed("path-finder link", true).attr("marker-end", (d) => `url(#arrow-${d.type})`);
+    const forceLink2 = link_default(links2).id(({ index: i }) => N[i]);
     if (linkStrength !== void 0)
       forceLink2.strength(linkStrength);
     simulation.nodes(nodes2);
@@ -6953,9 +7293,9 @@ async function ForceGraphWithLabels(view, contentEl, nextPath, {
     let pathsLength = paths.length;
     if (index2 >= pathsLength) {
       if (calculationComplete) {
-        new import_obsidian4.Notice("No more paths available!");
+        new import_obsidian5.Notice("No more paths available!");
       } else {
-        new import_obsidian4.Notice("Still Calculating!");
+        new import_obsidian5.Notice("Still Calculating!");
       }
       index2 = pathsLength - 1;
     }
@@ -7004,32 +7344,56 @@ async function ForceGraphWithLabels(view, contentEl, nextPath, {
     });
     pathContainer.selectAll("div.path-finder.panel-display.path-item").remove();
     pathContainer.selectAll("div.path-finder.panel-display.path-item").data(path).enter().append("div").classed("path-finder panel-display path-item", true).text((d) => nodeTitle({ id: d })).on("mouseover", function(evt, u) {
-      setNodeClass(node.filter((d) => {
-        let v = d.id;
-        return u === v;
-      }), "center", true);
+      setNodeClass(
+        node.filter((d) => {
+          let v = d.id;
+          return u === v;
+        }),
+        "center",
+        true
+      );
       select_default2(this).classed("selected", true);
     }).on("mouseout", function(evt, u) {
-      setNodeClass(node.filter((d) => {
-        let v = d.id;
-        return u === v;
-      }), "center", false);
+      setNodeClass(
+        node.filter((d) => {
+          let v = d.id;
+          return u === v;
+        }),
+        "center",
+        false
+      );
       select_default2(this).classed("selected", false);
     });
   }
   function setSelectedPath(nodeMap, linkMap, flag) {
-    setNodeClass(node.filter((d) => {
-      return nodeMap.get(d.id);
-    }), "selected", flag);
-    setNodeClass(node.filter((d) => {
-      return !nodeMap.get(d.id);
-    }), "unselected", flag);
-    setLinkClass(link.filter((d) => {
-      return linkMap.get(`${d.source.id}|${d.target.id}`) || linkMap.get(`${d.target.id}|${d.source.id}`);
-    }), "selected", flag);
-    setLinkClass(link.filter((d) => {
-      return !(linkMap.get(`${d.source.id}|${d.target.id}`) || linkMap.get(`${d.target.id}|${d.source.id}`));
-    }), "unselected", flag);
+    setNodeClass(
+      node.filter((d) => {
+        return nodeMap.get(d.id);
+      }),
+      "selected",
+      flag
+    );
+    setNodeClass(
+      node.filter((d) => {
+        return !nodeMap.get(d.id);
+      }),
+      "unselected",
+      flag
+    );
+    setLinkClass(
+      link.filter((d) => {
+        return linkMap.get(`${d.source.id}|${d.target.id}`) || linkMap.get(`${d.target.id}|${d.source.id}`);
+      }),
+      "selected",
+      flag
+    );
+    setLinkClass(
+      link.filter((d) => {
+        return !(linkMap.get(`${d.source.id}|${d.target.id}`) || linkMap.get(`${d.target.id}|${d.source.id}`));
+      }),
+      "unselected",
+      flag
+    );
   }
   let graphContainerNode = graphContainer.node();
   let panelContainerNode = panelContainer.node();
@@ -7037,7 +7401,7 @@ async function ForceGraphWithLabels(view, contentEl, nextPath, {
   contentEl.appendChild(panelContainerNode);
   const closeButton = panelContainerNode.createDiv();
   closeButton.addClasses(["path-finder", "panel-button", "mod-close"]);
-  (0, import_obsidian4.setIcon)(closeButton, "cross", 20);
+  (0, import_obsidian5.setIcon)(closeButton, "cross");
   closeButton.style.display = "none";
   view.closePanel = function() {
     this.style.display = "none";
@@ -7056,7 +7420,7 @@ async function ForceGraphWithLabels(view, contentEl, nextPath, {
   closeButton.setAttribute("aria-label", "Close");
   const openButton = panelContainerNode.createDiv();
   openButton.addClasses(["path-finder", "panel-button", "mod-open"]);
-  (0, import_obsidian4.setIcon)(openButton, "right-triangle", 20);
+  (0, import_obsidian5.setIcon)(openButton, "right-triangle");
   view.openPanel = function() {
     panelContainerNode.toggleClass("is-close", false);
     closeButton.style.display = "flex";
@@ -7072,15 +7436,116 @@ async function ForceGraphWithLabels(view, contentEl, nextPath, {
       closeButton.style.display = "none";
   });
   const leftButtonContainer = leftButtonDiv.node();
-  (0, import_obsidian4.setIcon)(leftButtonContainer, "left-arrow", 20);
+  (0, import_obsidian5.setIcon)(leftButtonContainer, "left-arrow");
   const rightButtonContainer = rightButtonDiv.node();
-  (0, import_obsidian4.setIcon)(rightButtonContainer, "right-arrow", 20);
+  (0, import_obsidian5.setIcon)(rightButtonContainer, "right-arrow");
+  let graphControls = new GraphControl(contentEl);
+  let forcesCategory = graphControls.addCategory("forces", "Forces", false);
+  addRepelForceSetting();
+  function addRepelForceSetting() {
+    let setting = forcesCategory.addSetting();
+    setting.setName("Repel force").addSlider((slider) => {
+      slider.setLimits(-2e3, -500, 10).setValue(-1500).setDynamicTooltip().onChange((value) => {
+        nodeStrength = value;
+        forceNode.strength(nodeStrength);
+        simulation.force("charge", forceNode);
+        simulation.alpha(1).restart().tick();
+      });
+    }).settingEl.addClass("mod-slider");
+  }
+  addLinkForceSetting();
+  function addLinkForceSetting() {
+    let setting = forcesCategory.addSetting();
+    setting.setName("Link force").addSlider((slider) => {
+      slider.setLimits(-1e3, 0, 10).setValue(-400).setDynamicTooltip().onChange((value) => {
+        linkStrength = value;
+        forceLink.strength(linkStrength);
+        simulation.force("link", forceLink);
+        simulation.alpha(1).restart().tick();
+      });
+    }).settingEl.addClass("mod-slider");
+  }
+  addXForceSetting();
+  function addXForceSetting() {
+    let setting = forcesCategory.addSetting();
+    setting.setName("X force").addToggle((toggle) => {
+      toggle.setValue(true).onChange((on) => {
+        if (on) {
+          simulation.force("x", x_default2(xCenter));
+        } else {
+          simulation.force("x", null);
+        }
+        simulation.alpha(1).restart().tick();
+      });
+    }).settingEl.addClass("mod-toggle");
+  }
+  addXForceCenterSetting();
+  function addXForceCenterSetting() {
+    forcesCategory.addSetting().setName("X force center").addText((text) => {
+      1;
+      text.setValue("0").onChange((value) => {
+        if (value === "") {
+          text.setValue("0");
+          value = "0";
+        }
+        xCenter = Number.parseInt(value);
+        if (isNaN(xCenter)) {
+          new import_obsidian5.Notice(
+            `Illegal X force center: ${value} is not a number.`
+          );
+          return;
+        }
+        if (simulation.force("x")) {
+          simulation.force("x", x_default2(xCenter));
+          simulation.alpha(1).restart().tick();
+        }
+      });
+    });
+  }
+  addYForceSetting();
+  function addYForceSetting() {
+    let setting = forcesCategory.addSetting();
+    setting.setName("Y force").addToggle((toggle) => {
+      toggle.setValue(true).onChange((on) => {
+        if (on) {
+          1;
+          simulation.force("y", y_default2(yCenter));
+        } else {
+          simulation.force("y", null);
+        }
+        simulation.alpha(1).restart().tick();
+      });
+    }).settingEl.addClass("mod-toggle");
+  }
+  addYForceCenterSetting();
+  function addYForceCenterSetting() {
+    let setting = forcesCategory.addSetting().setName("Y force center");
+    setting.addText((text) => {
+      text.setValue("0").onChange((value) => {
+        if (value === "") {
+          text.setValue("0");
+          value = "0";
+        }
+        yCenter = Number.parseInt(value);
+        if (isNaN(yCenter)) {
+          new import_obsidian5.Notice(
+            `Illegal Y force center: ${value} is not a number.`
+          );
+          return;
+        }
+        if (simulation.force("y")) {
+          simulation.force("y", y_default2(yCenter));
+          simulation.alpha(1).restart().tick();
+        }
+      });
+    });
+  }
 }
 
 // src/view.ts
 var VIEW_TYPE_PATHGRAPHVIEW = "path-graph-view";
 var VIEW_TYPE_PATHVIEW = "path-view";
-var PathGraphView = class extends import_obsidian5.ItemView {
+var PathGraphView = class extends import_obsidian6.ItemView {
   constructor(leaf) {
     super(leaf);
   }
@@ -7092,15 +7557,20 @@ var PathGraphView = class extends import_obsidian5.ItemView {
   }
   onResize() {
     const { contentEl } = this;
-    const svg = contentEl.getElementsByClassName("path-finder path-graph")[0];
+    const svg = contentEl.getElementsByClassName(
+      "path-finder path-graph"
+    )[0];
     let width = contentEl.clientWidth, height = contentEl.clientHeight;
-    svg.setAttribute("viewBox", `${-height / 2},${-width / 2},${height},${width}`);
+    svg.setAttribute(
+      "viewBox",
+      `${-height / 2},${-width / 2},${height},${width}`
+    );
     svg.setAttribute("width", width.toString());
     svg.setAttribute("height", height.toString());
   }
   getNodes(graph) {
     let ret = [];
-    for (let i = 1; i <= graph.getN(); i++) {
+    for (let i = 1; i <= graph.getNodeCount(); i++) {
       ret.push({
         id: graph.getName(i),
         group: i === this.source ? "source" : i === this.target ? "target" : "node"
@@ -7110,8 +7580,8 @@ var PathGraphView = class extends import_obsidian5.ItemView {
   }
   getLinks(graph) {
     let ret = [];
-    for (let i = 1; i <= graph.getM(); i++) {
-      let fromFilePath = graph.getName(graph.edges[i].u), toFilePath = graph.getName(graph.edges[i].v);
+    for (let i = 1; i <= graph.getEdgeCount(); i++) {
+      let fromFilePath = graph.getName(graph.edges[i].source), toFilePath = graph.getName(graph.edges[i].target);
       if (!fromFilePath || !toFilePath)
         continue;
       let resolvedLinks = app.metadataCache.resolvedLinks;
@@ -7129,40 +7599,46 @@ var PathGraphView = class extends import_obsidian5.ItemView {
   setData(from, to, length, graph) {
     const contentEl = this.contentEl;
     contentEl.empty();
-    let newGraph = new ExtendedGraph();
+    let newGraph = new WeightedGraphWithNodeID();
     newGraph.addVertice(from);
     newGraph.addVertice(to);
     let source = newGraph.getID(from);
     let target = newGraph.getID(to);
     this.source = source;
     this.target = target;
-    ForceGraphWithLabels(this, contentEl, getNextPath(graph.getID(from), graph.getID(to), length, graph), {
-      graph: newGraph,
-      getNodes: this.getNodes.bind(this),
-      getLinks: this.getLinks
-    }, {
-      nodeGroup: (x2) => {
-        return x2.group;
+    ForceGraphWithLabels(
+      this,
+      contentEl,
+      getNextPath(graph.getID(from), graph.getID(to), length, graph),
+      {
+        graph: newGraph,
+        getNodes: this.getNodes.bind(this),
+        getLinks: this.getLinks.bind(this)
       },
-      nodeGroups: ["source", "target", "node"],
-      colors: ["#227d51", "#cb1b45", "#0b1013"],
-      nodeRadius: 10,
-      linkGroups: ["monodirectional", "bidirectional"],
-      nodeTitle: (x2) => {
-        let file = app.vault.getAbstractFileByPath(x2.id);
-        if (!file)
-          return "undefined";
-        else if (file instanceof import_obsidian5.TFile) {
-          if (file.extension == "md")
-            return file.basename;
-          else {
+      {
+        nodeGroup: (x2) => {
+          return x2.group;
+        },
+        nodeGroups: ["source", "target", "node"],
+        colors: ["#227d51", "#cb1b45", "#0b1013"],
+        nodeRadius: 10,
+        linkGroups: ["monodirectional", "bidirectional"],
+        nodeTitle: (x2) => {
+          let file = app.vault.getAbstractFileByPath(x2.id);
+          if (!file)
+            return "undefined";
+          else if (file instanceof import_obsidian6.TFile) {
+            if (file.extension == "md")
+              return file.basename;
+            else {
+              return file.name;
+            }
+          } else {
             return file.name;
           }
-        } else {
-          return file.name;
         }
       }
-    });
+    );
   }
   nextPath() {
   }
@@ -7179,7 +7655,7 @@ var PathGraphView = class extends import_obsidian5.ItemView {
   async onClose() {
   }
 };
-var PathView = class extends import_obsidian5.ItemView {
+var PathView = class extends import_obsidian6.ItemView {
   constructor(leaf) {
     super(leaf);
   }
@@ -7218,7 +7694,7 @@ var PathView = class extends import_obsidian5.ItemView {
         cls: ["path-finder", "panel-display", "path-item"]
       });
       pathItemContainer.createEl("h3", {
-        text: file instanceof import_obsidian5.TFile ? file.basename : file.name
+        text: file instanceof import_obsidian6.TFile ? file.basename : file.name
       });
       pathItemContainer.createEl("p", { text: file.path });
     }
@@ -7247,8 +7723,8 @@ var PathView = class extends import_obsidian5.ItemView {
     const leftButton = leftButtonContainer.createEl("button", {
       cls: ["path-finder", "left-button-container", "left-button"]
     });
-    (0, import_obsidian5.setIcon)(leftButton, "left-arrow");
-    leftButton.onClickEvent((evt) => {
+    (0, import_obsidian6.setIcon)(leftButton, "left-arrow");
+    leftButton.onClickEvent(() => {
       if (this.currentPage > 0) {
         this.currentPage--;
       }
@@ -7257,8 +7733,8 @@ var PathView = class extends import_obsidian5.ItemView {
     const rightButton = rightButtonContainer.createEl("button", {
       cls: ["path-finder", "right-button-container", "right-button"]
     });
-    (0, import_obsidian5.setIcon)(rightButton, "right-arrow");
-    rightButton.onClickEvent(async (evt) => {
+    (0, import_obsidian6.setIcon)(rightButton, "right-arrow");
+    rightButton.onClickEvent(async () => {
       if (this.currentPage < this.paths.length - 1) {
         this.currentPage++;
       } else {
@@ -7267,7 +7743,7 @@ var PathView = class extends import_obsidian5.ItemView {
           this.paths.push(res.value);
           this.currentPage++;
         } else {
-          new import_obsidian5.Notice("No more Paths!");
+          new import_obsidian6.Notice("No more Paths!");
         }
       }
       this.update(pathTitleContainer, pathContentContainer);
@@ -7282,7 +7758,47 @@ var PathView = class extends import_obsidian5.ItemView {
 };
 
 // src/settings.ts
-var import_obsidian6 = require("obsidian");
+var import_obsidian7 = require("obsidian");
+function isFiltered(filter2, x2) {
+  if (filter2.regexp == "")
+    return false;
+  return filter2.mode == "Exclude" && RegExp(filter2.regexp).test(x2) || filter2.mode == "Include" && !RegExp(filter2.regexp).test(x2);
+}
+function formatHotkey(hotkey) {
+  if (isBlank(hotkey)) {
+    return "Blank";
+  }
+  function isBlank(hotkey2) {
+    return !hotkey2 || (!hotkey2.modifiers || hotkey2.modifiers.length == 0) && !hotkey2.key;
+  }
+  return formatHotkey2(hotkey);
+  function formatHotkey2(hotkey2) {
+    hotkey2.modifiers.sort();
+    let result = hotkey2.modifiers.join(" + ");
+    if (hotkey2.key) {
+      if (result != "") {
+        result += " + ";
+      }
+      if (hotkey2.key.length == 1)
+        result += hotkey2.key.toUpperCase();
+      else
+        result += hotkey2.key;
+    }
+    result = replaceArrow(result);
+    result = replaceModifiers(result);
+    return result;
+    function replaceArrow(result2) {
+      return result2.replaceAll("ArrowLeft", "\u2190").replaceAll("ArrowRight", "\u2192").replaceAll("ArrowUp", "\u2191").replaceAll("ArrowDown", "\u2193");
+    }
+    function replaceModifiers(result2) {
+      if (import_obsidian7.Platform.isMacOS) {
+        return result2.replaceAll("Meta", "\u2318Command").replaceAll("Alt", "\u2325Option");
+      } else {
+        return result2.replaceAll("Meta", "\u229EWindows");
+      }
+    }
+  }
+}
 var DEFAULT_SETTINGS = {
   nextPathHotkey: {
     modifiers: [],
@@ -7299,52 +7815,23 @@ var DEFAULT_SETTINGS = {
   closePanelHotkey: {
     modifiers: [],
     key: "w"
+  },
+  filter: {
+    regexp: "",
+    mode: "Exclude"
   }
 };
-var PathFinderPluginSettingTab = class extends import_obsidian6.PluginSettingTab {
+var PathFinderPluginSettingTab = class extends import_obsidian7.PluginSettingTab {
   constructor(app2, plugin) {
     super(app2, plugin);
     this.plugin = plugin;
   }
-  getName(hotkey) {
-    let ret = "";
-    if (!hotkey)
-      return "Blank";
-    if ((!hotkey.modifiers || hotkey.modifiers.length == 0) && !hotkey.key)
-      return "Blank";
-    hotkey.modifiers.sort();
-    for (let i = 0; i < hotkey.modifiers.length; i++) {
-      if (i != 0)
-        ret += " + ";
-      ret += hotkey.modifiers[i];
-    }
-    if (hotkey.key) {
-      if (ret != "") {
-        ret += " + ";
-      }
-      if (hotkey.key.length == 1)
-        ret += hotkey.key.toUpperCase();
-      else
-        ret += hotkey.key;
-    }
-    ret = ret.replaceAll("ArrowLeft", "\u2190");
-    ret = ret.replaceAll("ArrowRight", "\u2192");
-    ret = ret.replaceAll("ArrowUp", "\u2191");
-    ret = ret.replaceAll("ArrowDown", "\u2193");
-    if (import_obsidian6.Platform.isMacOS) {
-      ret = ret.replaceAll("Meta", "\u2318Command");
-      ret = ret.replaceAll("Alt", "\u2325Option");
-    } else {
-      ret = ret.replaceAll("Meta", "\u229EWindows");
-    }
-    return ret;
-  }
   addHotkeySetting(title, target, defaultHotkey) {
     let { containerEl } = this;
-    let hotkeyButton, resetButton;
-    new import_obsidian6.Setting(containerEl).setName(title).addButton((button) => {
+    let hotkeyButton;
+    new import_obsidian7.Setting(containerEl).setName(title).addButton((button) => {
       hotkeyButton = button;
-      button.setButtonText(this.getName(target)).setTooltip("Customize hotkey").onClick(async (evt) => {
+      button.setButtonText(formatHotkey(target)).setTooltip("Customize hotkey").onClick(async () => {
         let controller = new AbortController();
         button.setCta();
         let blankHotkey = {
@@ -7355,68 +7842,71 @@ var PathFinderPluginSettingTab = class extends import_obsidian6.PluginSettingTab
           modifiers: [],
           key: ""
         };
-        global.addEventListener("keydown", async (evt2) => {
-          let { modifiers, key } = hotkey;
-          if (evt2.key == "Escape") {
-            button.setButtonText("Blank");
-            Object.assign(target, blankHotkey);
+        global.addEventListener(
+          "keydown",
+          async (evt) => {
+            let { modifiers } = hotkey;
+            if (evt.key == "Escape") {
+              button.setButtonText("Blank");
+              Object.assign(target, blankHotkey);
+              await this.plugin.saveSettings();
+              button.removeCta();
+              controller.abort();
+              evt.stopImmediatePropagation();
+              return;
+            }
+            if (evt.ctrlKey) {
+              if (evt.key == "Control") {
+                Object.assign(hotkey, blankHotkey);
+                return;
+              }
+              if (!modifiers.includes("Ctrl"))
+                modifiers.push("Ctrl");
+            }
+            if (evt.shiftKey) {
+              if (evt.key == "Shift") {
+                Object.assign(hotkey, blankHotkey);
+                return;
+              }
+              if (!modifiers.includes("Shift"))
+                modifiers.push("Shift");
+            }
+            if (evt.altKey) {
+              if (evt.key == "Alt") {
+                Object.assign(hotkey, blankHotkey);
+                return;
+              }
+              if (!modifiers.includes("Alt"))
+                modifiers.push("Alt");
+            }
+            if (evt.metaKey) {
+              if (evt.key == "Meta") {
+                Object.assign(hotkey, blankHotkey);
+                return;
+              }
+              if (!modifiers.includes("Meta"))
+                modifiers.push("Meta");
+            }
+            hotkey.key = evt.key;
+            button.setButtonText(formatHotkey(hotkey));
+            Object.assign(target, hotkey);
             await this.plugin.saveSettings();
             button.removeCta();
             controller.abort();
-            evt2.stopImmediatePropagation();
-            return;
+          },
+          {
+            capture: true,
+            signal: controller.signal
           }
-          if (evt2.ctrlKey) {
-            if (evt2.key == "Control") {
-              Object.assign(hotkey, blankHotkey);
-              return;
-            }
-            if (!modifiers.includes("Ctrl"))
-              modifiers.push("Ctrl");
-          }
-          if (evt2.shiftKey) {
-            if (evt2.key == "Shift") {
-              Object.assign(hotkey, blankHotkey);
-              return;
-            }
-            if (!modifiers.includes("Shift"))
-              modifiers.push("Shift");
-          }
-          if (evt2.altKey) {
-            if (evt2.key == "Alt") {
-              Object.assign(hotkey, blankHotkey);
-              return;
-            }
-            if (!modifiers.includes("Alt"))
-              modifiers.push("Alt");
-          }
-          if (evt2.metaKey) {
-            if (evt2.key == "Meta") {
-              Object.assign(hotkey, blankHotkey);
-              return;
-            }
-            if (!modifiers.includes("Meta"))
-              modifiers.push("Meta");
-          }
-          hotkey.key = evt2.key;
-          button.setButtonText(this.getName(hotkey));
-          Object.assign(target, hotkey);
-          await this.plugin.saveSettings();
-          button.removeCta();
-          controller.abort();
-        }, {
-          capture: true,
-          signal: controller.signal
-        });
+        );
       });
     }).addButton((button) => {
-      resetButton = button;
-      button.setIcon("reset").setTooltip("Restore default").onClick(async (evt) => {
+      button.setIcon("reset").setTooltip("Restore default").onClick(async () => {
         if (defaultHotkey)
           Object.assign(target, defaultHotkey);
         else
           Object.assign(target, { modifiers: [], key: "" });
-        hotkeyButton.setButtonText(this.getName(target));
+        hotkeyButton.setButtonText(formatHotkey(target));
         await this.plugin.saveSettings();
       });
     });
@@ -7426,16 +7916,48 @@ var PathFinderPluginSettingTab = class extends import_obsidian6.PluginSettingTab
     let { settings } = this.plugin;
     containerEl.empty();
     containerEl.createEl("h1", { text: "Hotkey Settings" });
-    this.addHotkeySetting("Previous Path", settings.prevPathHotkey, DEFAULT_SETTINGS.prevPathHotkey);
-    this.addHotkeySetting("Next Path", settings.nextPathHotkey, DEFAULT_SETTINGS.nextPathHotkey);
-    this.addHotkeySetting("Open Panel", settings.openPanelHotkey, DEFAULT_SETTINGS.openPanelHotkey);
-    this.addHotkeySetting("Close Panel", settings.closePanelHotkey, DEFAULT_SETTINGS.closePanelHotkey);
+    this.addHotkeySetting(
+      "Previous Path",
+      settings.prevPathHotkey,
+      DEFAULT_SETTINGS.prevPathHotkey
+    );
+    this.addHotkeySetting(
+      "Next Path",
+      settings.nextPathHotkey,
+      DEFAULT_SETTINGS.nextPathHotkey
+    );
+    this.addHotkeySetting(
+      "Open Panel",
+      settings.openPanelHotkey,
+      DEFAULT_SETTINGS.openPanelHotkey
+    );
+    this.addHotkeySetting(
+      "Close Panel",
+      settings.closePanelHotkey,
+      DEFAULT_SETTINGS.closePanelHotkey
+    );
+    new import_obsidian7.Setting(containerEl).setName("Filter").setDesc(
+      (0, import_obsidian7.sanitizeHTMLToDom)(
+        `Write plain text or regex.<br>
+The filter string will be matched everywhere in the file path(from vault root to file).<br>
+<a href="https://javascript.info/regular-expressions">Regex Tutorial</a>`
+      )
+    ).addText((text) => {
+      text.setValue(settings.filter.regexp).onChange((regexp) => {
+        settings.filter.regexp = regexp;
+      });
+    });
+    new import_obsidian7.Setting(containerEl).setName("Filter Mode").addDropdown((dropdown) => {
+      dropdown.addOption("Include", "Include").addOption("Exclude", "Exclude").setValue(settings.filter.mode).onChange((mode) => {
+        settings.filter.mode = mode;
+      });
+    });
   }
 };
 
 // src/main.ts
 var import_posix = require("path/posix");
-var PathFinderPlugin = class extends import_obsidian7.Plugin {
+var PathFinderPlugin = class extends import_obsidian8.Plugin {
   async onload() {
     console.log("Loading Path Finder plugin");
     await this.loadSettings();
@@ -7444,24 +7966,42 @@ var PathFinderPlugin = class extends import_obsidian7.Plugin {
       id: "find-shortest-path",
       name: "Find Shortest Path",
       callback: () => {
-        new PathsModal(this.app, this.findPaths.bind(this, "shortest_path"), "shortest_path").open();
+        new PathsModal(
+          this.app,
+          this.findPaths.bind(this, "shortest_path"),
+          Object.assign({}, this.settings.filter),
+          "shortest_path"
+        ).open();
       }
     });
     this.addCommand({
       id: "find-all-paths-as-graph",
       name: "Find All Path As Graph",
       callback: () => {
-        new PathsModal(this.app, this.findPaths.bind(this, "all_paths_as_graph"), "all_paths_as_graph").open();
+        new PathsModal(
+          this.app,
+          this.findPaths.bind(this, "all_paths_as_graph"),
+          Object.assign({}, this.settings.filter),
+          "all_paths_as_graph"
+        ).open();
       }
     });
     this.addCommand({
       id: "find-all-paths",
       name: "Find All Path",
       callback: () => {
-        new PathsModal(this.app, this.findPaths.bind(this, "all_paths"), "all_paths").open();
+        new PathsModal(
+          this.app,
+          this.findPaths.bind(this, "all_paths"),
+          Object.assign({}, this.settings.filter),
+          "all_paths"
+        ).open();
       }
     });
-    this.registerView(VIEW_TYPE_PATHGRAPHVIEW, (leaf) => new PathGraphView(leaf));
+    this.registerView(
+      VIEW_TYPE_PATHGRAPHVIEW,
+      (leaf) => new PathGraphView(leaf)
+    );
     this.registerView(VIEW_TYPE_PATHVIEW, (leaf) => new PathView(leaf));
     this.registerDomEvent(document, "keydown", (evt) => {
       let activeView = app.workspace.getActiveViewOfType(PathGraphView);
@@ -7478,12 +8018,17 @@ var PathFinderPlugin = class extends import_obsidian7.Plugin {
         activeView.closePanel();
     });
   }
-  onunload() {
+  async onunload() {
     this.app.workspace.detachLeavesOfType(VIEW_TYPE_PATHGRAPHVIEW);
     this.app.workspace.detachLeavesOfType(VIEW_TYPE_PATHVIEW);
+    await this.saveSettings();
   }
   async loadSettings() {
-    this.settings = Object.assign({}, DEFAULT_SETTINGS, await this.loadData());
+    this.settings = Object.assign(
+      {},
+      DEFAULT_SETTINGS,
+      await this.loadData()
+    );
   }
   async saveSettings() {
     await this.saveData(this.settings);
@@ -7501,37 +8046,36 @@ var PathFinderPlugin = class extends import_obsidian7.Plugin {
       return false;
     return true;
   }
-  findPaths(operation, from, to, length) {
-    from = (0, import_obsidian7.normalizePath)(from);
-    to = (0, import_obsidian7.normalizePath)(to);
+  findPaths(operation, filter2, from, to, length) {
+    from = (0, import_obsidian8.normalizePath)(from);
+    to = (0, import_obsidian8.normalizePath)(to);
     let { vault } = app;
-    let { adapter } = vault;
     if (vault.getAbstractFileByPath(from) === null) {
-      new import_obsidian7.Notice(`${from} does not exist.`);
+      new import_obsidian8.Notice(`${from} does not exist.`);
       return;
     }
     if (vault.getAbstractFileByPath(to) === null) {
-      new import_obsidian7.Notice(`${to} does not exist.`);
+      new import_obsidian8.Notice(`${to} does not exist.`);
       return;
     }
-    let graph = this.buildGraphFromLinks();
+    let graph = this.buildGraphFromLinks(filter2);
     let source = graph.getID(from);
     let target = graph.getID(to);
     if (source === void 0) {
-      new import_obsidian7.Notice(`${from} does not exist!`);
+      new import_obsidian8.Notice(`${from} does not exist or is filtered out!`);
       return;
     }
     if (target === void 0) {
-      new import_obsidian7.Notice(`${to} does not exist!`);
+      new import_obsidian8.Notice(`${to} does not exist or is filtered out!`);
       return;
     }
     let { dis } = dijkstra(source, graph);
     if (from === to) {
-      new import_obsidian7.Notice(`${from} and ${to} are the same file!`);
+      new import_obsidian8.Notice(`${from} and ${to} are the same file!`);
       return;
     }
     if (dis[target] === Infinity) {
-      new import_obsidian7.Notice(`${from} has no path that lead to ${to}.`);
+      new import_obsidian8.Notice(`${from} has no path that lead to ${to}.`);
       return;
     }
     if (operation == "shortest_path") {
@@ -7542,11 +8086,15 @@ var PathFinderPlugin = class extends import_obsidian7.Plugin {
       this.openPathView(from, to, length, graph);
     }
   }
-  buildGraphFromLinks() {
-    let graph = new ExtendedGraph();
+  buildGraphFromLinks(filter2) {
+    let graph = new WeightedGraphWithNodeID();
     let { resolvedLinks } = app.metadataCache;
     for (let fromFilePath in resolvedLinks) {
+      if (isFiltered(filter2, fromFilePath))
+        continue;
       for (let toFilePath in resolvedLinks[fromFilePath]) {
+        if (isFiltered(filter2, toFilePath))
+          continue;
         graph.addEdgeExtended(fromFilePath, toFilePath, 1);
         graph.addEdgeExtended(toFilePath, fromFilePath, 1);
       }
@@ -7557,7 +8105,10 @@ var PathFinderPlugin = class extends import_obsidian7.Plugin {
     let { workspace } = app;
     let pathGraphViewLeaf = workspace.getLeaf(true);
     pathGraphViewLeaf.getDisplayText = function() {
-      return `${(0, import_posix.basename)(from, (0, import_posix.extname)(from))}->${(0, import_posix.basename)(to, (0, import_posix.extname)(to))}${length == Infinity ? "" : ` within ${length} steps`}`;
+      return `${(0, import_posix.basename)(from, (0, import_posix.extname)(from))}->${(0, import_posix.basename)(
+        to,
+        (0, import_posix.extname)(to)
+      )}${length == Infinity ? "" : ` within ${length} steps`}`;
     };
     await pathGraphViewLeaf.setViewState({
       type: VIEW_TYPE_PATHGRAPHVIEW,
@@ -7565,7 +8116,7 @@ var PathFinderPlugin = class extends import_obsidian7.Plugin {
     });
     let pathGraphView = pathGraphViewLeaf.view;
     if (!(pathGraphView instanceof PathGraphView)) {
-      new import_obsidian7.Notice("Failed to open Path View. Please try again.");
+      new import_obsidian8.Notice("Failed to open Path View. Please try again.");
       pathGraphViewLeaf.detach();
       return;
     }
@@ -7575,17 +8126,20 @@ var PathFinderPlugin = class extends import_obsidian7.Plugin {
   async openPathView(from, to, length, graph) {
     let source = graph.getID(from), target = graph.getID(to);
     if (source === void 0) {
-      new import_obsidian7.Notice(`${from} does note exist!`);
+      new import_obsidian8.Notice(`${from} does note exist!`);
       return;
     }
     if (target === void 0) {
-      new import_obsidian7.Notice(`${to} does note exist!`);
+      new import_obsidian8.Notice(`${to} does note exist!`);
       return;
     }
     let { workspace } = app;
     let pathViewLeaf = workspace.getLeaf(true);
     pathViewLeaf.getDisplayText = function() {
-      return `${(0, import_posix.basename)(from, (0, import_posix.extname)(from))}->${(0, import_posix.basename)(to, (0, import_posix.extname)(to))}${length == Infinity ? "" : ` within ${length} steps`}`;
+      return `${(0, import_posix.basename)(from, (0, import_posix.extname)(from))}->${(0, import_posix.basename)(
+        to,
+        (0, import_posix.extname)(to)
+      )}${length == Infinity ? "" : ` within ${length} steps`}`;
     };
     await pathViewLeaf.setViewState({
       type: VIEW_TYPE_PATHVIEW,
@@ -7593,7 +8147,7 @@ var PathFinderPlugin = class extends import_obsidian7.Plugin {
     });
     let pathView = pathViewLeaf.view;
     if (!(pathView instanceof PathView)) {
-      new import_obsidian7.Notice("Failed to open Path View. Please try again.");
+      new import_obsidian8.Notice("Failed to open Path View. Please try again.");
       pathViewLeaf.detach();
       return;
     }
@@ -7601,3 +8155,5 @@ var PathFinderPlugin = class extends import_obsidian7.Plugin {
     this.app.workspace.revealLeaf(pathViewLeaf);
   }
 };
+
+/* nosourcemap */

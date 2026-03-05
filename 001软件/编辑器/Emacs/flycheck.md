@@ -1,9 +1,10 @@
 ---
-title: "Flycheck"
-categories: 
+title: Flycheck
+categories:
 date: 2022-10-05 03:54:36 +0800
-tags: Emacs
-excerpt: 
+tags:
+  - Emacs
+excerpt:
 ---
 
 [flycheck/flycheck](https://github.com/flycheck/flycheck): On-the-fly syntax checking for GNU Emacs

@@ -1,9 +1,11 @@
 ---
-title: "SelectMode"
-categories: 
+title: SelectMode
+categories:
 date: 2022-09-25 18:00:58 +0800
-tags: Vim 模式
-excerpt: 
+tags:
+  - Vim
+  - 模式
+excerpt:
 ---
 
 

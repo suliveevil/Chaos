@@ -1,9 +1,11 @@
 ---
-title: "vim-subversive"
-categories: 
+title: vim-subversive
+categories:
 date: 2022-09-29 23:35:54 +0800
-tags: Vim 模式
-excerpt: 
+tags:
+  - Vim
+  - 模式
+excerpt:
 ---
 
 

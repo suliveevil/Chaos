@@ -1,10 +1,13 @@
 ---
-title: "OS X Daily"
-author: 
-categories: 
+title: OS X Daily
+author:
+categories:
 date: 2022-10-13 15:18:40 +0800
-tags: iOS iPadOS macOS
-excerpt: 
+tags:
+  - iOS
+  - iPadOS
+  - macOS
+excerpt:
 ---
 
 

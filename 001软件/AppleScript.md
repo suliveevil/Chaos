@@ -1,9 +1,10 @@
 ---
-title: "AppleScript"
-categories: 
+title: AppleScript
+categories:
 date: 2022-10-02 10:35:07 +0800
-tags: AppleScript
-excerpt: 
+tags:
+  - AppleScript
+excerpt:
 ---
 
 [[macOS]] 自动化 [[DSL]] [[编程语言]]

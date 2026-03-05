@@ -1,9 +1,10 @@
 ---
-title: "snippet-converter.nvim"
-categories: 
+title: snippet-converter.nvim
+categories:
 date: 2022-09-25 19:25:21 +0800
-tags: Snippets
-excerpt: 
+tags:
+  - Snippets
+excerpt:
 ---
 
 

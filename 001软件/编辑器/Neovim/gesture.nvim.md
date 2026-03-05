@@ -1,9 +1,12 @@
 ---
-title: "gesture.nvim"
-categories: 
+title: gesture.nvim
+categories:
 date: 2022-09-24 18:23:10 +0800
-tags: Neovim 触控板 鼠标
-excerpt: 
+tags:
+  - Neovim
+  - 触控板
+  - 鼠标
+excerpt:
 ---
 
 [[Neovim 插件]]

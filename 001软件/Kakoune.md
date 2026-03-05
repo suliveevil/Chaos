@@ -1,9 +1,10 @@
 ---
-title: "Kakoune"
-categories: 
+title: Kakoune
+categories:
 date: 2022-10-01 10:45:56 +0800
-tags: 文本编辑器
-excerpt: 
+tags:
+  - 文本编辑器
+excerpt:
 ---
 
 

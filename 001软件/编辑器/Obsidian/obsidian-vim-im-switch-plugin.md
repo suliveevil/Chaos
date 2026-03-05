@@ -1,10 +1,13 @@
 ---
-title: "obsidian-vim-im-switch-plugin"
-author: 
-categories: 
+title: obsidian-vim-im-switch-plugin
+author:
+categories:
 date: 2022-10-06 11:27:49 +0800
-tags: Obsidian Vim 输入法
-excerpt: 
+tags:
+  - Obsidian
+  - Vim
+  - 输入法
+excerpt:
 ---
 
 

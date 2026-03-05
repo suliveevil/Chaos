@@ -1,10 +1,11 @@
 ---
-title: "Wox"
-author: 
-categories: 
+title: Wox
+author:
+categories:
 date: 2022-10-04 01:16:01 +0800
-tags: Windows
-excerpt: 
+tags:
+  - Windows
+excerpt:
 ---
 
 

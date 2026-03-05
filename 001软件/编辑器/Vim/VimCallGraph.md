@@ -1,10 +1,12 @@
 ---
-title: "VimCallGraph"
-author: 
-categories: 
+title: VimCallGraph
+author:
+categories:
 date: 2022-10-07 06:34:02 +0800
-tags: Vim vimscript
-excerpt: 
+tags:
+  - Vim
+  - vimscript
+excerpt:
 ---
 
 

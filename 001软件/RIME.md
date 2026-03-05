@@ -1,9 +1,10 @@
 ---
-title: "RIME"
-categories: 
+title: RIME
+categories:
 date: 2022-09-25 06:09:57 +0800
-tags: 输入法
-excerpt: 
+tags:
+  - 输入法
+excerpt:
 ---
 
 ## App

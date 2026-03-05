@@ -1,9 +1,11 @@
 ---
-title: "VIntSearch"
-categories: 
+title: VIntSearch
+categories:
 date: 2022-09-28 03:32:08 +0800
-tags: Vim 文本搜索
-excerpt: 
+tags:
+  - Vim
+  - 文本搜索
+excerpt:
 ---
 
 

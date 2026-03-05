@@ -1,9 +1,12 @@
 ---
 title: ""
-categories: 
+categories:
 date: 2022-09-25 10:07:01 +0800
-tags: 数学 OCR LaTeX
-excerpt: 
+tags:
+  - 数学
+  - OCR
+  - LaTeX
+excerpt:
 ---
 
 [breezedeus/pix2text](https://github.com/breezedeus/pix2text): Pix In, Text Out. Recognize Chinese, English Texts, and Math Formulas of Images. Automatically choose the appropriate recognition model.

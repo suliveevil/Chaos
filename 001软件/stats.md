@@ -1,9 +1,11 @@
 ---
-title: "stats"
-categories: 
+title: stats
+categories:
 date: 2022-09-27 00:10:44 +0800
-tags: macOS 自由软件
-excerpt: 
+tags:
+  - macOS
+  - 自由软件
+excerpt:
 ---
 
 [exelban/stats](https://github.com/exelban/stats): macOS system monitor in your menu bar

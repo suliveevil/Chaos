@@ -1,8 +1,9 @@
 ---
-title: "XDG"
-categories: 
+title: XDG
+categories:
 date: 2022-09-24 20:03:11 +0800
-tags: 文件管理
+tags:
+  - 文件管理
 excerpt: XDG 规范：XDG Base Directory
 ---
 

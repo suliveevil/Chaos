@@ -1,9 +1,11 @@
 ---
-title: "nvim-ufo"
-categories: 
+title: nvim-ufo
+categories:
 date: 2022-10-01 08:10:09 +0800
-tags: Neovim 折叠
-excerpt: 
+tags:
+  - Neovim
+  - 折叠
+excerpt:
 ---
 
 

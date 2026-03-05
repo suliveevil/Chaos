@@ -1,9 +1,11 @@
 ---
-title: "SwiftPlantUML"
-categories: 
+title: SwiftPlantUML
+categories:
 date: 2022-09-27 10:18:46 +0800
-tags: macOS Swift
-excerpt: 
+tags:
+  - macOS
+  - Swift
+excerpt:
 ---
 
 

@@ -1,10 +1,13 @@
 ---
-title: "sqlite.lua"
-author: 
-categories: 
+title: sqlite.lua
+author:
+categories:
 date: 2022-10-01 06:05:39 +0800
-tags: Neovim SQLite LuaJIT
-excerpt: 
+tags:
+  - Neovim
+  - SQLite
+  - LuaJIT
+excerpt:
 ---
 
 

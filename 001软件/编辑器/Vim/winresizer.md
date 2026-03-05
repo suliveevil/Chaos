@@ -1,9 +1,11 @@
 ---
 title: ""
-categories: 
+categories:
 date: 2022-09-28 21:19:02 +0800
-tags: Vim 窗口管理
-excerpt: 
+tags:
+  - Vim
+  - 窗口管理
+excerpt:
 ---
 
 

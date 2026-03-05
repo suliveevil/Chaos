@@ -1,10 +1,11 @@
 ---
-title: "Richard Stallman"
-author: 
-categories: 
+title: Richard Stallman
+author:
+categories:
 date: 2022-10-05 03:46:08 +0800
-tags: GNU
-excerpt: 
+tags:
+  - GNU
+excerpt:
 ---
 
 

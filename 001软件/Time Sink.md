@@ -1,9 +1,10 @@
 ---
-title: "Time Sink"
-categories: 
+title: Time Sink
+categories:
 date: 2022-09-27 00:03:39 +0800
-tags: macOS
-excerpt: 
+tags:
+  - macOS
+excerpt:
 ---
 
 

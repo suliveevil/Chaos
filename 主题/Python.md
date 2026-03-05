@@ -1,8 +1,9 @@
 ---
-title: "Python"
+title: Python
 categories:
 date: 2022-09-25 18:46:08 +0800
-tags: 编程语言
+tags:
+  - 编程语言
 excerpt:
 ---
 

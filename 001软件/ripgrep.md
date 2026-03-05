@@ -1,9 +1,11 @@
 ---
-title: "ripgrep"
-categories: 
+title: ripgrep
+categories:
 date: 2022-09-24 19:13:42 +0800
-tags: 模糊搜索 Rust
-excerpt: 
+tags:
+  - 模糊搜索
+  - Rust
+excerpt:
 ---
 
 ripgrep 使用 [[Rust]] 编写，不兼容 POSIX。

@@ -1,9 +1,12 @@
 ---
-title: "thing-edit"
-categories: 
+title: thing-edit
+categories:
 date: 2022-09-30 00:45:50 +0800
-tags: Emacs 文本对象 剪贴板
-excerpt: 
+tags:
+  - Emacs
+  - 文本对象
+  - 剪贴板
+excerpt:
 ---
 
 [[Emacs 插件]]

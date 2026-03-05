@@ -1,10 +1,12 @@
 ---
-title: "YankRing.vim"
-author: 
-categories: 
+title: YankRing.vim
+author:
+categories:
 date: 2022-10-01 11:16:36 +0800
-tags: Vim 剪贴板
-excerpt: 
+tags:
+  - Vim
+  - 剪贴板
+excerpt:
 ---
 
 [[Vim 插件]]

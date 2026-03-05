@@ -1,9 +1,10 @@
 ---
-title: "Textadept"
-categories: 
+title: Textadept
+categories:
 date: 2022-10-06 18:03:21 +0800
-tags: 文本编辑器
-excerpt: 
+tags:
+  - 文本编辑器
+excerpt:
 ---
 
 

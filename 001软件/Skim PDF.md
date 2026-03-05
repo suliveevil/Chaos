@@ -1,9 +1,11 @@
 ---
-title: "Skim PDF"
-categories: 
+title: Skim PDF
+categories:
 date: 2022-09-24 09:31:29 +0800
-tags: macOS PDF
-excerpt: 
+tags:
+  - macOS
+  - PDF
+excerpt:
 ---
 
 [Skim](https://skim-app.sourceforge.io/)

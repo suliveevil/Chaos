@@ -1,10 +1,12 @@
 ---
-title: "crazy8.nvim"
-author: 
-categories: 
+title: crazy8.nvim
+author:
+categories:
 date: 2022-10-01 07:31:58 +0800
-tags: Neovim 缩进
-excerpt: 
+tags:
+  - Neovim
+  - 缩进
+excerpt:
 ---
 
 

@@ -1,10 +1,12 @@
 ---
-title: "eregex.vim"
-author: 
-categories: 
+title: eregex.vim
+author:
+categories:
 date: 2022-10-07 06:05:52 +0800
-tags: Vim 正则表达式
-excerpt: 
+tags:
+  - Vim
+  - 正则表达式
+excerpt:
 ---
 
 [[Vim 插件]]

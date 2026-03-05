@@ -1,10 +1,11 @@
 ---
-title: "TextMate"
-author: 
-categories: 
+title: TextMate
+author:
+categories:
 date: 2022-10-04 08:20:43 +0800
-tags: 文本编辑器
-excerpt: 
+tags:
+  - 文本编辑器
+excerpt:
 ---
 
 ## 功能

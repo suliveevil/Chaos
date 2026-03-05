@@ -1,10 +1,11 @@
 ---
-title: "nvim-highlight-colors"
-author: 
-categories: 
+title: nvim-highlight-colors
+author:
+categories:
 date: 2022-10-02 06:15:22 +0800
-tags: Neovim
-excerpt: 
+tags:
+  - Neovim
+excerpt:
 ---
 
 

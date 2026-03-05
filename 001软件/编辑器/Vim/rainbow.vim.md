@@ -1,10 +1,12 @@
 ---
-title: "rainbow.vim"
-author: 
-categories: 
+title: rainbow.vim
+author:
+categories:
 date: 2022-10-02 19:52:23 +0800
-tags: Vim UI
-excerpt: 
+tags:
+  - Vim
+  - UI
+excerpt:
 ---
 
 

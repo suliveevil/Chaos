@@ -1,9 +1,10 @@
 ---
-title: "iOS"
-categories: 
+title: iOS
+categories:
 date: 2022-09-25 23:15:16 +0800
-tags: 操作系统
-excerpt: 
+tags:
+  - 操作系统
+excerpt:
 ---
 
 [[Apple苹果]] [[iPhone]] 机载操作系统

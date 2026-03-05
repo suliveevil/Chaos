@@ -1,8 +1,9 @@
 ---
-title: "Language Server Protocol"
+title: Language Server Protocol
 categories:
 date: 2022-09-30 22:45:44 +0800
-tags: LSP
+tags:
+  - LSP
 excerpt:
 ---
 

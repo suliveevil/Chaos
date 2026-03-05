@@ -1,9 +1,11 @@
 ---
-title: "key-menu.nvim"
-categories: 
+title: key-menu.nvim
+categories:
 date: 2022-10-02 23:30:40 +0800
-tags: Neovim 快捷键
-excerpt: 
+tags:
+  - Neovim
+  - 快捷键
+excerpt:
 ---
 
 

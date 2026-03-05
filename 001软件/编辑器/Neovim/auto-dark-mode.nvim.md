@@ -1,9 +1,12 @@
 ---
-title: "auto-dark-mode.nvim"
-categories: 
+title: auto-dark-mode.nvim
+categories:
 date: 2022-09-26 23:35:20 +0800
-tags: Neovim macOS GUI
-excerpt: 
+tags:
+  - Neovim
+  - macOS
+  - GUI
+excerpt:
 ---
 
 [[Neovim 插件]]

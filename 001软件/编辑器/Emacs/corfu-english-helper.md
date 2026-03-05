@@ -1,9 +1,11 @@
 ---
-title: "corfu-english-helper"
-categories: 
+title: corfu-english-helper
+categories:
 date: 2022-09-30 05:40:39 +0800
-tags: Emacs 词典
-excerpt: 
+tags:
+  - Emacs
+  - 词典
+excerpt:
 ---
 
 [[Emacs 插件]]

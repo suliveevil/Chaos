@@ -1,10 +1,12 @@
 ---
-title: "macOS 快捷键"
-author: 
-categories: 
+title: macOS 快捷键
+author:
+categories:
 date: 2022-10-10 19:13:04 +0800
-tags: macOS 快捷键
-excerpt: 
+tags:
+  - macOS
+  - 快捷键
+excerpt:
 ---
 
 [[macOS]] [[快捷键]]

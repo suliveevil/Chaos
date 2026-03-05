@@ -1,9 +1,11 @@
 ---
-title: "Karabiner-Elements"
-categories: 
+title: Karabiner-Elements
+categories:
 date: 2022-09-23 23:30:13 +0800
-tags: macOS 键盘
-excerpt: 
+tags:
+  - macOS
+  - 键盘
+excerpt:
 ---
 
 A powerful and stable keyboard customizer for macOS.

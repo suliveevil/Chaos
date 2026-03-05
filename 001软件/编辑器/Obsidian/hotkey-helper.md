@@ -1,9 +1,11 @@
 ---
-title: "hotkey-helper"
-categories: 
+title: hotkey-helper
+categories:
 date: 2022-09-29 05:46:54 +0800
-tags: Obsidian 快捷键管理
-excerpt: 
+tags:
+  - Obsidian
+  - 快捷键管理
+excerpt:
 ---
 
 

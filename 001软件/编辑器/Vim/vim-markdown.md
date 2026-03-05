@@ -1,9 +1,11 @@
 ---
-title: "vim-markdown"
-categories: 
+title: vim-markdown
+categories:
 date: 2022-09-28 03:56:03 +0800
-tags: Vim Markdown
-excerpt: 
+tags:
+  - Vim
+  - Markdown
+excerpt:
 ---
 
 [[Vim 插件]]

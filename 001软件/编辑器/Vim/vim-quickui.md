@@ -1,10 +1,12 @@
 ---
-title: "vim-quickui"
-author: 
-categories: 
+title: vim-quickui
+author:
+categories:
 date: 2022-10-06 02:32:56 +0800
-tags: Vim UI
-excerpt: 
+tags:
+  - Vim
+  - UI
+excerpt:
 ---
 
 
